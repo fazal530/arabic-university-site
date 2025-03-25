@@ -18,3 +18,5 @@
 # Special handling for web/libraries folder
 # Keep old libraries, but ignore new ones managed by Composer
 /web/libraries/*
+
+db_backup.sql.gz 
