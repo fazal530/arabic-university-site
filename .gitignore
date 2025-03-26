@@ -1,1 +1,26 @@
-db_backup.sql.gz
+# Ignore Drupal-specific files
+web/sites/default/files/
+web/sites/*/files/
+
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore Node.js dependencies
+/node_modules/
+
+# Ignore environment and IDE-specific files
+/.env
+/.DS_Store
+/.idea/
+/.vscode/
+
+# Ignore build artifacts
+web/core/
+web/modules/contrib/
+web/themes/contrib/
+web/profiles/contrib/
+
+# Ignore other unnecessary files
+web/autoload.php
+web/.htaccess
+web/web.config
