@@ -258,7 +258,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-# $settings['config_sync_directory'] = '/directory/outside/webroot';
+$settings['config_sync_directory'] = '../config/sync';
 
 /**
  * Settings:
@@ -894,19 +894,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
+
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-// $host = "localhost";
-// $port = 3306;
-// $driver = "mysql";
 
-// $databases['default']['default']['database'] = "university_site";
-// $databases['default']['default']['username'] = "root";
-// $databases['default']['default']['password'] = "root";
-// $databases['default']['default']['host'] = $host;
-// $databases['default']['default']['port'] = $port;
-// $databases['default']['default']['driver'] = $driver;
-
-// $settings['hash_salt'] = 'ab43086a5f8bd78dfbbaffff553b5a09e0d32c973819547342e4a555c74cec18';
-// $config['system.logging']['error_level'] = 'verbose';
