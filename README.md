@@ -39,7 +39,7 @@ git push -u origin feature/abdul  # Or replace with your name
 
 ### 💻 Step-by-step
 
-1. **Make your changes (code, templates, config, etc.)**
+1. **Make your changes in your feature branch (code, templates, config, etc.)**
 
 2. **Add and commit your changes**
 
