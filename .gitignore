@@ -1,6 +1,8 @@
 # Ignore Drupal-specific files
 web/sites/default/files/
 web/sites/*/files/
+web/sites/*/settings.local.php
+
 
 # Ignore Composer dependencies
 /vendor/
