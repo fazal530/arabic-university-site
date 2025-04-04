@@ -1,9 +1,21 @@
 @charset "UTF-8";
 /* One should use it like this
 
+
+
+
 .example {
   font-size: calculate-values (12, 20, 768, 1280);
 */
+
+
+body{
+  background-color: blue;
+}
+
+
+
+
 @font-face {
   font-family: Montserrat;
   src: url(../fonts/Montserrat_otf/Montserrat-Black.otf);
