@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.student.field_age
+    - field.field.node.student.field_f_name
     - node.type.student
   module:
     - user
@@ -19,6 +20,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_f_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

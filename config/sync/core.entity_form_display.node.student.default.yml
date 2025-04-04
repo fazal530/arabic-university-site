@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.student.field_age
+    - field.field.node.student.field_f_name
     - node.type.student
   module:
     - path
@@ -21,6 +22,14 @@ content:
   field_age:
     type: string_textfield
     weight: 121
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_f_name:
+    type: string_textfield
+    weight: 122
     region: content
     settings:
       size: 60
