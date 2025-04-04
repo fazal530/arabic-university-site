@@ -1,0 +1,19 @@
+uuid: 02b300ed-e3a0-4c73-9866-34d15004ae84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_age
+    - node.type.student
+id: node.student.field_age
+field_name: field_age
+entity_type: node
+bundle: student
+label: Age
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
