@@ -714,12 +714,13 @@ body {
 }
 
 body {
-  background-color: #AE9A64;
-}
-
-div {
-  background-color: #006B8D;
-  color: #dc101b;
+<<<<<<< HEAD
+  background-color: cyan;
+  color: chartreuse;
+=======
+  background-color: red;
+  color: yellow;
+>>>>>>> main
 }
 
 div {
