@@ -12,7 +12,7 @@ web/sites/*/settings.local.php
 
 # Ignore environment and IDE-specific files
 /.env
-/.DS_Store
+**/.DS_Store
 /.idea/
 /.vscode/
 
