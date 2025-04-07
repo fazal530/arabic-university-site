@@ -26,3 +26,4 @@ web/profiles/contrib/
 web/autoload.php
 web/.htaccess
 web/web.config
+config/sync/.htaccess
