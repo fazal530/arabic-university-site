@@ -713,4 +713,12 @@ body {
   }
 }
 
+body {
+  background-color: #006B8D;
+}
+
+div {
+  background-color: yellow;
+}
+
 /*# sourceMappingURL=style.css.map */
