@@ -57,6 +57,9 @@ git commit -m "feat: Added custom slider on product page"
 | config | For config changes           | `config: Exported updated taxonomy view`|
 | chore  | For misc. changes (e.g. composer) | `chore: Updated Drupal core to 10.2.6`|
 
+2A. **Stop Npm running in the theme**
+
+
 3. **Stay updated with `main`**
 
 ```bash
@@ -74,6 +77,9 @@ composer install
 drush cr
 drush cim -y
 ```
+
+4A. **Run: npm run sass**
+
 
 5. **Push your changes to GitHub**
 
