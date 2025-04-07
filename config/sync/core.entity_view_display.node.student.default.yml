@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.student.field_address
     - field.field.node.student.field_age
+    - field.field.node.student.field_class
     - field.field.node.student.field_f_name
     - node.type.student
   module:
@@ -29,6 +30,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_class:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_f_name:
     type: string
