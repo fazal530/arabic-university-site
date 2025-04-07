@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.student.field_address
     - field.field.node.student.field_age
+    - field.field.node.student.field_class
     - field.field.node.student.field_f_name
     - node.type.student
   module:
@@ -31,6 +32,14 @@ content:
   field_age:
     type: string_textfield
     weight: 121
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_class:
+    type: string_textfield
+    weight: 124
     region: content
     settings:
       size: 60
