@@ -1,36 +1,27 @@
-uuid: 6464d30f-2839-49e8-b9a2-578bc13b914c
+uuid: ed8bf63d-df5a-4dc8-967c-08cde6f79c2e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.university.field_blocks
-    - field.field.node.university.field_content_
-    - field.field.node.university.field_university_info
-    - node.type.university
+    - field.field.node.about_page.field_about_content
+    - field.field.node.about_page.field_cagetory
+    - node.type.about_page
   module:
-    - block_field
     - text
     - user
-id: node.university.default
+id: node.about_page.default
 targetEntityType: node
-bundle: university
+bundle: about_page
 mode: default
 content:
-  field_blocks:
-    type: block_field
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 103
-    region: content
-  field_content_:
+  field_about_content:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 102
     region: content
-  field_university_info:
+  field_cagetory:
     type: entity_reference_label
     label: above
     settings:
