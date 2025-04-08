@@ -1,19 +1,17 @@
-uuid: 41d4522c-0667-47a7-8d0e-3236586b6964
+uuid: 73114095-3821-4356-84d9-2372ed5222b2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.university.field_blocks
-    - field.field.node.university.field_content_
-    - field.field.node.university.field_university_info
-    - node.type.university
+    - field.field.node.about_page.field_about_content
+    - field.field.node.about_page.field_cagetory
+    - node.type.about_page
   module:
-    - block_field
     - path
     - text
-id: node.university.default
+id: node.about_page.default
 targetEntityType: node
-bundle: university
+bundle: about_page
 mode: default
 content:
   created:
@@ -22,16 +20,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_blocks:
-    type: block_field_default
-    weight: 123
-    region: content
-    settings:
-      plugin_id: ''
-      settings: {  }
-      configuration_form: full
-    third_party_settings: {  }
-  field_content_:
+  field_about_content:
     type: text_textarea
     weight: 122
     region: content
@@ -39,7 +28,7 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_university_info:
+  field_cagetory:
     type: entity_reference_autocomplete
     weight: 121
     region: content
