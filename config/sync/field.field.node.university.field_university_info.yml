@@ -1,0 +1,29 @@
+uuid: 91dc89c3-12f1-4228-aa3a-efb219fec9ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_university_info
+    - node.type.university
+    - taxonomy.vocabulary.university_info
+id: node.university.field_university_info
+field_name: field_university_info
+entity_type: node
+bundle: university
+label: 'university info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      university_info: university_info
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
