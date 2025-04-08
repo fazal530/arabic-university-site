@@ -714,13 +714,8 @@ body {
 }
 
 body {
-<<<<<<< HEAD
   background-color: cyan;
-  color: chartreuse;
-=======
-  background-color: red;
-  color: yellow;
->>>>>>> main
+  color: greenyellow;
 }
 
 div {
