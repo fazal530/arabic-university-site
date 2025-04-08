@@ -1,0 +1,22 @@
+uuid: bed95586-a1bc-4367-9bc4-16ab94679c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_content
+    - node.type.about_page
+  module:
+    - text
+id: node.about_page.field_about_content
+field_name: field_about_content
+entity_type: node
+bundle: about_page
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

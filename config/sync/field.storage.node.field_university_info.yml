@@ -1,0 +1,20 @@
+uuid: c77fd9a9-ce2b-4be9-8eae-a1c5ed9f9b2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_university_info
+field_name: field_university_info
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

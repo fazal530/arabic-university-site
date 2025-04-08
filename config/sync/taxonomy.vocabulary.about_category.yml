@@ -1,0 +1,9 @@
+uuid: ba8ef777-4faf-4aee-a246-723e01d90a50
+langcode: en
+status: true
+dependencies: {  }
+name: 'About Category'
+vid: about_category
+description: null
+weight: 0
+new_revision: false
