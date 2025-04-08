@@ -713,9 +713,8 @@ body {
   }
 }
 
-body {
-  background-color: cyan;
-  color: greenyellow;
+div {
+  background-color: yellow;
 }
 
 /*# sourceMappingURL=style.css.map */
