@@ -57,11 +57,7 @@ $desktop-xlg: 1920;
 }
 
 // 1920px
-@mixin desktop-xlarge() {
-  @media (min-width: #{$desktop-xlg}px) {
-    @content;
-  }
-}
+
 
 // THE FUNCTION FOR THE FLUID SIZES
 
