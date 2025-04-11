@@ -1,0 +1,45 @@
+uuid: e6e8d6d6-51f7-4146-9faf-d4fb942bc1a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_section
+    - paragraphs.paragraphs_type.circular_button
+    - paragraphs.paragraphs_type.hero_section
+    - paragraphs.paragraphs_type.slider
+  module:
+    - entity_reference_revisions
+id: paragraph.hero_section.field_hero_section
+field_name: field_hero_section
+entity_type: paragraph
+bundle: hero_section
+label: 'Hero Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      circular_button: circular_button
+      slider: slider
+    negate: 0
+    target_bundles_drag_drop:
+      circular_button:
+        weight: 6
+        enabled: true
+      hero_section:
+        weight: 7
+        enabled: false
+      slide:
+        weight: 8
+        enabled: false
+      slider:
+        weight: 9
+        enabled: true
+      text:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions
