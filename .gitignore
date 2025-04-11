@@ -6,6 +6,7 @@ web/sites/*/settings.local.php
 
 # Ignore Composer dependencies
 /vendor/
+/private/
 
 # Ignore Node.js dependencies
 /node_modules/
