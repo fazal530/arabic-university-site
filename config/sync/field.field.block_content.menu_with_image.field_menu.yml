@@ -1,0 +1,24 @@
+uuid: 0e227633-982a-490e-a300-a16d10cee347
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.menu_with_image
+    - field.storage.block_content.field_menu
+  module:
+    - block_field
+id: block_content.menu_with_image.field_menu
+field_name: field_menu
+entity_type: block_content
+bundle: menu_with_image
+label: Menu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

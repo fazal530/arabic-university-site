@@ -1,0 +1,11 @@
+uuid: 4fc14805-5e1e-4bdd-965b-48ce5c802ada
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fazal_content
+id: node.fazal_content
+target_entity_type_id: node
+target_bundle: fazal_content
+default_langcode: site_default
+language_alterable: false

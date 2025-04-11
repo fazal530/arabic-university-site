@@ -1,0 +1,36 @@
+uuid: 5f937e99-d4c7-4b89-9f8a-d02abf32896a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.menu_with_image
+    - field.field.block_content.menu_with_image.field_image
+    - field.field.block_content.menu_with_image.field_menu
+  module:
+    - block_field
+    - image
+id: block_content.menu_with_image.default
+targetEntityType: block_content
+bundle: menu_with_image
+mode: default
+content:
+  field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_menu:
+    type: block_field
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
