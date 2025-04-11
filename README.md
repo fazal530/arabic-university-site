@@ -44,6 +44,7 @@ git push -u origin feature/abdul  # Or replace with your name
 2. **Add and commit your changes**
 
 ```bash
+drush cex
 git add .
 git commit -m "feat: Added custom slider on product page"
 ```
