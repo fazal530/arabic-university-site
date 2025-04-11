@@ -1,0 +1,35 @@
+uuid: b6b43c41-ae23-4c8d-915c-8e0ed1bbf177
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.circular_button.field_icon
+    - field.field.paragraph.circular_button.field_label
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.circular_button
+  module:
+    - image
+id: paragraph.circular_button.default
+targetEntityType: paragraph
+bundle: circular_button
+mode: default
+content:
+  field_icon:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
