@@ -9,7 +9,7 @@ dependencies:
 id: sass_theme_msd_languageswitcher
 theme: sass_theme_msd
 region: menubar
-weight: 0
+weight: -5
 provider: null
 plugin: 'language_block:language_interface'
 settings:
