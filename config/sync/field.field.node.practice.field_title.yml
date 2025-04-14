@@ -1,15 +1,15 @@
-uuid: 2748000d-2f3e-492d-b4c5-9c006e927881
+uuid: 19f3b958-4142-4def-ae8f-a973269ed333
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_text
-    - node.type.site
-id: node.site.field_text
-field_name: field_text
+    - field.storage.node.field_title
+    - node.type.practice
+id: node.practice.field_title
+field_name: field_title
 entity_type: node
-bundle: site
-label: text
+bundle: practice
+label: title
 description: ''
 required: false
 translatable: false

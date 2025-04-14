@@ -1,15 +1,15 @@
-uuid: a962441b-95dc-4dfa-a453-4a7587ab36ab
+uuid: ac1b7761-88a6-416d-8c0e-7c98f2a32e43
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.site.field_text
-    - node.type.site
+    - field.field.node.practice.field_title
+    - node.type.practice
   module:
     - path
-id: node.site.default
+id: node.practice.default
 targetEntityType: node
-bundle: site
+bundle: practice
 mode: default
 content:
   created:
@@ -18,7 +18,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_text:
+  field_title:
     type: string_textfield
     weight: 121
     region: content
