@@ -1,0 +1,25 @@
+uuid: 507440f5-0cfd-4d8a-9e76-bc2db997b6c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.university_section.field_content
+    - paragraphs.paragraphs_type.university_section
+  module:
+    - text
+id: paragraph.university_section.default
+targetEntityType: paragraph
+bundle: university_section
+mode: default
+content:
+  field_content:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
