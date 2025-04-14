@@ -1,0 +1,57 @@
+uuid: c341ed63-aa51-453c-a726-bd6b9b186322
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.form.field_class_name
+    - field.field.node.form.field_fa_name
+    - field.field.node.form.field_name
+    - field.field.node.form.field_teacher_name
+    - node.type.form
+  module:
+    - user
+id: node.form.default
+targetEntityType: node
+bundle: form
+mode: default
+content:
+  field_class_name:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_fa_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_teacher_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
