@@ -2,10 +2,7 @@ uuid: 0c55a2f6-d1fb-4e37-88f3-cecaca5552f7
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:menu_with_image:be6f1ec0-925e-4fc6-bd1a-8adbe6729a48'
   module:
-    - block_content
     - node
   theme:
     - sass_theme_msd

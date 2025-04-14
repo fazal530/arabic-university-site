@@ -1,0 +1,19 @@
+uuid: 4518750a-47d4-4d3c-a376-c68f7fa43564
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teacher_name
+    - node.type.form
+id: node.form.field_teacher_name
+field_name: field_teacher_name
+entity_type: node
+bundle: form
+label: 'Teacher Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
