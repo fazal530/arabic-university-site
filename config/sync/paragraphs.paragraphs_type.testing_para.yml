@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: testing_para
-label: 'Changed Para'
+label: 'Changed Paragraph'
 icon_uuid: null
 icon_default: null
 description: ''
