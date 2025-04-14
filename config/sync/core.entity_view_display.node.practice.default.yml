@@ -1,18 +1,18 @@
-uuid: 0fbf6295-100c-4a52-9f24-7fba27e03db8
+uuid: 00a16897-1467-4b20-99b5-1870d4367eb1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.site.field_text
-    - node.type.site
+    - field.field.node.practice.field_title
+    - node.type.practice
   module:
     - user
-id: node.site.default
+id: node.practice.default
 targetEntityType: node
-bundle: site
+bundle: practice
 mode: default
 content:
-  field_text:
+  field_title:
     type: string
     label: above
     settings:

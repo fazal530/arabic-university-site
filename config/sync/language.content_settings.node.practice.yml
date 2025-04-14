@@ -1,11 +1,11 @@
-uuid: 82accf61-e631-4be8-83e6-9b14a5292cbc
+uuid: 9a7a73a5-9c26-4c68-b33b-69bdd330a792
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.site
-id: node.site
+    - node.type.practice
+id: node.practice
 target_entity_type_id: node
-target_bundle: site
+target_bundle: practice
 default_langcode: site_default
 language_alterable: false
