@@ -1,0 +1,10 @@
+uuid: 15b1f78b-a95c-4eb7-aa3c-192110eb9ce5
+langcode: en
+status: true
+dependencies: {  }
+id: university_section
+label: 'university section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
