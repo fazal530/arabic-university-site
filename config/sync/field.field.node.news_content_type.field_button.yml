@@ -1,0 +1,21 @@
+uuid: 533be539-d925-4f7b-b79a-d07a8b410fd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button
+    - node.type.news_content_type
+id: node.news_content_type.field_button
+field_name: field_button
+entity_type: node
+bundle: news_content_type
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
