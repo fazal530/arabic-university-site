@@ -28,3 +28,5 @@ web/autoload.php
 web/.htaccess
 web/web.config
 config/sync/.htaccess
+
+.DS_Store
