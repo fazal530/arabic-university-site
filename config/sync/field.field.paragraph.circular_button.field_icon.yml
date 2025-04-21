@@ -6,7 +6,14 @@ dependencies:
     - field.storage.paragraph.field_icon
     - paragraphs.paragraphs_type.circular_button
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      file: file
+      alt: '0'
+      title: '0'
 id: paragraph.circular_button.field_icon
 field_name: field_icon
 entity_type: paragraph
@@ -14,7 +21,7 @@ bundle: circular_button
 label: Icon
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
