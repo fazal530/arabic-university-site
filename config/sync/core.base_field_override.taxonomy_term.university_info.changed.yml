@@ -1,0 +1,18 @@
+uuid: 54c0f323-62f8-43f6-a203-728a3418739b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.university_info
+id: taxonomy_term.university_info.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: university_info
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed
