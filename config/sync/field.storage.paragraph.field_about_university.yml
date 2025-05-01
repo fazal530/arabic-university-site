@@ -1,12 +1,12 @@
-uuid: 43342260-555e-4fc3-a4fe-57661d6f1684
+uuid: c9a21e0d-5e2f-42b3-a11f-2b2dbc28ed08
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
     - text
-id: paragraph.field_content
-field_name: field_content
+id: paragraph.field_about_university
+field_name: field_about_university
 entity_type: paragraph
 type: text_long
 settings: {  }

@@ -1,18 +1,18 @@
-uuid: 093e85e9-54ec-4da2-aaf0-8a262361c881
+uuid: 3ff1fa2c-b21a-4266-9037-aded237c1021
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_body
+    - field.storage.paragraph.field_about_university
     - filter.format.full_html
-    - paragraphs.paragraphs_type.slide
+    - paragraphs.paragraphs_type.about_university
   module:
     - text
-id: paragraph.slide.field_body
-field_name: field_body
+id: paragraph.about_university.field_about_university
+field_name: field_about_university
 entity_type: paragraph
-bundle: slide
-label: Body
+bundle: about_university
+label: 'About University'
 description: ''
 required: false
 translatable: false

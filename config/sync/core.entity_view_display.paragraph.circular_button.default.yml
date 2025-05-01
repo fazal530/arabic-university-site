@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.circular_button.field_icon
+    - field.field.paragraph.circular_button.field_image
     - field.field.paragraph.circular_button.field_label
+    - field.field.paragraph.circular_button.field_program_type
     - paragraphs.paragraphs_type.circular_button
   module:
     - image
@@ -13,7 +14,7 @@ targetEntityType: paragraph
 bundle: circular_button
 mode: default
 content:
-  field_icon:
+  field_image:
     type: image
     label: hidden
     settings:
@@ -22,7 +23,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_label:
     type: string
@@ -31,5 +32,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_program_type:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
     region: content
 hidden: {  }
