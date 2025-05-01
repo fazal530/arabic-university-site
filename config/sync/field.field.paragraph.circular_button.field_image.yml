@@ -1,16 +1,16 @@
-uuid: 2a028dad-eeb9-43c1-b108-cd6825fc11d7
+uuid: af1b2aa6-02ae-4526-9e41-3b2f65ba0bc4
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_image
-    - paragraphs.paragraphs_type.testing_para
+    - paragraphs.paragraphs_type.circular_button
   module:
     - image
-id: paragraph.testing_para.field_image
+id: paragraph.circular_button.field_image
 field_name: field_image
 entity_type: paragraph
-bundle: testing_para
+bundle: circular_button
 label: image
 description: ''
 required: false

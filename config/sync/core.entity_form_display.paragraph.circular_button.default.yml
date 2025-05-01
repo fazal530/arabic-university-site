@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.circular_button.field_icon
+    - field.field.paragraph.circular_button.field_image
     - field.field.paragraph.circular_button.field_label
+    - field.field.paragraph.circular_button.field_program_type
     - image.style.thumbnail
     - paragraphs.paragraphs_type.circular_button
   module:
@@ -14,9 +15,9 @@ targetEntityType: paragraph
 bundle: circular_button
 mode: default
 content:
-  field_icon:
+  field_image:
     type: image_image
-    weight: 1
+    weight: 2
     region: content
     settings:
       progress_indicator: throbber
@@ -29,6 +30,19 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_program_type:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

@@ -1,0 +1,22 @@
+uuid: 43d8b727-eb37-4f90-b9af-233ad7dfad5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_university.field_about_university
+    - paragraphs.paragraphs_type.about_university
+  module:
+    - text
+id: paragraph.about_university.default
+targetEntityType: paragraph
+bundle: about_university
+mode: default
+content:
+  field_about_university:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

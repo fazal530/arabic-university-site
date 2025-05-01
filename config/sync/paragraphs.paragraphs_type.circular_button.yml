@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: circular_button
-label: 'Circular Button'
+label: 'Right Section'
 icon_uuid: null
 icon_default: null
 description: ''
