@@ -23,7 +23,7 @@ settings:
   handler_settings:
     target_bundles:
       hero_section: hero_section
-    negate: 1
+    negate: 0
     target_bundles_drag_drop:
       about_university:
         weight: 4

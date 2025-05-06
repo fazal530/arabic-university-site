@@ -50,6 +50,10 @@
  * @see html.html.twig
  */
 #}
+<div id="loader">
+	<div class="spinner"></div>
+  </div>
+  
 <div id="page-wrapper">
 
 	<div id="page">
@@ -62,7 +66,7 @@
 			<div class="section layout-container clearfix">
 				{{ page.primary_menu }}
 				{{ page.secondary_menu }}
-				{{ page.header }}
+				<div class="header-section">{{ page.header }}</div>
 			</div>
 		</header>
 		{% if page.highlighted %}
@@ -81,29 +85,30 @@
 		{% endif %}
 		{{ page.breadcrumb }}
 		<div id="main-wrapper" class="page-layout-main-wrapper layout-container clearfix">
-			<div id="main" class="layout-main clearfix">
-				{% if page.sidebar_first %}
-					<div id="sidebar-first" class="column sidebar">
-						<aside class="section" role="complementary">
-							{{ page.sidebar_first }}
-						</aside>
-					</div>
-				{% endif %}
-				<main id="content" class="column main-content" role="main">
-					<section class="section">
-						<a id="main-content" tabindex="-1"></a>
-						{{ page.content }}
-					</section>
-				</main>
-				{% if page.sidebar_second %}
-					<div id="sidebar-second" class="column sidebar">
-						<aside class="section" role="complementary">
-							{{ page.sidebar_second }}
-						</aside>
-					</div>
-				{% endif %}
-			</div>
-		</div>
+    <div id="main" class="layout-main clearfix {% if page.sidebar_first %}has-sidebar-first{% endif %} {% if page.sidebar_second %}has-sidebar-second{% endif %}">
+        {% if page.sidebar_first %}
+            <div id="sidebar-first" class="column sidebar">
+                <aside class="section" role="complementary">
+                    {{ page.sidebar_first }}
+                </aside>
+            </div>
+        {% endif %}
+        <main id="content" class="column main-content" role="main">
+            <section class="section">
+                <a id="main-content" tabindex="-1"></a>
+                {{ page.content }}
+            </section>
+        </main>
+        {% if page.sidebar_second %}
+            <div id="sidebar-second" class="column sidebar">
+                <aside class="section" role="complementary">
+                    {{ page.sidebar_second }}
+                </aside>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
 		<footer class="site-footer">
 			<div class="layout-container">
 				{% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
