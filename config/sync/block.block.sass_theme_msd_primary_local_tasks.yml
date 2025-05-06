@@ -1,6 +1,6 @@
 uuid: ebebe8bb-320b-4fe4-bc9d-497ccf5877a4
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - sass_theme_msd

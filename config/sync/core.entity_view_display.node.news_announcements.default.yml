@@ -1,0 +1,54 @@
+uuid: 3489a04e-d93e-4da8-98a9-566196046305
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_announcements.field_date
+    - field.field.node.news_announcements.field_description
+    - field.field.node.news_announcements.field_image
+    - image.style.wide
+    - node.type.news_announcements
+  module:
+    - datetime
+    - image
+    - user
+id: node.news_announcements.default
+targetEntityType: node
+bundle: news_announcements
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_month
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_description:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true

@@ -3,15 +3,26 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.hero_section.field_bg_image
     - field.field.paragraph.hero_section.field_hero_section
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.hero_section
   module:
+    - image
     - paragraphs
 id: paragraph.hero_section.default
 targetEntityType: paragraph
 bundle: hero_section
 mode: default
 content:
+  field_bg_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_hero_section:
     type: paragraphs
     weight: 0
