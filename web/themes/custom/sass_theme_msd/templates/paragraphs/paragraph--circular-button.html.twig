@@ -6,11 +6,13 @@
     </div>
     <div class="arc-circle"></div>
   </div>
-<div class="label">
-  {% for item in paragraph.field_label %}
+  <div class="label">
+    {% for item in paragraph.field_label %}
     <div class="label-item label-item--{{ loop.index }}">
       {{ item.value }}
     </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>
-</div>
+
+composer require 'drupal/block_field:^1.0@RC'

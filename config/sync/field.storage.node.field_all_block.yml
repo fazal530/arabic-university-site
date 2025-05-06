@@ -1,12 +1,12 @@
-uuid: 3a21c9d1-aed3-4b72-b6af-7e67f474409a
+uuid: 61f3ac67-5a82-4241-a504-60871cd86576
 langcode: en
 status: true
 dependencies:
   module:
     - block_field
     - node
-id: node.field_all
-field_name: field_all
+id: node.field_all_block
+field_name: field_all_block
 entity_type: node
 type: block_field
 settings: {  }

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.standard_page.field_all
+    - field.field.node.standard_page.field_all_block
     - field.field.node.standard_page.field_content
     - node.type.standard_page
   module:
@@ -15,12 +15,12 @@ targetEntityType: node
 bundle: standard_page
 mode: default
 content:
-  field_all:
+  field_all_block:
     type: block_field
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 103
     region: content
   field_content:
     type: entity_reference_revisions_entity_view
