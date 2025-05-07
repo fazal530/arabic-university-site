@@ -1,0 +1,294 @@
+// FONT FAMILIES
+/* stylelint-disable */
+$font-Work_Sans: Work_Sans, sans-serif;
+$font-Space_Mono: Space_Mono, sans-serif;
+
+
+.h1,
+h1 {
+  font-family: $font-Work_Sans;
+  font-size: 28px;
+  line-height: 140%;
+  font-weight: 600;
+  color: $white;
+  padding: 0px;
+  margin: 0px;
+
+  @include tablet {
+    font-size: 38px;
+    line-height: 120%;
+  }
+
+  @include desktop {
+    font-size: 51px;
+    line-height: 110.00000000000001%;
+  }
+}
+
+.h2,
+h2 {
+  font-family: $font-Work_Sans;
+  font-size: 28px;
+  line-height: 140%;
+  color: $white;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+
+  @include desktop {
+    font-size: 38px;
+    line-height: 120%;
+  }
+}
+
+.h3,
+h3 {
+  font-family: $font-Work_Sans;
+  font-size: 22px;
+  line-height: 160%;
+  color: $white;
+  padding: 0px;
+  margin: 0px;
+
+  @include tablet {
+    line-height: 160%;
+  }
+
+  @include desktop {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
+
+.h4,
+h4 {
+  font-family: $font-Work_Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: $white;
+  padding: 0px;
+  margin: 0px;
+
+  @include desktop {
+    font-size: 22px;
+    line-height: 160%;
+  }
+}
+
+.h5,
+h5 {
+  font-family: $font-Work_Sans;
+  font-size: 22px;
+  line-height: 140%;
+  color: $white;
+  padding: 0px;
+  margin: 0px;
+  font-weight: normal;
+
+}
+
+
+
+p,
+p {
+  font-family: $font-Work_Sans;
+  font-size: 16px;
+  line-height: 140%;
+  color: $white;
+  font-weight: 400;
+
+  @include desktop {
+    font-size: 22px;
+    line-height: 160%;
+  }
+}
+
+.body1 {
+  font-family: $font-Work_Sans;
+  font-size: 16px;
+  line-height: 140%;
+  color: $white;
+  text-decoration: none;
+  font-weight: 400;
+
+}
+
+.body2 {
+  font-family: $font-Work_Sans;
+  font-size: 12px;
+  line-height: 110.00000000000001%;
+  color: $white;
+  text-decoration: none;
+  font-weight: 400;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.body3 {
+  font-family: $font-Work_Sans;
+  font-size: 12px;
+  line-height: 110.00000000000001%;
+  font-weight: 400;
+  color: $white;
+  text-decoration: none;
+}
+
+.body4 {
+  font-family: $font-Work_Sans;
+  font-size: 38px;
+  line-height: 120%;
+  color: $white;
+  text-decoration: none;
+
+}
+
+.body5 {
+  font-family: $font-Work_Sans;
+  font-size: 16px;
+  line-height: 140%;
+  color: $white;
+  text-decoration: none;
+
+  @include tablet {
+    font-size: 22px;
+  }
+}
+
+.body6 {
+  font-family: $font-Work_Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+
+  @include tablet {
+    text-align: center;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 22.4px;
+
+
+  }
+
+}
+
+
+// BUTTONS
+.sing_button {
+  @extend p;
+  background-color: $purple;
+  width: 152px;
+  border-radius: 20px;
+}
+
+.get_button {
+  font-family: $font-Work_Sans;
+  font-size: 16px;
+  background-color: $purple;
+  border: 0;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+  border-radius: 20px;
+  color: $white;
+  width: 100%;
+  padding-block: 15px;
+  padding-inline: 30px;
+}
+
+.view_button {
+  font-size: 16px;
+  font-family: $font-Work_Sans;
+  color: $white;
+  line-height: 140%;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 2px solid $purple;
+  padding: 15px 25px;
+  text-decoration: none;
+
+}
+
+.see_button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  font-family: Work_Sans, sans-serif;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding-block: 12px;
+
+  @include desktop {
+    padding: 21px 45px;
+
+  }
+}
+
+.nft_button {
+  font-size: 16px;
+  font-family: $font-Work_Sans;
+  background-color: $white;
+  color: $black;
+  border: 0;
+  border-radius: 20px;
+
+}
+
+.email_button {
+  font-size: 16px;
+  background-color: $white;
+  color: $black;
+  border: 0;
+  border-radius: 20px;
+}
+
+.subscribe_button {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  padding: 12px;
+  background-color: $purple;
+  color: $white;
+  border: 0;
+  border-radius: 20px;
+}
+
+.copy_button {
+  font-size: 16px;
+  background-color: $purple;
+  border: 0;
+  border-radius: 20px;
+}
+
+.bid_button {
+  font-size: 16px;
+  background-color: $purple;
+  border: 0;
+  border-radius: 20px;
+}
+
+
+.line {
+  margin-block: 40px;
+  width: 100%;
+  height: 5px;
+}
+
+.s-line {
+  margin-block: 20px;
+  width: 100%;
+  height: 5px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}

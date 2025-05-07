@@ -9,15 +9,17 @@ slick:
 global:
   js:
     js/toggleMenu.js: {}
-    js/copy-it.js: {}
     js/local-menu.js: {}
     js/sliders.js: {}
+    js/formred.js: {}
+    js/toggleform.js: {}
   dependencies:
     - core/drupal
     - core/jquery
   css:
     base:
       css/style.css: {}
+      css/custom.css: {}
 fontawesome:
   version: 5.15.4
   css:
