@@ -21,20 +21,22 @@
     width: 60%;
     z-index: 2;
 }
-    [dir="rtl"] h1 {
-        font-size: 25px;
-        color: red;
-    }
 
-    [dir="rtl"] p {
-        font-size: 25px;
-        color: yellowgreen;
-    }
-    [dir="rtl"] p button {
-        font-size: 25px;
-        color: black;
-        background-color: salmon;
-    }
+[dir="rtl"] h1 {
+    font-size: 25px;
+    color: red;
+}
+
+[dir="rtl"] p {
+    font-size: 25px;
+    color: yellowgreen;
+}
+
+[dir="rtl"] p button {
+    font-size: 25px;
+    color: black;
+    background-color: salmon;
+}
 
 
 .right_section {
@@ -131,7 +133,7 @@
 
 
     .program_type {
-        @extend .see_button;
+        @extend .button;
     }
 }
 
@@ -145,3 +147,14 @@
     align-items: center;
 
 }
+
+// .news_announement {
+//     .news_body {
+//         .image_wrapper {}
+
+//         .date {}
+
+//         .description {}
+//     }
+// }
+
