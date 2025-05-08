@@ -6,28 +6,14 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.news_announcements.field_date
     - field.field.node.news_announcements.field_description
-    - field.field.node.news_announcements.field_image
-    - image.style.medium
     - node.type.news_announcements
   module:
-    - image
     - user
 id: node.news_announcements.teaser
 targetEntityType: node
 bundle: news_announcements
 mode: teaser
 content:
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: content
-      image_style: medium
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: -1
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
