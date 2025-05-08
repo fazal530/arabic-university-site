@@ -10,8 +10,6 @@ body {
   padding: 0;
 }
 
-
-
 .hide-on-mobile {
   display: none !important;
 
@@ -23,7 +21,6 @@ body {
     display: block !important;
   }
 }
-
 
 .hide-on-tablet-n-desktop {
   display: block !important;
@@ -59,10 +56,4 @@ body {
   @include desktop {
     display: block !important;
   }
-}
-
-
-.grey-color {
-  font-size: 14px;
-  color: #232323;
 }
