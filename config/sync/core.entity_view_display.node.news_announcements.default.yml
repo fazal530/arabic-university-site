@@ -11,6 +11,7 @@ dependencies:
   module:
     - datetime
     - image
+    - text
     - user
 id: node.news_announcements.default
 targetEntityType: node
@@ -27,12 +28,12 @@ content:
     weight: 1
     region: content
   field_description:
-    type: string
+    type: text_trimmed
     label: hidden
     settings:
-      link_to_entity: false
+      trim_length: 600
     third_party_settings: {  }
-    weight: 2
+    weight: 4
     region: content
   field_image:
     type: image
