@@ -75,8 +75,8 @@ git merge main
 
 ```bash
 composer install
-drush cr
-drush cim -y
+./drush cr
+./drush cim 
 ```
 
 4A. **Run: npm run sass**
