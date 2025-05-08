@@ -80,8 +80,9 @@ $desktop-xlg: 1920;
   $clamp-min: if($max-value < $min-value, $max-value, $min-value);
   $clamp-max: if($max-value < $min-value, $min-value, $max-value);
 
-  @return clamp(#{$clamp-min}rem,  #{$v}vw + #{$r}rem, #{$clamp-max}rem);
+  @return clamp(#{$clamp-min}rem, #{$v}vw + #{$r}rem, #{$clamp-max}rem);
 }
+
 /* One should use it like this
 
 .example {
