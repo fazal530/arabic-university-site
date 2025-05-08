@@ -1,18 +1,18 @@
-uuid: 8cea066a-9846-47d6-b083-77347aa0fc81
+uuid: 334e9135-6a68-4263-b4d6-3106856217f2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_background_images
+    - field.storage.paragraph.field_slider
     - paragraphs.paragraphs_type.background_image
     - paragraphs.paragraphs_type.hero_section
   module:
     - entity_reference_revisions
-id: paragraph.hero_section.field_background_images
-field_name: field_background_images
+id: paragraph.hero_section.field_slider
+field_name: field_slider
 entity_type: paragraph
 bundle: hero_section
-label: 'Background Images'
+label: Slider
 description: ''
 required: false
 translatable: false
