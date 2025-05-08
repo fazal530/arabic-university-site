@@ -1,16 +1,12 @@
 // FONT FAMILIES
-/* stylelint-disable */
-$font_myriad_pro:myriad_pro , sans-serif;
-
-
+$font_myriad_pro: myriad_pro, sans-serif;
+// FONT FAMILIES
 
 .h1,
 h1 {
-font-family: $font_myriad_pro;
+  font-family: $font_myriad_pro;
   font-size: 56px;
   line-height: 75px;
-
-
 }
 
 .h2,
@@ -18,7 +14,6 @@ h2 {
   font-size: 40px;
   line-height: 60px;
   font-weight: 400;
-
 }
 
 .h3,
@@ -26,7 +21,6 @@ h3 {
   font-size: 36px;
   line-height: 45px;
   font-weight: 400;
-
 }
 
 .h4,
@@ -34,7 +28,6 @@ h4 {
   font-size: 30px;
   line-height: 40px;
   font-weight: 400;
-
 }
 
 .h5,
@@ -42,7 +35,6 @@ h5 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
-
 }
 
 .h6,
@@ -50,7 +42,6 @@ h6 {
   font-size: 20px;
   line-height: 27px;
   font-weight: 600;
-
 }
 
 
@@ -58,18 +49,13 @@ h6 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-
 }
 
 .body2 {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-
-
 }
-
-
 
 // BUTTONS
 .button {
@@ -77,8 +63,3 @@ h6 {
   border-radius: 20px;
 }
 
-
-button {
-  border: none;
-  background-color: transparent;
-}
