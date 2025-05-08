@@ -1,9 +1,0 @@
-uuid: c47887da-c87d-4bdd-9043-fcaa6dbfea31
-langcode: en
-status: true
-dependencies: {  }
-name: 'university info'
-vid: university_info
-description: null
-weight: 0
-new_revision: false
