@@ -5,9 +5,12 @@ dependencies:
   config:
     - field.field.node.news_announcements.field_date
     - field.field.node.news_announcements.field_description
+    - field.field.node.news_announcements.field_image
+    - image.style.thumbnail
     - node.type.news_announcements
   module:
     - datetime
+    - image
     - path
 id: node.news_announcements.default
 targetEntityType: node
@@ -33,6 +36,14 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   langcode:
     type: language_select
