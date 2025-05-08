@@ -12,6 +12,7 @@ dependencies:
     - datetime
     - image
     - path
+    - text
 id: node.news_announcements.default
 targetEntityType: node
 bundle: news_announcements
@@ -24,17 +25,20 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_date:
-    type: datetime_default
+    type: datetime_datelist
     weight: 121
     region: content
-    settings: {  }
+    settings:
+      increment: 15
+      date_order: MDY
+      time_type: none
     third_party_settings: {  }
   field_description:
-    type: string_textfield
+    type: text_textarea
     weight: 122
     region: content
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_image:
