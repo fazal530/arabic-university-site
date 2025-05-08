@@ -1,0 +1,19 @@
+uuid: 61f3ac67-5a82-4241-a504-60871cd86576
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_field
+    - node
+id: node.field_all_block
+field_name: field_all_block
+entity_type: node
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

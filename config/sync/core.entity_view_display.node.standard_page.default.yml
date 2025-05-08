@@ -1,0 +1,40 @@
+uuid: cf7dcc03-9fdc-4e8f-8590-23017059004a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.standard_page.field_all_block
+    - field.field.node.standard_page.field_content
+    - node.type.standard_page
+  module:
+    - block_field
+    - entity_reference_revisions
+    - user
+id: node.standard_page.default
+targetEntityType: node
+bundle: standard_page
+mode: default
+content:
+  field_all_block:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
