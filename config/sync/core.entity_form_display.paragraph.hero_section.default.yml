@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.hero_section.field_background_images
     - field.field.paragraph.hero_section.field_description
     - field.field.paragraph.hero_section.field_program_type
-    - field.field.paragraph.hero_section.field_slider
     - paragraphs.paragraphs_type.hero_section
   module:
     - paragraphs
@@ -15,23 +15,7 @@ targetEntityType: paragraph
 bundle: hero_section
 mode: default
 content:
-  field_description:
-    type: text_textarea
-    weight: 1
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_program_type:
-    type: string_textfield
-    weight: 2
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_slider:
+  field_background_images:
     type: paragraphs
     weight: 0
     region: content
@@ -48,6 +32,22 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_program_type:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

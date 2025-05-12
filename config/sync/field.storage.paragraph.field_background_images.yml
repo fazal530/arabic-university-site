@@ -1,12 +1,12 @@
-uuid: 9ff27ad1-5f12-46e5-a05a-d26d44a9adda
+uuid: a8f6a60f-7361-4282-a0c3-c4e30a0d295c
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
-id: paragraph.field_slider
-field_name: field_slider
+id: paragraph.field_background_images
+field_name: field_background_images
 entity_type: paragraph
 type: entity_reference_revisions
 settings:

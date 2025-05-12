@@ -52,16 +52,16 @@
   {{ exposed }}
   {{ attachment_before }}
 
-  {% if rows %}
-    {% for row in rows %}
-      <div class="news-row{% if loop.first %} news-child-1{% endif %}">
-        {{ row.content }}
-      </div>
-    {% endfor %}
-  {% elseif empty %}
-    {{ empty }}
-  {% endif %}
-  
+{% if rows %}
+  {% for row in rows %}
+    <div class="news-row {% if loop.first %}news-child-one{% else %}news-child{% endif %}">
+      {{ row.content }}
+    </div>
+  {% endfor %}
+{% elseif empty %}
+  {{ empty }}
+{% endif %}
+
   {{ pager }}
 
   {{ attachment_after }}
