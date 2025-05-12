@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_description
     - field.field.node.event.field_image
+    - field.field.node.event.field_is_feature
     - image.style.wide
     - node.type.event
   module:
@@ -45,6 +46,16 @@ content:
         attribute: eager
     third_party_settings: {  }
     weight: -1
+    region: content
+  field_is_feature:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 101
     region: content
   links:
     settings: {  }

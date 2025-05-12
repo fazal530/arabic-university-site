@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.event.field_date
     - field.field.node.event.field_description
     - field.field.node.event.field_image
+    - field.field.node.event.field_is_feature
     - image.style.thumbnail
     - node.type.event
   module:
@@ -48,6 +49,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_is_feature:
+    type: boolean_checkbox
+    weight: 26
+    region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   langcode:
     type: language_select
