@@ -423,5 +423,8 @@ span {
   font-weight: 600;
   color: rgb(112, 111, 111);
 }
+.button a {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
