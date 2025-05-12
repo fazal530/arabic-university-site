@@ -37,6 +37,6 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 0
     region: content
 hidden: {  }
