@@ -1,17 +1,17 @@
-uuid: a495c5c3-988c-4bd0-b513-91732cea6701
+uuid: 818eff09-8fc8-4164-b043-a37145d2d26e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_description
     - filter.format.full_html
-    - node.type.news_announcements
+    - node.type.event
   module:
     - text
-id: node.news_announcements.field_description
+id: node.event.field_description
 field_name: field_description
 entity_type: node
-bundle: news_announcements
+bundle: event
 label: Description
 description: ''
 required: false
