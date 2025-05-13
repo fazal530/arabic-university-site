@@ -9,7 +9,7 @@ dependencies:
 id: sass_theme_msd_submenu
 theme: sass_theme_msd
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: 'block_content:be6f1ec0-925e-4fc6-bd1a-8adbe6729a48'
 settings:
