@@ -1,17 +1,17 @@
-uuid: 7021ff42-6f30-4c6a-ad53-060955523ac8
+uuid: a0937969-4fa2-47d5-bf74-ee1b8e434a39
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_image
-    - paragraphs.paragraphs_type.background_image
+    - field.storage.paragraph.field_slider
+    - paragraphs.paragraphs_type.hero_section
   module:
     - image
-id: paragraph.background_image.field_image
-field_name: field_image
+id: paragraph.hero_section.field_slider
+field_name: field_slider
 entity_type: paragraph
-bundle: background_image
-label: Image
+bundle: hero_section
+label: slider
 description: ''
 required: false
 translatable: false
