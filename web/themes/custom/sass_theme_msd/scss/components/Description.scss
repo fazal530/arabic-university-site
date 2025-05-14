@@ -1,0 +1,40 @@
+.description{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-block: 100px;
+    
+     img{
+            width: 505px;
+            height: 279px;
+            object-fit: cover;
+            object-position: center;
+        }
+ }
+.description-wrapper:nth-of-type(odd){
+    .description{
+        flex-direction: row-reverse;
+        img{
+         width: 505px;
+          height: 516px;
+          object-fit: cover;
+          object-position: center;
+            
+        }
+    }
+}
+
+.description-wrapper:nth-child(4) {
+  .description{
+         img{
+            width: 510px;
+            height: 510px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+
+
+
