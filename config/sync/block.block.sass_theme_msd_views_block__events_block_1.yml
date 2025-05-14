@@ -1,21 +1,21 @@
-uuid: 6b62af3f-14ab-43de-94d4-a0992bd2b0b4
+uuid: ca58b065-92b7-49be-88e4-d108cd154ec0
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.news_listing
+    - views.view.events
   module:
     - views
   theme:
     - sass_theme_msd
-id: sass_theme_msd_views_block__news_listing_block_1
+id: sass_theme_msd_views_block__events_block_1
 theme: sass_theme_msd
 region: content
-weight: 0
+weight: -4
 provider: null
-plugin: 'views_block:news_listing-block_1'
+plugin: 'views_block:events-block_1'
 settings:
-  id: 'views_block:news_listing-block_1'
+  id: 'views_block:events-block_1'
   label: ''
   label_display: '0'
   provider: views

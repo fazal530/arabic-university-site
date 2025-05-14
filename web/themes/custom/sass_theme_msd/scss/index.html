@@ -159,28 +159,21 @@
     </div>
   </div>
 
-  <script>
-    const slides = document.querySelectorAll('.background-slider img');
-    const dots = document.querySelectorAll('.dot');
-    let index = 0;
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+            let loader = document.getElementById("loader");
+            loader.style.opacity = "0"; // Fade out effect
 
-    function showSlide(i) {
-      slides.forEach((img, idx) => {
-        img.classList.toggle('active', idx === i);
-        dots[idx].classList.toggle('active', idx === i);
-      });
-      index = i;
-    }
-
-    setInterval(() => {
-      index = (index + 1) % slides.length;
-      showSlide(index);
-    }, 5000);
-
-    dots.forEach((dot, i) => {
-      dot.addEventListener('click', () => showSlide(i));
+            setTimeout(() => {
+                loader.style.display = "none"; // Hide after fade-out
+            }, 500); // Wait for fade effect
+            
+        }, 5000); // 5 seconds delay
     });
-  </script>
+</script> -->
+<a href=""></a>
 
+<body>
 </body>
 </html>
