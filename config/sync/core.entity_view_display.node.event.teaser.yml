@@ -1,0 +1,41 @@
+uuid: e6662cc9-e9a6-4061-8664-ce9a765bae99
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_date
+    - field.field.node.event.field_description
+    - field.field.node.event.field_image
+    - field.field.node.event.field_is_feature
+    - image.style.medium
+    - node.type.event
+  module:
+    - image
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_description: true
+  field_is_feature: true
+  langcode: true

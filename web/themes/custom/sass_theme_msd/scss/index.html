@@ -1,57 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loader Test</title>
-    <!-- <style>
-        #loader {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease-out;
-        }
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 5px solid #ccc;
-            border-top: 5px solid #3498db;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Arab East University</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      color: white;
+      overflow: hidden;
+    }
+
+    .background-slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .background-slider img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .background-slider img.active {
+      opacity: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 100px 50px;
+      background: rgba(0, 0, 0, 0.3); /* Optional: adds overlay over the image */
+      height: 100%;
+    }
+
+    .content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .content h1 span {
+      color: gold;
+    }
+
+    .content p {
+      max-width: 600px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 40px;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .program-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .program-buttons button {
+      padding: 10px 20px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: black;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    .program-buttons button:hover {
+      background-color: white;
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+
+    .dot {
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      background-color: white;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: opacity 0.3s;
+    }
+
+    .dot.active {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
 
-<div id="loader">
-    <div class="spinner"></div>
-</div>
+  <div class="hero">
+    <!-- Background Images -->
+    <div class="background-slider">
+      <img src="../images/b7552748f3daeea90b88a2e94a159a05caca1d97.jpg" class="active" alt="Slide 1">
+      <img src="../images/background.png" alt="Slide 2">
+      <img src="../images/d9f01a29177921eb90d7a55620606877cd24c0bf.jpg" alt="Slide 3">
+    </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(() => {
-            let loader = document.getElementById("loader");
-            loader.style.opacity = "0"; // Fade out effect
+    <!-- Fixed Content on top -->
+    <div class="content">
+      <h1>ARAB EAST <span>UNIVERSITY</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lectus quis justo dignissim aliquam. Nunc mi.</p>
+      <a href="#" class="btn">See more</a>
 
-            setTimeout(() => {
-                loader.style.display = "none"; // Hide after fade-out
-            }, 500); // Wait for fade effect
-            
-        }, 5000); // 5 seconds delay
+      <div class="program-buttons">
+        <button>Bachelor Programs</button>
+        <button>Master Programs</button>
+        <button>Diploma Programs</button>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.background-slider img');
+    const dots = document.querySelectorAll('.dot');
+    let index = 0;
+
+    function showSlide(i) {
+      slides.forEach((img, idx) => {
+        img.classList.toggle('active', idx === i);
+        dots[idx].classList.toggle('active', idx === i);
+      });
+      index = i;
+    }
+
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    }, 5000);
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => showSlide(i));
     });
-</script> -->
+  </script>
 
-<body>
 </body>
-
 </html>

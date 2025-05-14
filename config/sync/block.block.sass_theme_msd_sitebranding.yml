@@ -1,4 +1,4 @@
-uuid: 35185490-d633-492f-a74c-ae621bd56138
+uuid: 53692967-0637-45f0-b723-eddfcf33b0cf
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: sass_theme_msd_sitebranding
 theme: sass_theme_msd
 region: header
-weight: -6
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:

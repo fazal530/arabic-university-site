@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.standard_page
-    - paragraphs.paragraphs_type.background_image
   module:
     - entity_reference_revisions
 id: node.standard_page.field_content
@@ -21,8 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles:
-      background_image: background_image
+    target_bundles: {  }
     negate: 1
     target_bundles_drag_drop:
       background_image:

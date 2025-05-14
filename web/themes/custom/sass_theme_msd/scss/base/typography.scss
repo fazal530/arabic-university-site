@@ -7,17 +7,21 @@ h1 {
   font-family: $font_myriad_pro;
   font-size: 56px;
   line-height: 75px;
+
 }
 
 .h2,
 h2 {
+  font-family: $font_myriad_pro;
   font-size: 40px;
   line-height: 60px;
   font-weight: 400;
+
 }
 
 .h3,
 h3 {
+  font-family: $font_myriad_pro;
   font-size: 36px;
   line-height: 45px;
   font-weight: 400;
@@ -25,6 +29,7 @@ h3 {
 
 .h4,
 h4 {
+  font-family: $font_myriad_pro;
   font-size: 30px;
   line-height: 40px;
   font-weight: 400;
@@ -32,26 +37,32 @@ h4 {
 
 .h5,
 h5 {
+  font-family: $font_myriad_pro;
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
+
+
 }
 
 .h6,
 h6 {
+  font-family: $font_myriad_pro;
   font-size: 20px;
   line-height: 27px;
   font-weight: 600;
+
 }
 
-
 .body1 {
+  font-family: $font_myriad_pro;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
 }
 
 .body2 {
+  font-family: $font_myriad_pro;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -63,3 +74,19 @@ h6 {
   border-radius: 20px;
 }
 
+.program_button{
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: $black !important;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+.see_button{
+  padding: 10px 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}

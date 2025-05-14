@@ -1,34 +1,38 @@
-uuid: 334e9135-6a68-4263-b4d6-3106856217f2
+uuid: a0937969-4fa2-47d5-bf74-ee1b8e434a39
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_slider
-    - paragraphs.paragraphs_type.background_image
     - paragraphs.paragraphs_type.hero_section
   module:
-    - entity_reference_revisions
+    - image
 id: paragraph.hero_section.field_slider
 field_name: field_slider
 entity_type: paragraph
 bundle: hero_section
-label: Slider
+label: slider
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:paragraph'
-  handler_settings:
-    target_bundles:
-      background_image: background_image
-    negate: 0
-    target_bundles_drag_drop:
-      background_image:
-        weight: 3
-        enabled: true
-      hero_section:
-        weight: 4
-        enabled: false
-field_type: entity_reference_revisions
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image
