@@ -52,10 +52,10 @@
         "sort-packages": true
     },
     "extra": {
-       "patches": {
-         "drupal/fontawesome": {
-            "Fix CKEditor compatibility issue": "https://www.drupal.org/files/issues/2024-01-17/ckeditor_compatibility_issue_0.patch"
-        }
+        "patches": {
+            "drupal/fontawesome": {
+                "Fix CKEditor compatibility issue": "https://www.drupal.org/files/issues/2024-01-17/ckeditor_compatibility_issue_0.patch"
+            }
         },
         "drupal-scaffold": {
             "locations": {

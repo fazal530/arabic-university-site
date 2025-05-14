@@ -302,7 +302,15 @@ display:
           id: area
           table: views
           field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
           plugin_id: text
+          empty: false
+          content:
+            value: "<img src=\"C:\\xampp\\htdocs\\arabic-university-site\\web\\themes\\custom\\sass_theme_msd\\images\\news-page-image.png\" alt=\"Header Image\" class=\"my-header-image\">\r\n"
+            format: full_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -503,8 +511,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: text_trimmed
+          settings:
+            trim_length: 60
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -547,7 +556,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"button\">\r\n<button>View All</button>\r\n</div>"
+            value: "<div class=\"button\">\r\n<button><a href=\"/News\">view All</a></button>\r\n</div>"
             format: full_html
           tokenize: false
       display_extenders: {  }
@@ -569,12 +578,28 @@ display:
     position: 1
     display_options:
       pager:
-        type: none
+        type: some
         options:
           offset: 0
+          items_per_page: 3
       defaults:
         pager: false
+        header: false
       display_description: ''
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: ''
+            format: full_html
+          tokenize: false
       display_extenders: {  }
       path: News
     cache_metadata:
