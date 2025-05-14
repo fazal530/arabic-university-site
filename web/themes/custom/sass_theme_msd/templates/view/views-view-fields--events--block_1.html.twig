@@ -1,12 +1,13 @@
 <div class="events">
   <div class="Events-date">
-   
    {{fields.field_date.content}}
-
 </div>
 <div class="Events-image">
-  {{fields.field_image.content}}
-  </div>
+<a href="{{ fields.view_node.content }}">
+  {{ fields.field_image.content }}
+</a>
+  
+</div>
 <div class="Events-description">
   {{fields.field_description.content}}
   </div>

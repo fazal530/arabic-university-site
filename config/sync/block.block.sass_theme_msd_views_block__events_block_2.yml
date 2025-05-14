@@ -1,4 +1,4 @@
-uuid: ca58b065-92b7-49be-88e4-d108cd154ec0
+uuid: 861d176e-6a51-4b4f-a6da-666fd4b4a556
 langcode: en
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - views
   theme:
     - sass_theme_msd
-id: sass_theme_msd_views_block__events_block_1
+id: sass_theme_msd_views_block__events_block_2
 theme: sass_theme_msd
 region: content
-weight: -4
+weight: 0
 provider: null
-plugin: 'views_block:events-block_1'
+plugin: 'views_block:events-block_2'
 settings:
-  id: 'views_block:events-block_1'
+  id: 'views_block:events-block_2'
   label: ''
   label_display: '0'
   provider: views
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/node/70\r\n"
+    pages: '/event/*'
