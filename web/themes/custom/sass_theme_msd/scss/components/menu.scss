@@ -1,0 +1,42 @@
+.header_wrapper{
+position: absolute;
+top: 0px;
+z-index: 10;
+width: 100%;
+padding-inline: 100px;
+.flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    #block-sass-theme-msd-mainnavigation{
+        .sf-menu{
+
+            
+                .sf-depth-1{
+                    @extend .h6;
+                    color: $white;
+                    a{
+                        text-decoration: none;
+                    }
+                    ul{
+                        display: flex;
+                        background-color: #FFFFFF;
+                        width: 30em !important;
+                        background-color: rgba(255, 255, 255, 0.28); 
+                        border-radius: 10px;
+                       .sf-depth-2{
+                        color:$white;
+                        opacity: 1;
+                      
+                       }
+                       .sf-depth-2:hover{
+                        color: $black !important;
+                       }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

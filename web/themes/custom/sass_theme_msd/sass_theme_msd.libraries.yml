@@ -13,6 +13,8 @@ global:
     js/sliders.js: {}
     js/formred.js: {}
     js/toggleform.js: {}
+    js/owl.carousel.min.js: {}
+    js/owl-init.js: {}
   dependencies:
     - core/drupal
     - core/jquery
