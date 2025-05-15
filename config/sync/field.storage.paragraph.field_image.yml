@@ -1,4 +1,4 @@
-uuid: 0e6f5f9d-03dc-4738-8305-8b244b7fda03
+uuid: d9e0395f-c08e-4a76-a810-1c03df6b728f
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - file
     - image
     - paragraphs
-id: paragraph.field_slider
-field_name: field_slider
+id: paragraph.field_image
+field_name: field_image
 entity_type: paragraph
 type: image
 settings:

@@ -1,0 +1,26 @@
+uuid: 923b8793-ff5d-4eb0-a4c1-4ceb9bd778ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.background_image.field_image
+    - paragraphs.paragraphs_type.background_image
+  module:
+    - image
+id: paragraph.background_image.default
+targetEntityType: paragraph
+bundle: background_image
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

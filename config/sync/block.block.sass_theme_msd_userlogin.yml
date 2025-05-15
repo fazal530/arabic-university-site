@@ -1,6 +1,6 @@
 uuid: 5c7c2b24-f964-49c7-a92a-95b1c645294e
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - user
@@ -9,7 +9,7 @@ dependencies:
 id: sass_theme_msd_userlogin
 theme: sass_theme_msd
 region: header
-weight: -5
+weight: -4
 provider: null
 plugin: user_login_block
 settings:

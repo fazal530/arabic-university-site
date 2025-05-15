@@ -560,7 +560,6 @@ h6 {
   display: flex;
   gap: 20px;
   align-items: center;
-  padding-inline: 100px;
 }
 .views-row .news-page-view-image {
   width: 610px;
@@ -590,10 +589,10 @@ h6 {
   color: #006B8D !important;
 }
 
-.views-row:nth-of-type(odd) .news-page-view {
+.views-row:nth-of-type(even) .news-page-view {
   flex-direction: row-reverse;
 }
-.views-row:nth-of-type(odd) .news-page-view .news-page-view-date h5 {
+.views-row:nth-of-type(even) .news-page-view .news-page-view-date h5 {
   text-align: right;
 }
 

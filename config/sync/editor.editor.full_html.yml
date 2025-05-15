@@ -34,7 +34,6 @@ settings:
       - codeBlock
       - '|'
       - sourceEditing
-      - fontawesome
   plugins:
     ckeditor5_codeBlock:
       languages:
@@ -82,7 +81,6 @@ settings:
           language: xml
     ckeditor5_heading:
       enabled_headings:
-        - heading1
         - heading2
         - heading3
         - heading4
