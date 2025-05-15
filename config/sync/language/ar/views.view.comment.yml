@@ -19,7 +19,6 @@ display:
           label: 'نُشِر في'
           separator: ', '
         changed:
-          label: Updated
           separator: ', '
         operations:
           label: عمليات
@@ -78,7 +77,6 @@ display:
           label: 'نُشِر في'
           separator: ', '
         changed:
-          label: Updated
           separator: ', '
         operations:
           label: عمليات

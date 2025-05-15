@@ -5,7 +5,6 @@ dependencies:
   config:
     - views.view.news_listing
   module:
-    - system
     - views
   theme:
     - sass_theme_msd
@@ -22,8 +21,4 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: /node/70
+visibility: {  }

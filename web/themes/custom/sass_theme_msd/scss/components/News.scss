@@ -2,6 +2,7 @@
     padding-block: 30px;
     h2{
         text-align: center;
+        color: $secondary;
     }
 }
 .news-child-one{
@@ -53,6 +54,7 @@
             span{
                 color: $white;
             }
+          
         }
  }
 
@@ -126,6 +128,7 @@
             border-radius: 10px;
         }
     }
+    
     p{
         color: $tertiary;
         font-size: 16px;
@@ -151,6 +154,9 @@
             text-align: right;
         }
     }
+    
+   
+   
   }
 }
 
