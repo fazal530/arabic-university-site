@@ -431,6 +431,7 @@ h6 {
 }
 .hero .content .see_btn .btn {
   color: #fff;
+  font-size: 16px;
 }
 .hero .content .see_btn .btn:hover {
   background-color: rgba(163, 145, 97, 0.6980392157);
