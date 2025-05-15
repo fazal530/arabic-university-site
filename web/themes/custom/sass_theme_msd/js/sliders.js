@@ -1,10 +1,10 @@
 (function ($, Drupal) {
 	Drupal.behaviors.backgroundSlider = {
 	  attach: function (context, settings) {
-		$('.background-slider', context).each(function () {
+		$('.background-sliders', context).each(function () {
 		  if (!$(this).hasClass('slick-initialized')) {
 			$(this).slick({
-			  autoplay: false,
+			  autoplay: true,
 			  autoplaySpeed: 1000,
 			  arrows: true,
 			  dots: true,
