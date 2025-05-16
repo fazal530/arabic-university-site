@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.standard_page
+    - paragraphs.paragraphs_type.hero_section
+    - paragraphs.paragraphs_type.text_with_image
   module:
     - entity_reference_revisions
 id: node.standard_page.field_content
@@ -20,13 +22,15 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: {  }
-    negate: 1
+    target_bundles:
+      hero_section: hero_section
+      text_with_image: text_with_image
+    negate: 0
     target_bundles_drag_drop:
-      background_image:
-        weight: 3
-        enabled: true
       hero_section:
-        weight: 6
-        enabled: false
+        weight: -5
+        enabled: true
+      text_with_image:
+        weight: -4
+        enabled: true
 field_type: entity_reference_revisions

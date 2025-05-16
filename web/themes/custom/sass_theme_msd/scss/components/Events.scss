@@ -4,6 +4,9 @@
 .Events-header{
     text-align: center;
     margin-block: 30px;
+    h2{
+        color:$secondary;
+    }
 }
 .events{
     overflow: hidden;
@@ -77,10 +80,9 @@
                 border-radius: 10px;
             }
         }
-            
-        }
+    }
 
-        .events-page-view-date{
+    .events-page-view-date{
         position : absolute;
         top: 0%;
         left: 0%;

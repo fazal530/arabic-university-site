@@ -256,7 +256,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-          order: DESC
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
@@ -513,7 +513,7 @@ display:
           click_sort_column: value
           type: text_trimmed
           settings:
-            trim_length: 60
+            trim_length: 100
           group_column: value
           group_columns: {  }
           group_rows: true
