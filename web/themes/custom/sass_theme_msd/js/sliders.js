@@ -5,7 +5,7 @@
 		  if (!$(this).hasClass('slick-initialized')) {
 			$(this).slick({
 			  autoplay: false,
-			  autoplaySpeed: 1000,
+			  autoplaySpeed: 3000,
 			  arrows: true,
 			  dots: true,
 			  fade: true,
