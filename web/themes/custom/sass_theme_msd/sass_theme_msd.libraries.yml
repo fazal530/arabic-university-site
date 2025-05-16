@@ -13,8 +13,10 @@ global:
     js/sliders.js: {}
     js/formred.js: {}
     js/toggleform.js: {}
+
    
     
+
   dependencies:
     - core/drupal
     - core/jquery
