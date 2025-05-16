@@ -383,7 +383,7 @@ h6 {
   width: 30em !important;
   background-color: rgba(255, 255, 255, 0.28);
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 ul .sf-depth-2 {
   color: #fff;
