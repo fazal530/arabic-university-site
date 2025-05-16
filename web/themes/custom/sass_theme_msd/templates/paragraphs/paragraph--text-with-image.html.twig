@@ -47,17 +47,16 @@
   ]
 %}
 {% block paragraph %}
-  <div class="description-wrapper" {{ attributes.addClass(classes) }}>
+  <div class="description-wrapper"{{ attributes.addClass(classes) }}>
     {% block content %}
-    <div class="description container ">
+      <div class="description container ">
       <div class="description-text">
-      {{ content.field_text }}
+      {{ content.field_description_text }}
       </div>
       <div class="description-image">
-      {{ content.field_images }}
+      {{ content.field_description_image}}
       </div>
       </div>
-      
     {% endblock %}
   </div>
 {% endblock paragraph %}
