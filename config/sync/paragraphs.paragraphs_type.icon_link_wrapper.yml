@@ -1,0 +1,10 @@
+uuid: ed569966-1877-48e4-b8a7-79b2bdf427f2
+langcode: en
+status: true
+dependencies: {  }
+id: icon_link_wrapper
+label: icon-link-wrapper
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
