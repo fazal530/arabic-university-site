@@ -1,48 +1,46 @@
-uuid: 5a9a75ba-629c-480e-9848-50c837fad3c5
+uuid: 4d8b938b-f5a3-4170-8e6d-a68561c3e195
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
-    - node.type.standard_page
+    - field.storage.paragraph.field_accreditations
     - paragraphs.paragraphs_type.accreditations_achievements
-    - paragraphs.paragraphs_type.icon_link
+    - paragraphs.paragraphs_type.accreditations_wrapper
   module:
     - entity_reference_revisions
-id: node.standard_page.field_content
-field_name: field_content
-entity_type: node
-bundle: standard_page
-label: Content
+id: paragraph.accreditations_wrapper.field_accreditations
+field_name: field_accreditations
+entity_type: paragraph
+bundle: accreditations_wrapper
+label: 'Accreditations '
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      icon_link: icon_link
       accreditations_achievements: accreditations_achievements
-    negate: 1
+    negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:
-        weight: 6
+        weight: 7
         enabled: true
       accreditations_wrapper:
         weight: 8
         enabled: false
       hero_section:
-        weight: -5
+        weight: 9
         enabled: false
       icon_link:
-        weight: 5
-        enabled: true
+        weight: 10
+        enabled: false
       icon_link_wrapper:
-        weight: 7
+        weight: 11
         enabled: false
       text_with_image:
-        weight: -4
+        weight: 12
         enabled: false
 field_type: entity_reference_revisions

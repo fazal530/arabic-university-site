@@ -1,0 +1,22 @@
+uuid: edef1370-456e-4276-baa0-2f877029fadf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accreditations_body
+    - paragraphs.paragraphs_type.accreditations_achievements
+  module:
+    - text
+id: paragraph.accreditations_achievements.field_accreditations_body
+field_name: field_accreditations_body
+entity_type: paragraph
+bundle: accreditations_achievements
+label: 'Accreditations body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

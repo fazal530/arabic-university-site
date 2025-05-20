@@ -1,17 +1,18 @@
-uuid: 5ba3e45d-e681-40ce-b135-01c63358d60b
+uuid: bab7be7b-449c-4c31-9f4b-3f360dd124a3
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.token
     - field.field.paragraph.icon_link_wrapper.field_icon_link
     - field.field.paragraph.icon_link_wrapper.field_label
     - paragraphs.paragraphs_type.icon_link_wrapper
   module:
     - entity_reference_revisions
-id: paragraph.icon_link_wrapper.default
+id: paragraph.icon_link_wrapper.token
 targetEntityType: paragraph
 bundle: icon_link_wrapper
-mode: default
+mode: token
 content:
   field_icon_link:
     type: entity_reference_revisions_entity_view
