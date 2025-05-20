@@ -1,0 +1,25 @@
+uuid: 9c3001b1-4198-45b6-9cff-f0b1b578861b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_mainnavigation_2
+theme: sass_theme_msd
+region: footer_third
+weight: -12
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Menu
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

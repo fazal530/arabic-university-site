@@ -1,0 +1,23 @@
+uuid: b1e4fd0a-57d4-4778-b8e6-1ffa25198557
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_sitebranding_2
+theme: sass_theme_msd
+region: footer_first
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
