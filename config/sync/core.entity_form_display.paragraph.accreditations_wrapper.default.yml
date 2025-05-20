@@ -1,19 +1,19 @@
-uuid: 78d8d0b2-c95e-4252-b6fd-dbfd1638ff67
+uuid: 3703bc24-b717-4e2b-9e0a-d3b92aafa8b8
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.icon_link_wrapper.field_icon_link
-    - field.field.paragraph.icon_link_wrapper.field_label
-    - paragraphs.paragraphs_type.icon_link_wrapper
+    - field.field.paragraph.accreditations_wrapper.field_accreditations
+    - field.field.paragraph.accreditations_wrapper.field_accreditations_title
+    - paragraphs.paragraphs_type.accreditations_wrapper
   module:
     - paragraphs
-id: paragraph.icon_link_wrapper.default
+id: paragraph.accreditations_wrapper.default
 targetEntityType: paragraph
-bundle: icon_link_wrapper
+bundle: accreditations_wrapper
 mode: default
 content:
-  field_icon_link:
+  field_accreditations:
     type: paragraphs
     weight: 1
     region: content
@@ -31,7 +31,7 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
-  field_label:
+  field_accreditations_title:
     type: string_textfield
     weight: 0
     region: content
