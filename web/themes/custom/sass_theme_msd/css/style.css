@@ -859,6 +859,62 @@ h6 {
 }
 .Accreditation:hover .Accreditation-body p {
   color: #fff;
+.site-footer {
+  background-image: url(../images/footer-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.site-footer .layout-container {
+  background: var(--COLORS-2-Blue-Opicity-76, rgba(0, 107, 141, 0.76));
+}
+.site-footer .site-footer__top .log_icons {
+  grid-column: 1/3;
+}
+.site-footer .site-footer__top .address {
+  grid-column: 4/7;
+}
+.site-footer .site-footer__top .address h4 {
+  color: #fff;
+}
+.site-footer .site-footer__top .address p {
+  color: #fff;
+}
+.site-footer .site-footer__top .menu {
+  grid-column: 7/10;
+}
+.site-footer .site-footer__top .menu #block-sass-theme-msd-mainnavigation-2 h4 {
+  color: #fff;
+}
+.site-footer .site-footer__top .menu #block-sass-theme-msd-mainnavigation-2 ul {
+  list-style: none;
+}
+.site-footer .site-footer__top .menu #block-sass-theme-msd-mainnavigation-2 ul li {
+  color: #fff;
+}
+.site-footer .site-footer__top .menu #block-sass-theme-msd-mainnavigation-2 ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.site-footer .site-footer__top .contact-us {
+  grid-column: 10/13;
+}
+.site-footer .site-footer__top .contact-us h4 {
+  color: #fff;
+}
+.site-footer .site-footer__top .contact-us p {
+  color: #fff;
+}
+.site-footer .site-footer__top .contact-us p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copywrite {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-block: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
