@@ -1,0 +1,25 @@
+uuid: 583834cb-7b50-43a9-a2a9-85ee96941768
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d945ba17-82f0-41db-a12d-b6ceb6579a4d'
+  module:
+    - block_content
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_copywriteblock
+theme: sass_theme_msd
+region: footer_fifth
+weight: -11
+provider: null
+plugin: 'block_content:d945ba17-82f0-41db-a12d-b6ceb6579a4d'
+settings:
+  id: 'block_content:d945ba17-82f0-41db-a12d-b6ceb6579a4d'
+  label: 'Copywrite Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
