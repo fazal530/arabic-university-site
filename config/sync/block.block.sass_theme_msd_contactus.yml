@@ -1,0 +1,25 @@
+uuid: b9cd4e05-c2df-4f14-b0f0-a67d4e1d4fe7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:deb07a06-97a5-42a8-bc8d-c4d5af6fb90d'
+  module:
+    - block_content
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_contactus
+theme: sass_theme_msd
+region: footer_fourth
+weight: -11
+provider: null
+plugin: 'block_content:deb07a06-97a5-42a8-bc8d-c4d5af6fb90d'
+settings:
+  id: 'block_content:deb07a06-97a5-42a8-bc8d-c4d5af6fb90d'
+  label: 'Contact us'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

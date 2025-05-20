@@ -19,10 +19,13 @@ padding-inline: 100px;
                     a{
                         text-decoration: none;
                     }
+                    .sf-hidden{
+                        width: 1px !important;
+                       }
                     ul{
                         display: flex;
                         background-color: #FFFFFF;
-                        width: 30em !important;
+                        width: 32em !important;
                         background-color: rgba(255, 255, 255, 0.28); 
                         border-radius: 10px;
                         overflow: hidden !important;
@@ -34,6 +37,7 @@ padding-inline: 100px;
                        .sf-depth-2:hover{
                         color: $black !important;
                        }
+
                     }
                     
                 }

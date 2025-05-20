@@ -104,7 +104,7 @@ h4 {
   font-weight: 400;
 }
 
-.h5, .hero .program-buttons .program-item,
+.h5, .site-footer .site-footer__top .contact-us p a, .site-footer .site-footer__top .contact-us p, .site-footer .site-footer__top .menu #block-sass-theme-msd-mainnavigation-2 ul li, .site-footer .site-footer__top .address p, .hero .program-buttons .program-item,
 h5 {
   font-family: myriad_pro, sans-serif;
   font-size: 24px;
@@ -160,11 +160,12 @@ h6 {
 @font-face {
   font-family: myriad_pro;
   src: url(../fonts/Myriad_pro/MYRIADPRO-BOLD.OTF);
-  font-weight: 400;
+  font-weight: 700;
 }
 @font-face {
   font-family: myriad_pro;
   src: url(../fonts/Myriad_pro/MYRIADPRO-REGULAR.OTF);
+  font-weight: 400;
 }
 .container {
   padding-inline: 15px !important;
@@ -309,19 +310,19 @@ h6 {
   font-size: 1.5rem;
 }
 
-.grid {
+.grid, .site-footer .site-footer__top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
   row-gap: 20px;
 }
 @media (min-width: 768px) {
-  .grid {
+  .grid, .site-footer .site-footer__top {
     grid-template-columns: repeat(8, 1fr);
   }
 }
 @media (min-width: 1280px) {
-  .grid {
+  .grid, .site-footer .site-footer__top {
     grid-template-columns: repeat(12, 1fr);
   }
 }
@@ -377,10 +378,13 @@ h6 {
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 a {
   text-decoration: none;
 }
+.header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 .sf-hidden {
+  width: 1px !important;
+}
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 ul {
   display: flex;
   background-color: #FFFFFF;
-  width: 30em !important;
+  width: 32em !important;
   background-color: rgba(255, 255, 255, 0.28);
   border-radius: 10px;
   overflow: hidden !important;
@@ -409,7 +413,7 @@ h6 {
   z-index: 5 !important;
 }
 .hero .content {
-  grid-column: 2/7;
+  grid-column: 2/8;
   z-index: 1;
   grid-row: 1/1;
   display: flex;
@@ -420,6 +424,7 @@ h6 {
 }
 .hero .content h1 {
   color: #fff;
+  font-weight: 700;
 }
 .hero .content span {
   color: #AE9A64;
@@ -486,11 +491,6 @@ h6 {
   font-size: 50px !important;
   color: #006B8D !important;
   opacity: 1 !important;
-}
-
-img {
-  width: 100%;
-  height: 100%;
 }
 
 .slick-next.slick-arrow {
