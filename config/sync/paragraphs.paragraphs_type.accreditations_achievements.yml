@@ -1,0 +1,10 @@
+uuid: 1dbc4c11-ec1f-4fdc-ab10-1710fa745d54
+langcode: en
+status: true
+dependencies: {  }
+id: accreditations_achievements
+label: 'Accreditations & Achievements'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

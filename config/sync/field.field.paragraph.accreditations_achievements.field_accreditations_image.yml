@@ -1,0 +1,38 @@
+uuid: bc5fd4ae-493f-45ea-a739-47f5d6a856a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accreditations_image
+    - paragraphs.paragraphs_type.accreditations_achievements
+  module:
+    - image
+id: paragraph.accreditations_achievements.field_accreditations_image
+field_name: field_accreditations_image
+entity_type: paragraph
+bundle: accreditations_achievements
+label: 'Accreditations image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

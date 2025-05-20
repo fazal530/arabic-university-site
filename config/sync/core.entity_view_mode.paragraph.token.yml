@@ -6,6 +6,6 @@ dependencies:
     - paragraphs
 id: paragraph.token
 label: Token
-description: null
+description: ''
 targetEntityType: paragraph
 cache: true
