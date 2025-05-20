@@ -1,0 +1,25 @@
+uuid: 6b7653c2-1d71-4886-ba32-480d14f79b0e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c3579d02-c137-4fe8-8f5f-dbb9c1961ac3'
+  module:
+    - block_content
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_infoblock
+theme: sass_theme_msd
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:c3579d02-c137-4fe8-8f5f-dbb9c1961ac3'
+settings:
+  id: 'block_content:c3579d02-c137-4fe8-8f5f-dbb9c1961ac3'
+  label: 'Info Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
