@@ -1,14 +1,14 @@
 .container {
-  padding-inline: 15px !important;
+  padding-inline: 25px !important;
   margin-inline: auto;
 
   @include tablet {
-    padding-inline: 25px !important;
+    padding-inline: 50px !important;
   }
 
   @include desktop {
     padding-inline: 100px !important;
     margin-inline: auto !important;
-    max-width: 1280px;
+    max-width: 1440px;
   }
 }
