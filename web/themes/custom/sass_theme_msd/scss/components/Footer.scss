@@ -21,6 +21,10 @@ padding-top: 30px;
             }
 
             #block-sass-theme-msd-socialicons {
+                .icon-link-bg-color{
+                    background-color: unset !important;
+                    padding-block: unset !important;
+                }
                 .grid.container {
                     display: flex !important;
                     margin: unset !important;
