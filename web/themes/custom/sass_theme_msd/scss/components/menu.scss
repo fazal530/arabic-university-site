@@ -1,45 +1,63 @@
-.header_wrapper{
-position: absolute;
-top: 0px;
-z-index: 10;
-width: 100%;
-padding-inline: 100px;
-.flex{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
+.header_wrapper {
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    @extend .container;
 
-    #block-sass-theme-msd-mainnavigation{
-        .sf-menu{
+    .flex {
+        display: flex;
+        justify-content: space-between;
 
-            
-                .sf-depth-1{
+        @include desktop {
+            align-items: center;
+        }
+
+        #block-sass-theme-msd-mainnavigation {
+
+            .sf-expanded {
+                background-color: red
+            }
+
+            .sf-menu {
+
+
+                .sf-depth-1 {
                     @extend .h6;
                     color: $white;
-                    a{
+
+                    a {
                         text-decoration: none;
                     }
-                    .sf-hidden{
+
+                    .sf-hidden {
                         width: 1px !important;
-                       }
-                    ul{
-                        display: flex;
+                    }
+
+                    ul {
                         background-color: #FFFFFF;
-                        width: 32em !important;
-                        background-color: rgba(255, 255, 255, 0.28); 
+
+                        background-color: rgba(255, 255, 255, 0.28);
                         border-radius: 10px;
                         overflow: hidden !important;
-                       .sf-depth-2{
-                        color:$white;
-                        opacity: 1;
-                      
-                       }
-                       .sf-depth-2:hover{
-                        color: $black !important;
-                       }
+
+                        @include desktop {
+                            width: 32em !important;
+                            display: flex;
+                        }
+
+                        .sf-depth-2 {
+                            color: $white;
+                            opacity: 1;
+
+                        }
+
+                        .sf-depth-2:hover {
+                            color: $black !important;
+                        }
 
                     }
-                    
+
                 }
             }
         }
