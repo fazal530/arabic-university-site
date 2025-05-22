@@ -1,0 +1,26 @@
+uuid: 19837aa3-195e-471a-b56d-b7655b9a15e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events_block_view.field_events_block_view
+    - paragraphs.paragraphs_type.events_block_view
+  module:
+    - block_field
+id: paragraph.events_block_view.default
+targetEntityType: paragraph
+bundle: events_block_view
+mode: default
+content:
+  field_events_block_view:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,6 +1,5 @@
 .news-header {
     padding-block: 30px;
-
     h2 {
         text-align: center;
         color: $secondary;
@@ -8,22 +7,32 @@
 }
 
 .news-child-one {
-    grid-column: span 6;
-    grid-row: 1/4;
+    grid-column: 1/-1;
 
-    .news-content {
+    @include desktop {
+        grid-column: span 6;
+        grid-row: 1/4;
+    }
+.news-content {
         overflow: hidden;
         position: relative;
         border-radius: 10px;
+      .news-image {
+            height: 210px;
 
-        .news-image {
-            height: 377px;
+            @include tablet {
+                height: 413px;
+            }
 
+            @include desktop {
+                height: 377px;
+            }
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                object-position: center;
+                object-position: top;
+               
 
             }
 
@@ -34,25 +43,38 @@
                 width: 100%;
                 padding: 5rem;
                 background: linear-gradient(to top,
-                        rgba(174, 154, 100, 1)0%,
-                        rgba(160, 120, 50, 0.7) 30%,
-                        rgba(160, 120, 50, 0.4) 60%,
-                        rgba(160, 120, 50, 0.0) 100%);
-                color:$white;
+                rgba(174, 154, 100, 1)0%, 
+                rgba(160, 120, 50, 0.7) 30%,
+                rgba(160, 120, 50, 0.4) 60%,        
+                rgba(160, 120, 50, 0.0) 100%);                       
+                color: $white;
             }
 
         }
 
         .news-description {
             position: absolute;
-            top: 70%;
+            top: 40%;
             left: 5%;
 
-        }
+            @include tablet {
+                top: 65%;
+            }
+       }
 
         .news-date {
-            h6 {
+            h5 {
                 color: $white !important;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+
+                @include desktop {
+                    font-size: 36px;
+                    line-height: 45px;
+
+
+                }
             }
         }
     }
@@ -66,13 +88,25 @@
 }
 
 .news-child {
-    grid-column: span 6;
+    grid-column: 1/-1;
+
+    @include desktop {
+        grid-column: span 6;
+    }
+
     .news-content {
         display: flex;
         gap: 20px;
-      .news-image {
-           height: 112px;
-             img {
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+        }
+
+        .news-image {
+            height: 112px;
+
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
@@ -80,17 +114,22 @@
                 border-radius: 10px;
             }
         }
+
         .news-description {
             flex: 1;
-          h6 {
-                color: $secondary;
+
+            h5 {
+                color: $secondary !important;
             }
         }
     }
 
     .news-detail {
-         h5 {
-            color: rgba(112, 111, 111, 1)
+        h5 {
+            span {
+                color: rgba(112, 111, 111, 1);
+            }
+
         }
     }
 
@@ -99,14 +138,17 @@
 .button {
     text-align: center;
     margin-block: 30px;
-
-    button {
+     button {
         padding: 10px 50px 10px 50px;
         border: 1px solid $tertiary;
         font-size: 20px;
         line-height: 27px;
         font-weight: 600;
- }
+         width: 100%;
+         @include tablet{
+            width: auto;
+         }
+   }
 
     a {
         text-decoration: none;

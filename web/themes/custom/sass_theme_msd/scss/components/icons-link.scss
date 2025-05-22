@@ -1,3 +1,25 @@
+
+.field-items{
+    margin-block: 60px 30px;
+    h2{
+        color:$secondary;
+    }
+}
+
+.icon-link-bg-color{
+    background-color: $white;
+    padding-block: 30px;
+    @include desktop{
+        padding-block: 18px;
+    }
+}
+
+.icon-link-wrapper{
+    grid-column: span 4;
+}
+
+
+.icon-link{
 .icon-link-wrapper {
     grid-column: span 4;
 }
@@ -33,7 +55,7 @@
         h5 {
             a {
                 text-decoration: none;
-                color: #706F6F;
+                color: $tertiary;
             }
         }
     }

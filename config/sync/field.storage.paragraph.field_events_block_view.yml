@@ -1,0 +1,19 @@
+uuid: ca41e4c5-356f-4c77-8515-9c740c0d401d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.field_events_block_view
+field_name: field_events_block_view
+entity_type: paragraph
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
