@@ -1029,6 +1029,16 @@ h6 {
   grid-column: span 4;
 }
 
+.icon-link .icon-link-wrapper {
+  grid-column: span 4;
+}
+.icon-link .field-items {
+  grid-column: 1/-1;
+}
+.icon-link .field-items h2 {
+  color: #006B8D;
+}
+
 .icon-link {
   display: flex;
   align-items: center;
