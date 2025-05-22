@@ -19,19 +19,6 @@
 }
 
 
-.icon-link{
-.icon-link-wrapper {
-    grid-column: span 4;
-}
-
-.field-items {
-    grid-column: 1/-1;
-
-    h2 {
-        color: $secondary;
-    }
-}
-
 .icon-link {
     display: flex;
     align-items: center;
@@ -59,5 +46,4 @@
             }
         }
     }
-}
 }
