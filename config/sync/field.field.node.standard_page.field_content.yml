@@ -33,6 +33,9 @@ settings:
       accreditations_wrapper:
         weight: 8
         enabled: false
+      events_block_view:
+        weight: 11
+        enabled: false
       hero_section:
         weight: -5
         enabled: false
@@ -41,6 +44,9 @@ settings:
         enabled: true
       icon_link_wrapper:
         weight: 7
+        enabled: false
+      news_block_view:
+        weight: 13
         enabled: false
       text_with_image:
         weight: -4

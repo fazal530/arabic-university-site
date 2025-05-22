@@ -1,0 +1,19 @@
+uuid: ba56c832-a9c6-44b4-85fb-739f17a6061d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.field_news_view
+field_name: field_news_view
+entity_type: paragraph
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

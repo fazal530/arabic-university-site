@@ -1,0 +1,10 @@
+uuid: bd4ac22e-6bb9-485b-bd5c-aa6a802549cc
+langcode: en
+status: true
+dependencies: {  }
+id: news_block_view
+label: 'News block view'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -49,9 +49,13 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
+    <div class="icon-link-label container">
+    {{content.field_label}}
+    </div>
+    <div class="icon-link-bg-color">
     <div class="grid container">
-      {{content.field_label}}
-       {{content.field_icon_link}}
+      {{content.field_icon_link}}
+     </div>
      </div>
     
     {% endblock %}
