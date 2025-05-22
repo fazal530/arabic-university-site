@@ -39,7 +39,7 @@ settings:
   touchual: ''
   touchuam: 0
   small: 2
-  smallbp: 768
+  smallbp: 1024
   smallua: 0
   smallual: ''
   smalluam: 0
@@ -49,10 +49,10 @@ settings:
   smallcmc: 0
   smallecm: ''
   smallchc: 0
-  smallech: null
+  smallech: ''
   smallicm: ''
   smallich: ''
-  smallamt: ''
+  smallamt: '&#x2261;'
   smallabt: 1
   supersubs: 1
   minwidth: 12

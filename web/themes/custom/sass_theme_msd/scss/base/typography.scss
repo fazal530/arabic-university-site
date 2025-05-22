@@ -5,42 +5,99 @@ $font_myriad_pro: myriad_pro, sans-serif;
 .h1,
 h1 {
   font-family: $font_myriad_pro;
-  font-size: 56px;
-  line-height: 75px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+
+  @include tablet {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  @include desktop {
+    font-size: 56px;
+    line-height: 75px;
+  }
 
 }
 
 .h2,
 h2 {
   font-family: $font_myriad_pro;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 28px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 42px;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
 
 }
 
 .h3,
 h3 {
   font-family: $font_myriad_pro;
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 24px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 36px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 .h4,
 h4 {
   font-family: $font_myriad_pro;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 30px;
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .h5,
 h5 {
   font-family: $font_myriad_pro;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 18px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 28px;
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 32px;
+  }
 
 
 }
@@ -48,26 +105,59 @@ h5 {
 .h6,
 h6 {
   font-family: $font_myriad_pro;
-  font-size: 20px;
-  line-height: 27px;
-  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include tablet {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 27px;
+  }
 
 }
 
 .body1 {
   font-family: $font_myriad_pro;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 22px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .body2 {
   font-family: $font_myriad_pro;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 13px;
+  font-style: normal;
   font-weight: 400;
-  color: $tertiary;
- 
+  line-height: 20px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
 }
 
 // BUTTONS
@@ -76,7 +166,7 @@ h6 {
   border-radius: 20px;
 }
 
-.program_button{
+.program_button {
   padding: 10px 20px;
   border: none;
   background-color: rgba(255, 255, 255, 0.5);
@@ -85,10 +175,11 @@ h6 {
   border-radius: 10px;
   transition: background 0.3s ease;
 }
-.see_button{
+
+.see_button {
   padding: 10px 50px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 1px solid $white;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: background 0.5s ease;
 }
