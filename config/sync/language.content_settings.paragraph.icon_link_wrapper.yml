@@ -1,9 +1,9 @@
-uuid: 5f1cb538-02b0-4913-a2e4-c2e81114c136
+uuid: d8596924-99e0-4639-8fd9-0d3eb01da0ed
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.social_icon
+    - paragraphs.paragraphs_type.icon_link_wrapper
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: block_content.social_icon
-target_entity_type_id: block_content
-target_bundle: social_icon
+id: paragraph.icon_link_wrapper
+target_entity_type_id: paragraph
+target_bundle: icon_link_wrapper
 default_langcode: site_default
 language_alterable: false
