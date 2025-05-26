@@ -1,0 +1,22 @@
+uuid: ff461bb9-ba5f-4562-acae-85f5c66a4bda
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.social_icon
+id: block_content.social_icon.status
+field_name: status
+entity_type: block_content
+bundle: social_icon
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
