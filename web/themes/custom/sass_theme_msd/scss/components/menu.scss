@@ -16,7 +16,9 @@
         #block-sass-theme-msd-mainnavigation {
 
             .sf-expanded {
-                background-color: red
+                background-color: $secondary;
+                border-radius: 10px;
+
             }
 
             .sf-menu {
@@ -24,7 +26,7 @@
 
                 .sf-depth-1 {
                     @extend .h6;
-                    color: $white;
+                    // color: $white;
 
                     a {
                         text-decoration: none;
@@ -35,9 +37,9 @@
                     }
 
                     ul {
-                        background-color: #FFFFFF;
+                     
 
-                        background-color: rgba(255, 255, 255, 0.28);
+                       background-color: rgba(255, 255, 255, 0.28);
                         border-radius: 10px;
                         overflow: hidden !important;
 
@@ -63,3 +65,6 @@
         }
     }
 }
+
+
+  

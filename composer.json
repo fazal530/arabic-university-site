@@ -29,6 +29,7 @@
         "drupal/paragraphs": "^1.19",
         "drupal/paragraphs_asymmetric_translation_widgets": "^1.4",
         "drupal/pathauto": "^1.13",
+        "drupal/quicktabs": "^4.0",
         "drupal/recreate_block_content": "^3.0",
         "drupal/superfish": "^1.10",
         "drupal/webform": "^6.3@beta",
