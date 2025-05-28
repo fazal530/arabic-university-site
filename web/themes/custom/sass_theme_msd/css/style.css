@@ -493,10 +493,8 @@ h6 {
   }
 }
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-expanded {
-  background-color: red;
-}
-.header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 {
-  color: #fff;
+  background-color: #006B8D;
+  border-radius: 10px;
 }
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 a {
   text-decoration: none;
@@ -505,7 +503,6 @@ h6 {
   width: 1px !important;
 }
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 ul {
-  background-color: #FFFFFF;
   background-color: rgba(255, 255, 255, 0.28);
   border-radius: 10px;
   overflow: hidden !important;
@@ -1151,6 +1148,9 @@ h6 {
 @media (min-width: 768px) {
   .accreditation-title {
     text-align: left;
+  }
+  [dir=rtl] .accreditation-title {
+    text-align: right;
   }
 }
 
