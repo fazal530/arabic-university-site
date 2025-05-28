@@ -1004,10 +1004,6 @@ h6 {
 .events-node .events-node-date h5 {
   color: #006B8D !important;
 }
-.events-node .events-node-image {
-  width: 1030px;
-  height: 480px;
-}
 .events-node .events-node-image img {
   width: 100%;
   height: 100%;
@@ -1187,7 +1183,7 @@ h6 {
   /* Show the body on hover */
 }
 .accreditation-bg-color .Accreditation-wrappper {
-  grid-column: 1/-1;
+  grid-column: span 2;
   justify-self: center;
 }
 @media (min-width: 768px) {
@@ -1204,18 +1200,11 @@ h6 {
   position: relative;
   display: inline-block;
 }
-.accreditation-bg-color .Accreditation-image {
-  height: 324px;
-}
-@media (min-width: 1280px) {
-  .accreditation-bg-color .Accreditation-image {
-    height: 245px;
-  }
-}
 .accreditation-bg-color .Accreditation-image img {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .accreditation-bg-color .Accreditation-body {
   display: none;
