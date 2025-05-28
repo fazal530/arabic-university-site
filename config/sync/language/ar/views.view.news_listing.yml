@@ -16,6 +16,6 @@ display:
       footer:
         area:
           content:
-            value: '<div class="button container"><button><a href="/news"> عرض الكل</a></button></div>'
+            value: '<div class="button container"><button><a href="/web/news"> عرض الكل</a></button></div>'
             format: full_html
 label: 'كتلة قائمة الأخبار'
