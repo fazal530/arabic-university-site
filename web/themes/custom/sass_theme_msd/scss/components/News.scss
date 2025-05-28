@@ -97,6 +97,9 @@
 
         .news-image {
             height: 112px;
+            @include tablet{
+                width: 190px;
+            }
 
             img {
                 width: 100%;
