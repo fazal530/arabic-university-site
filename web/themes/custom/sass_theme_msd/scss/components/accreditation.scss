@@ -6,7 +6,13 @@
    @include tablet{
     text-align: left;
    }
+   [dir="rtl"] & {
+ @include tablet {
+    text-align: right;
+  }
 }
+}
+
 .accreditation-bg-color{
    background-color: $primary;
    padding-block: 30px;

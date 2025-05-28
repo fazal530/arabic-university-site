@@ -5,10 +5,8 @@
         color: $secondary;
     }
 }
-
 .news-child-one {
     grid-column: 1/-1;
-
     @include desktop {
         grid-column: span 6;
         grid-row: 1/4;
@@ -32,11 +30,8 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: top;
-               
-
-            }
-
-            .gradient-overlay {
+               }
+   .gradient-overlay {
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -49,15 +44,13 @@
                 rgba(160, 120, 50, 0.0) 100%);                       
                 color: $white;
             }
-
         }
 
         .news-description {
             position: absolute;
             top: 40%;
             left: 5%;
-
-            @include tablet {
+          @include tablet {
                 top: 65%;
             }
        }
@@ -68,7 +61,6 @@
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 36px;
-
                 @include desktop {
                     font-size: 36px;
                     line-height: 45px;
@@ -127,7 +119,7 @@
     .news-detail {
         h5 {
             span {
-                color: rgba(112, 111, 111, 1);
+                color: $tertiary;
             }
 
         }
@@ -152,7 +144,7 @@
 
     a {
         text-decoration: none;
-        color: rgba(112, 111, 111, 1)
+        color: $tertiary;
     }
 }
 
@@ -169,6 +161,7 @@
         gap: 20px;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 60px;
         @include desktop{
             flex-direction: row;
         }
@@ -201,12 +194,23 @@
 
         h5 {
             color: $secondary !important;
+            
         }
     }
 
     .news-page-view-description {
         h5 {
             color: $secondary;
+            font-size: 24px;
+            line-height: 36px;
+            @include tablet{
+                font-size: 30px;
+                line-height: 42px;
+            }
+           @include desktop{
+                font-size: 36px;
+                line-height: 45px;
+           }
         }
     }
 }
