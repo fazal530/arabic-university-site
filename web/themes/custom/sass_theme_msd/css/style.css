@@ -259,7 +259,7 @@ h6 {
 .program_button, .hero .program-buttons .program-item {
   padding: 10px 20px;
   border: none;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff;
   color: #000 !important;
   cursor: pointer;
   border-radius: 10px;
@@ -492,9 +492,19 @@ h6 {
     align-items: center;
   }
 }
+.header_wrapper .flex #block-sass-theme-msd-sitebranding a img {
+  width: 152px;
+  height: 78px;
+}
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-expanded {
   background-color: #006B8D;
   border-radius: 10px;
+}
+.header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-expanded:hover {
+  color: black !important;
+}
+.header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 {
+  color: #fff;
 }
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 a {
   text-decoration: none;
@@ -520,6 +530,19 @@ h6 {
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1 ul .sf-depth-2:hover {
   color: #000 !important;
 }
+.header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-accordion-toggle {
+  text-align: end;
+}
+.header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-accordion-toggle a {
+  text-decoration: none;
+}
+.header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-accordion-toggle a span {
+  font-size: 55px;
+  color: #fff;
+}
+.header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-accordion-toggle .sf-expanded {
+  background-color: transparent !important;
+}
 
 .hero {
   position: relative;
@@ -528,16 +551,6 @@ h6 {
   grid-column: 1/-1;
   grid-row: 1/3;
   height: 800px;
-}
-@media (min-width: 768px) {
-  .hero .background-slider {
-    grid-column: 1/-1;
-  }
-}
-@media (min-width: 1280px) {
-  .hero .background-slider {
-    grid-column: 1/-1;
-  }
 }
 .hero .background-slider .slick-list .slick-track {
   width: 100%;
@@ -561,13 +574,6 @@ h6 {
 @media (min-width: 768px) {
   .hero .content {
     grid-column: 1/8;
-    grid-row: 1/1;
-  }
-}
-@media (min-width: 1280px) {
-  .hero .content {
-    grid-column: 1/8;
-    grid-row: 1/1;
   }
 }
 .hero .content h1 {
@@ -597,6 +603,7 @@ h6 {
   grid-column: 1/-1;
   grid-row: 2/2;
   z-index: 2;
+  margin-inline: 25px;
 }
 @media (min-width: 768px) {
   .hero .program-buttons {
