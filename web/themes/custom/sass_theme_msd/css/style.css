@@ -767,6 +767,11 @@ h6 {
 .news-child .news-content .news-image {
   height: 112px;
 }
+@media (min-width: 768px) {
+  .news-child .news-content .news-image {
+    width: 190px;
+  }
+}
 .news-child .news-content .news-image img {
   width: 100%;
   height: 100%;
@@ -1159,9 +1164,6 @@ h6 {
 @media (min-width: 768px) {
   .accreditation-title {
     text-align: left;
-  }
-  [dir=rtl] .accreditation-title {
-    text-align: right;
   }
 }
 @media (min-width: 768px) {
