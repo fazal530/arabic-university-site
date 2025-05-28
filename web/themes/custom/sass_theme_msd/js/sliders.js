@@ -4,8 +4,8 @@
 		$('[dir="rtl"] .background-slider', context).each(function () {
 		  if (!$(this).hasClass('slick-initialized')) {
 			$(this).slick({
-			  autoplay: false,
-			  autoplaySpeed: 3000,
+			  autoplay: true,
+			  autoplaySpeed: 4000,
 			  arrows: true,
 			  dots: true,
 			  fade: true,
