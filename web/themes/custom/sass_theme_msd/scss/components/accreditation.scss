@@ -1,9 +1,10 @@
 
-.accreditation-title{
-   @extend .container;
-   margin-block: 30px;
-   text-align: center;
-   @include tablet{
+.accreditation-title {
+  @extend .container;
+  margin-block: 30px;
+  text-align: center;
+
+  @include tablet {
     text-align: left;
    }
    [dir="rtl"] & {
@@ -77,3 +78,4 @@
   }
  }
 }
+

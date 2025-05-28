@@ -489,7 +489,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_link: ''
+            image_link: content
             image_style: news_image
             image_loading:
               attribute: lazy
@@ -667,7 +667,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"button container\">\r\n<button><a href=\"/news\">view All</a></button>\r\n</div>"
+            value: "<div class=\"button container\">\r\n<button><a href=\"/web/news\">view All</a></button>\r\n</div>"
             format: full_html
           tokenize: false
       display_extenders: {  }
