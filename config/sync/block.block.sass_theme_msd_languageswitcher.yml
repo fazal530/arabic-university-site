@@ -1,6 +1,6 @@
 uuid: 41e6cb01-92cf-4d5b-ad2d-10ba31e08999
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - language
@@ -8,8 +8,8 @@ dependencies:
     - sass_theme_msd
 id: sass_theme_msd_languageswitcher
 theme: sass_theme_msd
-region: menubar
-weight: -10
+region: header
+weight: -9
 provider: null
 plugin: 'language_block:language_interface'
 settings:
