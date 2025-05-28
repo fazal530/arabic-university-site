@@ -238,6 +238,7 @@ h6 {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  color: #706F6F;
 }
 @media (min-width: 768px) {
   .body2 {
@@ -780,7 +781,7 @@ h6 {
   color: #006B8D !important;
 }
 .news-child .news-detail h5 span {
-  color: rgb(112, 111, 111);
+  color: #706F6F;
 }
 
 .button {
@@ -802,7 +803,7 @@ h6 {
 }
 .button a {
   text-decoration: none;
-  color: rgb(112, 111, 111);
+  color: #706F6F;
 }
 
 .views-row .news-page-view {
@@ -810,6 +811,7 @@ h6 {
   gap: 20px;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 @media (min-width: 1280px) {
   .views-row .news-page-view {
@@ -847,6 +849,20 @@ h6 {
 }
 .views-row .news-page-view-description h5 {
   color: #006B8D;
+  font-size: 24px;
+  line-height: 36px;
+}
+@media (min-width: 768px) {
+  .views-row .news-page-view-description h5 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+@media (min-width: 1280px) {
+  .views-row .news-page-view-description h5 {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 .views-row:nth-of-type(even) .news-page-view {
@@ -924,14 +940,13 @@ h6 {
 }
 .button a {
   text-decoration: none;
-  color: rgb(112, 111, 111);
+  color: #706F6F;
 }
 
-@media (min-width: 360px) {
-  .views-row:nth-child(3) {
-    display: none;
-  }
+.views-row:nth-child(3) {
+  display: none;
 }
+
 @media (min-width: 1280px) {
   .views-row:nth-child(3) {
     display: block;
@@ -1041,7 +1056,6 @@ h6 {
 }
 @media (min-width: 768px) {
   .description-wrapper:nth-of-type(even) .description {
-    flex-direction: row;
     flex-direction: row-reverse;
   }
 }
@@ -1068,9 +1082,6 @@ h6 {
   object-position: center;
 }
 
-.description-wrapper:nth-child(3) .description {
-  flex-direction: column;
-}
 @media (min-width: 768px) {
   .description-wrapper:nth-child(3) .description {
     flex-direction: row;
@@ -1149,6 +1160,11 @@ h6 {
   .accreditation-title {
     text-align: left;
   }
+  [dir=rtl] .accreditation-title {
+    text-align: right;
+  }
+}
+@media (min-width: 768px) {
   [dir=rtl] .accreditation-title {
     text-align: right;
   }

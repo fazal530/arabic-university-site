@@ -6,13 +6,12 @@
 
   @include tablet {
     text-align: left;
-    [dir="rtl"] & {
-      text-align: right;
-    }
-
+   }
+   [dir="rtl"] & {
+ @include tablet {
+    text-align: right;
   }
-
-  
+}
 }
 
 .accreditation-bg-color{

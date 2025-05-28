@@ -55,15 +55,15 @@
     }
      a{
         text-decoration: none;
-        color:rgba(112, 111, 111, 1) 
+        color: $tertiary;
     }
 }
 
-  @include mobile {
+ 
   .views-row:nth-child(3) {
     display: none;
   }
-}
+
 @include desktop{
      .views-row:nth-child(3) {
         display: block;

@@ -147,6 +147,7 @@ h6 {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  color: $tertiary;
 
   @include tablet {
     font-size: 14px;
