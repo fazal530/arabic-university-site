@@ -37,7 +37,6 @@
         
         flex-direction: column;
         @include tablet{
-        flex-direction: row;
         flex-direction: row-reverse;
     }
         .description-image{
@@ -64,7 +63,6 @@
 
 .description-wrapper:nth-child(3) {
   .description{
-    flex-direction: column;
     @include tablet{
         flex-direction: row;
     }
