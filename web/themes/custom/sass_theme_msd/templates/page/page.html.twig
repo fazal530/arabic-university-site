@@ -62,13 +62,27 @@
 			<div class="menubar">{{ page.menubar }}</div>
 		{% endif %}
 
+
+
 		<header id="header" class="header" role="banner">
 			<div class="section layout-container clearfix">
-				{{ page.primary_menu }}
-				{{ page.secondary_menu }}
-				<div class="header-section">{{ page.header }}</div>
+				<div class="header-section">
+				<div class="header_wrapper">
+				  <div class="flex">
+				{{ drupal_entity('block', 'sass_theme_msd_sitebranding', check_access=false) }}
+				
+			<div class="flex-2">
+				{{ drupal_entity('block', 'sass_theme_msd_mainnavigation', check_access=false) }}
+				{{ drupal_entity('block', 'sass_theme_msd_languageswitcher', check_access=false) }}
+			</div>	
+				</div>	
+				</div>
+				</div>
 			</div>
 		</header>
+
+
+
 		{% if page.highlighted %}
 			<div class="highlighted">
 				<aside class="layout-container section clearfix" role="complementary">
