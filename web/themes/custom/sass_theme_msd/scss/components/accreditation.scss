@@ -1,12 +1,20 @@
 
-.accreditation-title{
-   @extend .container;
-   margin-block: 30px;
-   text-align: center;
-   @include tablet{
+.accreditation-title {
+  @extend .container;
+  margin-block: 30px;
+  text-align: center;
+
+  @include tablet {
     text-align: left;
-   }
+    [dir="rtl"] & {
+      text-align: right;
+    }
+
+  }
+
+  
 }
+
 .accreditation-bg-color{
    background-color: $primary;
    padding-block: 30px;
@@ -71,3 +79,4 @@
   }
  }
 }
+

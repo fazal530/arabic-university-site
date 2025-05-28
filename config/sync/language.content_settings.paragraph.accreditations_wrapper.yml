@@ -1,0 +1,18 @@
+uuid: 460f4f1e-6684-4bd1-8fff-69dc5b7307b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.accreditations_wrapper
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.accreditations_wrapper
+target_entity_type_id: paragraph
+target_bundle: accreditations_wrapper
+default_langcode: site_default
+language_alterable: false

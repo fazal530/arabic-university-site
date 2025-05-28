@@ -1,0 +1,14 @@
+label: الفعاليات
+display:
+  block_1:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="Events-header"><h2>الفعاليات المميزة</h2></div>'
+            format: full_html
+      footer:
+        area:
+          content:
+            value: '<div class="button container"><button><a href="/events"> عرض الكل</a></button></div>'
+            format: full_html
