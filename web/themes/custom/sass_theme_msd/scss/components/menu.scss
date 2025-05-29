@@ -9,9 +9,6 @@
         display: flex;
         justify-content: space-between;
 
-        @include desktop {
-            align-items: center;
-        }
 
         #block-sass-theme-msd-sitebranding,
         #block-sass-theme-msd-sitebranding--2 {
@@ -38,7 +35,21 @@
             }
 
             .sf-menu {
+                display: block;
+                position: absolute;
+                right: 25px;
+                width: 45%;
 
+                [dir="rtl"] & {
+                    left: 25px !important;
+                    width: 45% !important;
+                }
+
+                @include desktop {
+                    position: relative;
+                    right: unset;
+                    width: unset;
+                }
 
                 .sf-depth-1 {
                     @extend .h6;
@@ -46,6 +57,10 @@
 
                     a {
                         text-decoration: none;
+                    }
+
+                    &:hover {
+                        color: $black !important;
                     }
 
                     .sf-hidden {
@@ -101,6 +116,7 @@
 
         .language-switcher-language-url {
             padding-top: 15px;
+
             .links {
                 display: flex;
                 gap: 17px;
@@ -133,12 +149,10 @@
                 }
             }
         }
-        .flex-2{
+
+        .flex-2 {
             display: flex;
-            gap: 17px;
-            @include desktop {
-                align-items: center;
-            }
+            gap: 5px;
         }
     }
 }
