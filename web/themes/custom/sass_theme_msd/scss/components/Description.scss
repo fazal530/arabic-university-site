@@ -1,93 +1,139 @@
-.description{
+.paragraph--type--text-with-banner {
+    position: relative;
+    height: 340px;
+
+    @include tablet {
+        height: 356px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .field-items {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0px !important;
+        z-index: 2;
+
+        h2 {
+            @extend .h1;
+            color: $white;
+        }
+
+    }
+
+
+}
+
+
+
+.description {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-block: 100px;
     flex-direction: column;
-    @include tablet{
+
+    @include tablet {
         flex-direction: row;
     }
-    .description-text{
+
+    .description-text {
         flex: 1;
-        h2{
+
+        h2 {
             color: $secondary;
         }
     }
-    .description-image{
+
+    .description-image {
         width: 340px;
         height: 188px;
-        @include tablet{
+
+        @include tablet {
             width: 237px;
             height: 131px;
         }
-        @include desktop{
+
+        @include desktop {
             width: 505px;
             height: 279px;
         }
-     img{
+
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
-         }
+        }
     }
- }
-.description-wrapper:nth-of-type(even){
-    .description{
-        
+}
+
+.description-wrapper:nth-of-type(even) {
+    .description {
+
         flex-direction: column;
-        @include tablet{
-        flex-direction: row-reverse;
-    }
-        .description-image{
+
+        @include tablet {
+            flex-direction: row-reverse;
+        }
+
+        .description-image {
             width: 340px;
             height: 347px;
-            @include tablet{
+
+            @include tablet {
                 width: 230px;
                 height: 236px;
             }
-       @include desktop{
-         width: 505px;
-          height: 516px;
-       }
-        img{
-         width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-            
-        }
+
+            @include desktop {
+                width: 505px;
+                height: 516px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+
+            }
         }
     }
 }
 
 .description-wrapper:nth-child(3) {
-  .description{
-    @include tablet{
-        flex-direction: row;
-    }
-    .description-image{
-        width: 340px;
-        height: 340px;
-        @include tablet{
-            width: 238px;
-            height: 238px;
+    .description {
+        @include tablet {
+            flex-direction: row;
         }
-      @include desktop{
-          width: 510px;
-        height: 510px;
-      }
-         img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+
+        .description-image {
+            width: 340px;
+            height: 340px;
+
+            @include tablet {
+                width: 238px;
+                height: 238px;
+            }
+
+            @include desktop {
+                width: 510px;
+                height: 510px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
             }
         }
     }
 }
-
-
-
-
-
