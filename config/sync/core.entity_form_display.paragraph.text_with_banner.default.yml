@@ -1,0 +1,35 @@
+uuid: 7543bed9-22f6-4060-abb5-21375c2f24a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_banner.field_description_image
+    - field.field.paragraph.text_with_banner.field_label
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.text_with_banner
+  module:
+    - image
+id: paragraph.text_with_banner.default
+targetEntityType: paragraph
+bundle: text_with_banner
+mode: default
+content:
+  field_description_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

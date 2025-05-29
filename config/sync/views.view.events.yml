@@ -686,7 +686,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"button container\">\r\n<button><a href=\"/events\">view All</a></button>\r\n</div>"
+            value: "<div class=\"button container\">\r\n<button><a href=\"[site:base-path]/events\">view All</a></button>\r\n</div>"
             format: full_html
           tokenize: false
       display_extenders: {  }

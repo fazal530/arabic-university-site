@@ -48,6 +48,9 @@ settings:
       news_block_view:
         weight: 13
         enabled: false
+      text_with_banner:
+        weight: 17
+        enabled: false
       text_with_image:
         weight: -4
         enabled: false
