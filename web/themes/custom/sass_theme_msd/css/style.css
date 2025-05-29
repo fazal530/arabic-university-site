@@ -73,7 +73,7 @@ body {
   }
 }
 
-.h1,
+.h1, .paragraph--type--text-with-banner .field-items h2,
 h1 {
   font-family: myriad_pro, sans-serif;
   font-size: 36px;
@@ -82,14 +82,14 @@ h1 {
   line-height: 40px;
 }
 @media (min-width: 768px) {
-  .h1,
+  .h1, .paragraph--type--text-with-banner .field-items h2,
   h1 {
     font-size: 44px;
     line-height: 60px;
   }
 }
 @media (min-width: 1280px) {
-  .h1,
+  .h1, .paragraph--type--text-with-banner .field-items h2,
   h1 {
     font-size: 56px;
     line-height: 75px;
@@ -276,6 +276,14 @@ h6 {
   border: 1px solid #fff;
   text-decoration: none;
   transition: background 0.5s ease;
+}
+
+.overlay {
+  background: var(--COLORS-2-G1, linear-gradient(180deg, #3D788A 0%, rgba(115, 115, 115, 0) 100%));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 
 @font-face {
@@ -735,12 +743,6 @@ h6 {
   color: #006B8D !important;
   opacity: 1 !important;
 }
-.hero .overlay {
-  background: var(--COLORS-2-G1, linear-gradient(180deg, #3D788A 0%, rgba(115, 115, 115, 0) 100%));
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
 
 .slick-next.slick-arrow {
   display: none !important;
@@ -1091,6 +1093,32 @@ h6 {
   color: #006B8D !important;
 }
 
+.paragraph--type--text-with-banner {
+  position: relative;
+  height: 340px;
+}
+@media (min-width: 768px) {
+  .paragraph--type--text-with-banner {
+    height: 356px;
+  }
+}
+.paragraph--type--text-with-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.paragraph--type--text-with-banner .field-items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px !important;
+  z-index: 2;
+}
+.paragraph--type--text-with-banner .field-items h2 {
+  color: #fff;
+}
+
 .description {
   display: flex;
   align-items: center;
@@ -1416,6 +1444,7 @@ h6 {
 }
 .site-footer .site-footer__top .address h4 {
   color: #fff;
+  margin-bottom: 10px;
 }
 .site-footer .site-footer__top .address p {
   color: #fff;
@@ -1435,6 +1464,7 @@ h6 {
 }
 .site-footer .site-footer__top .menu #block-sass-theme-msd-mainnavigation-2 h4 {
   color: #fff;
+  margin-bottom: 10px;
 }
 .site-footer .site-footer__top .menu #block-sass-theme-msd-mainnavigation-2 ul {
   list-style: none;
@@ -1461,9 +1491,11 @@ h6 {
 }
 .site-footer .site-footer__top .contact-us h4 {
   color: #fff;
+  margin-bottom: 10px;
 }
 .site-footer .site-footer__top .contact-us p {
   color: #fff;
+  padding-bottom: 18px;
 }
 .site-footer .site-footer__top .contact-us p a {
   color: #fff;
