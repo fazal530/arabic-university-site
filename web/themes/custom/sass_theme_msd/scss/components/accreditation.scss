@@ -60,6 +60,8 @@
   z-index: 2;
   border-radius: 50%;
   opacity: 0.9;
+  
+ 
  
 }
 
@@ -72,7 +74,57 @@
   text-align: center;
    p{
     color: $white;
+     font-size: 9px !important;
+     line-height: 18px;
+     [dir="rtl"] & {
+        font-size: 8px !important;
+   }
+    
+    @include mobile {
+      font-size: 12px !important;
+       [dir="rtl"] & {
+        font-size: 10px !important;
+   }
+ 
+      }
+      @include tablet{
+         font-size: 14px !important;
+         line-height: 24px !important;
+             [dir="rtl"] & {
+        font-size: 14px !important;
+        line-height: 24px !important;
+   }
+         
+      }
+      @include desktop {
+        font-size: 18px !important;
+        line-height: 28px !important;
+                [dir="rtl"] & {
+       font-size: 18px !important;
+        line-height: 28px !important;
+   }
+       
+      }
+
+  }
+  h5 {
+    font-size: 12px;
+    line-height: 18px;
+    @include mobile {
+      font-size: 18px ;
+      line-height: 28px;
+    }
+      @include tablet {
+    font-size: 22px !important;
+    line-height: 32px !important;
+  }
+
+  @include desktop {
+    font-size: 24px !important;
+    
+  }
   }
  }
 }
+
 
