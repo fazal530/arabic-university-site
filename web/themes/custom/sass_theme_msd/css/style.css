@@ -518,11 +518,17 @@ h6 {
   width: 45% !important;
 }
 @media (min-width: 1280px) {
+  [dir=rtl] .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu,
+  [dir=rtl] .header_wrapper .flex #block-sass-theme-msd-mainnavigation--2 .sf-menu {
+    width: 100% !important;
+  }
+}
+@media (min-width: 1280px) {
   .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu,
   .header_wrapper .flex #block-sass-theme-msd-mainnavigation--2 .sf-menu {
     position: relative;
-    right: unset;
-    width: unset;
+    right: 0px;
+    width: 100%;
   }
 }
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1,
@@ -661,7 +667,6 @@ h6 {
 }
 .hero .content .see_btn .btn {
   color: #fff;
-  font-size: 16px;
 }
 .hero .content .see_btn .btn:hover {
   background-color: #AE9A64;

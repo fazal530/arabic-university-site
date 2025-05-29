@@ -43,12 +43,15 @@
                 [dir="rtl"] & {
                     left: 25px !important;
                     width: 45% !important;
+                    @include desktop {
+                        width: 100% !important;
+                    }
                 }
 
                 @include desktop {
                     position: relative;
-                    right: unset;
-                    width: unset;
+                    right: 0px;
+                    width: 100%;
                 }
 
                 .sf-depth-1 {
