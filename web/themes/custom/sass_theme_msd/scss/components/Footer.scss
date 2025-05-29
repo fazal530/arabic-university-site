@@ -57,6 +57,7 @@
 
         .address {
             grid-column: 1/-1;
+            
 
             @include tablet {
                 grid-column: 1/4;
@@ -70,6 +71,8 @@
 
             h4 {
                 color: $white;
+                margin-bottom: 10px
+
             }
 
             p {
@@ -92,6 +95,8 @@
             #block-sass-theme-msd-mainnavigation-2 {
                 h4 {
                     color: $white;
+                    margin-bottom: 10px
+
                 }
 
                 ul {
@@ -123,12 +128,13 @@
 
             h4 {
                 color: $white;
+                margin-bottom: 10px
             }
 
             p {
                 @extend .h5;
                 color: $white;
-
+padding-bottom: 18px;
                 a {
                     @extend .h5;
                     color: $white;
