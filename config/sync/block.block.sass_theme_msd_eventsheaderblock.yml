@@ -1,0 +1,30 @@
+uuid: 8dac5dc2-5f2a-47a7-a160-68ca3b6619ad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:events_block:6d2898d8-7e19-4a4f-9243-73d5b0e827c5'
+  module:
+    - block_content
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_eventsheaderblock
+theme: sass_theme_msd
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:6d2898d8-7e19-4a4f-9243-73d5b0e827c5'
+settings:
+  id: 'block_content:6d2898d8-7e19-4a4f-9243-73d5b0e827c5'
+  label: 'Events header block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/event/*"
