@@ -501,8 +501,22 @@ h6 {
 }
 .header_wrapper .flex #block-sass-theme-msd-sitebranding a img,
 .header_wrapper .flex #block-sass-theme-msd-sitebranding--2 a img {
-  width: 152px;
-  height: 78px;
+  width: 107px;
+  height: 55px;
+}
+@media (min-width: 768px) {
+  .header_wrapper .flex #block-sass-theme-msd-sitebranding a img,
+  .header_wrapper .flex #block-sass-theme-msd-sitebranding--2 a img {
+    width: 152px;
+    height: 78px;
+  }
+}
+@media (min-width: 1280px) {
+  .header_wrapper .flex #block-sass-theme-msd-sitebranding a img,
+  .header_wrapper .flex #block-sass-theme-msd-sitebranding--2 a img {
+    width: 190px;
+    height: 97px;
+  }
 }
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation .sf-expanded,
 .header_wrapper .flex #block-sass-theme-msd-mainnavigation--2 .sf-expanded {
@@ -624,7 +638,17 @@ h6 {
 }
 .header_wrapper .flex .flex-2 {
   display: flex;
-  gap: 5px;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .header_wrapper .flex .flex-2 {
+    gap: 14px;
+  }
+}
+@media (min-width: 1280px) {
+  .header_wrapper .flex .flex-2 {
+    gap: 0px;
+  }
 }
 
 .hero {
@@ -633,16 +657,25 @@ h6 {
 .hero .background-slider {
   grid-column: 1/-1;
   grid-row: 1/3;
-  height: 800px;
 }
-.hero .background-slider .slick-list .slick-track {
+.hero .slick-list .slick-track {
   width: 100%;
 }
-.hero .background-slider .slick-list .slick-track img {
+.hero .slick-list .slick-track img {
   width: 100%;
-  height: 800px !important;
+  height: 618px !important;
   object-fit: cover;
   z-index: 5 !important;
+}
+@media (min-width: 768px) {
+  .hero .slick-list .slick-track img {
+    height: 600px !important;
+  }
+}
+@media (min-width: 1280px) {
+  .hero .slick-list .slick-track img {
+    height: 800px !important;
+  }
 }
 .hero .content {
   grid-column: 1/-1;
@@ -653,6 +686,7 @@ h6 {
   justify-content: center;
   align-self: flex-end;
   background: rgba(0, 0, 0, 0);
+  margin-top: 60px;
 }
 @media (min-width: 768px) {
   .hero .content {
@@ -709,39 +743,7 @@ h6 {
   color: #fff !important;
 }
 .hero .slick-dots {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-}
-.hero .slick-dots li button {
-  color: white !important;
-  width: 20px !important;
-  height: 20px !important;
-}
-.hero .slick-dots li button::before {
-  font-size: 50px !important;
-  color: white !important;
-  opacity: 1 !important;
-}
-.hero .slick-dots li.slick-active {
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: opacity 0.3s;
-}
-.hero .slick-dots li.slick-active button {
-  width: 15px;
-  height: 15px;
-}
-.hero .slick-dots li.slick-active button::before {
-  font-size: 50px !important;
-  color: #006B8D !important;
-  opacity: 1 !important;
+  display: none;
 }
 
 .slick-next.slick-arrow {
