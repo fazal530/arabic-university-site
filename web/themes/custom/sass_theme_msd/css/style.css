@@ -1039,6 +1039,59 @@ h6 {
     display: block;
   }
 }
+.events-node-view-wrapper {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.events-node-view {
+  grid-column: span 4;
+}
+
+.events-node-view .Events-image {
+  height: 195px;
+}
+@media (min-width: 768px) {
+  .events-node-view .Events-image {
+    height: 187px;
+  }
+}
+@media (min-width: 1280px) {
+  .events-node-view .Events-image {
+    height: 231px;
+  }
+}
+.events-node-view .Events-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.events-node-view:nth-child(n+4) {
+  display: none;
+}
+@media (min-width: 768px) {
+  .events-node-view:nth-child(n+7) {
+    display: none;
+  }
+  .events-node-view:nth-child(n+4):nth-child(-n+6) {
+    display: block;
+  }
+}
+@media (min-width: 1280px) {
+  .events-node-view {
+    display: block;
+  }
+  .events-node-view:nth-child(n) {
+    display: block;
+  }
+}
+
+.events-page-view-wrapper {
+  margin-top: 92px;
+  margin-bottom: 60px;
+}
+
 .views-row {
   grid-column: span 4;
 }
@@ -1054,7 +1107,6 @@ h6 {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 10px;
 }
 .views-row .events-page-view-date {
   position: absolute;
@@ -1062,7 +1114,7 @@ h6 {
   left: 0%;
   padding: 30px 10px 30px 10px;
   background-color: #AE9A64;
-  border-radius: 10px 0px 10px 0px;
+  border-radius: 0px 0px 10px 0px;
   color: #fff;
 }
 .views-row .events-page-view-description {
@@ -1079,6 +1131,20 @@ h6 {
 .events-node .events-node-date h5 {
   color: #006B8D !important;
 }
+.events-node .events-node-image {
+  width: 100%;
+  height: 158px;
+}
+@media (min-width: 768px) {
+  .events-node .events-node-image {
+    height: 310px;
+  }
+}
+@media (min-width: 1280px) {
+  .events-node .events-node-image {
+    height: 480px;
+  }
+}
 .events-node .events-node-image img {
   width: 100%;
   height: 100%;
@@ -1087,10 +1153,30 @@ h6 {
   border-radius: 10px;
 }
 .events-node .events-node-description {
-  margin-block: 30px;
+  margin-block: 15px;
 }
 .events-node .events-node-description h5 {
   color: #006B8D !important;
+  font-size: 24px;
+  line-height: 36px;
+}
+@media (min-width: 768px) {
+  .events-node .events-node-description h5 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+@media (min-width: 1280px) {
+  .events-node .events-node-description h5 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+@media (min-width: 768px) {
+  .events-node .events-node-description .body2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .paragraph--type--text-with-banner {
