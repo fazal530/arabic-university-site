@@ -142,8 +142,13 @@
          width: 100%;
          &:hover {
             background-color: $primary;
-            
+            border: 1px solid $primary;
+           
          }
+           &:hover a{
+            color: $white;
+           }
+        
          @include tablet{
             width: auto;
          }
@@ -152,10 +157,8 @@
     a {
         text-decoration: none;
         color: $tertiary;
-        &:hover {
-            color: $white;
-            
-        }
+       
+      
     }
 }
 
