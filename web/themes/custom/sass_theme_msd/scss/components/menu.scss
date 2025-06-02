@@ -14,9 +14,18 @@
         #block-sass-theme-msd-sitebranding--2 {
             a {
                 img {
-                    width: 152px;
-                    height: 78px;
+                    width: 107px;
+                    height: 55px;
 
+                    @include tablet {
+                        width: 152px;
+                        height: 78px;
+                    }
+
+                    @include desktop {
+                        width: 190px;
+                        height: 97px;
+                    }
                 }
             }
         }
@@ -43,6 +52,7 @@
                 [dir="rtl"] & {
                     left: 25px !important;
                     width: 45% !important;
+
                     @include desktop {
                         width: 100% !important;
                     }
@@ -155,7 +165,15 @@
 
         .flex-2 {
             display: flex;
-            gap: 5px;
+            gap: 10px;
+
+            @include tablet {
+                gap: 14px;
+            }
+
+            @include desktop {
+                gap: 0px;
+            }
         }
     }
 }
