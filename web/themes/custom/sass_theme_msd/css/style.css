@@ -984,7 +984,7 @@ h6 {
 
 .Events-header {
   text-align: center;
-  margin-block: 60px;
+  margin-block: 30px;
 }
 .Events-header h2 {
   color: #006B8D;
@@ -1322,6 +1322,14 @@ h6 {
 }
 .field-items h2 {
   color: #006B8D;
+}
+
+.paragraph--type--icon-link-wrapper .field-items {
+  margin-block: 30px 30px;
+}
+.paragraph--type--icon-link-wrapper .field-items h2 {
+  color: #006B8D;
+  text-align: center;
 }
 
 .icon-link-bg-color {
