@@ -6,6 +6,18 @@
     }
 }
 
+.paragraph--type--icon-link-wrapper {
+    .field-items {
+        margin-block: 30px 30px;
+    
+        h2 {
+            color: $secondary;
+            text-align: center;
+        }
+    }
+}
+
+
 .icon-link-bg-color {
     background-color: $white;
     padding-block: 30px;
