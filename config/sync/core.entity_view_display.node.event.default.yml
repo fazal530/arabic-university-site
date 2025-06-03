@@ -11,7 +11,7 @@ dependencies:
     - node.type.event
   module:
     - datetime
-    - image
+    - svg_image
     - text
     - user
 id: node.event.default
@@ -24,7 +24,7 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: olivero_medium
+      format_type: html_year
     third_party_settings: {  }
     weight: 1
     region: content
@@ -44,6 +44,10 @@ content:
       image_style: wide
       image_loading:
         attribute: eager
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
     third_party_settings: {  }
     weight: -1
     region: content
