@@ -30,3 +30,5 @@ web/web.config
 config/sync/.htaccess
 
 .DS_Store
+
+web/themes/custom/sass_theme_msd/css/style.css.map
