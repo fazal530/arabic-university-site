@@ -898,7 +898,7 @@ h6 {
   background-color: #AE9A64;
   border: 1px solid #AE9A64;
 }
-.button button:hover a {
+.news-button button:hover a {
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -909,9 +909,6 @@ h6 {
 .news-button a {
   text-decoration: none;
   color: #706F6F;
-}
-.button a:hover {
-  color: #fff;
 }
 
 .views-row .news-page-view {
@@ -1044,6 +1041,19 @@ h6 {
   font-size: 20px;
   line-height: 27px;
   font-weight: 600;
+  width: 100%;
+}
+.event-button button:hover {
+  background-color: #AE9A64;
+  border: 1px solid #AE9A64;
+}
+.event-button button:hover a {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .event-button button {
+    width: auto;
+  }
 }
 .event-button a {
   text-decoration: none;
@@ -1322,25 +1332,21 @@ h6 {
   object-position: center;
 }
 
-.field-items {
-  margin-block: 60px 30px;
-}
-.field-items h2 {
+.icon-link-label .field-items h2 {
   color: #006B8D;
-}
-
-.icon-link-bg-color .field-items {
-  padding-bottom: 30px;
-}
-.icon-link-bg-color .field-items h2 {
-  color: #006B8D;
-  text-align: center;
 }
 
 .icon-link-bg-color {
   background-color: #fff;
   border-block: 2px solid #AE9A64;
   padding-block: 30px;
+}
+.icon-link-bg-color .field-items {
+  padding-bottom: 30px;
+}
+.icon-link-bg-color .field-items h2 {
+  color: #006B8D;
+  text-align: center;
 }
 
 .icon-link-wrapper {
@@ -1425,8 +1431,6 @@ h6 {
 .accreditation-bg-color {
   background-color: #AE9A64;
   padding-block: 30px;
-  margin-bottom: 60px;
-  /* Initially hide the body */
   /* Show the body on hover */
 }
 .accreditation-bg-color .accreditation-wrappper {

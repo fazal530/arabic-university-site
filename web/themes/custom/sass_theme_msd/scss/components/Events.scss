@@ -44,21 +44,40 @@
   }
 }
 
-.event-button{
+.event-button {
     text-align: center;
     padding-top: 30px;
-    button{
-    padding: 10px 50px 10px 50px;
-    border: 1px solid $tertiary;
-    font-size: 20px;
-    line-height: 27px;
-    font-weight: 600;
+
+    button {
+        padding: 10px 50px 10px 50px;
+        border: 1px solid $tertiary;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 600;
+        width: 100%;
+
+        &:hover {
+            background-color: $primary;
+            border: 1px solid $primary;
+           
+         }
+           &:hover a{
+            color: $white;
+           }
+        
+         @include tablet{
+            width: auto;
+        }
     }
-     a{
+
+    a {
         text-decoration: none;
         color: $tertiary;
+       
+      
     }
 }
+
 
  
   .views-row:nth-child(3) {
