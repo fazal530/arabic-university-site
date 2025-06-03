@@ -1,17 +1,17 @@
-.views-row{
-    grid-column: span 4;
-}
-.Events-header{
+.events-header{
     text-align: center;
     margin-block: 60px;
     h2{
         color:$secondary;
     }
 }
-.events{
+.events-view-block-wrapper{
+.views-row{
+    grid-column: span 4;
+    .events{
     overflow: hidden;
     position: relative;
-    .Events-image{
+    .events-image{
          height: 241px;
          @include tablet{
             height: 231px;
@@ -24,7 +24,7 @@
             border-radius: 10px;
         }
     }
-    .Events-date{
+    .events-date{
         position : absolute;
         top: 0%;
         left: 0%;
@@ -33,7 +33,7 @@
         border-radius: 10px 0px 10px 0px;
         color: $white;
         }
-    .Events-description{
+    .events-description{
         text-align: center;
         padding: 15px;
         h5{
@@ -41,7 +41,8 @@
           }
         }
     }
-
+  }
+}
 
 .button{
     text-align: center;
@@ -78,13 +79,11 @@
 .events-node-view-wrapper{
     margin-top: 20px;
     margin-bottom:60px;
-}
+
 .events-node-view{
     grid-column: span 4;
-}
-.events-node-view{
-   
-    .Events-image{
+  .events-node-view-content{
+        .events-image{
         height: 195px;
         @include tablet{
             height: 187px;
@@ -99,6 +98,8 @@
             object-position: center;
         }
     }
+   }
+    
     
      &:nth-child(n+4) {
       display: none;
@@ -118,7 +119,9 @@
         display: block;
       }
     }
+  }
 }
+
 
 
 
@@ -127,7 +130,7 @@
 .events-page-view-wrapper{
     margin-top: 92px;
     margin-bottom: 60px;
-}
+
 .views-row{
     grid-column: span 4;
     .events-page-view{
@@ -143,7 +146,7 @@
                 
             }
         }
-    }
+   
 
     .events-page-view-date{
         position : absolute;
@@ -164,8 +167,8 @@
         }
       }
     }
-
-
+   }
+ }
 
 
 //Events-node-design//
