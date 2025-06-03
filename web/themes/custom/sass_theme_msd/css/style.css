@@ -720,7 +720,7 @@ h6 {
 .hero .content .see_btn .btn:hover {
   background-color: #AE9A64;
   color: #fff !important;
-  border: #AE9A64;
+  border: 1px solid #AE9A64;
 }
 .hero .program-buttons {
   grid-column: 1/-1;
