@@ -3,6 +3,7 @@
   @extend .container;
   padding-bottom: 30px;
   text-align: center;
+  color: $secondary;
 
   @include tablet {
     text-align: left;
@@ -27,13 +28,10 @@
     @include desktop{
         grid-column:span 3;
     }
-}
-.accreditation {
+    .accreditation {
   position: relative;
   display: inline-block;
-}
-
-.accreditation-image  {
+  .accreditation-image  {
  
  img{
       display: block;
@@ -42,10 +40,8 @@
       object-fit: cover;
   
  }
-}
-
-/* Initially hide the body */
-.accreditation-body {
+  }
+  .accreditation-body {
   display: none;
   position: absolute;
   top: 0;
@@ -58,8 +54,11 @@
   z-index: 2;
   border-radius: 50%;
   opacity: 0.9;
+
+}
 }
 
+}
 /* Show the body on hover */
 .accreditation:hover .accreditation-body {
   display: block;

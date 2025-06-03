@@ -1,10 +1,15 @@
-.field-items {
 
+.icon-link-label{
+    .field-items {
+    margin-block: 60px 30px;
 
     h2 {
         color: $secondary;
     }
 }
+}
+
+
 
 .icon-link-bg-color {
     .field-items {
@@ -42,10 +47,14 @@
     cursor: pointer;
     z-index: 1;
     transition: color 0.3s ease;
-
     &:hover {
-        color: $white;
+    .icon-link-title h5 a {
+      color: $white; // hover color
     }
+  }
+    
+     
+   
 }
 
 .icon-link::before {
@@ -59,16 +68,20 @@
     transform: translateX(-100%);
     transition: transform 0.5s ease;
     z-index: -1;
-
-    [dir="rtl"] & {
+     
+     [dir="rtl"] & {
         transform: translatex(100%);
-    }
+   }
+   
+ 
+
 }
 
 .icon-link:hover::before {
     transform: translateX(0);
-
-}
+   
+  
+   }
 
 .icon-link {
     display: flex;
@@ -77,10 +90,7 @@
     border: 1px solid #D9D9D9;
     border-radius: 10px;
     padding: 6px 8px;
-
-    &:hover {
-        color: $white !important;
-    }
+     
 
     .icon-link-image {
         width: 50px;
@@ -99,12 +109,10 @@
             a {
                 text-decoration: none;
                 color: $tertiary;
+      }
+       
 
-            }
-
-            a:hover {
-                color: $white;
-            }
+            
 
         }
     }
