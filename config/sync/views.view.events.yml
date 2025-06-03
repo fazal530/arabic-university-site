@@ -686,7 +686,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"event-button \">\r\n<button><a href=\"[site:base-path]/events\">View All</a></button>\r\n</div>\r\n<div class=\"space-line\"</div>"
+            value: "<div class=\"event-button \">\r\n<button><a href=\"[site:base-path]/events\">View All</a></button>\r\n</div>\r\n"
             format: full_html
           tokenize: false
       display_extenders: {  }
