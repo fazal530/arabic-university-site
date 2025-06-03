@@ -43,24 +43,14 @@
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished'
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'icon-link-bg-color'
   ]
 %}
 {% block paragraph %}
-  <div class="accreditation-wrappper" {{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes) }}>
     {% block content %}
-  <div class="accreditation">
-  <div class="accreditation-image">
-    {{ content.field_accreditations_image }}
-  </div>
-  <div class="accreditation-body">
-    {{ content.field_accreditations_body }}
-  </div>
-</div>
-
-
-     
+      {{ content }}
     {% endblock %}
   </div>
-
 {% endblock paragraph %}

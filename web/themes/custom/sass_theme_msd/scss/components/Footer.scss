@@ -27,6 +27,14 @@
             }
 
             #block-sass-theme-msd-socialicons {
+                .space-line{
+                    margin: unset !important;
+                }
+                .icon-link-bg-color {
+                    margin-top: unset !important;
+                    border: unset !important;
+
+                }
                 .icon-link-bg-color {
                     background-color: unset !important;
                     padding-block: unset !important;
