@@ -138,16 +138,16 @@
 .news-button {
     text-align: center;
     padding-top: 30px;
-
-    button {
+    
+   button {
         padding: 10px 50px 10px 50px;
         border: 1px solid $tertiary;
         font-size: 20px;
         line-height: 27px;
         font-weight: 600;
         width: 100%;
-
-        &:hover {
+    
+     &:hover {
             background-color: $primary;
             border: 1px solid $primary;
            
@@ -160,6 +160,7 @@
             width: auto;
         }
     }
+    
 
     a {
         text-decoration: none;
@@ -168,6 +169,14 @@
       
     }
 }
+
+
+
+
+
+
+
+     
 
 
 
