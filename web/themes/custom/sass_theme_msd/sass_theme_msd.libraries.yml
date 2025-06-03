@@ -2,6 +2,8 @@
 slick:
   js:
     libs/slick.min.js: {}
+    https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js: {}
+
   css:
     component:
       libs/slick-theme.css: {}
@@ -13,6 +15,7 @@ global:
     js/sliders.js: {}
     js/formred.js: {}
     js/toggleform.js: {}
+    js/scroll.js: {}
 
    
     
