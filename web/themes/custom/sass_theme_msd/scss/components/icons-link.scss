@@ -1,15 +1,16 @@
 .field-items {
-    margin-block: 60px 30px;
+
 
     h2 {
         color: $secondary;
     }
 }
 
-.paragraph--type--icon-link-wrapper {
+.icon-link-bg-color {
     .field-items {
-        margin-block: 30px 30px;
-    
+        padding-bottom: 30px;
+
+
         h2 {
             color: $secondary;
             text-align: center;
@@ -20,11 +21,9 @@
 
 .icon-link-bg-color {
     background-color: $white;
+    border-block: 2px solid $primary;
     padding-block: 30px;
 
-    @include desktop {
-        padding-block: 18px;
-    }
 }
 
 .icon-link-wrapper {
@@ -43,7 +42,8 @@
     cursor: pointer;
     z-index: 1;
     transition: color 0.3s ease;
-    &:hover{
+
+    &:hover {
         color: $white;
     }
 }
@@ -59,9 +59,10 @@
     transform: translateX(-100%);
     transition: transform 0.5s ease;
     z-index: -1;
-     [dir="rtl"] & {
+
+    [dir="rtl"] & {
         transform: translatex(100%);
-   }
+    }
 }
 
 .icon-link:hover::before {
@@ -76,6 +77,7 @@
     border: 1px solid #D9D9D9;
     border-radius: 10px;
     padding: 6px 8px;
+
     &:hover {
         color: $white !important;
     }
@@ -97,14 +99,15 @@
             a {
                 text-decoration: none;
                 color: $tertiary;
-       
+
             }
-            a:hover{
+
+            a:hover {
                 color: $white;
             }
 
         }
     }
- 
+
 
 }
