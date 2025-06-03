@@ -1,7 +1,7 @@
 
 .accreditation-title {
   @extend .container;
-  margin-block: 30px;
+  padding-bottom: 30px;
   text-align: center;
 
   @include tablet {
@@ -17,7 +17,6 @@
 .accreditation-bg-color{
    background-color: $primary;
    padding-block: 30px;
-   margin-bottom: 60px;
 
 .accreditation-wrappper {
     grid-column: span 2;
