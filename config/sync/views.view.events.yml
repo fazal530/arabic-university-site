@@ -9,8 +9,8 @@ dependencies:
     - node.type.event
   module:
     - datetime
-    - image
     - node
+    - svg_image
     - text
     - user
 id: events
@@ -686,7 +686,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<div class=\"button container\">\r\n<button><a href=\"[site:base-path]/events\">View All</a></button>\r\n</div>"
+            value: "<div class=\"event-button button \">\r\n<button><a href=\"[site:base-path]/events\">View All</a></button>\r\n</div>"
             format: full_html
           tokenize: false
       display_extenders: {  }

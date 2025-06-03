@@ -1,5 +1,6 @@
 .news-header {
-    padding-block: 30px;
+    padding-bottom: 30px;
+
     h2 {
         text-align: center;
         color: $secondary;
@@ -8,15 +9,18 @@
 .news{
 .news-child-one {
     grid-column: 1/-1;
+
     @include desktop {
         grid-column: span 6;
         grid-row: 1/4;
     }
-.news-content {
+
+    .news-content {
         overflow: hidden;
         position: relative;
         border-radius: 10px;
-      .news-image {
+
+        .news-image {
             height: 210px;
 
             @include tablet {
@@ -26,23 +30,25 @@
             @include desktop {
                 height: 377px;
             }
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: top;
-               }
-   .gradient-overlay {
+            }
+
+            .gradient-overlay {
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 width: 100%;
                 padding: 5rem;
                 background: linear-gradient(to top,
-                rgba(174, 154, 100, 1)0%, 
-                rgba(160, 120, 50, 0.7) 30%,
-                rgba(160, 120, 50, 0.4) 60%,        
-                rgba(160, 120, 50, 0.0) 100%);                       
+                        rgba(174, 154, 100, 1)0%,
+                        rgba(160, 120, 50, 0.7) 30%,
+                        rgba(160, 120, 50, 0.4) 60%,
+                        rgba(160, 120, 50, 0.0) 100%);
                 color: $white;
             }
         }
@@ -51,7 +57,8 @@
             position: absolute;
             top: 40%;
             left: 5%;
-          @include tablet {
+
+            @include tablet {
                 top: 65%;
             }
             .news-date {
@@ -60,6 +67,7 @@
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 36px;
+
                 @include desktop {
                     font-size: 36px;
                     line-height: 45px;
@@ -95,7 +103,8 @@
 
         .news-image {
             height: 112px;
-            @include tablet{
+
+            @include tablet {
                 width: 190px;
             }
 
@@ -126,18 +135,19 @@
   }
 }
 
-
-.button {
+.news-button {
     text-align: center;
-    margin-block: 30px;
-     button {
+    padding-top: 30px;
+
+    button {
         padding: 10px 50px 10px 50px;
         border: 1px solid $tertiary;
         font-size: 20px;
         line-height: 27px;
         font-weight: 600;
-         width: 100%;
-         &:hover {
+        width: 100%;
+
+        &:hover {
             background-color: $primary;
             border: 1px solid $primary;
            
@@ -148,8 +158,8 @@
         
          @include tablet{
             width: auto;
-         }
-   }
+        }
+    }
 
     a {
         text-decoration: none;
@@ -173,7 +183,8 @@
         align-items: center;
         flex-direction: column;
         margin-bottom: 60px;
-        @include desktop{
+
+        @include desktop {
             flex-direction: row;
         }
         .news-page-view-date-des{
@@ -188,11 +199,13 @@
     .news-page-view-image {
         width: 340px;
         height: 272px;
-        @include tablet{
+
+        @include tablet {
             width: 668px;
             height: 534px;
         }
-        @include desktop{
+
+        @include desktop {
             width: 610px;
             height: 487px;
         }
@@ -212,14 +225,16 @@
             color: $secondary;
             font-size: 24px;
             line-height: 36px;
-            @include tablet{
+
+            @include tablet {
                 font-size: 30px;
                 line-height: 42px;
             }
-           @include desktop{
+
+            @include desktop {
                 font-size: 36px;
                 line-height: 45px;
-           }
+            }
         }
     }
 }
@@ -227,13 +242,14 @@
 .views-row:nth-of-type(even) {
     .news-page-view {
         flex-direction: column;
-        @include desktop{
+
+        @include desktop {
             flex-direction: row-reverse;
         }
 
         .news-page-view-date {
             h5 {
-                @include desktop{
+                @include desktop {
                     text-align: right;
                 }
             }

@@ -11,10 +11,11 @@
 
 
 
-.paragraph--type--icon-link-wrapper {
+.icon-link-bg-color {
     .field-items {
-        margin-block: 30px 30px;
-    
+        padding-bottom: 30px;
+
+
         h2 {
             color: $secondary;
             text-align: center;
@@ -25,11 +26,9 @@
 
 .icon-link-bg-color {
     background-color: $white;
+    border-block: 2px solid $primary;
     padding-block: 30px;
 
-    @include desktop {
-        padding-block: 18px;
-    }
 }
 
 .icon-link-wrapper {
@@ -117,6 +116,6 @@
 
         }
     }
- 
+
 
 }

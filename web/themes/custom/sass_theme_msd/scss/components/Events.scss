@@ -1,6 +1,6 @@
 .events-header{
     text-align: center;
-    margin-block: 30px;
+    padding-bottom: 30px;
     h2{
         color:$secondary;
     }
@@ -44,9 +44,9 @@
   }
 }
 
-.button{
+.event-button{
     text-align: center;
-    margin-block: 30px;
+    padding-top: 30px;
     button{
     padding: 10px 50px 10px 50px;
     border: 1px solid $tertiary;
