@@ -1,0 +1,30 @@
+uuid: 57c67f42-ed2c-4eb7-b10f-0267d1553a61
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:news_block:7d62bd2d-c33f-4355-8481-f2c3f32ca50d'
+  module:
+    - block_content
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_newsblock
+theme: sass_theme_msd
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:7d62bd2d-c33f-4355-8481-f2c3f32ca50d'
+settings:
+  id: 'block_content:7d62bd2d-c33f-4355-8481-f2c3f32ca50d'
+  label: 'news block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/news\r\n"

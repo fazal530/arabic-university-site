@@ -49,7 +49,12 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content }}
+    <div class="description-hero-image">
+      {{ content.field_description_image }}
+      </div>
+      <div class="description-label">
+      {{content.field_label}}
+      </div>
       <div class="overlay"></div>
     {% endblock %}
   </div>

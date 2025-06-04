@@ -10,7 +10,7 @@ dependencies:
     - node.type.news_announcements
   module:
     - datetime
-    - image
+    - svg_image
     - text
     - user
 id: node.news_announcements.default

@@ -1,0 +1,8 @@
+uuid: 8001a96a-4d96-47ab-a03e-e58d9979c291
+langcode: en
+status: true
+dependencies: {  }
+id: news_block
+label: 'news block'
+revision: false
+description: null

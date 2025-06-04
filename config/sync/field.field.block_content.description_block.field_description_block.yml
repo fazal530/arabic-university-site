@@ -1,18 +1,18 @@
-uuid: 15bef02f-3720-4d17-9d54-64d3307690ed
+uuid: 70865b89-af57-42e9-bb42-6186ca3e66e8
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.events_block
-    - field.storage.block_content.field_text_with_banner
+    - block_content.type.description_block
+    - field.storage.block_content.field_description_block
     - paragraphs.paragraphs_type.text_with_banner
   module:
     - entity_reference_revisions
-id: block_content.events_block.field_text_with_banner
-field_name: field_text_with_banner
+id: block_content.description_block.field_description_block
+field_name: field_description_block
 entity_type: block_content
-bundle: events_block
-label: 'text with banner'
+bundle: description_block
+label: 'Description block'
 description: ''
 required: false
 translatable: true
