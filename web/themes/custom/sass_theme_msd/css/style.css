@@ -1336,18 +1336,17 @@ h6 {
   color: #006B8D;
 }
 
+.icon-link-bg-color {
+  background-color: #fff;
+  border-block: 2px solid #AE9A64;
+  padding-block: 30px;
+}
 .icon-link-bg-color .field-items {
   padding-bottom: 30px;
 }
 .icon-link-bg-color .field-items h2 {
   color: #006B8D;
   text-align: center;
-}
-
-.icon-link-bg-color {
-  background-color: #fff;
-  border-block: 2px solid #AE9A64;
-  padding-block: 30px;
 }
 
 .icon-link-wrapper {

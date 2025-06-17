@@ -11,11 +11,12 @@
 
 
 .icon-link-bg-color {
+    background-color: $white;
+    border-block: 2px solid $primary;
+    padding-block: 30px;
     .field-items {
         padding-bottom: 30px;
-
-
-        h2 {
+       h2 {
             color: $secondary;
             text-align: center;
         }
@@ -23,12 +24,7 @@
 }
 
 
-.icon-link-bg-color {
-    background-color: $white;
-    border-block: 2px solid $primary;
-    padding-block: 30px;
 
-}
 
 .icon-link-wrapper {
     grid-column: span 4;
