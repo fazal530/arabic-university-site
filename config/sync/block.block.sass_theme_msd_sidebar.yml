@@ -1,0 +1,33 @@
+uuid: bd32b81f-67da-4799-91fb-5e4365709c90
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.sidebar
+  module:
+    - node
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_sidebar
+theme: sass_theme_msd
+region: sidebar_second
+weight: -12
+provider: null
+plugin: 'system_menu_block:sidebar'
+settings:
+  id: 'system_menu_block:sidebar'
+  label: 'Sidebar '
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      about_page: about_page
