@@ -1,0 +1,55 @@
+uuid: 7eacceca-84f2-4e37-b6cb-00fea70be6c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - node.type.about_page
+    - paragraphs.paragraphs_type.text_with_banner
+  module:
+    - entity_reference_revisions
+id: node.about_page.field_banner
+field_name: field_banner
+entity_type: node
+bundle: about_page
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_with_banner: text_with_banner
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 10
+        enabled: false
+      accreditations_wrapper:
+        weight: 11
+        enabled: false
+      events_block_view:
+        weight: 12
+        enabled: false
+      hero_section:
+        weight: 13
+        enabled: false
+      icon_link:
+        weight: 14
+        enabled: false
+      icon_link_wrapper:
+        weight: 15
+        enabled: false
+      news_block_view:
+        weight: 16
+        enabled: false
+      text_with_banner:
+        weight: 17
+        enabled: true
+      text_with_image:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions
