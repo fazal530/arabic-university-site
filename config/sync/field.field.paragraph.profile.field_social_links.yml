@@ -1,19 +1,18 @@
-uuid: 7eacceca-84f2-4e37-b6cb-00fea70be6c4
+uuid: b64d926a-983c-4266-aeaa-1302696a7c7c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_banner
-    - node.type.about_page
-    - paragraphs.paragraphs_type.profile_wrapper
-    - paragraphs.paragraphs_type.text_with_banner
+    - field.storage.paragraph.field_social_links
+    - paragraphs.paragraphs_type.icon_link_wrapper
+    - paragraphs.paragraphs_type.profile
   module:
     - entity_reference_revisions
-id: node.about_page.field_banner
-field_name: field_banner
-entity_type: node
-bundle: about_page
-label: Banner
+id: paragraph.profile.field_social_links
+field_name: field_social_links
+entity_type: paragraph
+bundle: profile
+label: 'Social links'
 description: ''
 required: false
 translatable: false
@@ -23,41 +22,37 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      text_with_banner: text_with_banner
-      profile_wrapper: profile_wrapper
+      icon_link_wrapper: icon_link_wrapper
     negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:
-        weight: 10
-        enabled: false
-      accreditations_wrapper:
         weight: 11
         enabled: false
-      events_block_view:
+      accreditations_wrapper:
         weight: 12
         enabled: false
-      hero_section:
+      events_block_view:
         weight: 13
         enabled: false
-      icon_link:
+      hero_section:
         weight: 14
         enabled: false
-      icon_link_wrapper:
+      icon_link:
         weight: 15
         enabled: false
-      news_block_view:
+      icon_link_wrapper:
         weight: 16
+        enabled: true
+      news_block_view:
+        weight: 17
         enabled: false
       profile:
+        weight: 18
+        enabled: false
+      text_with_banner:
         weight: 19
         enabled: false
-      profile_wrapper:
-        weight: 20
-        enabled: true
-      text_with_banner:
-        weight: 17
-        enabled: true
       text_with_image:
-        weight: 18
+        weight: 20
         enabled: false
 field_type: entity_reference_revisions
