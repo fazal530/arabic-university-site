@@ -1,4 +1,3 @@
-
 .accreditation-title {
   @extend .container;
   padding-bottom: 30px;
@@ -7,118 +6,135 @@
 
   @include tablet {
     text-align: left;
-   }
-   [dir="rtl"] & {
- @include tablet {
-    text-align: right;
+  }
+
+  [dir="rtl"] & {
+    @include tablet {
+      text-align: right;
+    }
   }
 }
-}
 
-.accreditation-bg-color{
-   background-color: $primary;
-   padding-block: 30px;
+.accreditation-bg-color {
+  background-color: $primary;
+  padding-block: 30px;
 
-.accreditation-wrappper {
+  .accreditation-wrappper {
     grid-column: span 2;
     justify-self: center;
-    @include tablet{
-       grid-column:span 4;
+
+    @include tablet {
+      grid-column: span 4;
     }
-    @include desktop{
-        grid-column:span 3;
+
+    @include desktop {
+      grid-column: span 3;
     }
+
     .accreditation {
-  position: relative;
-  display: inline-block;
-  .accreditation-image  {
- 
- img{
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  
- }
-  }
-  .accreditation-body {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: $white;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  z-index: 2;
-  border-radius: 50%;
-  opacity: 0.9;
+      position: relative;
+      display: inline-block;
 
-}
-}
+      .accreditation-image {
 
-}
-/* Show the body on hover */
-.accreditation:hover .accreditation-body {
-  display: block;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-   p{
-    color: $white;
-     font-size: 9px !important;
-     line-height: 18px;
-     [dir="rtl"] & {
-        font-size: 8px !important;
-   }
-    
-    @include mobile {
-      font-size: 12px !important;
-       [dir="rtl"] & {
-        font-size: 10px !important;
-   }
- 
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+        }
       }
-      @include tablet{
-         font-size: 14px !important;
-         line-height: 24px !important;
-             [dir="rtl"] & {
+
+      .accreditation-body {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $white;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        z-index: 2;
+        border-radius: 50%;
+        opacity: 0.9;
+
+      }
+    }
+
+  }
+
+  /* Show the body on hover */
+  .accreditation:hover .accreditation-body {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      color: $white;
+      font-size: 9px !important;
+      line-height: 18px;
+
+      [dir="rtl"] & {
+        font-size: 8px !important;
+      }
+
+      @include mobile {
+        font-size: 12px !important;
+
+        [dir="rtl"] & {
+          font-size: 10px !important;
+        }
+
+      }
+
+      @include tablet {
         font-size: 14px !important;
         line-height: 24px !important;
-   }
-         
+
+        [dir="rtl"] & {
+          font-size: 14px !important;
+          line-height: 24px !important;
+        }
+
       }
+
       @include desktop {
         font-size: 18px !important;
         line-height: 28px !important;
-                [dir="rtl"] & {
-       font-size: 18px !important;
-        line-height: 28px !important;
-   }
-       
+
+        [dir="rtl"] & {
+          font-size: 18px !important;
+          line-height: 28px !important;
+        }
+
       }
 
-  }
-  h5 {
-    font-size: 12px;
-    line-height: 18px;
-    @include mobile {
-      font-size: 18px ;
-      line-height: 28px;
     }
-      @include tablet {
-    font-size: 22px !important;
-    line-height: 32px !important;
-  }
 
-  @include desktop {
-    font-size: 24px !important;
-    
+    h5 {
+      font-size: 12px;
+      line-height: 18px;
+
+      @include mobile {
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      @include tablet {
+        font-size: 22px !important;
+        line-height: 32px !important;
+      }
+
+      @include desktop {
+        font-size: 24px !important;
+
+      }
+    }
   }
-  }
- }
 }
 
 .accreditation-body {
@@ -137,12 +153,12 @@
 .accreditation-body::before {
   content: "";
   position: absolute;
-  top: 0;           
-  left: 0;          
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: $secondary;
-  transform: translatey(100%); 
+  transform: translatey(100%);
   transition: transform 0.4s ease;
   z-index: -1;
 }
@@ -150,7 +166,3 @@
 .accreditation-body:hover::before {
   transform: translateX(0);
 }
-
-
-
-

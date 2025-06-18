@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 
     .layout-container {
         background: var(--COLORS-2-Blue-Opicity-76, rgba(0, 107, 141, 0.76));
@@ -13,7 +14,7 @@
         @extend .grid;
         @extend .container;
         padding-top: 30px;
-
+        row-gap: 0px;
         .log_icons {
             grid-column: 1/-1;
 
