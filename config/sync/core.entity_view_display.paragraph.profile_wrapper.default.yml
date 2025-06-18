@@ -1,0 +1,24 @@
+uuid: b4b6f60a-a079-428a-a900-16787bd86a06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.profile_wrapper.field_profile
+    - paragraphs.paragraphs_type.profile_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.profile_wrapper.default
+targetEntityType: paragraph
+bundle: profile_wrapper
+mode: default
+content:
+  field_profile:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
