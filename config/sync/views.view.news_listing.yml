@@ -79,10 +79,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: datetime_custom
           settings:
             timezone_override: ''
-            format_type: medium
+            date_format: 'M d o'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -425,7 +425,7 @@ display:
           type: datetime_custom
           settings:
             timezone_override: ''
-            date_format: 'd M, o'
+            date_format: 'd F'
           group_column: value
           group_columns: {  }
           group_rows: true

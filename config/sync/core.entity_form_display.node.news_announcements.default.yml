@@ -10,8 +10,8 @@ dependencies:
     - node.type.news_announcements
   module:
     - datetime
-    - image
     - path
+    - svg_image
     - text
 id: node.news_announcements.default
 targetEntityType: node
@@ -90,6 +90,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

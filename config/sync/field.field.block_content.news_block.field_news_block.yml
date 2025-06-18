@@ -1,18 +1,18 @@
-uuid: 15bef02f-3720-4d17-9d54-64d3307690ed
+uuid: 80e6fef1-6ab8-45cc-bcf5-6019e7edc6f2
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.events_block
-    - field.storage.block_content.field_text_with_banner
+    - block_content.type.news_block
+    - field.storage.block_content.field_news_block
     - paragraphs.paragraphs_type.text_with_banner
   module:
     - entity_reference_revisions
-id: block_content.events_block.field_text_with_banner
-field_name: field_text_with_banner
+id: block_content.news_block.field_news_block
+field_name: field_news_block
 entity_type: block_content
-bundle: events_block
-label: 'text with banner'
+bundle: news_block
+label: 'news block'
 description: ''
 required: false
 translatable: true

@@ -12,7 +12,7 @@ dependencies:
 id: sass_theme_msd_views_block__events_block_2
 theme: sass_theme_msd
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: 'views_block:events-block_2'
 settings:

@@ -47,11 +47,10 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 ]
 %}
 {% block paragraph %}
-<div {{ attributes.addClass(classes) }}>
+<div class="description-wrapper" {{ attributes.addClass(classes) }}>
   {% block content %}
-  <div class="description-wrapper">
+  
     <div class="description container">
-
       <div class="description-text">
         {{ content.field_description_text }}
       </div>
@@ -59,7 +58,7 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
         {{ content.field_description_image}}
       </div>
     </div>
-  </div>
+  
   {% endblock %}
 </div>
 {% endblock paragraph %}

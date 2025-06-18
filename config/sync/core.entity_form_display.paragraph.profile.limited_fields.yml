@@ -1,8 +1,9 @@
-uuid: b2592b92-55fe-4ac5-9f27-23939bde127b
+uuid: 92ddc1d8-5852-416e-89ab-31793df0dd56
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_form_mode.paragraph.limited_fields
     - field.field.paragraph.profile.field_accreditations_image
     - field.field.paragraph.profile.field_accreditations_title
     - field.field.paragraph.profile.field_label
@@ -12,10 +13,10 @@ dependencies:
   module:
     - paragraphs
     - svg_image
-id: paragraph.profile.default
+id: paragraph.profile.limited_fields
 targetEntityType: paragraph
 bundle: profile
-mode: default
+mode: limited_fields
 content:
   field_accreditations_image:
     type: image_image
@@ -53,7 +54,7 @@ content:
       autocollapse: none
       closed_mode_threshold: 0
       add_mode: dropdown
-      form_display_mode: default
+      form_display_mode: limited_fields
       default_paragraph_type: icon_link_wrapper
       features:
         add_above: '0'

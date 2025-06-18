@@ -1,3 +1,8 @@
+
+.paragraph--type--news-block-view{
+    background-color:$off-white;
+
+
 .news-header {
     padding-bottom: 30px;
 
@@ -138,6 +143,7 @@
 .news-button {
     text-align: center;
     padding-top: 30px;
+    padding-inline: 25px;
     
    button {
         padding: 10px 50px 10px 50px;
@@ -169,22 +175,8 @@
       
     }
 }
-
-
-
-
-
-
-
-     
-
-
-
-
-
+}
 //NEWS PAGE VIEW DESIGN//
-
-
 .views-row {
     .news-page-view {
           display: flex;

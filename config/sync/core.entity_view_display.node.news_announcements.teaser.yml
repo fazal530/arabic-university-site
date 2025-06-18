@@ -10,7 +10,7 @@ dependencies:
     - image.style.medium
     - node.type.news_announcements
   module:
-    - image
+    - svg_image
     - user
 id: node.news_announcements.teaser
 targetEntityType: node
