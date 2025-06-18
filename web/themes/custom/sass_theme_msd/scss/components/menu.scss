@@ -88,7 +88,7 @@
                         overflow: hidden !important;
 
                         @include desktop {
-                            width: 32em !important;
+                            width: 100% !important;
                             display: flex;
                         }
 
@@ -159,6 +159,7 @@
                     border-radius: 10px;
                     padding-inline: 8px;
                     padding-block: 3px;
+                    width: 100%;
                 }
             }
         }
@@ -172,8 +173,21 @@
             }
 
             @include desktop {
-                gap: 0px;
+                gap: 6px;
             }
         }
     }
 }
+
+ul.sf-menu a {
+    padding: 24px 8px;
+}
+
+ul.sf-menu .sf-with-ul {
+    padding-right: 45px;
+}
+
+
+#block-sass-theme-msd-mainnavigation-2 ul > li:nth-child(n+4):nth-child(-n+5):nth-child(-n+6) {
+    display: none;
+  }

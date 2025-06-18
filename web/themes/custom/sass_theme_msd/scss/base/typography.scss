@@ -171,12 +171,13 @@ h6 {
 }
 
 .program_button {
-  padding: 10px 20px;
+  padding-block: 13px;
+  padding-inline: 60px;
   border: none;
   background-color: $white;
   color: $black !important;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 30px;
   transition: background 0.3s ease;
 }
 
