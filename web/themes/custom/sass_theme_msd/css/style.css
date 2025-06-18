@@ -1475,27 +1475,26 @@ ul.sf-menu .sf-with-ul {
 .accreditation-bg-color {
   background-color: #E5F1F4;
   padding-block: 30px;
+  /* Show the body on hover */
 }
-
-.accreditation-wrappper {
+.accreditation-bg-color .accreditation-wrappper {
   border: 1px solid rgba(248, 248, 248, 0.9);
   padding: 20px;
   border-radius: 50%;
   padding: 37px;
   background-color: #fff;
 }
-.accreditation-wrappper .accreditation {
+.accreditation-bg-color .accreditation-wrappper .accreditation {
   position: relative;
   display: inline-block;
 }
-.accreditation-wrappper .accreditation .accreditation-image img {
+.accreditation-bg-color .accreditation-wrappper .accreditation .accreditation-image img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.accreditation-body {
+.accreditation-bg-color .accreditation-wrappper .accreditation .accreditation-body {
   display: none;
   position: absolute;
   top: 0;
@@ -1507,57 +1506,72 @@ ul.sf-menu .sf-with-ul {
   z-index: 2;
   border-radius: 50%;
   opacity: 0.9;
-  /* Show the body on hover */
 }
-.accreditation-body .accreditation:hover .accreditation-body {
+.accreditation-bg-color .accreditation-wrappper .accreditation .accreditation-image {
+  width: 119px;
+  height: 119px;
+}
+.accreditation-bg-color .accreditation-wrappper .accreditation .accreditation-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.accreditation-bg-color .accreditation:hover .accreditation-body {
   display: block;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-.accreditation-body .accreditation:hover .accreditation-body p {
+.accreditation-bg-color .accreditation:hover .accreditation-body p {
   color: #fff;
   font-size: 10px !important;
   line-height: 18px;
 }
-[dir=rtl] .accreditation-body .accreditation:hover .accreditation-body p {
+[dir=rtl] .accreditation-bg-color .accreditation:hover .accreditation-body p {
   font-size: 8px !important;
 }
 @media (min-width: 360px) {
-  .accreditation-body .accreditation:hover .accreditation-body p {
+  .accreditation-bg-color .accreditation:hover .accreditation-body p {
     font-size: 12px !important;
   }
-  [dir=rtl] .accreditation-body .accreditation:hover .accreditation-body p {
+  [dir=rtl] .accreditation-bg-color .accreditation:hover .accreditation-body p {
     font-size: 10px !important;
   }
 }
 @media (min-width: 768px) {
-  .accreditation-body .accreditation:hover .accreditation-body p {
+  .accreditation-bg-color .accreditation:hover .accreditation-body p {
     font-size: 13px !important;
     line-height: 24px !important;
   }
-  [dir=rtl] .accreditation-body .accreditation:hover .accreditation-body p {
+  [dir=rtl] .accreditation-bg-color .accreditation:hover .accreditation-body p {
     font-size: 13px !important;
-    line-height: 24px !important;
-  }
-  [dir=rtl] [dir=rtl] .accreditation-body .accreditation:hover .accreditation-body p {
-    font-size: 14px !important;
     line-height: 24px !important;
   }
 }
-@media (min-width: 768px) and (min-width: 1280px) {
-  .accreditation-body .accreditation:hover .accreditation-body p {
+@media (min-width: 1280px) {
+  .accreditation-bg-color .accreditation:hover .accreditation-body p {
     font-size: 13px !important;
     line-height: 28px !important;
   }
-  [dir=rtl] .accreditation-body .accreditation:hover .accreditation-body p {
+  [dir=rtl] .accreditation-bg-color .accreditation:hover .accreditation-body p {
     font-size: 14px !important;
     line-height: 28px !important;
+  }
+}
+.accreditation-bg-color .accreditation:hover .accreditation-body h5 {
+  font-size: 12px;
+  line-height: 18px;
+}
+@media (min-width: 360px) {
+  .accreditation-bg-color .accreditation:hover .accreditation-body h5 {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 @media (min-width: 768px) {
-  .accreditation-body .accreditation:hover .accreditation-body p {
+  .accreditation-bg-color .accreditation:hover .accreditation-body h5 {
     font-size: 20px !important;
     line-height: 32px !important;
   }
