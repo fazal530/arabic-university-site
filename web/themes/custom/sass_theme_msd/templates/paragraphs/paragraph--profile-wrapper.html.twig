@@ -49,20 +49,7 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-    <div class="accreditation-wrappper">
-  <div class="accreditation">
-  <div class="accreditation-image">
-    {{ content.field_accreditations_image }}
-  </div>
-  <div class="accreditation-body">
-    {{ content.field_accreditations_body }}
-  </div>
-</div>
-</div>
-
-
-     
+      {{ content}}
     {% endblock %}
   </div>
-
 {% endblock paragraph %}

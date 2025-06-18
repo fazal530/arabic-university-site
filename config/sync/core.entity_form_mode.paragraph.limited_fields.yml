@@ -1,0 +1,11 @@
+uuid: 51490a7a-827e-4bdd-a675-38b90403d7cf
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.limited_fields
+label: 'limited fields'
+description: ''
+targetEntityType: paragraph
+cache: true

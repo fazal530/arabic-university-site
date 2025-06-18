@@ -1,0 +1,47 @@
+uuid: da84d8f6-b486-471e-91b6-bcd22f387192
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.limited_fields
+    - field.field.paragraph.icon_link_wrapper.field_icon_link
+    - field.field.paragraph.icon_link_wrapper.field_label
+    - paragraphs.paragraphs_type.icon_link_wrapper
+  module:
+    - paragraphs
+id: paragraph.icon_link_wrapper.limited_fields
+targetEntityType: paragraph
+bundle: icon_link_wrapper
+mode: limited_fields
+content:
+  field_icon_link:
+    type: paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: limited_fields
+      default_paragraph_type: icon_link
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
