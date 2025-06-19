@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 
     .layout-container {
         background: var(--COLORS-2-Blue-Opicity-76, rgba(0, 107, 141, 0.76));
@@ -15,27 +15,31 @@
         @extend .container;
         padding-top: 30px;
         row-gap: 0px;
+
         .log_icons {
             grid-column: 1/-1;
 
             @include tablet {
                 grid-column: 1/3;
             }
-            a{
-                img{
+
+            a {
+                img {
                     border-radius: 10px;
                 }
             }
 
             #block-sass-theme-msd-socialicons {
-                .space-line{
+                .space-line {
                     margin: unset !important;
                 }
+
                 .icon-link-bg-color {
                     margin-top: unset !important;
                     border: unset !important;
 
                 }
+
                 .icon-link-bg-color {
                     background-color: unset !important;
                     padding-block: unset !important;
@@ -64,9 +68,9 @@
             }
         }
 
-     .address {
+        .address {
             grid-column: 1/-1;
-            
+
 
             @include tablet {
                 grid-column: 1/4;
@@ -81,7 +85,6 @@
             h4 {
                 color: $white;
                 margin-bottom: 10px
-
             }
 
             p {
@@ -92,6 +95,7 @@
 
         .menu {
             grid-column: 1/-1;
+            background-color: transparent !important;
 
             @include tablet {
                 grid-column: 4/6;
@@ -102,10 +106,12 @@
             }
 
             #block-sass-theme-msd-mainnavigation-2 {
+
+
+
                 h4 {
                     color: $white;
                     margin-bottom: 10px
-
                 }
 
                 ul {
@@ -143,7 +149,8 @@
             p {
                 @extend .h5;
                 color: $white;
-padding-bottom: 18px;
+                padding-bottom: 18px;
+
                 a {
                     @extend .h5;
                     color: $white;
@@ -167,3 +174,7 @@ padding-bottom: 18px;
     justify-content: center;
     padding-block: 10px;
 }
+
+#block-sass-theme-msd-mainnavigation-2 ul > li:not(:nth-child(-n+3)):not(:last-child) {
+    display: none;
+  }
