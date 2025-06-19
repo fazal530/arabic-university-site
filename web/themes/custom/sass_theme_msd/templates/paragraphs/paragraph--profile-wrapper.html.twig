@@ -49,7 +49,10 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content}}
+    <div class="grid container profile-content">
+       {{ content}}
+     </div>
+    
     {% endblock %}
   </div>
 {% endblock paragraph %}
