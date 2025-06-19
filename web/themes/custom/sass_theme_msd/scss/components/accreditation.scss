@@ -1,4 +1,3 @@
-
 .accreditation-title {
   @extend .container;
   padding-bottom: 30px;
@@ -7,146 +6,163 @@
 
   @include tablet {
     text-align: left;
-   }
-   [dir="rtl"] & {
- @include tablet {
-    text-align: right;
+  }
+
+  [dir="rtl"] & {
+    @include tablet {
+      text-align: right;
+    }
   }
 }
-}
-.accreditation-main-wrapper{
- 
-  @include tablet{
-    
-    grid-template-columns: repeat(9,1fr);   
-  }
+
+.accreditation-bg-color {
+  background-color: $soft-blue;
+  padding-block: 30px;
   @include desktop{
-   
-     grid-template-columns: repeat(10,1fr);
+    padding-block: 58px;
   }
-  .paragraph--type--accreditations-achievements{
-    grid-column: span 2;
-    @include tablet{
-      grid-column: span 3;
-    }
-    @include desktop{
-      grid-column: span 2;
-    }
-  }
-  
-}
 
-
-
-.accreditation-bg-color{
-   background-color: $soft-blue;
-   padding-block: 30px;
-  
-   
-
-.accreditation-wrappper {
-    border: 1px solid rgba(248, 248, 248, 0.90);
-    padding: 20px;
-    border-radius: 50%;
-    padding: 37px;
-    background-color: $white;
- 
-    .accreditation {
-  position: relative;
-  display: inline-block;
-  .accreditation-image  {
- img{
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  
- }
-  }
-  .accreditation-body {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: $white;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  z-index: 2;
-  border-radius: 50%;
-  opacity: 0.9;
-
-}
-.accreditation-image{
-  width: 119px;
-  height: 119px;
-  img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-}
-
-}
-
-}
-
-/* Show the body on hover */
-.accreditation:hover .accreditation-body{
-  display: block;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-   p{
-    color: $white;
-     font-size: 10px !important;
-     line-height: 18px;
-     [dir="rtl"] & {
-        font-size: 8px !important;
-   }
-    
-    @include mobile {
-      font-size: 12px !important;
-       [dir="rtl"] & {
-        font-size: 10px !important;
-   }
- 
+  .accreditation-main-wrapper {
+       @include tablet {
+        grid-template-columns: repeat(9, 1fr);
       }
-      @include tablet{
-         font-size: 13px !important;
-         line-height: 24px !important;
-             [dir="rtl"] & {
+       @include desktop {
+       grid-template-columns: repeat(10, 1fr);
+    }
+
+    .paragraph--type--accreditations-achievements {
+      grid-column: span 2;
+      @include tablet {
+        grid-column: span 3;
+      }
+      @include desktop {
+        grid-column: span 2;
+      }
+    }
+  }
+
+  .accreditation-wrappper {
+    border: 1px solid rgba(248, 248, 248, 0.90);
+    border-radius: 50%;
+    padding: 16px;
+    background-color: $white;
+    @include tablet {
+      padding: 37px;
+    }
+    .accreditation {
+      position: relative;
+      display: inline-block;
+
+      .accreditation-image {
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .accreditation-body {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $white;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        z-index: 2;
+        border-radius: 50%;
+        opacity: 0.9;
+
+      }
+
+      .accreditation-image {
+        width: 100px;
+        height: 100px;
+
+        @include tablet {
+          width: 119px;
+          height: 119px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+    }
+
+  }
+
+  /* Show the body on hover */
+  .accreditation-wrappper:hover .accreditation-body {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      color: $white;
+      font-size: 10px !important;
+      line-height: 18px;
+
+      [dir="rtl"] & {
+        font-size: 8px !important;
+      }
+
+      @include mobile {
+        font-size: 11px !important;
+
+        [dir="rtl"] & {
+          font-size: 10px !important;
+        }
+
+      }
+
+      @include tablet {
         font-size: 13px !important;
         line-height: 24px !important;
-   }
-         
+
+        [dir="rtl"] & {
+          font-size: 13px !important;
+          line-height: 24px !important;
+        }
+
       }
+
       @include desktop {
         font-size: 13px !important;
         line-height: 28px !important;
-                [dir="rtl"] & {
-       font-size: 14px !important;
-        line-height: 28px !important;
-   }
-       
+
+        [dir="rtl"] & {
+          font-size: 14px !important;
+          line-height: 28px !important;
+        }
+
       }
 
-  }
-  h5 {
-    font-size: 12px;
-    line-height: 18px;
-    @include mobile {
-      font-size: 18px ;
-      line-height: 28px;
     }
+
+    h5 {
+      font-size: 12px;
+      line-height: 18px;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
       @include tablet {
-    font-size: 20px !important;
-    line-height: 32px !important;
+        font-size: 20px !important;
+        line-height: 32px !important;
+      }
+    }
   }
-  }
- }
 }
 
 .accreditation-wrappper {
@@ -165,12 +181,12 @@
 .accreditation-wrappper::before {
   content: "";
   position: absolute;
-  top: 0;           
-  left: 0;          
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: $secondary;
-  transform: translatey(100%); 
+  transform: translatey(100%);
   transition: transform 0.4s ease;
   z-index: -1;
 }
@@ -178,7 +194,3 @@
 .accreditation-wrappper:hover::before {
   transform: translateX(0);
 }
-
-
-
-

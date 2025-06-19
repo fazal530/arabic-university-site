@@ -47,22 +47,29 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div class="profile-main-wrapper" {{ attributes.addClass(classes) }}>
     {% block content %}
-    <div class="profile">
+    <div class="profile-wrapper">
       <div class="profile-image">
-     {{content.field_accreditations_image}}
-     </div>
-     <div class="profile-title">
-     {{content.field_accreditations_title}}
-     </div>
-     <div class="profile-label">
-     {{content.field_label}}
-     </div>
-     <div class="profile-social-links">
-     {{content.field_social_links}}
-     </div>
-</div>
+    {{content.field_accreditations_image}}
+    </div>
+    <div class="profile-title">
+    {{content.field_accreditations_title}}
+    </div>
+    <div class="profile-label">
+    {{content.field_label}}
+    </div>
+    <div class="profile-social-links">
+    {{content.field_social_links}}
+    </div>
+   </div>
+     
+     
+     
+    
+    
+  
+
     {% endblock %}
   </div>
 {% endblock paragraph %}
