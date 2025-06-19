@@ -1534,6 +1534,16 @@ ul.sf-menu .sf-with-ul {
   border-radius: 50%;
   opacity: 0.9;
 }
+.accreditation-bg-color .accreditation-wrappper .accreditation .accreditation-image {
+  width: 119px;
+  height: 119px;
+}
+.accreditation-bg-color .accreditation-wrappper .accreditation .accreditation-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 .accreditation-bg-color .accreditation:hover .accreditation-body {
   display: block;
   display: flex;

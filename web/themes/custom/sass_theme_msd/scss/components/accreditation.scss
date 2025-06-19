@@ -1,4 +1,3 @@
-
 .accreditation-title {
   @extend .container;
   padding-bottom: 30px;
@@ -77,6 +76,17 @@
   opacity: 0.9;
 
 }
+.accreditation-image{
+  width: 119px;
+  height: 119px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
 }
 
 }
