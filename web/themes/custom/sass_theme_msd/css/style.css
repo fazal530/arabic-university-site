@@ -188,6 +188,29 @@ h5 {
   }
 }
 
+.h6, .sidebar-section .sidebar-right .btn button a, .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .hero .content .content-body .see_btn .btn, .header_wrapper .logo-with-lan-switcher .flex .language-switcher-language-url .links li a, .button,
+h6 {
+  font-family: myriad_pro, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (min-width: 768px) {
+  .h6, .sidebar-section .sidebar-right .btn button a, .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .hero .content .content-body .see_btn .btn, .header_wrapper .logo-with-lan-switcher .flex .language-switcher-language-url .links li a, .button,
+  h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+}
+@media (min-width: 1280px) {
+  .h6, .sidebar-section .sidebar-right .btn button a, .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .hero .content .content-body .see_btn .btn, .header_wrapper .logo-with-lan-switcher .flex .language-switcher-language-url .links li a, .button,
+  h6 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
 
 .body1, .hero .content .content-body p, .menu #block-sass-theme-msd-mainnavigation .sf-menu .sf-depth-1,
 .menu #block-sass-theme-msd-mainnavigation--2 .sf-menu .sf-depth-1 {
