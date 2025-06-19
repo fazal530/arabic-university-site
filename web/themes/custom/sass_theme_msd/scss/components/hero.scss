@@ -36,44 +36,49 @@
     flex-direction: column;
     justify-content: center;
     align-self: flex-end;
-    background: rgba(0, 0, 0, 0);
     @extend .container;
-    margin-top: 60px;
 
-    @include tablet {
-      grid-column: 1/8;
-    }
+    .content-body {
+
+      background: rgba(0, 0, 0, 0);
+
+      margin-top: 60px;
+
+      @include tablet {
+        grid-column: 1/8;
+      }
 
 
-    h1 {
-      color: $white;
-      font-weight: 700;
-    }
+      h1 {
+        color: $white;
+        font-weight: 700;
+      }
 
-    span {
-      color: #AE9A64;
-    }
+      span {
+        color: #AE9A64;
+      }
 
-    p {
-      @extend .body1;
-      margin-block: 20px;
-      color: $white;
-    }
-
-    .see_btn {
-      margin-top: 10px;
-
-      .btn {
-        @extend .h6;
-        @extend .see_button;
+      p {
+        @extend .body1;
+        margin-block: 20px;
         color: $white;
       }
 
-      .btn:hover {
-        background-color: $primary;
-        color: $white !important;
-        border: 1px solid $primary;
-        
+      .see_btn {
+        margin-top: 10px;
+
+        .btn {
+          @extend .h6;
+          @extend .see_button;
+          color: $white;
+        }
+
+        .btn:hover {
+          background-color: $primary;
+          color: $white !important;
+          border: 1px solid $primary;
+
+        }
       }
     }
   }
