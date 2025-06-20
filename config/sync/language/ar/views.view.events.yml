@@ -10,5 +10,5 @@ display:
       footer:
         area:
           content:
-            value: '<div class="event-button"><button><a href="/events"> عرض الكل</a></button></div><div class="space-line" div="">&nbsp;</div>'
+            value: '<div class="event-button"><button><a href="/events"> عرض الكل</a></button></div>'
             format: full_html
