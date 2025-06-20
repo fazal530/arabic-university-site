@@ -1,17 +1,16 @@
 
 .paragraph--type--news-block-view{
     background-color:$off-white;
-
+    padding-block: 30px;
 
 .news-header {
-    padding-bottom: 30px;
-
-    h2 {
+     h2 {
         text-align: center;
         color: $secondary;
     }
 }
 .news{
+    padding-block: 30px;
 .news-child-one {
     grid-column: 1/-1;
 
@@ -142,7 +141,6 @@
 
 .news-button {
     text-align: center;
-    padding-top: 30px;
     padding-inline: 25px;
     
    button {
