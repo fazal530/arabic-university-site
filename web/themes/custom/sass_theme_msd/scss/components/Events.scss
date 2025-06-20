@@ -1,11 +1,12 @@
 .events-header{
     text-align: center;
-    padding-bottom: 30px;
+ 
     h2{
         color:$secondary;
     }
 }
 .events-view-block-wrapper{
+     padding-block: 30px;
 .views-row{
     grid-column: span 4;
     .events{
@@ -46,7 +47,6 @@
 
 .event-button {
     text-align: center;
-    padding-top: 30px;
     padding-inline: 25px;
    
     button {
