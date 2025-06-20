@@ -70,8 +70,9 @@
 					<div class="header_wrapper">
 						<div class="logo-with-lan-switcher">
 							<div class="flex">
+																{{ drupal_entity('block', 'sass_theme_msd_sitebranding', check_access=false) }}
 								{{ drupal_entity('block', 'sass_theme_msd_languageswitcher', check_access=false) }}
-								{{ drupal_entity('block', 'sass_theme_msd_sitebranding', check_access=false) }}
+
 							</div>
 						</div>
 						<div class="menu">

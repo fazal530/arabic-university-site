@@ -38,16 +38,13 @@
     align-self: flex-end;
     @extend .container;
 
+    @include tablet {
+      grid-column: 1/8;
+    }
+
     .content-body {
-
       background: rgba(0, 0, 0, 0);
-
       margin-top: 60px;
-
-      @include tablet {
-        grid-column: 1/8;
-      }
-
 
       h1 {
         color: $white;
@@ -55,7 +52,7 @@
       }
 
       span {
-        color: #AE9A64;
+        color: $primary;
       }
 
       p {
