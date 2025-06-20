@@ -1,4 +1,12 @@
-.accreditation-title {
+
+
+.accreditation-bg-color {
+  background-color: $primary;
+  padding-block: 30px;
+  @include desktop{
+    padding-block: 58px;
+  }
+  .accreditation-title {
   @extend .container;
   padding-bottom: 30px;
   text-align: center;
@@ -14,13 +22,6 @@
     }
   }
 }
-
-.accreditation-bg-color {
-  background-color: $soft-blue;
-  padding-block: 30px;
-  @include desktop{
-    padding-block: 58px;
-  }
 
   .accreditation-main-wrapper {
        @include tablet {
