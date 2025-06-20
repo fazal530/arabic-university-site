@@ -3,6 +3,9 @@
     h2 {
         color: $secondary;
         text-align: left !important;
+          [dir="rtl"] & {
+        text-align: right !important;
+   }
     }
   }
 }
@@ -15,6 +18,7 @@
        h2 {
             color: $secondary;
             text-align: center;
+            
         }
     }
 }

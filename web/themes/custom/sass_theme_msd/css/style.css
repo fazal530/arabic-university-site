@@ -554,7 +554,7 @@ h6 {
 }
 
 .menu {
-  background-color: #AE9A64;
+  background-color: #D5C18E;
 }
 @media (min-width: 1280px) {
   .menu #block-sass-theme-msd-mainnavigation .sf-expanded,
@@ -759,7 +759,7 @@ ul.sf-menu .sf-with-ul {
   font-weight: 700;
 }
 .hero .content .content-body span {
-  color: #AE9A64;
+  color: #D5C18E;
 }
 .hero .content .content-body p {
   margin-block: 20px;
@@ -1396,6 +1396,9 @@ ul.sf-menu .sf-with-ul {
   color: #006B8D;
   text-align: left !important;
 }
+[dir=rtl] .icon-link-label .field-items h2 {
+  text-align: right !important;
+}
 
 .icon-link-bg-color {
   background-color: rgba(217, 217, 217, 0.9);
@@ -1610,7 +1613,7 @@ ul.sf-menu .sf-with-ul {
     line-height: 28px !important;
   }
   [dir=rtl] .accreditation-bg-color .accreditation-wrappper:hover .accreditation-body p {
-    font-size: 14px !important;
+    font-size: 12px !important;
     line-height: 28px !important;
   }
 }
