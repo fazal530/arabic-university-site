@@ -25,7 +25,15 @@
 
             a {
                 img {
-                    border-radius: 10px;
+
+                    width: 109px;
+                    height: 47px;
+                    object-fit: cover;
+
+                    @include tablet {
+                        width: 173px;
+                        height: 74px;
+                    }
                 }
             }
 
@@ -175,6 +183,6 @@
     padding-block: 10px;
 }
 
-#block-sass-theme-msd-mainnavigation-2 ul > li:not(:nth-child(-n+3)):not(:last-child) {
+#block-sass-theme-msd-mainnavigation-2 ul>li:not(:nth-child(-n+3)):not(:last-child) {
     display: none;
-  }
+}

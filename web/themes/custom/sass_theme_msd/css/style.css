@@ -500,7 +500,7 @@ h6 {
   width: 100%;
 }
 .header_wrapper .logo-with-lan-switcher {
-  background-color: #fff;
+  background-color: rgba(217, 217, 217, 0.9);
 }
 .header_wrapper .logo-with-lan-switcher .flex {
   display: flex;
@@ -511,6 +511,7 @@ h6 {
 .header_wrapper .logo-with-lan-switcher .flex #block-sass-theme-msd-sitebranding--2 a img {
   width: 66px;
   height: 29px;
+  object-fit: cover;
 }
 @media (min-width: 768px) {
   .header_wrapper .logo-with-lan-switcher .flex #block-sass-theme-msd-sitebranding a img,
@@ -693,10 +694,10 @@ h6 {
 }
 
 [dir=rtl] .sf-sub-indicator {
-  overflow: visible !important;
+  left: 0px !important;
 }
+
 [dir=rtl] .sf-sub-indicator::after {
-  left: -12px !important;
   top: 3px !important;
   font-size: 13px !important;
 }
@@ -707,6 +708,9 @@ ul.sf-menu a {
 
 ul.sf-menu .sf-with-ul {
   padding-right: 45px;
+}
+[dir=rtl] ul.sf-menu .sf-with-ul {
+  padding-right: 0 !important;
 }
 
 .hero {
@@ -1829,7 +1833,15 @@ ul.sf-menu .sf-with-ul {
   }
 }
 .site-footer .site-footer__top .log_icons a img {
-  border-radius: 10px;
+  width: 109px;
+  height: 47px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .site-footer .site-footer__top .log_icons a img {
+    width: 173px;
+    height: 74px;
+  }
 }
 .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .space-line {
   margin: unset !important;
