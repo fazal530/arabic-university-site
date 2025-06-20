@@ -556,14 +556,16 @@ h6 {
 .menu {
   background-color: #AE9A64;
 }
-.menu #block-sass-theme-msd-mainnavigation .sf-expanded,
-.menu #block-sass-theme-msd-mainnavigation--2 .sf-expanded {
-  background-color: #006B8D;
-  border-radius: 10px;
-}
-.menu #block-sass-theme-msd-mainnavigation .sf-expanded li a,
-.menu #block-sass-theme-msd-mainnavigation--2 .sf-expanded li a {
-  color: black !important;
+@media (min-width: 1280px) {
+  .menu #block-sass-theme-msd-mainnavigation .sf-expanded,
+  .menu #block-sass-theme-msd-mainnavigation--2 .sf-expanded {
+    background-color: #006B8D;
+    border-radius: 10px;
+  }
+  .menu #block-sass-theme-msd-mainnavigation .sf-expanded li a,
+  .menu #block-sass-theme-msd-mainnavigation--2 .sf-expanded li a {
+    color: black !important;
+  }
 }
 .menu #block-sass-theme-msd-mainnavigation .sf-menu,
 .menu #block-sass-theme-msd-mainnavigation--2 .sf-menu {
@@ -574,13 +576,13 @@ h6 {
 }
 [dir=rtl] .menu #block-sass-theme-msd-mainnavigation .sf-menu,
 [dir=rtl] .menu #block-sass-theme-msd-mainnavigation--2 .sf-menu {
-  left: 25px !important;
+  left: 0px !important;
   width: 45% !important;
 }
 @media (min-width: 1280px) {
   [dir=rtl] .menu #block-sass-theme-msd-mainnavigation .sf-menu,
   [dir=rtl] .menu #block-sass-theme-msd-mainnavigation--2 .sf-menu {
-    width: 93vw !important;
+    width: 100% !important;
   }
 }
 @media (min-width: 1280px) {
@@ -652,6 +654,7 @@ h6 {
 .menu #block-sass-theme-msd-mainnavigation .sf-accordion-toggle,
 .menu #block-sass-theme-msd-mainnavigation--2 .sf-accordion-toggle {
   text-align: end;
+  margin-right: 20px;
 }
 .menu #block-sass-theme-msd-mainnavigation .sf-accordion-toggle a,
 .menu #block-sass-theme-msd-mainnavigation--2 .sf-accordion-toggle a {
@@ -665,6 +668,10 @@ h6 {
 .menu #block-sass-theme-msd-mainnavigation .sf-accordion-toggle .sf-expanded,
 .menu #block-sass-theme-msd-mainnavigation--2 .sf-accordion-toggle .sf-expanded {
   background-color: transparent !important;
+}
+[dir=rtl] .menu #block-sass-theme-msd-mainnavigation .sf-accordion-toggle,
+[dir=rtl] .menu #block-sass-theme-msd-mainnavigation--2 .sf-accordion-toggle {
+  margin-left: 20px;
 }
 .menu .flex-2 {
   display: flex;
