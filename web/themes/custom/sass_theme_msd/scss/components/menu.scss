@@ -2,7 +2,7 @@
     width: 100%;
 
     .logo-with-lan-switcher {
-        background-color: $white;
+        background-color: $off-white;
 
         .flex {
             display: flex;
@@ -16,6 +16,7 @@
                     img {
                         width: 66px;
                         height: 29px;
+                        object-fit: cover;
 
                         @include tablet {
                             width: 93px;
@@ -29,8 +30,6 @@
                     }
                 }
             }
-
-
 
             .language-switcher-language-url {
 
@@ -222,11 +221,12 @@
 .sf-sub-indicator {
 
     [dir="rtl"] & {
-        overflow: visible !important;
+        left: 0px !important;
+
     }
 
     [dir="rtl"] &::after {
-        left: -12px !important;
+
         top: 3px !important;
         font-size: 13px !important;
     }
@@ -237,5 +237,9 @@ ul.sf-menu a {
 }
 
 ul.sf-menu .sf-with-ul {
+
     padding-right: 45px;
+    [dir="rtl"] &{
+        padding-right: 0 !important;
+    }
 }
