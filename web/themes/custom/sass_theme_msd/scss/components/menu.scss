@@ -1,7 +1,4 @@
 .header_wrapper {
-    position: absolute;
-    top: 0px;
-    z-index: 10;
     width: 100%;
 
     .logo-with-lan-switcher {
@@ -17,17 +14,17 @@
             #block-sass-theme-msd-sitebranding--2 {
                 a {
                     img {
-                        width: 107px;
-                        height: 55px;
+                        width: 66px;
+                        height: 29px;
 
                         @include tablet {
-                            width: 152px;
-                            height: 78px;
+                            width: 93px;
+                            height: 41px;
                         }
 
                         @include desktop {
-                            width: 190px;
-                            height: 97px;
+                            width: 146px;
+                            height: 63px;
                         }
                     }
                 }
@@ -49,14 +46,12 @@
                     li {
                         list-style: none;
 
-
                         a {
                             text-decoration: none;
                             color: $tertiary;
                             @extend .h6;
                             padding-inline: 8px;
                             padding-block: 3px;
-
                         }
                     }
 
@@ -75,19 +70,21 @@
 }
 
 .menu {
-    background-color: $secondary;
+    background-color: $primary;
 
     #block-sass-theme-msd-mainnavigation,
     #block-sass-theme-msd-mainnavigation--2 {
+        @include desktop {
+            .sf-expanded {
+                background-color: $secondary;
+                border-radius: 10px;
 
-        .sf-expanded {
-            background-color: $secondary;
-            border-radius: 10px;
-
-            &:hover {
-                color: black !important;
+                li {
+                    a {
+                        color: black !important;
+                    }
+                }
             }
-
         }
 
         .sf-menu {
@@ -97,11 +94,11 @@
             width: 45%;
 
             [dir="rtl"] & {
-                left: 25px !important;
+                left: 0px !important;
                 width: 45% !important;
 
                 @include desktop {
-                    width: 32em !important;
+                    width: 100% !important;
                 }
             }
 
@@ -119,18 +116,13 @@
                     text-decoration: none;
                 }
 
-                &:hover {
-                    color: $black !important;
-                }
-
                 .sf-hidden {
                     width: 1px !important;
+
                 }
 
                 ul {
-
-
-                    background-color:rgb(255 255 255 / 0%);
+                    background-color: $white;
                     border-radius: 10px;
                     overflow: hidden !important;
 
@@ -140,7 +132,7 @@
                     }
 
                     .sf-depth-2 {
-                        color: $white;
+                        color: $black;
                         opacity: 1;
 
                     }
@@ -161,13 +153,22 @@
                     transform: translate(-17%);
 
                     li {
+                        text-align: center;
+
                         a {
                             padding: 12px 16px;
+
                         }
                     }
+
+                    [dir="rtl"] & {
+                        transform: translate(-80%);
+                    }
                 }
+
             }
-            .sf-first.sfHover{
+
+            .sf-first.sfHover {
                 ul {
                     margin-top: 10px;
                     transform: translate(1%);
@@ -177,6 +178,7 @@
 
         .sf-accordion-toggle {
             text-align: end;
+            margin-right: 20px;
 
             a {
                 text-decoration: none;
@@ -190,6 +192,10 @@
             .sf-expanded {
                 background-color: transparent !important;
             }
+
+            [dir="rtl"] & {
+                margin-left: 20px;
+            }
         }
     }
 
@@ -197,20 +203,33 @@
         display: flex;
         gap: 10px;
         flex-direction: column-reverse;
-        
+
         @include tablet {
             gap: 14px;
         }
 
-        @include desktop  {
+        @include desktop {
             gap: 6px;
             padding-inline: 100px !important;
             margin-inline: auto !important;
             max-width: 1440px;
-      
+
         }
     }
 
+}
+
+.sf-sub-indicator {
+
+    [dir="rtl"] & {
+        overflow: visible !important;
+    }
+
+    [dir="rtl"] &::after {
+        left: -12px !important;
+        top: 3px !important;
+        font-size: 13px !important;
+    }
 }
 
 ul.sf-menu a {
@@ -219,4 +238,4 @@ ul.sf-menu a {
 
 ul.sf-menu .sf-with-ul {
     padding-right: 45px;
-}  
+}
