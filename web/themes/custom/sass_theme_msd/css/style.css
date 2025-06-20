@@ -696,6 +696,7 @@ h6 {
 [dir=rtl] .sf-sub-indicator {
   left: 0px !important;
 }
+
 [dir=rtl] .sf-sub-indicator::after {
   top: 3px !important;
   font-size: 13px !important;
@@ -1399,6 +1400,9 @@ ul.sf-menu .sf-with-ul {
   color: #006B8D;
   text-align: left !important;
 }
+[dir=rtl] .icon-link-label .field-items h2 {
+  text-align: right !important;
+}
 
 .icon-link-bg-color {
   background-color: rgba(217, 217, 217, 0.9);
@@ -1613,7 +1617,7 @@ ul.sf-menu .sf-with-ul {
     line-height: 28px !important;
   }
   [dir=rtl] .accreditation-bg-color .accreditation-wrappper:hover .accreditation-body p {
-    font-size: 14px !important;
+    font-size: 12px !important;
     line-height: 28px !important;
   }
 }

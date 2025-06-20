@@ -17,7 +17,6 @@
                         width: 66px;
                         height: 29px;
                         object-fit: cover;
-
                         @include tablet {
                             width: 93px;
                             height: 41px;
@@ -222,11 +221,9 @@
 
     [dir="rtl"] & {
         left: 0px !important;
-
     }
 
     [dir="rtl"] &::after {
-
         top: 3px !important;
         font-size: 13px !important;
     }
