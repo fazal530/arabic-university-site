@@ -1,8 +1,0 @@
-uuid: 3239f863-d74d-4ea6-b150-201d609424d6
-langcode: en
-status: true
-dependencies: {  }
-id: footer_logo
-label: 'Footer Logo'
-revision: false
-description: null

@@ -18,6 +18,7 @@
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.6",
+        "drupal/animate_on_scroll": "3.0.x-dev@dev",
         "drupal/backup_migrate": "^5.1",
         "drupal/better_exposed_filters": "^7.0",
         "drupal/block_field": "^1.0@RC",

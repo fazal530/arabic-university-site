@@ -1,8 +1,0 @@
-uuid: b7c6c4e9-fa20-45a9-86bc-a29442d05984
-langcode: en
-status: true
-dependencies: {  }
-id: menu_with_image
-label: 'Menu with Image'
-revision: false
-description: null
