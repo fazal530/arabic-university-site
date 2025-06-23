@@ -653,7 +653,7 @@ h6 {
 }
 [dir=rtl] .menu #block-sass-theme-msd-mainnavigation .sf-menu .sf-first.sfHover ul,
 [dir=rtl] .menu #block-sass-theme-msd-mainnavigation--2 .sf-menu .sf-first.sfHover ul {
-  transform: translate(0%);
+  transform: translate(-2%);
 }
 .menu #block-sass-theme-msd-mainnavigation .sf-menu .sfHover ul,
 .menu #block-sass-theme-msd-mainnavigation--2 .sf-menu .sfHover ul {
@@ -672,7 +672,7 @@ h6 {
 }
 [dir=rtl] .menu #block-sass-theme-msd-mainnavigation .sf-menu .sfHover ul,
 [dir=rtl] .menu #block-sass-theme-msd-mainnavigation--2 .sf-menu .sfHover ul {
-  transform: translate(-80%);
+  transform: translate(-84%);
 }
 .menu #block-sass-theme-msd-mainnavigation .sf-accordion-toggle,
 .menu #block-sass-theme-msd-mainnavigation--2 .sf-accordion-toggle {
