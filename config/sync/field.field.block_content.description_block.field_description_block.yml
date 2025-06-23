@@ -1,0 +1,55 @@
+uuid: 70865b89-af57-42e9-bb42-6186ca3e66e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.description_block
+    - field.storage.block_content.field_description_block
+    - paragraphs.paragraphs_type.text_with_banner
+  module:
+    - entity_reference_revisions
+id: block_content.description_block.field_description_block
+field_name: field_description_block
+entity_type: block_content
+bundle: description_block
+label: 'Description block'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_with_banner: text_with_banner
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 10
+        enabled: false
+      accreditations_wrapper:
+        weight: 11
+        enabled: false
+      events_block_view:
+        weight: 12
+        enabled: false
+      hero_section:
+        weight: 13
+        enabled: false
+      icon_link:
+        weight: 14
+        enabled: false
+      icon_link_wrapper:
+        weight: 15
+        enabled: false
+      news_block_view:
+        weight: 16
+        enabled: false
+      text_with_banner:
+        weight: 17
+        enabled: true
+      text_with_image:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

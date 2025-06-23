@@ -1,0 +1,22 @@
+uuid: c66f1019-40a2-4cd4-9aca-06a2f75a18d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_block_view.field_news_view
+    - paragraphs.paragraphs_type.news_block_view
+  module:
+    - block_field
+id: paragraph.news_block_view.default
+targetEntityType: paragraph
+bundle: news_block_view
+mode: default
+content:
+  field_news_view:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

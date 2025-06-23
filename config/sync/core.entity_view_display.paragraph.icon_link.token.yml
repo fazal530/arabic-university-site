@@ -1,0 +1,42 @@
+uuid: 4aad2d48-1f80-4994-a771-def573e26e3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.icon_link.field_description_image
+    - field.field.paragraph.icon_link.field_icon
+    - field.field.paragraph.icon_link.field_link
+    - field.field.paragraph.icon_link.field_style
+    - paragraphs.paragraphs_type.icon_link
+  module:
+    - fontawesome
+    - link
+id: paragraph.icon_link.token
+targetEntityType: paragraph
+bundle: icon_link
+mode: token
+content:
+  field_icon:
+    type: fontawesome_icon_formatter
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_description_image: true
+  field_style: true

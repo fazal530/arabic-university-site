@@ -1,0 +1,18 @@
+uuid: ef9670a6-e6a6-41ea-8d7c-b2bc34959b43
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news_announcements
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.news_announcements
+target_entity_type_id: node
+target_bundle: news_announcements
+default_langcode: site_default
+language_alterable: true

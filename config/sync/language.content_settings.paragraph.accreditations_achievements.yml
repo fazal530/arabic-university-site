@@ -1,0 +1,18 @@
+uuid: bda7e5f6-4398-40fc-9d25-9aa63665dd9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.accreditations_achievements
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.accreditations_achievements
+target_entity_type_id: paragraph
+target_bundle: accreditations_achievements
+default_langcode: site_default
+language_alterable: false

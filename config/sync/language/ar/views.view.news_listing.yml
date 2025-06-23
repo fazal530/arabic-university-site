@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<img class="my-header-image" src="C:\xampp\htdocs\arabic-university-site\web\themes\custom\sass_theme_msd\images\news-page-image.png" alt="Header Image">'
+            format: full_html
+  block_1:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="news-header"><h2>{{''الأخبار والإعلانات''|t}}</h2></div>'
+            format: full_html
+      footer:
+        area:
+          content:
+            value: '<div class="news-button"><button><a href="/news"> عرض الكل</a></button></div>'
+            format: full_html
+label: 'كتلة قائمة الأخبار'

@@ -1,0 +1,18 @@
+uuid: 07bd3540-a852-4bda-8bc5-8cd2e30865f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.accreditations_wrapper
+id: paragraph.accreditations_wrapper.created
+field_name: created
+entity_type: paragraph
+bundle: accreditations_wrapper
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,33 @@
+uuid: 5ba3e45d-e681-40ce-b135-01c63358d60b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_link_wrapper.field_icon_link
+    - field.field.paragraph.icon_link_wrapper.field_label
+    - paragraphs.paragraphs_type.icon_link_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.icon_link_wrapper.default
+targetEntityType: paragraph
+bundle: icon_link_wrapper
+mode: default
+content:
+  field_icon_link:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

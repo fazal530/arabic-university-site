@@ -1,0 +1,28 @@
+uuid: be1b5bb5-8172-4b43-8afc-ed2bed0a5d3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.profile.field_accreditations_image
+    - field.field.paragraph.profile.field_accreditations_title
+    - field.field.paragraph.profile.field_label
+    - field.field.paragraph.profile.field_social_links
+    - paragraphs.paragraphs_type.profile
+id: paragraph.profile.token
+targetEntityType: paragraph
+bundle: profile
+mode: token
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_accreditations_image: true
+  field_accreditations_title: true
+  field_social_links: true

@@ -1,0 +1,22 @@
+uuid: cf5c82f9-16f7-43a2-9297-00d6e4cf5e31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events_block_view.field_events_block_view
+    - paragraphs.paragraphs_type.events_block_view
+  module:
+    - block_field
+id: paragraph.events_block_view.default
+targetEntityType: paragraph
+bundle: events_block_view
+mode: default
+content:
+  field_events_block_view:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

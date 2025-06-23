@@ -1,0 +1,32 @@
+uuid: 43781c68-b790-4253-820d-5d313eec7663
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - node
+    - views
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_views_block__events_block_2
+theme: sass_theme_msd
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:events-block_2'
+settings:
+  id: 'views_block:events-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event

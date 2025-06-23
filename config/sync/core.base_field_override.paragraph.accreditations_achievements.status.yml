@@ -1,0 +1,22 @@
+uuid: 58b955e6-f183-482c-9b00-59ad215a96f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.accreditations_achievements
+id: paragraph.accreditations_achievements.status
+field_name: status
+entity_type: paragraph
+bundle: accreditations_achievements
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
