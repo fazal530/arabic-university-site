@@ -1,9 +1,9 @@
-uuid: f17881d8-80bc-4cce-b638-548e373aa2e0
+uuid: f7329d4c-8bb8-4d15-879e-0e6fa0e80b19
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.footer_logo
+    - paragraphs.paragraphs_type.profile_wrapper
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: block_content.footer_logo
-target_entity_type_id: block_content
-target_bundle: footer_logo
+id: paragraph.profile_wrapper
+target_entity_type_id: paragraph
+target_bundle: profile_wrapper
 default_langcode: site_default
 language_alterable: false
