@@ -5,13 +5,14 @@
         display: flex;
         align-items: center;
         height: 120px;
+        @extend .container;
         @include tablet {
             height: 168px;
         }
         @include desktop{
             height: 207px;
         }
-        @extend .container;
+     
 
         h2 {
             @extend .h1;
