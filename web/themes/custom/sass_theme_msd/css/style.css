@@ -73,7 +73,7 @@ body {
   }
 }
 
-.h1, .paragraph--type--text-with-banner .description-label h2,
+.h1, .description-banner-wrapper .description-label h2,
 h1 {
   font-family: myriad_pro, sans-serif;
   font-size: 36px;
@@ -82,14 +82,14 @@ h1 {
   line-height: 40px;
 }
 @media (min-width: 768px) {
-  .h1, .paragraph--type--text-with-banner .description-label h2,
+  .h1, .description-banner-wrapper .description-label h2,
   h1 {
     font-size: 44px;
     line-height: 60px;
   }
 }
 @media (min-width: 1280px) {
-  .h1, .paragraph--type--text-with-banner .description-label h2,
+  .h1, .description-banner-wrapper .description-label h2,
   h1 {
     font-size: 56px;
     line-height: 75px;
@@ -303,17 +303,17 @@ h6 {
   src: url(../fonts/Myriad_pro/MYRIADPRO-REGULAR.OTF);
   font-weight: 400;
 }
-.container, .site-footer .site-footer__top, .accreditation-bg-color .accreditation-title, .hero .content, .header_wrapper .logo-with-lan-switcher .flex {
+.container, .site-footer .site-footer__top, .accreditation-bg-color .accreditation-title, .description-banner-wrapper .description-label, .hero .content, .header_wrapper .logo-with-lan-switcher .flex {
   padding-inline: 25px !important;
   margin-inline: auto;
 }
 @media (min-width: 768px) {
-  .container, .site-footer .site-footer__top, .accreditation-bg-color .accreditation-title, .hero .content, .header_wrapper .logo-with-lan-switcher .flex {
+  .container, .site-footer .site-footer__top, .accreditation-bg-color .accreditation-title, .description-banner-wrapper .description-label, .hero .content, .header_wrapper .logo-with-lan-switcher .flex {
     padding-inline: 50px !important;
   }
 }
 @media (min-width: 1280px) {
-  .container, .site-footer .site-footer__top, .accreditation-bg-color .accreditation-title, .hero .content, .header_wrapper .logo-with-lan-switcher .flex {
+  .container, .site-footer .site-footer__top, .accreditation-bg-color .accreditation-title, .description-banner-wrapper .description-label, .hero .content, .header_wrapper .logo-with-lan-switcher .flex {
     padding-inline: 100px !important;
     margin-inline: auto !important;
     max-width: 1440px;
@@ -1302,32 +1302,26 @@ ul.sf-menu .sf-with-ul {
   }
 }
 
-.paragraph--type--text-with-banner {
-  position: relative;
+.description-banner-wrapper {
+  background-color: #DEDEDE;
 }
-.paragraph--type--text-with-banner .description-hero-image {
-  height: 340px;
+.description-banner-wrapper .description-label {
+  display: flex;
+  align-items: center;
+  height: 120px;
 }
 @media (min-width: 768px) {
-  .paragraph--type--text-with-banner .description-hero-image {
-    height: 356px;
+  .description-banner-wrapper .description-label {
+    height: 168px;
   }
 }
-.paragraph--type--text-with-banner .description-hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@media (min-width: 1280px) {
+  .description-banner-wrapper .description-label {
+    height: 207px;
+  }
 }
-.paragraph--type--text-with-banner .description-label {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0px !important;
-  z-index: 2;
-}
-.paragraph--type--text-with-banner .description-label h2 {
-  color: #fff;
+.description-banner-wrapper .description-label h2 {
+  color: #006B8D;
 }
 
 .description-wrapper .description {
@@ -1738,6 +1732,7 @@ ul.sf-menu .sf-with-ul {
   background-color: #FAFAFA;
   padding: 50px;
   border-radius: 10px;
+  opacity: 0.9;
 }
 .profile-content .profile-main-wrapper .profile-wrapper .profile-image {
   width: 190px;
@@ -1749,11 +1744,11 @@ ul.sf-menu .sf-with-ul {
   object-fit: cover;
   border-radius: 50%;
 }
+.profile-content .profile-main-wrapper .profile-wrapper .profile-title {
+  padding-block: 10px 15px;
+}
 .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2 {
   text-align: center;
-}
-.profile-content .profile-main-wrapper .profile-wrapper .profile-label {
-  padding-block: 10px;
 }
 .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
   font-size: 18px;
@@ -1763,6 +1758,7 @@ ul.sf-menu .sf-with-ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-top: 15px;
 }
 .profile-content .profile-main-wrapper .profile-wrapper .profile-social-links .icon-wrapper .fontawesome-icon {
   width: 50px;
@@ -1923,15 +1919,15 @@ ul.sf-menu .sf-with-ul {
   background-color: unset !important;
   padding-block: unset !important;
 }
-.site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.container, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .header_wrapper .logo-with-lan-switcher .grid.flex, .header_wrapper .logo-with-lan-switcher .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.flex, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .hero .grid.content, .hero .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.content, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .accreditation-bg-color .grid.accreditation-title, .accreditation-bg-color .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.accreditation-title, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .site-footer__top {
+.site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.container, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .header_wrapper .logo-with-lan-switcher .grid.flex, .header_wrapper .logo-with-lan-switcher .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.flex, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .hero .grid.content, .hero .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.content, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .description-banner-wrapper .grid.description-label, .description-banner-wrapper .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.description-label, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .accreditation-bg-color .grid.accreditation-title, .accreditation-bg-color .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.accreditation-title, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .site-footer__top {
   display: flex !important;
   margin: unset !important;
   padding: unset !important;
 }
-.site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.container .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .header_wrapper .logo-with-lan-switcher .grid.flex .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .header_wrapper .logo-with-lan-switcher .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.flex .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .hero .grid.content .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .hero .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.content .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .accreditation-bg-color .grid.accreditation-title .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .accreditation-bg-color .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.accreditation-title .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .site-footer__top .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon {
+.site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.container .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .header_wrapper .logo-with-lan-switcher .grid.flex .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .header_wrapper .logo-with-lan-switcher .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.flex .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .hero .grid.content .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .hero .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.content .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .description-banner-wrapper .grid.description-label .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .description-banner-wrapper .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.description-label .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .accreditation-bg-color .grid.accreditation-title .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .accreditation-bg-color .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.accreditation-title .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .site-footer__top .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon {
   margin-top: 18px;
 }
-.site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.container .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .header_wrapper .logo-with-lan-switcher .grid.flex .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .header_wrapper .logo-with-lan-switcher .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.flex .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .hero .grid.content .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .hero .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.content .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .accreditation-bg-color .grid.accreditation-title .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .accreditation-bg-color .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.accreditation-title .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .site-footer__top .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa {
+.site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.container .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .header_wrapper .logo-with-lan-switcher .grid.flex .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .header_wrapper .logo-with-lan-switcher .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.flex .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .hero .grid.content .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .hero .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.content .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .description-banner-wrapper .grid.description-label .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .description-banner-wrapper .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.description-label .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .accreditation-bg-color .grid.accreditation-title .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .accreditation-bg-color .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .grid.accreditation-title .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa, .site-footer .site-footer__top .log_icons #block-sass-theme-msd-socialicons .site-footer__top .icon-link-wrapper .highlighted .fontawesome-icons .fontawesome-icon .svg-inline--fa {
   height: 30px;
   color: #fff;
 }
