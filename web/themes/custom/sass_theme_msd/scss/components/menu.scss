@@ -98,7 +98,7 @@
                 left: 0px !important;
                 width: 45% !important;
 
-                @include desktop {
+                @include desktop-sm {
                     width: 100% !important;
                 }
             }
@@ -201,7 +201,9 @@
                 }
 
             }
-
+            @include desktop-sm {
+                width: 100% !important;
+            }
 
         }
 

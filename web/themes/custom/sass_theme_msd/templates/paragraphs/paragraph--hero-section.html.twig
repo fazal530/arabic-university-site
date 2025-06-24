@@ -49,19 +49,20 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 {% block paragraph %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-  <div class="hero grid">
+  <div class="hero-section grid">
     <div class="background-slider">
       {{ content.field_slider }}
     </div>
-    <div class="content">
-    <div class="content-body">
-      {{ content.field_description }}
-    </div>
-  </div>
-    <div class="program-buttons" data-aos="fade-up" data-aos-duration="1000">
-      {{ content.field_program_type }}
+    <div class="hero-section_body grid">
+      <div class="content-body">
+        {{ content.field_description }}
+      </div>
+      <div class="program-buttons" data-aos="fade-up" data-aos-duration="1000">
+        {{ content.field_program_type }}
+      </div>
     </div>
     <div class="overlay"></div>
+
   </div>
   <div class="space-line"></div>
   {% endblock %}

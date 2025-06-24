@@ -11,12 +11,6 @@
         }
 
         @include tablet {
-
-            &:nth-child(6),
-            &:nth-child(7) {
-                display: none;
-            }
-
             &:nth-child(5) {
                 display: block;
                 grid-column: 3/7;
@@ -27,9 +21,6 @@
             &:nth-child(7) {
                 grid-column: 5/9;
             }
-        }
-
-        @include desktop {
 
             &:nth-child(5),
             &:nth-child(6),
@@ -41,7 +32,6 @@
                 grid-column: span 4;
             }
         }
-
 
         .profile-wrapper {
             display: flex;
@@ -89,16 +79,18 @@
             .profile-social-links {
                 display: flex;
                 justify-content: space-around;
-                width: 100%;    
-                .icon-wrapper{
-                    .fontawesome-icon{
+                width: 100%;
+
+                .icon-wrapper {
+                    .fontawesome-icon {
                         width: 50px;
                         height: 50px;
                         border-radius: 50%;
                         padding: 10px;
                         background-color: $gray-light;
                     }
-                    .svg-inline--fa{
+
+                    .svg-inline--fa {
                         width: 30px;
                         height: 30px;
                     }
