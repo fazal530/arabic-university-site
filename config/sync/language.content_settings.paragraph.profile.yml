@@ -1,18 +1,18 @@
-uuid: 0fb18cb5-1f27-4be5-b623-959c190f84fb
+uuid: 1a73517c-5315-4377-b8dd-ae2f52c1afc2
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.about_page
+    - paragraphs.paragraphs_type.profile
   module:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: true
+    enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: node.about_page
-target_entity_type_id: node
-target_bundle: about_page
+id: paragraph.profile
+target_entity_type_id: paragraph
+target_bundle: profile
 default_langcode: site_default
-language_alterable: true
+language_alterable: false
