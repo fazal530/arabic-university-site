@@ -98,7 +98,7 @@
                 left: 0px !important;
                 width: 45% !important;
 
-                @include desktop {
+                @include desktop-sm {
                     width: 100% !important;
                 }
             }
@@ -173,7 +173,7 @@
                     transform: translate(1%);
 
                     [dir="rtl"] & {
-                        transform: translate(0%);
+                        transform: translate(-2%);
                     }
                 }
 
@@ -196,12 +196,14 @@
                     }
 
                     [dir="rtl"] & {
-                        transform: translate(-80%);
+                        transform: translate(-84%);
                     }
                 }
 
             }
-
+            @include desktop-sm {
+                width: 100% !important;
+            }
 
         }
 
