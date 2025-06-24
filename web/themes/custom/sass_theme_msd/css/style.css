@@ -1714,9 +1714,6 @@ ul.sf-menu .sf-with-ul {
   display: none;
 }
 @media (min-width: 768px) {
-  .profile-content .profile-main-wrapper:nth-child(6), .profile-content .profile-main-wrapper:nth-child(7) {
-    display: none;
-  }
   .profile-content .profile-main-wrapper:nth-child(5) {
     display: block;
     grid-column: 3/7;
@@ -1726,8 +1723,6 @@ ul.sf-menu .sf-with-ul {
   .profile-content .profile-main-wrapper:nth-child(7) {
     grid-column: 5/9;
   }
-}
-@media (min-width: 1280px) {
   .profile-content .profile-main-wrapper:nth-child(5), .profile-content .profile-main-wrapper:nth-child(6), .profile-content .profile-main-wrapper:nth-child(7) {
     display: block;
   }
