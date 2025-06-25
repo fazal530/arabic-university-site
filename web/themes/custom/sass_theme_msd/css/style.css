@@ -188,7 +188,7 @@ h5 {
   }
 }
 
-.h6, .sidebar-section .sidebar-right .btn button a, .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .hero-section .hero-section_body .content-body .see_btn .btn, .header_wrapper .logo-with-lan-switcher .flex .language-switcher-language-url .links li a, .button,
+.h6, .sidebar-section .sidebar-right .btn button a, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .hero-section .hero-section_body .content-body .see_btn .btn, .header_wrapper .logo-with-lan-switcher .flex .language-switcher-language-url .links li a, .button,
 h6 {
   font-family: myriad_pro, sans-serif;
   font-size: 16px;
@@ -197,7 +197,7 @@ h6 {
   line-height: 24px;
 }
 @media (min-width: 768px) {
-  .h6, .sidebar-section .sidebar-right .btn button a, .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .hero-section .hero-section_body .content-body .see_btn .btn, .header_wrapper .logo-with-lan-switcher .flex .language-switcher-language-url .links li a, .button,
+  .h6, .sidebar-section .sidebar-right .btn button a, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .hero-section .hero-section_body .content-body .see_btn .btn, .header_wrapper .logo-with-lan-switcher .flex .language-switcher-language-url .links li a, .button,
   h6 {
     font-size: 18px;
     font-weight: 600;
@@ -205,7 +205,7 @@ h6 {
   }
 }
 @media (min-width: 1280px) {
-  .h6, .sidebar-section .sidebar-right .btn button a, .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .hero-section .hero-section_body .content-body .see_btn .btn, .header_wrapper .logo-with-lan-switcher .flex .language-switcher-language-url .links li a, .button,
+  .h6, .sidebar-section .sidebar-right .btn button a, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-title .field-items h2, .hero-section .hero-section_body .content-body .see_btn .btn, .header_wrapper .logo-with-lan-switcher .flex .language-switcher-language-url .links li a, .button,
   h6 {
     font-size: 20px;
     line-height: 27px;
@@ -235,7 +235,7 @@ h6 {
   }
 }
 
-.body2, .sidebar-section .sidebar-right .sidebar-right_text p, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
+.body2, .sidebar-section .sidebar-right .sidebar-right_text p, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
   font-family: myriad_pro, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -244,13 +244,13 @@ h6 {
   color: #706F6F;
 }
 @media (min-width: 768px) {
-  .body2, .sidebar-section .sidebar-right .sidebar-right_text p, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
+  .body2, .sidebar-section .sidebar-right .sidebar-right_text p, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
     font-size: 14px;
     line-height: 24px;
   }
 }
 @media (min-width: 1280px) {
-  .body2, .sidebar-section .sidebar-right .sidebar-right_text p, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
+  .body2, .sidebar-section .sidebar-right .sidebar-right_text p, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
     font-size: 16px;
     line-height: 26px;
   }
@@ -1302,7 +1302,7 @@ ul.sf-menu .sf-with-ul {
   }
 }
 @media (min-width: 768px) {
-  .events-node .events-node-description .body2, .events-node .events-node-description .sidebar-section .sidebar-right .sidebar-right_text p, .sidebar-section .sidebar-right .sidebar-right_text .events-node .events-node-description p, .events-node .events-node-description .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items .events-node .events-node-description h2 {
+  .events-node .events-node-description .body2, .events-node .events-node-description .sidebar-section .sidebar-right .sidebar-right_text p, .sidebar-section .sidebar-right .sidebar-right_text .events-node .events-node-description p, .events-node .events-node-description .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items .events-node .events-node-description h2, .events-node .events-node-description .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items .events-node .events-node-description h2 {
     font-size: 16px;
     line-height: 26px;
   }
@@ -1710,24 +1710,14 @@ ul.sf-menu .sf-with-ul {
 .profile-content .profile-main-wrapper {
   grid-column: span 4;
 }
-.profile-content .profile-main-wrapper:nth-child(5), .profile-content .profile-main-wrapper:nth-child(6), .profile-content .profile-main-wrapper:nth-child(7) {
-  display: none;
-}
 @media (min-width: 768px) {
-  .profile-content .profile-main-wrapper:nth-child(5) {
-    display: block;
+  .profile-content .profile-main-wrapper:nth-child(7) {
     grid-column: 3/7;
   }
 }
 @media (min-width: 1280px) {
   .profile-content .profile-main-wrapper:nth-child(7) {
     grid-column: 5/9;
-  }
-  .profile-content .profile-main-wrapper:nth-child(5), .profile-content .profile-main-wrapper:nth-child(6), .profile-content .profile-main-wrapper:nth-child(7) {
-    display: block;
-  }
-  .profile-content .profile-main-wrapper:nth-child(5) {
-    grid-column: span 4;
   }
 }
 .profile-content .profile-main-wrapper .profile-wrapper {
@@ -1774,6 +1764,73 @@ ul.sf-menu .sf-with-ul {
   background-color: #DEDEDE;
 }
 .profile-content .profile-main-wrapper .profile-wrapper .profile-social-links .icon-wrapper .svg-inline--fa {
+  width: 30px;
+  height: 30px;
+}
+
+.organization-wrapper {
+  padding-block: 60px;
+}
+.organization-wrapper .profile-main-wrapper {
+  grid-column: span 4;
+}
+@media (min-width: 768px) {
+  .organization-wrapper .profile-main-wrapper:nth-child(1) {
+    grid-column: 3/7;
+  }
+}
+@media (min-width: 1280px) {
+  .organization-wrapper .profile-main-wrapper:nth-child(1) {
+    grid-column: 5/9;
+  }
+}
+.organization-wrapper .profile-main-wrapper:nth-child(2) {
+  grid-column: 1/5;
+}
+.organization-wrapper .profile-main-wrapper .profile-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAFAFA;
+  padding: 50px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.organization-wrapper .profile-main-wrapper .profile-wrapper .profile-image {
+  width: 190px;
+  height: 190px;
+}
+.organization-wrapper .profile-main-wrapper .profile-wrapper .profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.organization-wrapper .profile-main-wrapper .profile-wrapper .profile-title {
+  padding-block: 10px 15px;
+}
+.organization-wrapper .profile-main-wrapper .profile-wrapper .profile-title .field-items h2 {
+  text-align: center;
+}
+.organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
+  font-size: 18px;
+  text-align: center;
+}
+.organization-wrapper .profile-main-wrapper .profile-wrapper .profile-social-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 15px;
+}
+.organization-wrapper .profile-main-wrapper .profile-wrapper .profile-social-links .icon-wrapper .fontawesome-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #DEDEDE;
+}
+.organization-wrapper .profile-main-wrapper .profile-wrapper .profile-social-links .icon-wrapper .svg-inline--fa {
   width: 30px;
   height: 30px;
 }

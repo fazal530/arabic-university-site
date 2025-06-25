@@ -89,16 +89,7 @@
     {% endif %}
 
     <div{{ content_attributes }}>
-      {{ content.field_banner }}
-      <div class="sidebar-section container">
-        <div class="sidebar-left">
-          {{ drupal_menu('sidebar') }}
-        </div>
-        <div class="sidebar-right">
-          {{ content.body }}
-        </div>
-
-      </div>
+    {{content}}
       </div>
 
       </article>
