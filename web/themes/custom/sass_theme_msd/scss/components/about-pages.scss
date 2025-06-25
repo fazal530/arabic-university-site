@@ -1,6 +1,61 @@
+h2 {
+    color: $secondary;
+}
+
+.accordion {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+
+    p {
+        span {
+            @extend .h4;
+            color: $secondary;
+        }
+    }
+}
+
+.accordion svg {
+    height: 24px;
+    width: 24px;
+    fill: #007b8a;
+}
+
+.accordion .icon {
+    margin-right: 10px;
+    display: flex;
+}
+
+.accordion .label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.accordion .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.accordion.open .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    display: none;
+
+    p {
+        @extend .body2;
+    }
+}
+
+.accordion.open+.accordion-content {
+    display: block;
+}
+
+
 .sidebar-section {
     display: flex;
-    justify-content: space-between;
     gap: 60px;
     flex-direction: column;
     padding-block: 60px;
@@ -66,7 +121,7 @@
         @include tablet {
             flex-direction: row;
         }
-
+        
         .sidebar-right_text {
 
             h4 {
@@ -111,6 +166,7 @@
 
         .sidebar-right_image {
             height: 100%;
+            text-align: center;
 
             img {
                 width: 295px;
@@ -118,10 +174,27 @@
                 border-radius: 10px;
                 object-fit: cover;
             }
+
+            h4 {
+                text-align: center;
+            }
         }
     }
 
     .sidebar-right.specific {
         flex-direction: column;
+    }
+
+    .sidebar-right.policies {
+        flex-direction: column;
+        gap: 0px !important;
+    }
+    .trustees-wrapper{
+        display: flex;
+        flex-direction: column;
+        
+        @include tablet {
+            flex-direction: row;
+        }
     }
 }
