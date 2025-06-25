@@ -735,10 +735,14 @@ h6 {
     left: 0px !important;
     right: auto !important;
   }
-  [dir=rtl] .sf-sub-indicator::after {
-    top: 3px !important;
-    font-size: 13px !important;
-  }
+}
+.sf-sub-indicator::after {
+  content: "" !important;
+  background-image: url(../icons/Untitled-3.svg) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  width: 15px;
+  height: 15px;
 }
 
 ul.sf-menu a {
