@@ -177,3 +177,12 @@
         }
     }
 }
+
+
+
+.paragraph--type--organization-wrapper ~ .sidebar-section {
+  display: none;
+}
+.paragraph--type--profile-wrapper ~ .sidebar-section {
+  display: none;
+}
