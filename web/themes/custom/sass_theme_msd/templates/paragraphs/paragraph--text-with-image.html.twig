@@ -49,8 +49,9 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 {% block paragraph %}
 <div class="description-wrapper" {{ attributes.addClass(classes) }}>
   {% block content %}
-  
+   {{content.field_text_with_banner}}
     <div class="description container">
+    
       <div class="description-text">
         {{ content.field_description_text }}
       </div>

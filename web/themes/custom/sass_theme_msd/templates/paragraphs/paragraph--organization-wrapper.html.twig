@@ -47,12 +47,11 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes) }}  data-aos="fade-up" data-aos-duration="1000">
     {% block content %}
-    
-    <div class="grid container profile-content">
-       {{ content}}
-   </div>
+    <div class="grid container organization-wrapper">
+      {{ content }}
+      </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}
