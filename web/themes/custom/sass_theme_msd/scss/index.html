@@ -1,238 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Memory Card Game with Countdown Timer</title>
+  <meta charset="UTF-8">
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      background: #f2f2f2;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      margin-bottom: 5px;
-    }
-    #instructions {
-      font-size: 16px;
-      margin-bottom: 15px;
-      color: #333;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.4;
-    }
-    #stats {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-    .game-board {
-      display: grid;
-      grid-template-columns: repeat(4, 100px);
-      grid-gap: 15px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .card {
-      width: 100px;
-      height: 100px;
-      background-color: #007bff;
-      color: transparent;
-      font-size: 2rem;
+    .accordion {
       display: flex;
       align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      border-radius: 8px;
-      user-select: none;
-      transition: transform 0.4s;
-      transform-style: preserve-3d;
-      position: relative;
-    }
-    .card.flipped, .card.matched {
-      color: black;
-      background-color: #fff;
-      transform: rotateY(180deg);
-    }
-    .card.matched {
-      background-color: #28a745;
-      color: white;
-    }
-    #playAgainBtn {
-      display: none;
-      margin-top: 20px;
+      background-color: #ffffff;
+      color: #007b8a;
       padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      background-color: #28a745;
-      color: white;
-      border-radius: 8px;
       cursor: pointer;
+      font-family: sans-serif;
+      border: 1px solid #007b8a;
+      border-radius: 4px;
+      width: fit-content;
     }
-    #playAgainBtn:hover {
-      background-color: #218838;
+
+    .accordion svg {
+      height: 24px;
+      width: 24px;
+      fill: #007b8a;
+    }
+
+    .accordion .icon {
+      margin-right: 10px;
+      display: flex;
+    }
+
+    .accordion .label {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .accordion .arrow {
+      margin-left: 10px;
+      transition: transform 0.3s;
+    }
+
+    .accordion.open .arrow {
+      transform: rotate(180deg);
+    }
+
+    .accordion-contents {
+      display: none;
+      padding: 10px 20px;
+      background-color: #f2f2f2;
+      border-left: 1px solid #007b8a;
+      border-right: 1px solid #007b8a;
+      border-bottom: 1px solid #007b8a;
+      border-radius: 0 0 4px 4px;
+
+    }
+
+    .accordion.open + .accordion-content {
+      display: block;
     }
   </style>
 </head>
 <body>
+<h2>Policies</h2>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="icon">
+      <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+    </div>
+    <span class="label">Attendance</span>
+    <div class="arrow">
+      <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+    </div>
+  </div>
+  <div class="accordion-content">
+    <p>This is the hidden content shown when expanded.</p>
+  </div>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="icon">
+      <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+    </div>
+    <span class="label">Attendance</span>
+    <div class="arrow">
+      <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+    </div>
+  </div>
+  <div class="accordion-content">
+    <p>This is the hidden content shown when expanded.</p>
+  </div>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="icon">
+      <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+    </div>
+    <span class="label">Attendance</span>
+    <div class="arrow">
+      <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+    </div>
+  </div>
+  <div class="accordion-content">
+    <p>This is the hidden content shown when expanded.</p>
+  </div>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="icon">
+      <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+    </div>
+    <span class="label">Attendance</span>
+    <div class="arrow">
+      <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+    </div>
+  </div>
+  <div class="accordion-content">
+    <p>This is the hidden content shown when expanded.</p>
+  </div>
 
-<h1>🧠 Memory Card Flip Game</h1>
+  <h2>Regulations</h2>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="icon">
+      <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+    </div>
+    <span class="label">Attendance</span>
+    <div class="arrow">
+      <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+    </div>
+  </div>
+  <div class="accordion-content">
+    <p>This is the hidden content shown when expanded.</p>
+  </div>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="icon">
+      <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+    </div>
+    <span class="label">Attendance</span>
+    <div class="arrow">
+      <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+    </div>
+  </div>
+  <div class="accordion-content">
+    <p>This is the hidden content shown when expanded.</p>
+  </div>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="icon">
+      <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+    </div>
+    <span class="label">Attendance</span>
+    <div class="arrow">
+      <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+    </div>
+  </div>
+  <div class="accordion-content">
+    <p>This is the hidden content shown when expanded.</p>
+  </div>
+  <div class="accordion" onclick="this.classList.toggle('open')">
+    <div class="icon">
+      <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+    </div>
+    <span class="label">Attendance</span>
+    <div class="arrow">
+      <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+    </div>
+  </div>
+  <div class="accordion-content">
+    <p>This is the hidden content shown when expanded.</p>
+  </div>
 
-<div id="instructions">
-  ⏳ You have 1 minute to finish the game!
+<h2>Guides</h2>
+<div class="accordion" onclick="this.classList.toggle('open')">
+  <div class="icon">
+    <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+  </div>
+  <span class="label">Attendance</span>
+  <div class="arrow">
+    <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+  </div>
+</div>
+<div class="accordion-content">
+  <p>This is the hidden content shown when expanded.</p>
+</div>
+<div class="accordion" onclick="this.classList.toggle('open')">
+  <div class="icon">
+    <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+  </div>
+  <span class="label">Attendance</span>
+  <div class="arrow">
+    <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+  </div>
+</div>
+<div class="accordion-content">
+  <p>This is the hidden content shown when expanded.</p>
+</div>
+<div class="accordion" onclick="this.classList.toggle('open')">
+  <div class="icon">
+    <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+  </div>
+  <span class="label">Attendance</span>
+  <div class="arrow">
+    <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+  </div>
+</div>
+<div class="accordion-content">
+  <p>This is the hidden content shown when expanded.</p>
+</div>
+<div class="accordion" onclick="this.classList.toggle('open')">
+  <div class="icon">
+    <drupal-media data-entity-type="media" data-entity-uuid="0de25391-0ee8-45ad-8dc6-49ec723771d9">&nbsp;</drupal-media>
+  </div>
+  <span class="label">Attendance</span>
+  <div class="arrow">
+    <drupal-media data-entity-type="media" data-entity-uuid="b114184d-5e75-4744-bfaa-611a14418009">&nbsp;</drupal-media>
+  </div>
+</div>
+<div class="accordion-content">
+  <p>This is the hidden content shown when expanded.</p>
 </div>
 
-<div id="stats">
-  ⏱ Time Left: <span id="timer">60</span> sec |
-  🔢 Moves: <span id="moves">0</span> |
-  🏆 Best Time: <span id="bestTime">--</span>
-</div>
-<div class="game-board" id="gameBoard"></div>
-<button id="playAgainBtn" onclick="createBoard()">🔁 Play Again</button>
-
-<script>
-  const emojis = ['🍎', '🍌', '🍇', '🍉', '🍒', '🍍', '🥝', '🥑'];
-  let cards = [...emojis, ...emojis];
-  let flippedCards = [];
-  let matchedCards = 0;
-  let timeLeft = 60; // countdown from 60 seconds
-  let countdownInterval;
-  let hasStarted = false;
-  let moves = 0;
-  let gameOver = false;
-
-  // Sound effects
-  const flipSound = new Audio('https://actions.google.com/sounds/v1/card_flip/card_flip.ogg');
-  const matchSound = new Audio('https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg');
-  const winSound = new Audio('https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg');
-
-  function startCountdown() {
-    countdownInterval = setInterval(() => {
-      timeLeft--;
-      document.getElementById('timer').textContent = timeLeft;
-      if (timeLeft <= 0) {
-        clearInterval(countdownInterval);
-        gameOver = true;
-        alert("⏰ Time's up! You didn't finish in time.");
-        document.getElementById('playAgainBtn').style.display = 'inline-block';
-      }
-    }, 1000);
-  }
-
-  function updateBestTime() {
-    const best = localStorage.getItem('bestTime');
-    if (!best || (60 - timeLeft) < best) {
-      localStorage.setItem('bestTime', 60 - timeLeft);
-    }
-    const bestTime = localStorage.getItem('bestTime');
-    const bestMinutes = Math.floor(bestTime / 60);
-    const bestSeconds = bestTime % 60;
-    const formatted = bestMinutes > 0
-      ? `${bestMinutes}m ${bestSeconds}s`
-      : `${bestSeconds}s`;
-    document.getElementById('bestTime').textContent = formatted;
-  }
-
-  function shuffle(array) {
-    return array.sort(() => Math.random() - 0.5);
-  }
-
-  function createBoard() {
-    const gameBoard = document.getElementById('gameBoard');
-    gameBoard.innerHTML = '';
-    cards = shuffle(cards);
-    matchedCards = 0;
-    moves = 0;
-    timeLeft = 60;
-    hasStarted = false;
-    gameOver = false;
-    clearInterval(countdownInterval);
-    document.getElementById('timer').textContent = timeLeft;
-    document.getElementById('moves').textContent = moves;
-    updateBestTime();
-    document.getElementById('playAgainBtn').style.display = 'none';
-    flippedCards = [];
-
-    cards.forEach((emoji, index) => {
-      const card = document.createElement('div');
-      card.classList.add('card');
-      card.dataset.index = index;
-      card.dataset.emoji = emoji;
-      card.addEventListener('click', flipCard);
-      card.textContent = '';
-      gameBoard.appendChild(card);
-    });
-  }
-
-  function flipCard(e) {
-    if (gameOver) return;
-
-    const card = e.target;
-    if (!hasStarted) {
-      hasStarted = true;
-      startCountdown();
-    }
-    if (
-      card.classList.contains('flipped') ||
-      card.classList.contains('matched') ||
-      flippedCards.length >= 2
-    ) return;
-
-    flipSound.currentTime = 0;
-    flipSound.play();
-
-    card.textContent = card.dataset.emoji;
-    card.classList.add('flipped');
-    flippedCards.push(card);
-
-    if (flippedCards.length === 2) {
-      moves++;
-      document.getElementById('moves').textContent = moves;
-      setTimeout(checkMatch, 700);
-    }
-  }
-
-  function checkMatch() {
-    if (gameOver) return;
-
-    const [card1, card2] = flippedCards;
-    if (card1.dataset.emoji === card2.dataset.emoji) {
-      matchSound.currentTime = 0;
-      matchSound.play();
-
-      card1.classList.add('matched');
-      card2.classList.add('matched');
-      matchedCards += 2;
-
-      if (matchedCards === cards.length) {
-        gameOver = true;
-        clearInterval(countdownInterval);
-        updateBestTime();
-        const timeUsed = 60 - timeLeft;
-        const minutes = Math.floor(timeUsed / 60);
-        const seconds = timeUsed % 60;
-        const timeText = minutes > 0
-          ? `${minutes} minute${minutes > 1 ? 's' : ''} ${seconds} seconds`
-          : `${seconds} seconds`;
-
-        setTimeout(() => {
-          winSound.play();
-          alert(`🎉 You matched all pairs in ${timeText} with ${moves} moves!`);
-          document.getElementById('playAgainBtn').style.display = 'inline-block';
-        }, 300);
-      }
-    } else {
-      card1.classList.remove('flipped');
-      card2.classList.remove('flipped');
-      card1.textContent = '';
-      card2.textContent = '';
-    }
-    flippedCards = [];
-  }
-
-  createBoard();
-</script>
 </body>
 </html>
