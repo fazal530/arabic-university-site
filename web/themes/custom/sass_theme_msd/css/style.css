@@ -235,8 +235,7 @@ h6 {
   }
 }
 
-
-.body2, .sidebar-section .sidebar-right .sidebar-right_text p, .accordion-content p, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
+.body2, .sidebar-section .sidebar-right .sidebar-right_text p, .accordion-content p, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
   font-family: myriad_pro, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -245,15 +244,13 @@ h6 {
   color: #706F6F;
 }
 @media (min-width: 768px) {
-  .body2, .sidebar-section .sidebar-right .sidebar-right_text p, .accordion-content p, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
+.body2, .sidebar-section .sidebar-right .sidebar-right_text p, .accordion-content p, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
     font-size: 14px;
     line-height: 24px;
   }
 }
 @media (min-width: 1280px) {
-
-  .body2, .sidebar-section .sidebar-right .sidebar-right_text p, .accordion-content p, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
-
+  .body2, .sidebar-section .sidebar-right .sidebar-right_text p, .accordion-content p, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
     font-size: 16px;
     line-height: 26px;
   }
@@ -1309,7 +1306,8 @@ ul.sf-menu .sf-with-ul {
   }
 }
 @media (min-width: 768px) {
-  .events-node .events-node-description .body2, .events-node .events-node-description .sidebar-section .sidebar-right .sidebar-right_text p, .sidebar-section .sidebar-right .sidebar-right_text .events-node .events-node-description p, .events-node .events-node-description .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items .events-node .events-node-description h2, .events-node .events-node-description .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items .events-node .events-node-description h2 {
+
+  .events-node .events-node-description .body2, .events-node .events-node-description .sidebar-section .sidebar-right .sidebar-right_text p, .sidebar-section .sidebar-right .sidebar-right_text .events-node .events-node-description p, .events-node .events-node-description .accordion-content p, .accordion-content .events-node .events-node-description p, .events-node .events-node-description .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items .events-node .events-node-description h2, .events-node .events-node-description .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items .events-node .events-node-description h2 {
     font-size: 16px;
     line-height: 26px;
   }
@@ -1839,7 +1837,16 @@ ul.sf-menu .sf-with-ul {
 }
 .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-social-links .icon-wrapper .svg-inline--fa {
   width: 30px;
-  height: 30px;
+  height: 30px;}
+
+.paragraph--type--organization-wrapper ~ .sidebar-section {
+  display: none;
+}
+
+.paragraph--type--profile-wrapper ~ .sidebar-section {
+  display: none;
+}
+
 h2 {
   color: #2795B7;
 }
