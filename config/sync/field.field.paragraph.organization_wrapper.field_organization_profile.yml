@@ -1,68 +1,64 @@
-uuid: 7eacceca-84f2-4e37-b6cb-00fea70be6c4
+uuid: 568d500f-16da-457b-bca4-301835866a58
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_banner
-    - node.type.about_page
+    - field.storage.paragraph.field_organization_profile
     - paragraphs.paragraphs_type.organization_wrapper
-    - paragraphs.paragraphs_type.profile_wrapper
-    - paragraphs.paragraphs_type.text_with_banner
+    - paragraphs.paragraphs_type.profile
   module:
     - entity_reference_revisions
-id: node.about_page.field_banner
-field_name: field_banner
-entity_type: node
-bundle: about_page
-label: Banner
+id: paragraph.organization_wrapper.field_organization_profile
+field_name: field_organization_profile
+entity_type: paragraph
+bundle: organization_wrapper
+label: 'Organization profile'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      text_with_banner: text_with_banner
-      organization_wrapper: organization_wrapper
-      profile_wrapper: profile_wrapper
+      profile: profile
     negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:
-        weight: 10
-        enabled: false
-      accreditations_wrapper:
-        weight: 11
-        enabled: false
-      events_block_view:
-        weight: 12
-        enabled: false
-      hero_section:
         weight: 13
         enabled: false
-      icon_link:
+      accreditations_wrapper:
         weight: 14
         enabled: false
-      icon_link_wrapper:
+      events_block_view:
         weight: 15
         enabled: false
-      news_block_view:
+      hero_section:
         weight: 16
+        enabled: false
+      icon_link:
+        weight: 17
+        enabled: false
+      icon_link_wrapper:
+        weight: 18
+        enabled: false
+      news_block_view:
+        weight: 19
         enabled: false
       organization_wrapper:
         weight: 20
-        enabled: true
-      profile:
-        weight: 19
         enabled: false
+      profile:
+        weight: 21
+        enabled: true
       profile_wrapper:
-        weight: 20
-        enabled: true
+        weight: 22
+        enabled: false
       text_with_banner:
-        weight: 17
-        enabled: true
+        weight: 23
+        enabled: false
       text_with_image:
-        weight: 18
+        weight: 24
         enabled: false
 field_type: entity_reference_revisions
