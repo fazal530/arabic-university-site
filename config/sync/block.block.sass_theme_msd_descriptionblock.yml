@@ -1,0 +1,30 @@
+uuid: 41e142be-0e2a-419e-86b9-4a7d3fda3a3f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:description_block:b3e8437d-ef93-45ae-8e04-fdc63ec6d277'
+  module:
+    - block_content
+    - system
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_descriptionblock
+theme: sass_theme_msd
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:b3e8437d-ef93-45ae-8e04-fdc63ec6d277'
+settings:
+  id: 'block_content:b3e8437d-ef93-45ae-8e04-fdc63ec6d277'
+  label: 'Description block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/72

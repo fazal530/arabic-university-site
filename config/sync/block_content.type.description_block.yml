@@ -1,0 +1,8 @@
+uuid: 4a51229e-4ea7-4285-a8b2-28748f780559
+langcode: en
+status: true
+dependencies: {  }
+id: description_block
+label: 'Description block'
+revision: false
+description: null
