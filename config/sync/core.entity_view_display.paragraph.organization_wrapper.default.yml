@@ -1,0 +1,24 @@
+uuid: 39d42b95-f87e-46f7-b861-ed6cade5460c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.organization_wrapper.field_organization_profile
+    - paragraphs.paragraphs_type.organization_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.organization_wrapper.default
+targetEntityType: paragraph
+bundle: organization_wrapper
+mode: default
+content:
+  field_organization_profile:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
