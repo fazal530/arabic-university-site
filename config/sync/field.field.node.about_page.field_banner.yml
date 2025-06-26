@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_banner
     - node.type.about_page
-    - paragraphs.paragraphs_type.organization_wrapper
     - paragraphs.paragraphs_type.profile_wrapper
     - paragraphs.paragraphs_type.text_with_banner
   module:
@@ -25,7 +24,6 @@ settings:
   handler_settings:
     target_bundles:
       text_with_banner: text_with_banner
-      organization_wrapper: organization_wrapper
       profile_wrapper: profile_wrapper
     negate: 0
     target_bundles_drag_drop:
@@ -50,9 +48,6 @@ settings:
       news_block_view:
         weight: 16
         enabled: false
-      organization_wrapper:
-        weight: 20
-        enabled: true
       profile:
         weight: 19
         enabled: false
