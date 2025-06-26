@@ -41,7 +41,8 @@
                 .field-items {
                     h2 {
                         @extend .h6;
-                        text-align: center
+                        text-align: center;
+                        color:$tertiary;
                     }
                 }
             }
@@ -137,7 +138,8 @@
                 .field-items {
                     h2 {
                         @extend .h6;
-                        text-align: center
+                        text-align: center;
+                        color: $tertiary;
                     }
                 }
             }
