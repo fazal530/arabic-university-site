@@ -244,7 +244,7 @@ h6 {
   color: #706F6F;
 }
 @media (min-width: 768px) {
-  .body2, .sidebar-section .sidebar-right .sidebar-right_text p, .accordion-content p, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
+.body2, .sidebar-section .sidebar-right .sidebar-right_text p, .accordion-content p, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2 {
     font-size: 14px;
     line-height: 24px;
   }
@@ -735,10 +735,14 @@ h6 {
     left: 0px !important;
     right: auto !important;
   }
-  [dir=rtl] .sf-sub-indicator::after {
-    top: 3px !important;
-    font-size: 13px !important;
-  }
+}
+.sf-sub-indicator::after {
+  content: "" !important;
+  background-image: url(../icons/Untitled-3.svg) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  width: 15px;
+  height: 15px;
 }
 
 ul.sf-menu a {
@@ -1302,6 +1306,7 @@ ul.sf-menu .sf-with-ul {
   }
 }
 @media (min-width: 768px) {
+
   .events-node .events-node-description .body2, .events-node .events-node-description .sidebar-section .sidebar-right .sidebar-right_text p, .sidebar-section .sidebar-right .sidebar-right_text .events-node .events-node-description p, .events-node .events-node-description .accordion-content p, .accordion-content .events-node .events-node-description p, .events-node .events-node-description .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-label .field-items .events-node .events-node-description h2, .events-node .events-node-description .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items h2, .profile-content .profile-main-wrapper .profile-wrapper .profile-label .field-items .events-node .events-node-description h2 {
     font-size: 16px;
     line-height: 26px;
@@ -1832,8 +1837,7 @@ ul.sf-menu .sf-with-ul {
 }
 .organization-wrapper .profile-main-wrapper .profile-wrapper .profile-social-links .icon-wrapper .svg-inline--fa {
   width: 30px;
-  height: 30px;
-}
+  height: 30px;}
 
 .paragraph--type--organization-wrapper ~ .sidebar-section {
   display: none;

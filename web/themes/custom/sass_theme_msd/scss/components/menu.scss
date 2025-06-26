@@ -267,11 +267,15 @@
 
         }
 
-        [dir="rtl"] &::after {
+    }
+    &::after{
+        content: "" !important;
+        background-image: url(../icons/Untitled-3.svg) !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        width: 15px;
+        height: 15px;
 
-            top: 3px !important;
-            font-size: 13px !important;
-        }
 
     }
 }
