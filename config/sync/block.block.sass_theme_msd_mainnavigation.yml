@@ -34,12 +34,12 @@ settings:
   touch: 0
   touchbh: 2
   touchdh: 0
-  touchbp: 768
+  touchbp: 1280
   touchua: 0
   touchual: ''
   touchuam: 0
   small: 2
-  smallbp: 1024
+  smallbp: 1280
   smallua: 0
   smallual: ''
   smalluam: 0
