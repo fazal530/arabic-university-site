@@ -290,12 +290,12 @@ ul.sf-menu a {
     padding: 12px 19px;
 
     @include desktop {
-        padding: 12px 11px;
+        padding: 12px 11px !important;
 
     }
 
     @include desktop-md {
-        padding: 12px 19px;
+        padding: 12px 19px !important;
     }
 }
 
