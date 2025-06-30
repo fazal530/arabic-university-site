@@ -7,7 +7,6 @@ dependencies:
     - node.type.standard_page
     - paragraphs.paragraphs_type.accreditations_achievements
     - paragraphs.paragraphs_type.icon_link
-    - paragraphs.paragraphs_type.text_with_banner
   module:
     - entity_reference_revisions
 id: node.standard_page.field_content
@@ -26,7 +25,6 @@ settings:
     target_bundles:
       icon_link: icon_link
       accreditations_achievements: accreditations_achievements
-      text_with_banner: text_with_banner
     negate: 1
     target_bundles_drag_drop:
       accreditations_achievements:
@@ -50,9 +48,18 @@ settings:
       news_block_view:
         weight: 13
         enabled: false
+      organization_wrapper:
+        weight: 20
+        enabled: false
+      profile:
+        weight: 21
+        enabled: false
+      profile_wrapper:
+        weight: 22
+        enabled: false
       text_with_banner:
         weight: 17
-        enabled: true
+        enabled: false
       text_with_image:
         weight: -4
         enabled: false
