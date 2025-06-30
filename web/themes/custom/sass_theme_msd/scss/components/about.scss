@@ -76,6 +76,9 @@
                     .svg-inline--fa {
                         width: 30px;
                         height: 30px;
+                         path{
+                            fill: $secondary;
+                        }
                     }
                 }
             }
@@ -173,6 +176,9 @@
                     .svg-inline--fa {
                         width: 30px;
                         height: 30px;
+                        path{
+                            fill: $secondary;
+                        }
                     }
                 }
             }
