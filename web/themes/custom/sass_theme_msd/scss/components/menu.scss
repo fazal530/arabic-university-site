@@ -123,6 +123,10 @@
             .sf-depth-1 {
                 @extend .body1;
                 color: $white;
+                [dir="ltr"] & {
+                    font-size: 15px;
+                }
+               
 
                 a {
                     text-decoration: none;
@@ -184,7 +188,10 @@
                     margin-top: 10px;
                     width: 67em !important;
                     display: flex;
-                    transform: translate(-17%);
+                    [dir="ltr"] & {
+                        transform: translate(-14%);
+                    }
+                 
 
                     li {
                         text-align: center;
@@ -203,6 +210,7 @@
             }
             @include desktop-sm {
                 width: 100% !important;
+                display: flex;
             }
 
         }
@@ -267,15 +275,11 @@
 
         }
 
-    }
-    &::after{
-        content: "" !important;
-        background-image: url(../icons/Untitled-3.svg) !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        width: 15px;
-        height: 15px;
+        [dir="rtl"] &::after {
 
+            top: 3px !important;
+            font-size: 13px !important;
+        }
 
     }
 }
