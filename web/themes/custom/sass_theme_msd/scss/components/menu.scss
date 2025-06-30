@@ -18,6 +18,7 @@
                         width: 66px;
                         height: 29px;
                         object-fit: cover;
+
                         @include tablet {
                             width: 93px;
                             height: 41px;
@@ -123,10 +124,9 @@
             .sf-depth-1 {
                 @extend .body1;
                 color: $white;
-                [dir="ltr"] & {
-                    font-size: 15px;
-                }
-               
+
+
+
 
                 a {
                     text-decoration: none;
@@ -188,10 +188,11 @@
                     margin-top: 10px;
                     width: 67em !important;
                     display: flex;
+
                     [dir="ltr"] & {
                         transform: translate(-14%);
                     }
-                 
+
 
                     li {
                         text-align: center;
@@ -208,9 +209,10 @@
                 }
 
             }
+
             @include desktop-sm {
                 width: 100% !important;
-                display: flex;
+
             }
 
         }
@@ -286,6 +288,15 @@
 
 ul.sf-menu a {
     padding: 12px 19px;
+
+    @include desktop {
+        padding: 12px 11px;
+
+    }
+
+    @include desktop-md {
+        padding: 12px 19px;
+    }
 }
 
 ul.sf-menu .sf-with-ul {
