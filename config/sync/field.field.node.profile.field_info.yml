@@ -1,0 +1,64 @@
+uuid: 3d6e8b42-a78f-42c5-90c7-da5ebf45725e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_info
+    - node.type.profile
+    - paragraphs.paragraphs_type.profile
+  module:
+    - entity_reference_revisions
+id: node.profile.field_info
+field_name: field_info
+entity_type: node
+bundle: profile
+label: Info
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      profile: profile
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 13
+        enabled: false
+      accreditations_wrapper:
+        weight: 14
+        enabled: false
+      events_block_view:
+        weight: 15
+        enabled: false
+      hero_section:
+        weight: 16
+        enabled: false
+      icon_link:
+        weight: 17
+        enabled: false
+      icon_link_wrapper:
+        weight: 18
+        enabled: false
+      news_block_view:
+        weight: 19
+        enabled: false
+      organization_wrapper:
+        weight: 20
+        enabled: false
+      profile:
+        weight: 21
+        enabled: true
+      profile_wrapper:
+        weight: 22
+        enabled: false
+      text_with_banner:
+        weight: 23
+        enabled: false
+      text_with_image:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

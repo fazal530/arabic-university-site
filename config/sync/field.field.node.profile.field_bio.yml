@@ -1,0 +1,24 @@
+uuid: 40907b8d-a46b-4d40-acee-d6074da427d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio
+    - filter.format.full_html
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_bio
+field_name: field_bio
+entity_type: node
+bundle: profile
+label: Bio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long
