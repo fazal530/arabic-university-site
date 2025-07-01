@@ -1,18 +1,18 @@
-uuid: 568d500f-16da-457b-bca4-301835866a58
+uuid: 20dddf43-a43c-435c-af8d-b36258cd6b3a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_organization_profile
-    - paragraphs.paragraphs_type.organization_wrapper
-    - paragraphs.paragraphs_type.profile
+    - field.storage.node.field_banner_text
+    - node.type.colleges
+    - paragraphs.paragraphs_type.text_with_banner
   module:
     - entity_reference_revisions
-id: paragraph.organization_wrapper.field_organization_profile
-field_name: field_organization_profile
-entity_type: paragraph
-bundle: organization_wrapper
-label: 'Organization profile'
+id: node.colleges.field_banner_text
+field_name: field_banner_text
+entity_type: node
+bundle: colleges
+label: 'Banner Text'
 description: ''
 required: false
 translatable: false
@@ -22,7 +22,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      profile: profile
+      text_with_banner: text_with_banner
     negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:
@@ -51,13 +51,13 @@ settings:
         enabled: false
       profile:
         weight: 21
-        enabled: true
+        enabled: false
       profile_wrapper:
         weight: 22
         enabled: false
       text_with_banner:
         weight: 23
-        enabled: false
+        enabled: true
       text_with_image:
         weight: 24
         enabled: false

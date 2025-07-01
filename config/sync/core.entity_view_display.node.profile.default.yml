@@ -5,7 +5,9 @@ dependencies:
   config:
     - field.field.node.profile.field_achievements
     - field.field.node.profile.field_bio
+    - field.field.node.profile.field_college_categorization
     - field.field.node.profile.field_info
+    - field.field.node.profile.field_profile_categorization
     - field.field.node.profile.field_social_links
     - node.type.profile
   module:
@@ -23,14 +25,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 104
+    weight: 4
     region: content
   field_bio:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 103
+    weight: 3
     region: content
   field_info:
     type: entity_reference_revisions_entity_view
@@ -39,7 +41,7 @@ content:
       view_mode: profile
       link: ''
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_social_links:
     type: entity_reference_revisions_entity_view
@@ -48,12 +50,14 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  field_college_categorization: true
+  field_profile_categorization: true
   langcode: true

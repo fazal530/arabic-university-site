@@ -1,0 +1,29 @@
+uuid: bb3b0ce9-e2b7-4194-bb6d-e04dac73b777
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_node_ref
+    - node.type.colleges
+    - node.type.standard_page
+id: node.colleges.field_node_ref
+field_name: field_node_ref
+entity_type: node
+bundle: colleges
+label: Node-Ref
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      standard_page: standard_page
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
