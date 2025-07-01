@@ -1,10 +1,10 @@
 // FONT FAMILIES
-$font_myriad_pro: myriad_pro, sans-serif;
+$font_tajawal: 'tajawal', sans-serif;
 // FONT FAMILIES
 
 .h1,
 h1 {
-  font-family: $font_myriad_pro;
+  font-family: $font_tajawal;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -24,7 +24,7 @@ h1 {
 
 .h2,
 h2 {
-  font-family: $font_myriad_pro;
+  font-family: $font_tajawal;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -45,7 +45,7 @@ h2 {
 
 .h3,
 h3 {
-  font-family: $font_myriad_pro;
+  font-family: $font_tajawal;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +64,7 @@ h3 {
 
 .h4,
 h4 {
-  font-family: $font_myriad_pro;
+  font-family: $font_tajawal;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -83,7 +83,7 @@ h4 {
 
 .h5,
 h5 {
-  font-family: $font_myriad_pro;
+  font-family: $font_tajawal;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -105,7 +105,7 @@ h5 {
 
 .h6,
 h6 {
-  font-family: $font_myriad_pro;
+  font-family: $font_tajawal;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -125,7 +125,7 @@ h6 {
 }
 
 .body1 {
-  font-family: $font_myriad_pro;
+  font-family: $font_tajawal;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -143,7 +143,7 @@ h6 {
 }
 
 .body2 {
-  font-family: $font_myriad_pro;
+  font-family: $font_tajawal;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
