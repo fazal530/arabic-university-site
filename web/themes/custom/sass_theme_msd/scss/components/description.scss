@@ -67,7 +67,7 @@
     }
 }
 
-.description-wrapper:nth-of-type(even) {
+.description-wrapper:nth-of-type(odd) {
     .description {
 
         flex-direction: column;
@@ -101,7 +101,7 @@
     }
 }
 
-.description-wrapper:nth-child(3) {
+.description-wrapper:nth-child(4) {
     .description {
         @include tablet {
             flex-direction: row;
