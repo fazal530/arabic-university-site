@@ -268,13 +268,13 @@ ul.sf-menu a {
     @include desktop {
         padding: 12px 11px;
         [dir="rtl"] & {
-            padding: 12px 25px !important;
+            padding: 12px 17px !important;
         }
     }
     @include desktop-md {
         padding: 12px 19px;
         [dir="rtl"] & {
-            padding: 12px 30px !important;
+            padding: 12px 25px !important;
         }
     }
 
