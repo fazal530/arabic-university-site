@@ -2,16 +2,6 @@
     padding-block: 60px;
     .profile-main-wrapper {
         grid-column: span 4;
-        @include tablet{
-            &:nth-child(7) {
-             grid-column: 3/7;
-            }
-        }
-        @include desktop {
-            &:nth-child(7) {
-                grid-column: 5/9;
-            }
-      }
 
         .profile-wrapper {
             display: flex;
@@ -193,4 +183,58 @@
 }
 .paragraph--type--profile-wrapper ~ .sidebar-section {
   display: none;
+}
+
+
+.b-member {
+    padding-block: 60px;
+    header{
+        grid-column: 1/-1;
+        h4{
+            color: $secondary;
+        }
+    }
+    .profile-main-wrapper {
+        grid-column: span 4;
+
+        .profile-wrapper {
+
+            border-radius: 10px;
+            opacity: 0.9;
+
+            .profile-image {
+                height: 392px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .profile-title {
+                padding-block: 10px 15px;
+
+                .field-items {
+                    h2 {
+                        @extend .h6;
+                        text-align: center;
+                        color: $tertiary;
+                    }
+                }
+            }
+
+            .profile-label {
+
+                .field-items {
+                    h2 {
+                        @extend .body2;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+    }
 }
