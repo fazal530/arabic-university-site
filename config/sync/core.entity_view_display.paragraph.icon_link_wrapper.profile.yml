@@ -1,0 +1,27 @@
+uuid: ac378371-2dff-488e-8348-56807e00b2cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.profile
+    - field.field.paragraph.icon_link_wrapper.field_icon_link
+    - field.field.paragraph.icon_link_wrapper.field_label
+    - paragraphs.paragraphs_type.icon_link_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.icon_link_wrapper.profile
+targetEntityType: paragraph
+bundle: icon_link_wrapper
+mode: profile
+content:
+  field_icon_link:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: profile
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_label: true

@@ -1,0 +1,47 @@
+uuid: 16a045ff-b303-4e5d-95c3-da823642dad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.profile
+    - field.field.paragraph.profile.field_accreditations_image
+    - field.field.paragraph.profile.field_accreditations_title
+    - field.field.paragraph.profile.field_label
+    - field.field.paragraph.profile.field_social_links
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.profile
+  module:
+    - svg_image
+id: paragraph.profile.profile
+targetEntityType: paragraph
+bundle: profile
+mode: profile
+content:
+  field_accreditations_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_accreditations_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_label:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_social_links: true
+  status: true
