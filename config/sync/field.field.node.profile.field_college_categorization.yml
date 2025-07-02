@@ -1,0 +1,29 @@
+uuid: fe9fad81-ea1b-45d0-a2c1-522cb953c0b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_college_categorization
+    - node.type.profile
+    - taxonomy.vocabulary.college_categorization
+id: node.profile.field_college_categorization
+field_name: field_college_categorization
+entity_type: node
+bundle: profile
+label: 'College Categorization'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      college_categorization: college_categorization
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

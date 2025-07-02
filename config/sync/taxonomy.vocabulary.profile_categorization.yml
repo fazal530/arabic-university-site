@@ -1,0 +1,9 @@
+uuid: a6348ecb-8557-4ba5-90b8-5bdc714bcada
+langcode: en
+status: true
+dependencies: {  }
+name: 'Profile Categorization'
+vid: profile_categorization
+description: null
+weight: 0
+new_revision: false

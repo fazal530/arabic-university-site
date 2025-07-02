@@ -1,0 +1,25 @@
+uuid: bb3828ad-8b96-4ab4-9c15-4ac5001d762f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_organization_block
+    - paragraphs.paragraphs_type.organization_wrapper
+  module:
+    - block_field
+id: paragraph.organization_wrapper.field_organization_block
+field_name: field_organization_block
+entity_type: paragraph
+bundle: organization_wrapper
+label: 'Organization Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:profile_block_view-block_2': 'views_block:profile_block_view-block_2'
+field_type: block_field

@@ -3,22 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.organization_wrapper.field_organization_profile
+    - field.field.paragraph.organization_wrapper.field_organization_block
     - paragraphs.paragraphs_type.organization_wrapper
   module:
-    - entity_reference_revisions
+    - block_field
 id: paragraph.organization_wrapper.default
 targetEntityType: paragraph
 bundle: organization_wrapper
 mode: default
 content:
-  field_organization_profile:
-    type: entity_reference_revisions_entity_view
+  field_organization_block:
+    type: block_field
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden: {  }
