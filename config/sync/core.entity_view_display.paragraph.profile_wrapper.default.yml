@@ -3,21 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.profile_wrapper.field_profile
+    - field.field.paragraph.profile_wrapper.field_profiles_block
     - paragraphs.paragraphs_type.profile_wrapper
   module:
-    - entity_reference_revisions
+    - block_field
 id: paragraph.profile_wrapper.default
 targetEntityType: paragraph
 bundle: profile_wrapper
 mode: default
 content:
-  field_profile:
-    type: entity_reference_revisions_entity_view
+  field_profiles_block:
+    type: block_field
     label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content

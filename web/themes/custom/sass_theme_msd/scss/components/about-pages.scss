@@ -198,3 +198,20 @@ h2 {
         }
     }
 }
+
+
+.colleges-node{
+    article {
+        .paragraph--type--text-with-banner {
+            display: none;
+        }
+        h2{
+            a{
+                span{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}

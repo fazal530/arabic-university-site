@@ -5,7 +5,9 @@ dependencies:
   config:
     - field.field.node.profile.field_achievements
     - field.field.node.profile.field_bio
+    - field.field.node.profile.field_college_categorization
     - field.field.node.profile.field_info
+    - field.field.node.profile.field_profile_categorization
     - field.field.node.profile.field_social_links
     - node.type.profile
   module:
@@ -39,6 +41,12 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_college_categorization:
+    type: options_buttons
+    weight: 126
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_info:
     type: paragraphs
     weight: 121
@@ -58,6 +66,12 @@ content:
         collapse_edit_all: collapse_edit_all
         convert: '0'
         duplicate: duplicate
+    third_party_settings: {  }
+  field_profile_categorization:
+    type: options_buttons
+    weight: 125
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_social_links:
     type: paragraphs
