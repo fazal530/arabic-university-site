@@ -40,8 +40,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<span class=\"date-number\">{{ field_date|date(\"d\") }}</span>\r\n<span class=\"date-month\">{{ field_date|date(\"M\") }}</span>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -55,7 +55,7 @@ display:
             prefix: ''
             suffix: ''
             target: ''
-            nl2br: false
+            nl2br: true
             max_length: 0
             word_boundary: true
             ellipsis: true
@@ -66,7 +66,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h5
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -79,10 +79,10 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_default
+          type: datetime_custom
           settings:
             timezone_override: ''
-            format_type: html_date
+            date_format: 'd M'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -369,8 +369,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: "<span class=\"date-number\">{{ field_date|date(\"d\") }}</span>\r\n<br>\r\n<span class=\"date-month\">{{ field_date|date(\"M\") }}</span>\r\n"
             make_link: false
             path: ''
             absolute: false

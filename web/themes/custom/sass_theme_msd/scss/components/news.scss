@@ -63,9 +63,11 @@
                     position: absolute;
                     top: 40%;
                     left: 5%;
+
                     [dir="rtl"] & {
                         right: 5%;
                     }
+
                     @include tablet {
                         top: 65%;
                     }
@@ -87,8 +89,9 @@
                     }
 
                     .news-detail {
-                        span {
+                        h6 {
                             color: $white;
+
                         }
                     }
                 }
@@ -232,22 +235,11 @@
     }
 
     .news-page-view-description {
-        h5 {
+        h3 {
             color: $secondary;
-            font-size: 24px;
-            line-height: 36px;
-
-            @include tablet {
-                font-size: 30px;
-                line-height: 42px;
-            }
-
-            @include desktop {
-                font-size: 36px;
-                line-height: 45px;
-            }
         }
-        p{
+
+        p {
             @extend .body2;
         }
     }
