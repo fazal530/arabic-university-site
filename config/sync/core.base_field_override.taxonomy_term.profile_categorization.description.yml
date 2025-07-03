@@ -1,0 +1,21 @@
+uuid: 609c8a6f-2528-407b-be61-fd817d87b5a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.profile_categorization
+  module:
+    - text
+id: taxonomy_term.profile_categorization.description
+field_name: description
+entity_type: taxonomy_term
+bundle: profile_categorization
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

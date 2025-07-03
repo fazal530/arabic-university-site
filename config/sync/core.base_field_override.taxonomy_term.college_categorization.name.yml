@@ -1,0 +1,18 @@
+uuid: 648b42e1-ad24-49da-90b1-720d4a9121d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.college_categorization
+id: taxonomy_term.college_categorization.name
+field_name: name
+entity_type: taxonomy_term
+bundle: college_categorization
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

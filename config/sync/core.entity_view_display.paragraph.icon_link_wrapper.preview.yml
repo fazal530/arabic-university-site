@@ -1,0 +1,27 @@
+uuid: 786a3eaf-5e5b-4d20-a969-eebc40ae40c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.icon_link_wrapper.field_icon_link
+    - field.field.paragraph.icon_link_wrapper.field_label
+    - paragraphs.paragraphs_type.icon_link_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.icon_link_wrapper.preview
+targetEntityType: paragraph
+bundle: icon_link_wrapper
+mode: preview
+content:
+  field_icon_link:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_label: true

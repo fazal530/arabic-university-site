@@ -1,4 +1,4 @@
-uuid: aef70add-fbc0-4134-8901-b8946bc7ca9e
+uuid: a923d2d7-080b-4a60-877f-317e2369c045
 langcode: en
 status: true
 dependencies:
@@ -7,17 +7,18 @@ dependencies:
     - field.storage.paragraph.field_accreditations_title
     - field.storage.paragraph.field_label
     - node.type.profile
-    - taxonomy.vocabulary.profile_categorization
+    - taxonomy.vocabulary.college_categorization
   content:
-    - 'taxonomy_term:profile_categorization:7accf4df-ef05-44d1-bed2-71367b03b24a'
+    - 'taxonomy_term:college_categorization:35bd5f4e-0dc9-408d-8412-3cc06e326fdd'
+    - 'taxonomy_term:college_categorization:9c58b0e6-0780-4293-8d8b-504f1536009b'
   module:
     - node
     - paragraphs
     - svg_image
     - taxonomy
     - user
-id: b_members
-label: B-Members
+id: college_views
+label: College_Views
 module: views
 description: ''
 tag: ''
@@ -329,10 +330,27 @@ display:
           empty_zero: false
           hide_alter_empty: false
       pager:
-        type: some
+        type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 3
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -390,6 +408,94 @@ display:
           plugin_id: bundle
           value:
             profile: profile
+        field_college_categorization_target_id:
+          id: field_college_categorization_target_id
+          table: node__field_college_categorization
+          field: field_college_categorization_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            - 15
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: college_categorization
+          type: textfield
+          hierarchy: false
+          limit: true
+          error_message: true
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
         options:
@@ -422,10 +528,11 @@ display:
           plugin_id: standard
           required: true
       css_class: 'grid container organzation-wrapper'
-      use_more: true
+      use_ajax: true
+      use_more: false
       use_more_always: false
       use_more_text: 'See More'
-      link_display: custom_url
+      link_display: '0'
       link_url: '#'
       header:
         area:
@@ -448,6 +555,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -456,11 +564,38 @@ display:
         - 'config:field.storage.paragraph.field_label'
   block_1:
     id: block_1
-    display_title: B-Members
+    display_title: 'Graduate College'
     display_plugin: block
     position: 1
     display_options:
-      title: 'Board of Trustees x 3'
+      title: 'Graduate College'
+      defaults:
+        title: false
+        css_class: false
+        filters: true
+        filter_groups: true
+      css_class: 'grid container b-member'
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.paragraph.field_accreditations_image'
+        - 'config:field.storage.paragraph.field_accreditations_title'
+        - 'config:field.storage.paragraph.field_label'
+  block_2:
+    id: block_2
+    display_title: 'Law College'
+    display_plugin: block
+    position: 1
+    display_options:
+      title: 'Law College'
       filters:
         status:
           id: status
@@ -482,17 +617,17 @@ display:
           plugin_id: bundle
           value:
             profile: profile
-        field_profile_categorization_target_id:
-          id: field_profile_categorization_target_id
-          table: node__field_profile_categorization
-          field: field_profile_categorization_target_id
+        field_college_categorization_target_id:
+          id: field_college_categorization_target_id
+          table: node__field_college_categorization
+          field: field_college_categorization_target_id
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 12
+            - 14
           group: 1
           exposed: false
           expose:
@@ -523,11 +658,53 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          vid: profile_categorization
+          vid: college_categorization
           type: textfield
           hierarchy: false
           limit: true
           error_message: true
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -545,6 +722,34 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.paragraph.field_accreditations_image'
+        - 'config:field.storage.paragraph.field_accreditations_title'
+        - 'config:field.storage.paragraph.field_label'
+  block_3:
+    id: block_3
+    display_title: 'Applied College'
+    display_plugin: block
+    position: 1
+    display_options:
+      title: 'Applied College'
+      defaults:
+        title: false
+        css_class: false
+        filters: true
+        filter_groups: true
+      css_class: 'grid container b-member'
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
