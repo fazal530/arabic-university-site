@@ -1,0 +1,160 @@
+.college {
+    .college-info {
+        .profile-main-wrapper {
+            padding-block: 60px;
+
+            .profile-wrapper {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .profile-image {
+                    width: 324px;
+                    height: 324px;
+
+                    @include desktop {
+                        width: 400px;
+                        height: 400px;
+                    }
+
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 50%;
+
+                    }
+                }
+
+                .profile-title {
+                    padding: 10px;
+
+                    .field-items {
+                        h2 {
+                            @extend .h6;
+                            color: $tertiary;
+                            text-align: center;
+
+                        }
+                    }
+                }
+
+                .profile-label {
+                    .field-items {
+                        h2 {
+                            @extend .body2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .college-content {
+        align-items: center;
+
+        .college-bio {
+            .college-button{
+             padding-block: 10px;
+             a{
+                text-decoration: none;
+                font-family: $font_tajawal;
+                color: $tertiary;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                @include tablet{
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+                @include desktop{
+                    font-size: 24px;
+                }
+                
+             }
+    }
+            p {
+                @extend .body2;
+            }
+
+            grid-column: 1/-1;
+
+            @include tablet {
+                grid-column: 1/7;
+            }
+
+            @include desktop {
+                grid-column: 1/9;
+            }
+
+        }
+
+        .college-social-links {
+            border-left: 1px solid $secondary;
+            grid-column: 1/-1;
+            grid-row: 1/2;
+             [dir="rtl"] & {
+              border-right: 1px solid $secondary;
+               border-left: 0px;
+          }
+
+            @include tablet {
+                grid-column: 7/-1
+            }
+
+            @include desktop {
+                grid-column: 11/-1;
+            }
+        }
+
+        .paragraph--type--icon-link-wrapper {
+            padding: 20px;
+
+            .paragraph--type--icon-link {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-block: 25px;
+
+                .svg-inline--fa {
+                    width: 30px;
+                    height: 30px;
+                    path {
+                        fill: $secondary;
+                    }
+
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 400px;
+                    line-height: 28px;
+                    font-family: $font_tajawal;
+                    @include tablet{
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+                    @include desktop{
+                        font-size: 24px;
+                    }
+                }
+                
+            }
+        }
+
+    }
+
+    .college-achievements {
+        padding-block: 60px;
+
+        ul{
+            li{
+                @extend .body2;
+            }
+        }
+    }
+}

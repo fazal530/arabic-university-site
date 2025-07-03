@@ -48,7 +48,7 @@
                 .icon-link-bg-color {
                     margin-top: unset !important;
                     border: unset !important;
-margin-block: unset !important;
+                    margin-block: unset !important;
                 }
 
                 .icon-link-bg-color {
@@ -96,8 +96,8 @@ margin-block: unset !important;
             h4 {
                 color: $white;
                 margin-block: 20px;
-                
-                @include desktop{
+
+                @include desktop {
                     margin-block: unset;
                     margin-bottom: 10px
                 }
@@ -129,8 +129,8 @@ margin-block: unset !important;
                 h4 {
                     color: $white;
                     margin-block: 20px;
-                
-                    @include desktop{
+
+                    @include desktop {
                         margin-block: unset;
                         margin-bottom: 10px
                     }
@@ -166,8 +166,8 @@ margin-block: unset !important;
             h4 {
                 color: $white;
                 margin-block: 20px;
-                
-                @include desktop{
+
+                @include desktop {
                     margin-block: unset;
                     margin-bottom: 10px
                 }
@@ -203,5 +203,5 @@ margin-block: unset !important;
 }
 
 #block-sass-theme-msd-mainnavigation-2 ul>li:not(:nth-child(-n+3)):not(:last-child) {
-    display: none;
+    display: none !important;
 }
