@@ -188,6 +188,9 @@
             color: $secondary !important;
 
         }
+        p{
+          @extend .body2;
+        }
       }
     }
    }
