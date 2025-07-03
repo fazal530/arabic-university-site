@@ -1,0 +1,42 @@
+uuid: 2df73c50-dd29-47a9-9631-5c0e6a91b5d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.icon_link.field_description_image
+    - field.field.paragraph.icon_link.field_icon
+    - field.field.paragraph.icon_link.field_link
+    - field.field.paragraph.icon_link.field_style
+    - paragraphs.paragraphs_type.icon_link
+  module:
+    - fontawesome
+    - link
+id: paragraph.icon_link.preview
+targetEntityType: paragraph
+bundle: icon_link
+mode: preview
+content:
+  field_icon:
+    type: fontawesome_icon_formatter
+    label: hidden
+    settings:
+      layers: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_description_image: true
+  field_style: true
