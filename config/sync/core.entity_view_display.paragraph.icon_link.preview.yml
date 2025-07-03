@@ -1,8 +1,9 @@
-uuid: 6f11d622-53aa-4503-8493-4296474bbccd
+uuid: 2df73c50-dd29-47a9-9631-5c0e6a91b5d4
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.icon_link.field_description_image
     - field.field.paragraph.icon_link.field_icon
     - field.field.paragraph.icon_link.field_link
@@ -11,28 +12,11 @@ dependencies:
   module:
     - fontawesome
     - link
-    - options
-    - svg_image
-id: paragraph.icon_link.default
+id: paragraph.icon_link.preview
 targetEntityType: paragraph
 bundle: icon_link
-mode: default
+mode: preview
 content:
-  field_description_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-      svg_attributes:
-        width: null
-        height: null
-      svg_render_as_image: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_icon:
     type: fontawesome_icon_formatter
     label: hidden
@@ -53,11 +37,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_style:
-    type: list_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-hidden: {  }
+hidden:
+  field_description_image: true
+  field_style: true

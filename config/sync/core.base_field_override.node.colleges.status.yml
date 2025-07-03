@@ -1,0 +1,22 @@
+uuid: 585758bb-8c03-4526-a064-b58cd9b5c7b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.colleges
+id: node.colleges.status
+field_name: status
+entity_type: node
+bundle: colleges
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

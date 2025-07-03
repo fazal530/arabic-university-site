@@ -1,0 +1,20 @@
+uuid: 0e258d5e-eb10-4bb7-8cd7-a9ad4b79db86
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.colleges
+id: node.colleges.menu_link
+field_name: menu_link
+entity_type: node
+bundle: colleges
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference
