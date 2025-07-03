@@ -1,0 +1,18 @@
+uuid: 1dd9c98e-c5ab-4a0f-b54a-98e02b4f97c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.organization_wrapper
+id: paragraph.organization_wrapper.created
+field_name: created
+entity_type: paragraph
+bundle: organization_wrapper
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

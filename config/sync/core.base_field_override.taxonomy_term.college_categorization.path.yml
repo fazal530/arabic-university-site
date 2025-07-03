@@ -1,0 +1,20 @@
+uuid: 68c8c016-d5fb-4ef5-87ce-7ef0d4521c45
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.college_categorization
+  module:
+    - path
+id: taxonomy_term.college_categorization.path
+field_name: path
+entity_type: taxonomy_term
+bundle: college_categorization
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
