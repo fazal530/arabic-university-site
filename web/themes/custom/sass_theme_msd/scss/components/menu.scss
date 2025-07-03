@@ -264,15 +264,15 @@
     }
   }
 ul.sf-menu a {
-    padding: 12px 19px;
+    padding: 12px 19px !important;
     @include desktop {
-        padding: 12px 11px;
+        padding: 12px 11px !important;
         [dir="rtl"] & {
             padding: 12px 17px !important;
         }
     }
     @include desktop-md {
-        padding: 12px 19px;
+        padding: 12px 19px !important;
         [dir="rtl"] & {
             padding: 12px 25px !important;
         }
@@ -282,7 +282,7 @@ ul.sf-menu a {
 
 ul.sf-menu .sf-with-ul {
 
-    padding-right: 45px;
+    padding-right: 45px !important;
 
     [dir="rtl"] & {
         padding-right: 20px !important;
