@@ -1,97 +1,115 @@
-.events-header{
-    text-align: center;
- 
-    h2{
-        color:$secondary;
-    }
+.events-header {
+  text-align: center;
+
+  h2 {
+    color: $secondary;
+  }
 }
-.events-view-block-wrapper{
-     padding-block: 30px;
-.views-row{
+
+.events-view-block-wrapper {
+  padding-block: 30px;
+
+  .views-row {
     grid-column: span 4;
-    .events{
-    overflow: hidden;
-    position: relative;
-    .events-image{
-         height: 241px;
-         @include tablet{
-            height: 231px;
-         }
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 10px;
+
+    .events {
+      overflow: hidden;
+      position: relative;
+
+      .events-image {
+        height: 241px;
+
+        @include tablet {
+          height: 231px;
         }
-    }
-    .events-date{
-        position : absolute;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 10px;
+        }
+      }
+
+      .events-date {
+        width: 85px;
+        height: 80px;
+        position: absolute;
         top: 0%;
         left: 0%;
-        padding: 30px 10px 30px 10px;
+        padding-block: 11px;
         background-color: $primary;
         border-radius: 10px 0px 10px 0px;
         color: $white;
+
+        h5 {
+          text-align: center;
         }
-    .events-description{
+      }
+
+
+      .events-description {
         text-align: center;
         padding: 15px;
-        h5{
-            color: $secondary !important;
-          }
-          p{
-            @extend .body2;
-          }
+
+        h5 {
+          color: $secondary !important;
         }
+
+        p {
+          @extend .body2;
+        }
+      }
     }
   }
 }
 
 .event-button {
-    text-align: center;
-    padding-inline: 25px;
-   
-    button {
-        padding: 10px 50px 10px 50px;
-        border: 1px solid $tertiary;
-        font-size: 20px;
-        line-height: 27px;
-        font-weight: 600;
-        width: 100%;
+  text-align: center;
+  padding-inline: 25px;
 
-        &:hover {
-            background-color: $primary;
-            border: 1px solid $primary;
-           
-         }
-           &:hover a{
-            color: $white;
-           }
-        
-         @include tablet{
-            width: auto;
-        }
+  button {
+    padding: 10px 50px 10px 50px;
+    border: 1px solid $tertiary;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 600;
+    width: 100%;
+
+    &:hover {
+      background-color: $primary;
+      border: 1px solid $primary;
+
     }
 
-    a {
-        text-decoration: none;
-        color: $tertiary;
-       
-      
+    &:hover a {
+      color: $white;
     }
+
+    @include tablet {
+      width: auto;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $tertiary;
+
+
+  }
 }
 
 
- 
-  .views-row:nth-child(3) {
-    display: none;
-  }
 
-@include desktop{
-     .views-row:nth-child(3) {
-        display: block;
-    }
+.views-row:nth-child(3) {
+  display: none;
+}
+
+@include desktop {
+  .views-row:nth-child(3) {
+    display: block;
+  }
 }
 
 
@@ -99,45 +117,52 @@
 
 
 //Events-node-view-design//
-.events-node-view-wrapper{
-    margin-top: 20px;
-    margin-bottom:60px;
+.events-node-view-wrapper {
+  margin-top: 20px;
+  margin-bottom: 60px;
 
-.events-node-view{
+  .events-node-view {
     grid-column: span 4;
-  .events-node-view-content{
-        .events-image{
+
+    .events-node-view-content {
+      .events-image {
         height: 195px;
-        @include tablet{
-            height: 187px;
+
+        @include tablet {
+          height: 187px;
         }
-        @include desktop{
-            height: 231px;
+
+        @include desktop {
+          height: 231px;
         }
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
         }
+      }
     }
-   }
-    
-    
-     &:nth-child(n+4) {
+
+
+    &:nth-child(n+4) {
       display: none;
     }
-      @include tablet {
+
+    @include tablet {
       &:nth-child(n+7) {
         display: none;
       }
-   &:nth-child(n+4):nth-child(-n+6) {
+
+      &:nth-child(n+4):nth-child(-n+6) {
         display: block;
       }
     }
 
-      @include desktop {
+    @include desktop {
       display: block;
+
       &:nth-child(n) {
         display: block;
       }
@@ -150,103 +175,118 @@
 
 
 //Events-page- view//
-.events-page-view-wrapper{
-    margin-top: 92px;
-    margin-bottom: 60px;
+.events-page-view-wrapper {
+  margin-top: 92px;
+  margin-bottom: 60px;
 
-.views-row{
+  .views-row {
     grid-column: span 4;
-    .events-page-view{
-        overflow: hidden;
-        position: relative;
-        .events-page-view-image{
-            height: 231px;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-                
-            }
-        }
-   
 
-    .events-page-view-date{
-        position : absolute;
+    .events-page-view {
+      overflow: hidden;
+      position: relative;
+
+      .events-page-view-image {
+        height: 231px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 10px;
+
+        }
+      }
+
+
+      .events-page-view-date {
+        width: 85px;
+        height: 80px;
+        @extend .h5;
+        position: absolute;
+        text-align: center;
         top: 0%;
         left: 0%;
-        padding: 30px 10px 30px 10px;
+        padding-block: 11px;
         background-color: $primary;
-        border-radius: 0px 0px 10px 0px;
+        border-radius: 10px 0px 10px 0px;
         color: $white;
-        
-    }
-     .events-page-view-description{
+
+      }
+
+      .events-page-view-description {
         text-align: center;
         padding: 15px;
-        h5{
-            color: $secondary !important;
+
+        h5 {
+          color: $secondary !important;
 
         }
-        p{
+
+        p {
           @extend .body2;
         }
       }
     }
-   }
- }
+  }
+}
 
 
 //Events-node-design//
 
-.events-node{
-    justify-self: center;
-    
-    .events-node-date{
-       h5{
-         color: $secondary !important;
-       }
-    }
-    .events-node-image{
-        width: 100%;
-        height: 158px;
-        @include tablet{
-            height: 310px;
-        }
-        @include desktop{
-            height: 480px;
-        }
-    img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 10px;        
-        }
+.events-node {
+  justify-self: center;
+  padding-top: 60px;
 
+  .events-node-date {
+    h5 {
+      color: $secondary !important;
     }
-    .events-node-description{
-        margin-block: 15px;
-       h5{
-         color: $secondary !important;
-         font-size: 24px;
-         line-height: 36px;
-         @include tablet{
-            font-size: 30px;
-            line-height: 42px;
-         }
-         @include desktop{
-            font-size: 36px;
-            line-height: 45px;
-         }
+  }
+
+  .events-node-image {
+    width: 100%;
+    height: 158px;
+
+    @include tablet {
+      height: 310px;
+    }
+
+    @include desktop {
+      height: 480px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+    }
+
+  }
+
+  .events-node-description {
+    margin-block: 15px;
+
+    h5 {
+      color: $secondary !important;
+      font-size: 24px;
+      line-height: 36px;
+
+      @include tablet {
+        font-size: 30px;
+        line-height: 42px;
       }
-      .body2{
-        @include tablet{
-            font-size: 16px;
-            line-height: 26px;
-        }
+
+      @include desktop {
+        font-size: 36px;
+        line-height: 45px;
       }
     }
+    p{
+      @extend.body2;
+    }
+  }
 }
-
-
