@@ -120,6 +120,8 @@
                 padding-block: 25px;
 
                 .svg-inline--fa {
+                    width: 30px;
+                    height: 30px;
                     path {
                         fill: $secondary;
                     }
@@ -132,8 +134,15 @@
                     font-weight: 400px;
                     line-height: 28px;
                     font-family: $font_tajawal;
+                    @include tablet{
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+                    @include desktop{
+                        font-size: 24px;
+                    }
                 }
-
+                
             }
         }
 
