@@ -40,6 +40,9 @@
         h5{
             color: $secondary !important;
           }
+          p{
+            @extend .body2;
+          }
         }
     }
   }

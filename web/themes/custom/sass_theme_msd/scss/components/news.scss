@@ -247,6 +247,9 @@
                 line-height: 45px;
             }
         }
+        p{
+            @extend .body2;
+        }
     }
 }
 
