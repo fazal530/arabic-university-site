@@ -51,14 +51,31 @@
             }
         }
     }
-    .college-button{
-        padding-block: 10px;
-    }
+    
 
     .college-content {
         align-items: center;
 
         .college-bio {
+            .college-button{
+             padding-block: 10px;
+             a{
+                text-decoration: none;
+                font-family: $font_tajawal;
+                color: $tertiary;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                @include tablet{
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+                @include desktop{
+                    font-size: 24px;
+                }
+                
+             }
+    }
             p {
                 @extend .body2;
             }
