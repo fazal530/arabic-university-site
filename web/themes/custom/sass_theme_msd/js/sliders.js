@@ -43,13 +43,19 @@
 				arrows: false,
 				rtl: true,
 				responsive: [
-				  {
-					breakpoint: 768,
-					settings: {
-					  slidesToShow: 1
+					{
+					  breakpoint: 1024,   // below 1024px (tablet)
+					  settings: {
+						slidesToShow: 2   // show 2 slides on tablet
+					  }
+					},
+					{
+					  breakpoint: 768,    // below 768px (mobile)
+					  settings: {
+						slidesToShow: 1   // show 1 slide on mobile
+					  }
 					}
-				  }
-				]
+				  ]
 		
 			});
 		  }
@@ -68,9 +74,15 @@
 				  ltr: true,
 				  responsive: [
 					{
-					  breakpoint: 768,
+					  breakpoint: 1024,   // below 1024px (tablet)
 					  settings: {
-						slidesToShow: 1
+						slidesToShow: 2   // show 2 slides on tablet
+					  }
+					},
+					{
+					  breakpoint: 768,    // below 768px (mobile)
+					  settings: {
+						slidesToShow: 1   // show 1 slide on mobile
 					  }
 					}
 				  ]
