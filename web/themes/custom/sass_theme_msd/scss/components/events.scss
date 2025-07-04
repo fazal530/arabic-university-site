@@ -39,6 +39,7 @@
         top: 0%;
         left: 0%;
         padding-block: 11px;
+        padding-inline: 12px;
         background-color: $primary;
         border-radius: 10px 0px 10px 0px;
         color: $white;
@@ -62,6 +63,10 @@
         }
       }
     }
+  }
+  .slick-track{
+    display: flex;
+    gap:20px;
   }
 }
 

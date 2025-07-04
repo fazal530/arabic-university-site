@@ -91,6 +91,7 @@
                     .news-detail {
                         h6 {
                             color: $white;
+                            
 
                         }
                     }
@@ -138,10 +139,8 @@
                     }
 
                     .news-detail {
-                        h5 {
-                            span {
+                        h6{
                                 color: $tertiary;
-                            }
                         }
                     }
                 }

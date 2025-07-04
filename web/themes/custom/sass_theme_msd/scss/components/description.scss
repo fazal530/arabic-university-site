@@ -41,6 +41,9 @@
             h2 {
                 color: $secondary;
             }
+            p{
+                @extend .body2;
+            }
         }
 
         .description-image {

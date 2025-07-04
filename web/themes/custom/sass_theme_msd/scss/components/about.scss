@@ -1,5 +1,6 @@
 .profile-content {
     padding-block: 60px;
+
     .profile-main-wrapper {
         grid-column: span 4;
 
@@ -66,7 +67,8 @@
                     .svg-inline--fa {
                         width: 30px;
                         height: 30px;
-                         path{
+
+                        path {
                             fill: $secondary;
                         }
                     }
@@ -91,19 +93,22 @@
 
         grid-column: span 4;
 
-        &:nth-child(1){
-            
-            @include tablet{
+        &:nth-child(1) {
+
+            @include tablet {
                 grid-column: 3/7;
             }
-            @include desktop{
+
+            @include desktop {
                 grid-column: 5/9;
             }
         }
-         &:nth-child(2){
+
+        &:nth-child(2) {
             grid-column: 1/5;
         }
-       .profile-wrapper {
+
+        .profile-wrapper {
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -166,7 +171,8 @@
                     .svg-inline--fa {
                         width: 30px;
                         height: 30px;
-                        path{
+
+                        path {
                             fill: $secondary;
                         }
                     }
@@ -178,24 +184,25 @@
 
 
 
-.paragraph--type--organization-wrapper ~ .sidebar-section {
-  display: none;
+.paragraph--type--organization-wrapper~.sidebar-section {
+    display: none;
 }
-.paragraph--type--profile-wrapper ~ .sidebar-section {
-  display: none;
+
+.paragraph--type--profile-wrapper~.sidebar-section {
+    display: none;
 }
 
 
 .b-member {
     padding-block: 60px;
-    header{
-        grid-column: 1/-1;
-        h4{
+    header {
+        h4 {
             color: $secondary;
         }
     }
+
     .profile-main-wrapper {
-        grid-column: span 4;
+
 
         .profile-wrapper {
 
@@ -209,6 +216,7 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    border-radius: 10px;
                 }
             }
 
@@ -236,5 +244,10 @@
             }
 
         }
+    }
+
+    .slick-track {
+        display: flex;
+        gap: 20px;
     }
 }
