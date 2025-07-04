@@ -51,31 +51,35 @@
             }
         }
     }
-    
+
 
     .college-content {
         align-items: center;
 
         .college-bio {
-            .college-button{
-             padding-block: 10px;
-             a{
-                text-decoration: none;
-                font-family: $font_tajawal;
-                color: $tertiary;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 28px;
-                @include tablet{
-                    font-size: 22px;
-                    line-height: 32px;
+            .college-button {
+                padding-block: 10px;
+
+                a {
+                    text-decoration: none;
+                    font-family: $font_tajawal;
+                    color: $tertiary;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+
+                    @include tablet {
+                        font-size: 22px;
+                        line-height: 32px;
+                    }
+
+                    @include desktop {
+                        font-size: 24px;
+                    }
+
                 }
-                @include desktop{
-                    font-size: 24px;
-                }
-                
-             }
-    }
+            }
+
             p {
                 @extend .body2;
             }
@@ -96,10 +100,11 @@
             border-left: 1px solid $secondary;
             grid-column: 1/-1;
             grid-row: 1/2;
-             [dir="rtl"] & {
-              border-right: 1px solid $secondary;
-               border-left: 0px;
-          }
+
+            [dir="rtl"] & {
+                border-right: 1px solid $secondary;
+                border-left: 0px;
+            }
 
             @include tablet {
                 grid-column: 7/-1
@@ -122,6 +127,7 @@
                 .svg-inline--fa {
                     width: 30px;
                     height: 30px;
+
                     path {
                         fill: $secondary;
                     }
@@ -130,19 +136,10 @@
 
                 a {
                     text-decoration: none;
-                    font-size: 18px;
-                    font-weight: 400px;
-                    line-height: 28px;
-                    font-family: $font_tajawal;
-                    @include tablet{
-                        font-size: 22px;
-                        line-height: 32px;
-                    }
-                    @include desktop{
-                        font-size: 24px;
-                    }
+                    @extend .h5;
+                    color: $tertiary !important;
+
                 }
-                
             }
         }
 
@@ -151,8 +148,8 @@
     .college-achievements {
         padding-block: 60px;
 
-        ul{
-            li{
+        ul {
+            li {
                 @extend .body2;
             }
         }
