@@ -1,0 +1,8 @@
+uuid: 35d38b95-57bd-486a-aa85-2b7dfee0ece0
+langcode: en
+status: true
+dependencies: {  }
+id: college-of-law
+label: 'Law College  Menu'
+description: ''
+locked: false
