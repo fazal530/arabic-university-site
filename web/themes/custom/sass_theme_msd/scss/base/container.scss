@@ -12,3 +12,16 @@
     max-width: 1440px;
   }
 }
+
+
+
+
+.container-2 {
+ 
+
+  @include desktop {
+    padding-inline: 100px !important;
+    margin-inline: auto !important;
+    max-width: 1440px;
+  }
+}
