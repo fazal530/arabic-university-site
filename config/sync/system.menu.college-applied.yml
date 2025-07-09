@@ -1,0 +1,8 @@
+uuid: 38aa6a4e-843d-47eb-99af-2ca9e44f5ab4
+langcode: en
+status: true
+dependencies: {  }
+id: college-applied
+label: 'Applied College Menu'
+description: ''
+locked: false

@@ -1,9 +1,9 @@
-uuid: 6b7653c2-1d71-4886-ba32-480d14f79b0e
+uuid: 81f8fe3f-76b7-438f-b716-5d7844b6a9a9
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:c3579d02-c137-4fe8-8f5f-dbb9c1961ac3'
+    - 'block_content:basic:e91e6e29-6e58-42dc-b9e8-57fc1b329e6b'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: sass_theme_msd
 region: footer_second
 weight: 0
 provider: null
-plugin: 'block_content:c3579d02-c137-4fe8-8f5f-dbb9c1961ac3'
+plugin: 'block_content:e91e6e29-6e58-42dc-b9e8-57fc1b329e6b'
 settings:
-  id: 'block_content:c3579d02-c137-4fe8-8f5f-dbb9c1961ac3'
+  id: 'block_content:e91e6e29-6e58-42dc-b9e8-57fc1b329e6b'
   label: 'Info Block'
   label_display: '0'
   provider: block_content
