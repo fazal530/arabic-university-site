@@ -1,0 +1,10 @@
+uuid: e04e314b-8cca-46f5-9073-47486a554652
+langcode: en
+status: true
+dependencies: {  }
+id: label_text_wrapper
+label: Label-Text-Wrapper
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

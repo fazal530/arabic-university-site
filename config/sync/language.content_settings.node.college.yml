@@ -1,0 +1,11 @@
+uuid: d3dc53d9-02cf-4c9a-95a6-0b2e726dd664
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.college
+id: node.college
+target_entity_type_id: node
+target_bundle: college
+default_langcode: site_default
+language_alterable: false

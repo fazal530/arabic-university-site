@@ -1,0 +1,25 @@
+uuid: 5e238181-c2d6-41c5-b476-7871f6a80808
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_members_block
+    - node.type.college
+  module:
+    - block_field
+id: node.college.field_members_block
+field_name: field_members_block
+entity_type: node
+bundle: college
+label: 'College News'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:college_views-block_3': 'views_block:college_views-block_3'
+field_type: block_field
