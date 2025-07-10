@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.news_announcements.field_achievements
     - field.field.node.news_announcements.field_date
     - field.field.node.news_announcements.field_description
     - field.field.node.news_announcements.field_image
@@ -34,6 +35,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_achievements: true
   field_date: true
   field_description: true
   langcode: true

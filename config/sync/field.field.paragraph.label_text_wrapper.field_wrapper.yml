@@ -1,0 +1,70 @@
+uuid: e86b8687-1671-4091-8685-ba0bbb76c8ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wrapper
+    - paragraphs.paragraphs_type.label_text_wrapper
+    - paragraphs.paragraphs_type.label_with_text
+  module:
+    - entity_reference_revisions
+id: paragraph.label_text_wrapper.field_wrapper
+field_name: field_wrapper
+entity_type: paragraph
+bundle: label_text_wrapper
+label: Wrapper
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      label_with_text: label_with_text
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 15
+        enabled: false
+      accreditations_wrapper:
+        weight: 16
+        enabled: false
+      events_block_view:
+        weight: 17
+        enabled: false
+      hero_section:
+        weight: 18
+        enabled: false
+      icon_link:
+        weight: 19
+        enabled: false
+      icon_link_wrapper:
+        weight: 20
+        enabled: false
+      label_text_wrapper:
+        weight: 21
+        enabled: false
+      label_with_text:
+        weight: 22
+        enabled: true
+      news_block_view:
+        weight: 23
+        enabled: false
+      organization_wrapper:
+        weight: 24
+        enabled: false
+      profile:
+        weight: 25
+        enabled: false
+      profile_wrapper:
+        weight: 26
+        enabled: false
+      text_with_banner:
+        weight: 27
+        enabled: false
+      text_with_image:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

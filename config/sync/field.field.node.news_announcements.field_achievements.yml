@@ -1,0 +1,19 @@
+uuid: 5da4fe83-34f6-4ce8-b977-7a127091822d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_achievements
+    - node.type.news_announcements
+id: node.news_announcements.field_achievements
+field_name: field_achievements
+entity_type: node
+bundle: news_announcements
+label: 'News Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
