@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.college.field_all_block
     - field.field.node.college.field_banner_text
     - field.field.node.college.field_description
+    - field.field.node.college.field_former_deans
     - field.field.node.college.field_image
     - field.field.node.college.field_label_text
     - field.field.node.college.field_members_block
@@ -53,6 +54,13 @@ content:
       trim_length: 600
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_former_deans:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_image:
     type: image

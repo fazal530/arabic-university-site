@@ -22,4 +22,5 @@ settings:
   selection_settings:
     plugin_ids:
       'views_block:college_views-block_3': 'views_block:college_views-block_3'
+      'views_block:news_listing-block_2': 'views_block:news_listing-block_2'
 field_type: block_field

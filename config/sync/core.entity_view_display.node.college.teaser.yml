@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.college.field_all_block
     - field.field.node.college.field_banner_text
     - field.field.node.college.field_description
+    - field.field.node.college.field_former_deans
     - field.field.node.college.field_image
     - field.field.node.college.field_label_text
     - field.field.node.college.field_members_block
@@ -54,6 +55,7 @@ hidden:
   field_all_block: true
   field_banner_text: true
   field_description: true
+  field_former_deans: true
   field_label_text: true
   field_members_block: true
   langcode: true
