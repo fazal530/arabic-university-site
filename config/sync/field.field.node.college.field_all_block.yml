@@ -21,5 +21,7 @@ settings:
   selection: blocks
   selection_settings:
     plugin_ids:
-      'system_menu_block:footer': 'system_menu_block:footer'
+      'system_menu_block:college-applied': 'system_menu_block:college-applied'
+      'system_menu_block:graduate-college': 'system_menu_block:graduate-college'
+      'system_menu_block:college-of-law': 'system_menu_block:college-of-law'
 field_type: block_field
