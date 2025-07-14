@@ -1,0 +1,24 @@
+uuid: 1535d83d-c729-4646-8ff8-9c8da80072a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.text_with_file
+  module:
+    - text
+id: paragraph.text_with_file.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: text_with_file
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long
