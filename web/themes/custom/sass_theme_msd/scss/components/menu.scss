@@ -38,6 +38,10 @@
                 background-color: $secondary;
                 padding: 10px;
                 border-radius: 5px;
+                gap: 7px;
+                [dir="rtl"] & {
+                    flex-direction: row-reverse
+                }
 
                 P {
                     a {
