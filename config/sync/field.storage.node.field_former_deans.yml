@@ -1,0 +1,19 @@
+uuid: de5bac45-1492-4a5b-9c37-65908406c766
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_field
+    - node
+id: node.field_former_deans
+field_name: field_former_deans
+entity_type: node
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

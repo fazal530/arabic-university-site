@@ -1,0 +1,25 @@
+uuid: 8f3ea749-48fe-4948-be27-9af08687a95d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_all_block
+    - node.type.college
+  module:
+    - block_field
+id: node.college.field_all_block
+field_name: field_all_block
+entity_type: node
+bundle: college
+label: Navigation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'system_menu_block:footer': 'system_menu_block:footer'
+field_type: block_field

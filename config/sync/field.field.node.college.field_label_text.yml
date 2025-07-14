@@ -1,0 +1,70 @@
+uuid: 112fd7dd-2e5e-4d3b-b7c5-a49fdcf5f396
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label_text
+    - node.type.college
+    - paragraphs.paragraphs_type.label_text_wrapper
+  module:
+    - entity_reference_revisions
+id: node.college.field_label_text
+field_name: field_label_text
+entity_type: node
+bundle: college
+label: Label-Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      label_text_wrapper: label_text_wrapper
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 15
+        enabled: false
+      accreditations_wrapper:
+        weight: 16
+        enabled: false
+      events_block_view:
+        weight: 17
+        enabled: false
+      hero_section:
+        weight: 18
+        enabled: false
+      icon_link:
+        weight: 19
+        enabled: false
+      icon_link_wrapper:
+        weight: 20
+        enabled: false
+      label_text_wrapper:
+        weight: 21
+        enabled: true
+      label_with_text:
+        weight: 22
+        enabled: false
+      news_block_view:
+        weight: 23
+        enabled: false
+      organization_wrapper:
+        weight: 24
+        enabled: false
+      profile:
+        weight: 25
+        enabled: false
+      profile_wrapper:
+        weight: 26
+        enabled: false
+      text_with_banner:
+        weight: 27
+        enabled: false
+      text_with_image:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

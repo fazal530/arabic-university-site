@@ -1,0 +1,26 @@
+uuid: e2094c89-ede8-465c-b38e-ca1f56ebe861
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.full_html
+    - node.type.college
+  module:
+    - text
+id: node.college.body
+field_name: body
+entity_type: node
+bundle: college
+label: Message
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - full_html
+field_type: text_with_summary

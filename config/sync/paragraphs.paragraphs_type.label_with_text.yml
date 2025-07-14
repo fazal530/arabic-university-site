@@ -1,0 +1,10 @@
+uuid: 390b3891-05fe-4444-b413-c27673bd6923
+langcode: en
+status: true
+dependencies: {  }
+id: label_with_text
+label: 'Label With Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

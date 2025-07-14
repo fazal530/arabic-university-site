@@ -1,0 +1,25 @@
+uuid: 302e9cd3-cd93-4035-82c6-6185bf8ee002
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_former_deans
+    - node.type.college
+  module:
+    - block_field
+id: node.college.field_former_deans
+field_name: field_former_deans
+entity_type: node
+bundle: college
+label: 'Former Deans'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:related_profiles-block_1': 'views_block:related_profiles-block_1'
+field_type: block_field

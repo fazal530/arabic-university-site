@@ -1,0 +1,26 @@
+uuid: fe0c3a81-3501-4d34-bdcf-2f917383541e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.limited_fields
+    - field.field.paragraph.label_with_text.field_description
+    - field.field.paragraph.label_with_text.field_label
+    - paragraphs.paragraphs_type.label_with_text
+id: paragraph.label_with_text.limited_fields
+targetEntityType: paragraph
+bundle: label_with_text
+mode: limited_fields
+content:
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_description: true
+  status: true

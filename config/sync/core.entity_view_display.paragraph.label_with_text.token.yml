@@ -1,0 +1,24 @@
+uuid: 5f0d4ba6-f7b5-4503-a349-57b61638c9fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.label_with_text.field_description
+    - field.field.paragraph.label_with_text.field_label
+    - paragraphs.paragraphs_type.label_with_text
+id: paragraph.label_with_text.token
+targetEntityType: paragraph
+bundle: label_with_text
+mode: token
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_description: true
