@@ -1,9 +1,9 @@
-uuid: d3dc53d9-02cf-4c9a-95a6-0b2e726dd664
+uuid: 3929b384-0cb3-4b1f-be2f-24a28e8225cc
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.college
+    - paragraphs.paragraphs_type.label_text_wrapper
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: node.college
-target_entity_type_id: node
-target_bundle: college
+id: paragraph.label_text_wrapper
+target_entity_type_id: paragraph
+target_bundle: label_text_wrapper
 default_langcode: site_default
 language_alterable: false
