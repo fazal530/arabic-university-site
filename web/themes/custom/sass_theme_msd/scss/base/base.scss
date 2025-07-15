@@ -60,3 +60,34 @@ body {
     display: block !important;
   }
 }
+
+
+
+#block-sass-theme-msd-breadcrumbs {
+  @extend .container;
+  nav[role="navigation"] ol {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  nav[role="navigation"] li {
+    display: flex;
+    align-items: center;
+    @extend .h5;
+    color: $secondary;
+  }
+
+  nav[role="navigation"] li+li:before {
+    content: ">";
+    color: $tertiary;
+    padding-right: 8px;
+  }
+
+  nav[role="navigation"] a {
+    color: $tertiary;
+    text-decoration: none;
+  }
+}

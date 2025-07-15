@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_banner_text
     - node.type.college
-    - paragraphs.paragraphs_type.text_with_banner
   module:
     - entity_reference_revisions
 id: node.college.field_banner_text
@@ -21,8 +20,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles:
-      text_with_banner: text_with_banner
+    target_bundles: null
     negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:
@@ -63,7 +61,10 @@ settings:
         enabled: false
       text_with_banner:
         weight: 23
-        enabled: true
+        enabled: false
+      text_with_file:
+        weight: 29
+        enabled: false
       text_with_image:
         weight: 24
         enabled: false

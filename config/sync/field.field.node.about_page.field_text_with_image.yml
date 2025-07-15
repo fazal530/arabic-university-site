@@ -1,45 +1,47 @@
-uuid: 20dddf43-a43c-435c-af8d-b36258cd6b3a
+uuid: e6eb8cc5-da43-4523-9f81-fdbe374e0455
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_banner_text
-    - node.type.colleges
+    - field.storage.node.field_text_with_image
+    - node.type.about_page
+    - paragraphs.paragraphs_type.text_with_image
   module:
     - entity_reference_revisions
-id: node.colleges.field_banner_text
-field_name: field_banner_text
+id: node.about_page.field_text_with_image
+field_name: field_text_with_image
 entity_type: node
-bundle: colleges
-label: 'Banner Text'
+bundle: about_page
+label: 'Text with Image'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: null
+    target_bundles:
+      text_with_image: text_with_image
     negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:
-        weight: 13
-        enabled: false
-      accreditations_wrapper:
-        weight: 14
-        enabled: false
-      events_block_view:
-        weight: 15
-        enabled: false
-      hero_section:
         weight: 16
         enabled: false
-      icon_link:
+      accreditations_wrapper:
         weight: 17
         enabled: false
-      icon_link_wrapper:
+      events_block_view:
         weight: 18
+        enabled: false
+      hero_section:
+        weight: 19
+        enabled: false
+      icon_link:
+        weight: 20
+        enabled: false
+      icon_link_wrapper:
+        weight: 21
         enabled: false
       label_text_wrapper:
         weight: 22
@@ -48,24 +50,24 @@ settings:
         weight: 23
         enabled: false
       news_block_view:
-        weight: 19
+        weight: 24
         enabled: false
       organization_wrapper:
-        weight: 20
+        weight: 25
         enabled: false
       profile:
-        weight: 21
+        weight: 26
         enabled: false
       profile_wrapper:
-        weight: 22
+        weight: 27
         enabled: false
       text_with_banner:
-        weight: 23
+        weight: 28
         enabled: false
       text_with_file:
         weight: 29
         enabled: false
       text_with_image:
-        weight: 24
-        enabled: false
+        weight: 30
+        enabled: true
 field_type: entity_reference_revisions

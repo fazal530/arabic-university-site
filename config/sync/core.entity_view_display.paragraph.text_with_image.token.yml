@@ -1,0 +1,26 @@
+uuid: ff90a2be-4b75-4f77-86cc-00e76d59b54c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.text_with_image.field_description_image
+    - field.field.paragraph.text_with_image.field_description_text
+    - field.field.paragraph.text_with_image.field_label
+    - paragraphs.paragraphs_type.text_with_image
+id: paragraph.text_with_image.token
+targetEntityType: paragraph
+bundle: text_with_image
+mode: token
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_description_image: true
+  field_description_text: true

@@ -57,48 +57,48 @@ function sass_theme_msd_theme_suggestions_block_alter(array &$suggestions, array
 /**
  * Implements hook_preprocess_breadcrumb().
  */
-function sass_theme_msd_preprocess_breadcrumb(&$variables) {
-  $breadcrumb = &$variables['breadcrumb'];
-  $path = \Drupal::service('path.current')->getPath();
+// function sass_theme_msd_preprocess_breadcrumb(&$variables) {
+//   $breadcrumb = &$variables['breadcrumb'];
+//   $path = \Drupal::service('path.current')->getPath();
 
-  // Clear any existing breadcrumbs from other sources.
-  $breadcrumb = [];
+//   // Clear any existing breadcrumbs from other sources.
+//   $breadcrumb = [];
 
-  // Add the 'home' link.
-  $breadcrumb[] = Link::createFromRoute('Home', '<front>')->toString();
+//   // Add the 'home' link.
+//   $breadcrumb[] = Link::createFromRoute('Home', '<front>')->toString();
 
-  // Add the 'product-listing' link if it's part of the current path.
-  if (strpos($path, '/product-listing') === 0) {
-    // Construct the URL for 'Product Listing' page using base path.
-    $product_listing_url = Url::fromUri('internal:/product-listing')->toString();
-    $breadcrumb[] = '<a href="' . $product_listing_url . '">Product Listing</a>';
+//   // Add the 'product-listing' link if it's part of the current path.
+//   if (strpos($path, '/product-listing') === 0) {
+//     // Construct the URL for 'Product Listing' page using base path.
+//     $product_listing_url = Url::fromUri('internal:/product-listing')->toString();
+//     $breadcrumb[] = '<a href="' . $product_listing_url . '">Product Listing</a>';
 
-    // Extract the taxonomy ID from the path.
-    $taxonomy_id = str_replace('/product-listing/', '', $path);
+//     // Extract the taxonomy ID from the path.
+//     $taxonomy_id = str_replace('/product-listing/', '', $path);
 
-    if ($taxonomy_id && is_numeric($taxonomy_id)) {
-      // Load the current taxonomy term.
-      $term = Term::load($taxonomy_id);
+//     if ($taxonomy_id && is_numeric($taxonomy_id)) {
+//       // Load the current taxonomy term.
+//       $term = Term::load($taxonomy_id);
 
-      if ($term) {
-        // Check if the term has a parent.
-        $parent_term_id = $term->get('parent')->target_id;
-        if ($parent_term_id) {
-          // Load the parent term.
-          $parent_term = Term::load($parent_term_id);
+//       if ($term) {
+//         // Check if the term has a parent.
+//         $parent_term_id = $term->get('parent')->target_id;
+//         if ($parent_term_id) {
+//           // Load the parent term.
+//           $parent_term = Term::load($parent_term_id);
 
-          if ($parent_term) {
-            // Construct the URL for the parent term.
-            $parent_url = Url::fromUri('internal:/product-listing/' . $parent_term_id)->toString();
+//           if ($parent_term) {
+//             // Construct the URL for the parent term.
+//             $parent_url = Url::fromUri('internal:/product-listing/' . $parent_term_id)->toString();
 
-            // Insert the parent term link before the current term in the breadcrumb.
-            $breadcrumb[] = '<a href="' . $parent_url . '">' . $parent_term->getName() . '</a>';
-          }
-        }
+//             // Insert the parent term link before the current term in the breadcrumb.
+//             $breadcrumb[] = '<a href="' . $parent_url . '">' . $parent_term->getName() . '</a>';
+//           }
+//         }
 
-        // Add the current term's title as the last breadcrumb item.
-        $breadcrumb[] = $term->getName();
-      }
-    }
-  }
-}
+//         // Add the current term's title as the last breadcrumb item.
+//         $breadcrumb[] = $term->getName();
+//       }
+//     }
+//   }
+// }
