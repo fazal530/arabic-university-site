@@ -1,0 +1,73 @@
+uuid: e6eb8cc5-da43-4523-9f81-fdbe374e0455
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_with_image
+    - node.type.about_page
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - entity_reference_revisions
+id: node.about_page.field_text_with_image
+field_name: field_text_with_image
+entity_type: node
+bundle: about_page
+label: 'Text with Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_with_image: text_with_image
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 16
+        enabled: false
+      accreditations_wrapper:
+        weight: 17
+        enabled: false
+      events_block_view:
+        weight: 18
+        enabled: false
+      hero_section:
+        weight: 19
+        enabled: false
+      icon_link:
+        weight: 20
+        enabled: false
+      icon_link_wrapper:
+        weight: 21
+        enabled: false
+      label_text_wrapper:
+        weight: 22
+        enabled: false
+      label_with_text:
+        weight: 23
+        enabled: false
+      news_block_view:
+        weight: 24
+        enabled: false
+      organization_wrapper:
+        weight: 25
+        enabled: false
+      profile:
+        weight: 26
+        enabled: false
+      profile_wrapper:
+        weight: 27
+        enabled: false
+      text_with_banner:
+        weight: 28
+        enabled: false
+      text_with_file:
+        weight: 29
+        enabled: false
+      text_with_image:
+        weight: 30
+        enabled: true
+field_type: entity_reference_revisions

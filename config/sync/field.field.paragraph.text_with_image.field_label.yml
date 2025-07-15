@@ -1,0 +1,19 @@
+uuid: df481fdc-b34f-4744-8a21-6573dd3ae260
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_label
+    - paragraphs.paragraphs_type.text_with_image
+id: paragraph.text_with_image.field_label
+field_name: field_label
+entity_type: paragraph
+bundle: text_with_image
+label: 'Image Caption'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

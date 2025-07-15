@@ -1,0 +1,28 @@
+uuid: 2e465b4f-38c5-412a-a48b-31d0bc0ab0bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.limited_fields
+    - field.field.paragraph.text_with_image.field_description_image
+    - field.field.paragraph.text_with_image.field_description_text
+    - field.field.paragraph.text_with_image.field_label
+    - paragraphs.paragraphs_type.text_with_image
+id: paragraph.text_with_image.limited_fields
+targetEntityType: paragraph
+bundle: text_with_image
+mode: limited_fields
+content:
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_description_image: true
+  field_description_text: true
+  status: true
