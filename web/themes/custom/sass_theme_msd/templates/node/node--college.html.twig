@@ -88,7 +88,7 @@
     </footer>
     {% endif %}
 
-    <div{{ content_attributes }}>
+    <div class="college-page-wrapper" {{ content_attributes }}>
       <div class="college">
         {{ content.field_banner_text}}
         <div class="college-content container">
@@ -118,7 +118,10 @@
           </div>
         </div>
       </div>
-      {{ content.field_former_deans }}
+      <div class="former-deans">
+        {{ content.field_former_deans }}
+      </div>
+     
 
       </div>
 
