@@ -1,0 +1,33 @@
+uuid: 3e796b38-582f-4692-bf6f-fdc2c3c4b55e
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: college_content_type
+label: 'College Content Type'
+type: 'canonical_entities:node'
+pattern: 'Colleges/[node:title]'
+selection_criteria:
+  2753bc19-97e9-4f38-8e1e-6dbd4bab6cc3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 2753bc19-97e9-4f38-8e1e-6dbd4bab6cc3
+    context_mapping:
+      node: node
+    bundles:
+      college: college
+  7915b742-d10a-4886-8b17-1a81ab20377e:
+    id: language
+    negate: false
+    uuid: 7915b742-d10a-4886-8b17-1a81ab20377e
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language
