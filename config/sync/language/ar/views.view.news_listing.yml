@@ -30,4 +30,16 @@ display:
           content:
             value: ''
             format: full_html
+  block_3:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="news-header"><h2>الأخبار ذات الصلة</h2></div>'
+            format: full_html
+      footer:
+        area:
+          content:
+            value: ''
+            format: full_html
 label: 'كتلة قائمة الأخبار'

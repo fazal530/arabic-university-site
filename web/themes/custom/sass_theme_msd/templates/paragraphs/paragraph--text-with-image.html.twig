@@ -47,7 +47,7 @@
   ]
   %}
   {% block paragraph %}
-  <div {{ attributes.addClass(classes) }}>
+  <div class="description-wrapper" {{ attributes.addClass(classes) }}>
     {% block content %}
   
       {% if paragraph.field_label.value  is not empty %}
@@ -64,7 +64,7 @@
   </div>
       {% else %}
       
-        <div class="description-wrapper">
+        
           <div class="description container">
             <div class="description-text">
               {{ content.field_description_text }}
@@ -73,8 +73,8 @@
               {{ content.field_description_image }}
             </div>
           </div>
-        </div>
-       
+      
+     
       {% endif %}
   
     {% endblock %}

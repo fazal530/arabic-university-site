@@ -1,0 +1,76 @@
+uuid: 20375924-6d01-4598-995e-5b746ee436c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label
+    - node.type.page
+    - paragraphs.paragraphs_type.label
+  module:
+    - entity_reference_revisions
+id: node.page.field_label
+field_name: field_label
+entity_type: node
+bundle: page
+label: 'Label '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      label: label
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 17
+        enabled: false
+      accreditations_wrapper:
+        weight: 18
+        enabled: false
+      events_block_view:
+        weight: 19
+        enabled: false
+      hero_section:
+        weight: 20
+        enabled: false
+      icon_link:
+        weight: 21
+        enabled: false
+      icon_link_wrapper:
+        weight: 22
+        enabled: false
+      label:
+        weight: 23
+        enabled: true
+      label_text_wrapper:
+        weight: 24
+        enabled: false
+      label_with_text:
+        weight: 25
+        enabled: false
+      news_block_view:
+        weight: 26
+        enabled: false
+      organization_wrapper:
+        weight: 27
+        enabled: false
+      profile:
+        weight: 28
+        enabled: false
+      profile_wrapper:
+        weight: 29
+        enabled: false
+      text_with_banner:
+        weight: 30
+        enabled: false
+      text_with_file:
+        weight: 31
+        enabled: false
+      text_with_image:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions
