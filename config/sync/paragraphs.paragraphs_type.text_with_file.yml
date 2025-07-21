@@ -1,0 +1,10 @@
+uuid: b9a72c81-29ce-441d-9acd-62f2c5d02770
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_file
+label: 'Text with File'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

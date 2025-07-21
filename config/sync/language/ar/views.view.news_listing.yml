@@ -18,4 +18,28 @@ display:
           content:
             value: '<div class="news-button"><button><a href="/news"> عرض الكل</a></button></div>'
             format: full_html
+  block_2:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="news-header"><h2>أخبار الكلية</h2></div>'
+            format: full_html
+      footer:
+        area:
+          content:
+            value: ''
+            format: full_html
+  block_3:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="news-header"><h2>الأخبار ذات الصلة</h2></div>'
+            format: full_html
+      footer:
+        area:
+          content:
+            value: ''
+            format: full_html
 label: 'كتلة قائمة الأخبار'

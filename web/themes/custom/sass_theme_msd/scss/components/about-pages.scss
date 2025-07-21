@@ -7,34 +7,25 @@ h2 {
     align-items: center;
     cursor: pointer;
     padding-bottom: 10px;
-
-    p {
-        span {
-            @extend .h4;
-            color: $secondary;
-        }
+   h4 {
+        color: $secondary;
     }
-}
 
-.accordion svg {
-    height: 24px;
-    width: 24px;
-    fill: #007b8a;
-}
+    svg {
+        height: 24px;
+        width: 24px;
+        fill: #007b8a;
+    }
 
-.accordion .icon {
-    margin-right: 10px;
-    display: flex;
-}
+    .icon {
+        margin-right: 10px;
+        display: flex;
+    }
 
-.accordion .label {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.accordion .arrow {
-    margin-left: 10px;
-    transition: transform 0.3s;
+    .arrow {
+        margin-left: 10px;
+        transition: transform 0.3s;
+    }
 }
 
 .accordion.open .arrow {
@@ -62,13 +53,13 @@ h2 {
 
     @include desktop {
         flex-direction: row;
-        gap: 125px;
+        gap: 73px;
     }
 
     .sidebar-left {
         border-radius: 10px;
         border: 1px solid $light-gray;
-        height: 360px;
+        height: 350px;
         background-color: $white;
         width: 100%;
 
@@ -83,7 +74,6 @@ h2 {
 
             li {
                 @extend .h5;
-
                 list-style: none;
                 display: flex;
                 margin-bottom: 4px;
@@ -121,7 +111,7 @@ h2 {
         @include tablet {
             flex-direction: row;
         }
-        
+
         .sidebar-right_text {
 
             h4 {
@@ -135,13 +125,12 @@ h2 {
 
         .btn {
             display: flex;
-            justify-content: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
 
             button {
-                padding-inline: 50px;
-                padding-block: 10px;
-                background-color: transparent;
-                border: 1px solid $tertiary;
+                background-color: unset;
+                border: unset;
                 width: 100%;
 
                 @include tablet {
@@ -152,13 +141,15 @@ h2 {
                     @extend .h6;
                     text-decoration: none;
                     color: $tertiary;
-                }
+                    padding-inline: 50px;
+                    padding-block: 10px;
+                    border: 1px solid $tertiary;
+                    background-color: transparent;
 
-                &:hover {
-                    background-color: $primary;
-
-                    a {
+                    &:hover {
+                        background-color: $primary;
                         color: $white;
+
                     }
                 }
             }
@@ -189,29 +180,162 @@ h2 {
         flex-direction: column;
         gap: 0px !important;
     }
-    .trustees-wrapper{
+
+    .trustees-wrapper {
         display: flex;
         flex-direction: column;
-        
+
         @include tablet {
             flex-direction: row;
+            gap: 73px;
+        }
+
+        @include desktop {
+            gap: 102px;
         }
     }
 }
 
 
-.colleges-node{
+.colleges-node {
     article {
         .paragraph--type--text-with-banner {
             display: none;
         }
-        h2{
-            a{
-                span{
+
+        h2 {
+            a {
+                span {
                     display: none;
                 }
             }
         }
-        
+
+    }
+}
+
+.carosal_wrapper {
+    margin-top: 30px;
+
+    @include tablet {
+        padding-inline: 80px;
+    }
+
+    @include desktop {
+        padding-inline: 55px;
+    }
+
+    .make-carosel {
+        .slick-arrow {
+            background-color: $gray-light !important;
+            top: 40.4% !important;
+            transform: translate(0, -40%);
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+
+            &:hover::before {
+                color: $white !important;
+                filter: brightness(0) invert(1);
+            }
+
+            @include tablet {
+                width: 55px;
+                height: 55px;
+            }
+
+            @include desktop {
+                top: 35% !important;
+            }
+        }
+
+        .slick-prev,
+        .slick-next {
+            &::before {
+                content: "" !important;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background-image: url('../icons/slick_arrow.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+
+                @include desktop {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .slick-prev {
+            @include tablet {
+                [dir="ltr"] & {
+                    left: -10% !important;
+                }
+            }
+
+            @include desktop {
+                [dir="ltr"] & {
+                    left: -5% !important;
+                }
+            }
+
+            &::before {
+                [dir="rtl"] & {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .slick-next {
+            @include tablet {
+                [dir="ltr"] & {
+                    right: -10% !important;
+                }
+            }
+
+            @include desktop {
+                [dir="ltr"] & {
+                    right: -5% !important;
+                }
+            }
+
+            &::before {
+                [dir="ltr"] & {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .profile-wrapper {
+            @include tablet {
+                margin-inline: 10px;
+            }
+
+            @include desktop {
+                margin-inline: 38px;
+            }
+
+            a {
+                .profile-image {
+                    height: 235px !important;
+
+                    @include desktop {
+                        height: 288px !important;
+                    }
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .slick-track {
+            @include tablet {
+                gap: 0px !important;
+            }
+        }
     }
 }

@@ -1,0 +1,19 @@
+uuid: 3dddabab-7dbb-4159-a911-7f381faad3e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.text_with_file.field_description
+    - field.field.paragraph.text_with_file.field_description_text
+    - field.field.paragraph.text_with_file.field_upload_file
+    - paragraphs.paragraphs_type.text_with_file
+id: paragraph.text_with_file.token
+targetEntityType: paragraph
+bundle: text_with_file
+mode: token
+content: {  }
+hidden:
+  field_description: true
+  field_description_text: true
+  field_upload_file: true

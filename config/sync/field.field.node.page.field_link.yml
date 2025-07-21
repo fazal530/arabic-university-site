@@ -1,0 +1,79 @@
+uuid: 19ec3ff0-7ed7-4f70-b41a-75a8220a2974
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.page
+    - paragraphs.paragraphs_type.link_button
+  module:
+    - entity_reference_revisions
+id: node.page.field_link
+field_name: field_link
+entity_type: node
+bundle: page
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      link_button: link_button
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 18
+        enabled: false
+      accreditations_wrapper:
+        weight: 19
+        enabled: false
+      events_block_view:
+        weight: 20
+        enabled: false
+      hero_section:
+        weight: 21
+        enabled: false
+      icon_link:
+        weight: 22
+        enabled: false
+      icon_link_wrapper:
+        weight: 23
+        enabled: false
+      label:
+        weight: 24
+        enabled: false
+      label_text_wrapper:
+        weight: 25
+        enabled: false
+      label_with_text:
+        weight: 26
+        enabled: false
+      link_button:
+        weight: 27
+        enabled: true
+      news_block_view:
+        weight: 28
+        enabled: false
+      organization_wrapper:
+        weight: 29
+        enabled: false
+      profile:
+        weight: 30
+        enabled: false
+      profile_wrapper:
+        weight: 31
+        enabled: false
+      text_with_banner:
+        weight: 32
+        enabled: false
+      text_with_file:
+        weight: 33
+        enabled: false
+      text_with_image:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

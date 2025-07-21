@@ -14,12 +14,14 @@ bundle: college
 label: Navigation
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   selection: blocks
   selection_settings:
     plugin_ids:
-      'system_menu_block:footer': 'system_menu_block:footer'
+      'superfish:college-applied': 'superfish:college-applied'
+      'superfish:graduate-college': 'superfish:graduate-college'
+      'superfish:college-of-law': 'superfish:college-of-law'
 field_type: block_field

@@ -1,0 +1,23 @@
+uuid: 01331fee-a081-422f-874a-9d086ba5be46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.label.field_heading_size
+    - field.field.paragraph.label.field_label
+    - paragraphs.paragraphs_type.label
+id: paragraph.label.default
+targetEntityType: paragraph
+bundle: label
+mode: default
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_heading_size: true

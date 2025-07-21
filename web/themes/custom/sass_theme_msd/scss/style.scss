@@ -3,7 +3,6 @@
 // 1. BASE FILES
 @import "base/mixins";
 @import "base/variables";
-@import "base/base";
 @import "base/typography";
 @import "base/fonts";
 @import "base/container";
@@ -11,12 +10,14 @@
 @import "base/messages";
 @import "base/grid";
 @import "base/menu-local-task";
+@import "base/base";
 
 
 
 
 // 3. COMPONENTS
 @import "components/menu";
+@import "components/page-title";
 @import "components/hero";
 @import "components/news";
 @import "components/events";
@@ -26,6 +27,7 @@
 @import "components/about";
 @import "components/about-pages";
 @import "components/profile";
+@import "components/college-page";
 @import "components/footer";
 
 

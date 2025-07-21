@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_banner_text
     - node.type.colleges
-    - paragraphs.paragraphs_type.text_with_banner
   module:
     - entity_reference_revisions
 id: node.colleges.field_banner_text
@@ -15,14 +14,13 @@ bundle: colleges
 label: 'Banner Text'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles:
-      text_with_banner: text_with_banner
+    target_bundles: null
     negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:
@@ -43,6 +41,12 @@ settings:
       icon_link_wrapper:
         weight: 18
         enabled: false
+      label_text_wrapper:
+        weight: 22
+        enabled: false
+      label_with_text:
+        weight: 23
+        enabled: false
       news_block_view:
         weight: 19
         enabled: false
@@ -57,7 +61,10 @@ settings:
         enabled: false
       text_with_banner:
         weight: 23
-        enabled: true
+        enabled: false
+      text_with_file:
+        weight: 29
+        enabled: false
       text_with_image:
         weight: 24
         enabled: false

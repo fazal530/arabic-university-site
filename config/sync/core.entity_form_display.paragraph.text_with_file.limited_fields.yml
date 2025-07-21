@@ -1,0 +1,21 @@
+uuid: 48defaff-b480-4b82-a20f-3c3897129d94
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.limited_fields
+    - field.field.paragraph.text_with_file.field_description
+    - field.field.paragraph.text_with_file.field_description_text
+    - field.field.paragraph.text_with_file.field_upload_file
+    - paragraphs.paragraphs_type.text_with_file
+id: paragraph.text_with_file.limited_fields
+targetEntityType: paragraph
+bundle: text_with_file
+mode: limited_fields
+content: {  }
+hidden:
+  created: true
+  field_description: true
+  field_description_text: true
+  field_upload_file: true
+  status: true

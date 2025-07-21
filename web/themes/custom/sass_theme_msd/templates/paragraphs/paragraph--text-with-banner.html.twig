@@ -49,11 +49,14 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
+    {% if content.field_label|render|trim is not empty %}
     <div class="description-banner-wrapper">
       <div class="description-label">
-      {{content.field_label}}
+        {{ content.field_label }}
       </div>
-      </div>
+    </div>
+  {% endif %}
+  
     {% endblock %}
   </div>
 {% endblock paragraph %}

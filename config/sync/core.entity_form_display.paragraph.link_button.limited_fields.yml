@@ -1,0 +1,28 @@
+uuid: 51be97a0-0d46-4eac-9e67-2c1a40b9fa0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.limited_fields
+    - field.field.paragraph.link_button.field_link
+    - field.field.paragraph.link_button.field_upload_file
+    - paragraphs.paragraphs_type.link_button
+  module:
+    - link
+id: paragraph.link_button.limited_fields
+targetEntityType: paragraph
+bundle: link_button
+mode: limited_fields
+content:
+  field_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_upload_file: true
+  status: true

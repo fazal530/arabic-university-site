@@ -1,0 +1,30 @@
+uuid: 37dec534-3d4a-41dd-b407-1bbbc23f4c33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.label.field_heading_size
+    - field.field.paragraph.label.field_label
+    - paragraphs.paragraphs_type.label
+id: paragraph.label.default
+targetEntityType: paragraph
+bundle: label
+mode: default
+content:
+  field_heading_size:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

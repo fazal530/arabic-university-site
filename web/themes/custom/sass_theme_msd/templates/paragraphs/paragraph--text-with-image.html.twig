@@ -49,16 +49,28 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 {% block paragraph %}
 <div class="description-wrapper" {{ attributes.addClass(classes) }}>
   {% block content %}
-    <div class="description container">
-    
-      <div class="description-text">
-        {{ content.field_description_text }}
-      </div>
-      <div class="description-image">
-        {{ content.field_description_image}}
-      </div>
+
+  {% if paragraph.field_label.value is not empty %}
+  <div class="trustees-wrapper">
+    <div class="sidebar-right_text">
+      {{ content.field_description_text }}
     </div>
-  
+    <div class="sidebar-right_image">
+      {{ content.field_description_image }}
+      <h4>{{ paragraph.field_label.value }}</h4>
+    </div>
+  </div>
+  {% else %}
+
+  <div class="description container">
+    <div class="description-text">
+      {{ content.field_description_text }}
+    </div>
+    <div class="description-image">
+      {{ content.field_description_image }}
+    </div>
+  </div>
+  {% endif %}
   {% endblock %}
 </div>
 {% endblock paragraph %}

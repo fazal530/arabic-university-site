@@ -1,0 +1,39 @@
+uuid: 783b8d4e-0f9a-40ea-bf8d-55d6d83567ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_heading_size
+field_name: field_heading_size
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: h1
+      label: H1
+    -
+      value: h2
+      label: H2
+    -
+      value: h
+      label: H3
+    -
+      value: h3
+      label: H4
+    -
+      value: h5
+      label: H5
+    -
+      value: h6
+      label: H6
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

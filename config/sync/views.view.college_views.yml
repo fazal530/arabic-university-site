@@ -9,10 +9,9 @@ dependencies:
     - node.type.profile
     - taxonomy.vocabulary.college_categorization
   content:
-    - 'taxonomy_term:college_categorization:6eb8ff76-397b-414e-985a-8de03f264104'
-    - 'taxonomy_term:college_categorization:7bffb768-f68e-41c4-9051-f7a3fd9778db'
-    - 'taxonomy_term:college_categorization:9e2dd882-3a7e-4122-80e4-d3e2e6b1072a'
-    - 'taxonomy_term:profile_categorization:e75e0bfe-ad6c-427d-84e8-cac936bfcb26'
+    - 'taxonomy_term:college_categorization:32825c9b-b2b0-4668-a27e-f299d64ee47e'
+    - 'taxonomy_term:college_categorization:35bd5f4e-0dc9-408d-8412-3cc06e326fdd'
+    - 'taxonomy_term:college_categorization:9c58b0e6-0780-4293-8d8b-504f1536009b'
   module:
     - node
     - paragraphs
@@ -581,9 +580,9 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
-          operator: and
+          operator: or
           value:
-            - 12
+            - 15
           group: 1
           exposed: false
           expose:
@@ -720,7 +719,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
-          operator: and
+          operator: or
           value:
             - 14
           group: 1
@@ -859,9 +858,9 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: taxonomy_index_tid
-          operator: and
+          operator: or
           value:
-            - 13
+            - 16
           group: 1
           exposed: false
           expose:
@@ -950,11 +949,11 @@ display:
         filter_groups: false
       css_class: 'container b-member'
       display_description: ''
+      rendering_language: '***LANGUAGE_language_interface***'
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions

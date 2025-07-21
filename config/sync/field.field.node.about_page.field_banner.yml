@@ -7,7 +7,6 @@ dependencies:
     - node.type.about_page
     - paragraphs.paragraphs_type.organization_wrapper
     - paragraphs.paragraphs_type.profile_wrapper
-    - paragraphs.paragraphs_type.text_with_banner
   module:
     - entity_reference_revisions
 id: node.about_page.field_banner
@@ -17,14 +16,13 @@ bundle: about_page
 label: Banner
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      text_with_banner: text_with_banner
       organization_wrapper: organization_wrapper
       profile_wrapper: profile_wrapper
     negate: 0
@@ -47,6 +45,12 @@ settings:
       icon_link_wrapper:
         weight: 15
         enabled: false
+      label_text_wrapper:
+        weight: 22
+        enabled: false
+      label_with_text:
+        weight: 23
+        enabled: false
       news_block_view:
         weight: 16
         enabled: false
@@ -61,7 +65,10 @@ settings:
         enabled: true
       text_with_banner:
         weight: 17
-        enabled: true
+        enabled: false
+      text_with_file:
+        weight: 29
+        enabled: false
       text_with_image:
         weight: 18
         enabled: false

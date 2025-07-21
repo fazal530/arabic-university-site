@@ -1,0 +1,33 @@
+uuid: 16f0ab10-7fd9-4245-85ba-7070e07ae9ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_listing
+  module:
+    - node
+    - views
+  theme:
+    - sass_theme_msd
+id: sass_theme_msd_views_block__news_listing_block_3
+theme: sass_theme_msd
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news_listing-block_3'
+settings:
+  id: 'views_block:news_listing-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: null
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news_announcements: news_announcements

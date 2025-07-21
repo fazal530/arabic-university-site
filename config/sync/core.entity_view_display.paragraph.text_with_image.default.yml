@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.text_with_image.field_description_image
     - field.field.paragraph.text_with_image.field_description_text
+    - field.field.paragraph.text_with_image.field_label
     - paragraphs.paragraphs_type.text_with_image
   module:
     - svg_image
@@ -35,5 +36,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden: {  }

@@ -1,0 +1,43 @@
+uuid: 47737150-54a9-477a-9594-9e7240569ab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_file.field_description
+    - field.field.paragraph.text_with_file.field_description_text
+    - field.field.paragraph.text_with_file.field_upload_file
+    - paragraphs.paragraphs_type.text_with_file
+  module:
+    - file
+    - text
+id: paragraph.text_with_file.default
+targetEntityType: paragraph
+bundle: text_with_file
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_description_text:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_upload_file:
+    type: file_generic
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

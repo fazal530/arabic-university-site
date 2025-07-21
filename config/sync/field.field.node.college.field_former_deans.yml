@@ -14,12 +14,14 @@ bundle: college
 label: 'Former Deans'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   selection: blocks
   selection_settings:
     plugin_ids:
-      'views_block:related_profiles-block_1': 'views_block:related_profiles-block_1'
+      'views_block:college_views-block_3': 'views_block:college_views-block_3'
+      'views_block:college_views-block_1': 'views_block:college_views-block_1'
+      'views_block:college_views-block_2': 'views_block:college_views-block_2'
 field_type: block_field
