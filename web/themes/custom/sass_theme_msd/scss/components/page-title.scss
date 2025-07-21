@@ -1,0 +1,22 @@
+.description-banner-wrapper {
+    background-color: $gray-light ;
+
+    .description-label {
+        display: flex;
+        align-items: center;
+        height: 120px;
+        @extend .container;
+
+        @include tablet {
+            height: 168px;
+        }
+
+        @include desktop {
+            height: 207px;
+        }
+
+        h1 {
+            color: $secondary;
+        }
+    }
+}
