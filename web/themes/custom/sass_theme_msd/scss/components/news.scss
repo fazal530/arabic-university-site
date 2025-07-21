@@ -188,6 +188,7 @@
 //NEWS PAGE VIEW DESIGN//
 .views-row {
     .news-page-view {
+        @extend .container;
         display: flex;
         gap: 20px;
         align-items: center;

@@ -1,4 +1,4 @@
-uuid: 8fa5a92f-a717-4570-95c0-e0ffe8eef560
+uuid: de8f976d-65ae-4484-9ac3-27047a5c3ecb
 langcode: en
 status: true
 dependencies:
@@ -6,17 +6,17 @@ dependencies:
     - system
   theme:
     - sass_theme_msd
-id: sass_theme_msd_breadcrumbs
+id: sass_theme_msd_pagetitle
 theme: sass_theme_msd
 region: breadcrumb
-weight: -13
+weight: -14
 provider: null
-plugin: system_breadcrumb_block
+plugin: page_title_block
 settings:
-  id: system_breadcrumb_block
-  label: Breadcrumbs
+  id: page_title_block
+  label: 'Page title'
   label_display: '0'
-  provider: system
+  provider: core
 visibility:
   request_path:
     id: request_path
