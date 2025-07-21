@@ -66,9 +66,9 @@ settings:
   hide_linkdescription: 0
   add_linkdescription: 0
   link_depth_class: 1
+  link_text_prefix: ''
+  link_text_suffix: ''
   custom_list_class: ''
   custom_item_class: ''
   custom_link_class: ''
-  link_text_prefix: ''
-  link_text_suffix: ''
 visibility: {  }
