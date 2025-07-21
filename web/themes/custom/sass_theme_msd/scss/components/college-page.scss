@@ -99,6 +99,9 @@
                     @include desktop {
                         margin-bottom: 100px;
                         padding: 40px 57px 40px 20px;
+                        [dir="rtl"] & {
+                          padding: 40px 20px 40px 57px;
+                    }
 
                     }
 
@@ -132,7 +135,7 @@
 
             @include desktop {
                 grid-column: 6/-1;
-                grid-row: 1/4;
+                grid-row: 1/3;
             }
 
             p {
@@ -142,8 +145,8 @@
 
             .college-deans {
                 .college-message {
-
-                    h2 {
+                   flex: 1;
+                h2 {
                         white-space: nowrap;
                     }
 
@@ -172,24 +175,14 @@
                 }
 
                 .college-image {
-                    width: 100%;
-                    height: 100%;
-                    padding-bottom: 78px;
-
-
-
-
-
-                    img {
-                        width: 340px;
-                        height: 293px;
+                    height: 293px;
+                    padding-bottom:78px;
+                    flex: 1;          
+                 img {
+                        width: 100%;
                         object-fit: cover;
                         border-radius: 10px;
-
-                        @include desktop {
-                            width: 400px;
-
-                        }
+                        
                     }
                 }
             }

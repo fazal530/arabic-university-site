@@ -93,11 +93,6 @@ body {
   }
 }
 
-
-/* Force mobile accordion visible */
-
-
-
 .college-content .college-menu .sf-accordion-toggle.sf-style-none+ul {
   display: block !important;
 }
@@ -107,19 +102,23 @@ body {
 }
 
 
-// ul {
-//   list-style: none;
-//   @extend .container;
-//   li::before {
-//     content: "";               /* Or use any symbol or icon */
-//               /* Bullet color */
-//     // font-size: 16px;            /* Bullet size */
-//     display: inline-block;
-//     width: 24px;
-//     height: 24px;
-//     border-radius: 50%;                /* 🔸 Exact width you want */
-//     margin-left: -21px;   
-//     background-color: #333;      /* Align bullet to left of text */
-//   }
-// }
+.link-button {
+  border: 1px solid $tertiary;
+  display: inline;
+  padding: 10px 59px;
+  @include tablet{
+     padding: 10px 50px;
+  }
+ a{
+ 
+  font-family: $font_tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  text-decoration: none;
+  color: $tertiary;
+
+}
+}
 

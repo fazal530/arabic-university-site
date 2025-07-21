@@ -69,13 +69,14 @@
     }
 }
 
-.description-wrapper:nth-of-type(even) {
+.description-wrapper:nth-of-type(odd) {
+     
     .description {
 
         flex-direction: column;
 
         @include tablet {
-            flex-direction: row-reverse;
+          flex-direction: row-reverse; 
         }
 
         .description-image {
