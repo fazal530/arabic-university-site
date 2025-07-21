@@ -1,0 +1,24 @@
+uuid: c12059fb-2a36-41ed-a937-620bc348740d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.label.field_heading_size
+    - field.field.paragraph.label.field_label
+    - paragraphs.paragraphs_type.label
+id: paragraph.label.token
+targetEntityType: paragraph
+bundle: label
+mode: token
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_heading_size: true

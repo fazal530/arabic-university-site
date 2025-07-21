@@ -89,16 +89,23 @@
   {% endif %}
 
   <div{{ content_attributes }}>
-  <div class="news-node">
-    <div class="news-node-content">
-      <div class="news-node-date">
-    {{ content.field_date }}
+    <div class="news-node-header">
+    {{content.field_achievements}}
     </div>
+  <div class="news-node container">
+     
+    <div class="news-node-content">
+     
     <div class="news-node-image">
     {{ content.field_image }}
     </div>
+   
+      <div class="news-node-date">
+    {{ content.field_date }}
+    </div>
     <div class="news-node-desc">
     {{ content.field_description }}
+  
     </div>
     </div>
     </div>

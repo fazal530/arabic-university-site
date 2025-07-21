@@ -37,7 +37,7 @@
 						slidesToScroll: 1,     // 👈 Number of slides to move when scrolling/clicking arrow
 						arrows: true,          // 👈 Show previous/next arrows
 						infinite: false,       // 👈 Loop back to first slide when reaching the end (false = no loop)
-						autoplay: false,       // 👈 Automatically scroll through slides
+						autoplay: true,       // 👈 Automatically scroll through slides
 						autoplaySpeed: 3000,   // 👈 Time between auto scrolls (ms), only works if autoplay is true
 						speed: 500,            // 👈 Transition speed (ms) between slides
 					  
@@ -67,7 +67,7 @@
 						slidesToScroll: 1,     // 👈 Number of slides to move when scrolling/clicking arrow
 						arrows: true,          // 👈 Show previous/next arrows
 						infinite: true,       // 👈 Loop back to first slide when reaching the end (false = no loop)
-						autoplay: false,       // 👈 Automatically scroll through slides
+						autoplay: true,       // 👈 Automatically scroll through slides
 						autoplaySpeed: 3000,   // 👈 Time between auto scrolls (ms), only works if autoplay is true
 						speed: 500,            // 👈 Transition speed (ms) between slides
 

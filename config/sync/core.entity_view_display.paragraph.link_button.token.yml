@@ -1,0 +1,30 @@
+uuid: 5b4979ae-4edd-4202-ae5e-9301e5ec1771
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.link_button.field_link
+    - field.field.paragraph.link_button.field_upload_file
+    - paragraphs.paragraphs_type.link_button
+  module:
+    - link
+id: paragraph.link_button.token
+targetEntityType: paragraph
+bundle: link_button
+mode: token
+content:
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_upload_file: true
