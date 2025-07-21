@@ -65,6 +65,7 @@ body {
 
 #block-sass-theme-msd-breadcrumbs {
   @extend .container;
+
   nav[role="navigation"] ol {
     list-style: none;
     margin: 0;
@@ -91,3 +92,34 @@ body {
     text-decoration: none;
   }
 }
+
+
+/* Force mobile accordion visible */
+
+
+
+.college-content .college-menu .sf-accordion-toggle.sf-style-none+ul {
+  display: block !important;
+}
+
+.college-content .college-menu .sf-accordion-toggle.sf-style-none+ul.sf-hidden {
+  display: block !important;
+}
+
+
+// ul {
+//   list-style: none;
+//   @extend .container;
+//   li::before {
+//     content: "";               /* Or use any symbol or icon */
+//               /* Bullet color */
+//     // font-size: 16px;            /* Bullet size */
+//     display: inline-block;
+//     width: 24px;
+//     height: 24px;
+//     border-radius: 50%;                /* 🔸 Exact width you want */
+//     margin-left: -21px;   
+//     background-color: #333;      /* Align bullet to left of text */
+//   }
+// }
+

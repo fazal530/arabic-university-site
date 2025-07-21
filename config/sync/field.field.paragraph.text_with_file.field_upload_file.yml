@@ -6,7 +6,14 @@ dependencies:
     - field.storage.paragraph.field_upload_file
     - paragraphs.paragraphs_type.text_with_file
   module:
+    - content_translation
     - file
+third_party_settings:
+  content_translation:
+    translation_sync:
+      target_id: target_id
+      display: display
+      description: description
 id: paragraph.text_with_file.field_upload_file
 field_name: field_upload_file
 entity_type: paragraph
@@ -14,7 +21,7 @@ bundle: text_with_file
 label: 'Upload File'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

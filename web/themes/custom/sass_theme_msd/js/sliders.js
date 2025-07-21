@@ -1,20 +1,6 @@
 (function ($, Drupal) {
 	Drupal.behaviors.backgroundSlider = {
 		attach: function (context, settings) {
-			// RTL sliders
-			$('[dir="rtl"] .background-slider', context).each(function () {
-				if (!$(this).hasClass('slick-initialized')) {
-					$(this).slick({
-						autoplay: true,
-						autoplaySpeed: 4000,
-						arrows: true,
-						dots: true,
-						fade: true,
-						rtl: true
-					});
-				}
-			});
-
 			// LTR background sliders
 			$('[dir="ltr"] .background-slider', context).each(function () {
 				if (!$(this).hasClass('slick-initialized')) {
@@ -36,10 +22,11 @@
 						slidesToShow: 3,       // 👈 Number of slides (cards) shown at once
 						slidesToScroll: 1,     // 👈 Number of slides to move when scrolling/clicking arrow
 						arrows: true,          // 👈 Show previous/next arrows
-						infinite: false,       // 👈 Loop back to first slide when reaching the end (false = no loop)
-						autoplay: false,       // 👈 Automatically scroll through slides
+						infinite: true,       // 👈 Loop back to first slide when reaching the end (false = no loop)
+						autoplay: true,       // 👈 Automatically scroll through slides
 						autoplaySpeed: 3000,   // 👈 Time between auto scrolls (ms), only works if autoplay is true
-						speed: 500,            // 👈 Transition speed (ms) between slides
+						speed: 500,   
+						rtl: true,         // 👈 Transition speed (ms) between slides
 					  
 						responsive: [          // 👈 Media query breakpoints for responsiveness
 						  {
@@ -67,7 +54,7 @@
 						slidesToScroll: 1,     // 👈 Number of slides to move when scrolling/clicking arrow
 						arrows: true,          // 👈 Show previous/next arrows
 						infinite: true,       // 👈 Loop back to first slide when reaching the end (false = no loop)
-						autoplay: false,       // 👈 Automatically scroll through slides
+						autoplay: true,       // 👈 Automatically scroll through slides
 						autoplaySpeed: 3000,   // 👈 Time between auto scrolls (ms), only works if autoplay is true
 						speed: 500,            // 👈 Transition speed (ms) between slides
 
