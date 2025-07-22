@@ -47,20 +47,21 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }} >
+  <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{content.field_description_text}}
-      
-      <div class="accordion-content">
-        {{ content.field_description }}
-      <div class="btn">
-        <button>
-          <a href="{{ file_url(paragraph.field_upload_file.entity.fileuri) }}" download>
-            {{ 'Download'|t }}
-          </a>
-        </button>
+    <div class="college-page-wrapper">
+      <div class="college">
+        <div class="college-content">
+          <div class="college-left">
+            <div class="college-menu">
+              {{ content }}
+            </div>
+          </div>
+        </div>
       </div>
+     
     </div>
+      
     {% endblock %}
   </div>
 {% endblock paragraph %}
