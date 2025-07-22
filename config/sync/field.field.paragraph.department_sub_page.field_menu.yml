@@ -1,0 +1,27 @@
+uuid: 3f73be4e-ecea-4bef-a2e4-7f075f7c54a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_menu
+    - paragraphs.paragraphs_type.department_sub_page
+  module:
+    - block_field
+id: paragraph.department_sub_page.field_menu
+field_name: field_menu
+entity_type: paragraph
+bundle: department_sub_page
+label: Menu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'superfish:college-applied': 'superfish:college-applied'
+      'superfish:graduate-college': 'superfish:graduate-college'
+      'superfish:college-of-law': 'superfish:college-of-law'
+field_type: block_field
