@@ -64,9 +64,15 @@
       }
     }
   }
-  .slick-track{
+
+  .slick-track {
     display: flex;
-    gap:20px;
+    gap: 20px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
   }
 }
 
@@ -290,7 +296,8 @@
         line-height: 45px;
       }
     }
-    p{
+
+    p {
       @extend.body2;
     }
   }

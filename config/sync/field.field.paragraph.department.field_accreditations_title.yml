@@ -1,0 +1,19 @@
+uuid: 850cc1e9-bb1a-475c-8dce-a905d7921146
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accreditations_title
+    - paragraphs.paragraphs_type.department
+id: paragraph.department.field_accreditations_title
+field_name: field_accreditations_title
+entity_type: paragraph
+bundle: department
+label: 'sub caption'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

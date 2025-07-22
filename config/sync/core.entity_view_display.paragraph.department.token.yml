@@ -1,0 +1,30 @@
+uuid: 5683bfc9-3ee7-43d2-b2a4-7af6eec1cb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.department.field_accreditations_title
+    - field.field.paragraph.department.field_description
+    - field.field.paragraph.department.field_description_image
+    - field.field.paragraph.department.field_heading_dep
+    - field.field.paragraph.department.field_label
+    - paragraphs.paragraphs_type.department
+id: paragraph.department.token
+targetEntityType: paragraph
+bundle: department
+mode: token
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_accreditations_title: true
+  field_description: true
+  field_description_image: true
+  field_heading_dep: true
