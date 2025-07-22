@@ -1,0 +1,50 @@
+uuid: 9c457f54-b1f1-410e-b960-32e8a36b956f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.department.field_department_info
+    - field.field.node.department.field_navigation_menu
+    - field.field.node.department.field_ref_para
+    - node.type.department
+  module:
+    - block_field
+    - entity_reference_revisions
+    - user
+id: node.department.default
+targetEntityType: node
+bundle: department
+mode: default
+content:
+  field_department_info:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_navigation_menu:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_ref_para:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

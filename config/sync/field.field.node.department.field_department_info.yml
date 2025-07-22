@@ -1,0 +1,85 @@
+uuid: d40101d4-9c80-4f86-b917-863ae06a1c30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department_info
+    - node.type.department
+    - paragraphs.paragraphs_type.department
+  module:
+    - entity_reference_revisions
+id: node.department.field_department_info
+field_name: field_department_info
+entity_type: node
+bundle: department
+label: 'Department info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      department: department
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 20
+        enabled: false
+      accreditations_wrapper:
+        weight: 21
+        enabled: false
+      department:
+        weight: 22
+        enabled: true
+      department_section:
+        weight: 23
+        enabled: false
+      events_block_view:
+        weight: 24
+        enabled: false
+      hero_section:
+        weight: 25
+        enabled: false
+      icon_link:
+        weight: 26
+        enabled: false
+      icon_link_wrapper:
+        weight: 27
+        enabled: false
+      label:
+        weight: 28
+        enabled: false
+      label_text_wrapper:
+        weight: 29
+        enabled: false
+      label_with_text:
+        weight: 30
+        enabled: false
+      link_button:
+        weight: 31
+        enabled: false
+      news_block_view:
+        weight: 32
+        enabled: false
+      organization_wrapper:
+        weight: 33
+        enabled: false
+      profile:
+        weight: 34
+        enabled: false
+      profile_wrapper:
+        weight: 35
+        enabled: false
+      text_with_banner:
+        weight: 36
+        enabled: false
+      text_with_file:
+        weight: 37
+        enabled: false
+      text_with_image:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

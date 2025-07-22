@@ -1,0 +1,32 @@
+uuid: fa97457e-2e9d-48b6-808f-705f83d63c06
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.department_section.field_description
+    - field.field.paragraph.department_section.field_heading
+    - field.field.paragraph.department_section.field_link
+    - paragraphs.paragraphs_type.department_section
+  module:
+    - link
+id: paragraph.department_section.preview
+targetEntityType: paragraph
+bundle: department_section
+mode: preview
+content:
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_description: true
+  field_heading: true

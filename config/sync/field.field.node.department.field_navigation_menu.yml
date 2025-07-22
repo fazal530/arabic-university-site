@@ -1,0 +1,25 @@
+uuid: 4ddce8b2-4aeb-420d-9f4d-a315ef8c1046
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_navigation_menu
+    - node.type.department
+  module:
+    - block_field
+id: node.department.field_navigation_menu
+field_name: field_navigation_menu
+entity_type: node
+bundle: department
+label: Navigation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'superfish:graduate-college': 'superfish:graduate-college'
+field_type: block_field
