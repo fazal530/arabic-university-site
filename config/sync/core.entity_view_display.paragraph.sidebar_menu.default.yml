@@ -1,0 +1,22 @@
+uuid: 0e8194d2-4369-4fe9-99c1-32d07d140a54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sidebar_menu.field_menu_block
+    - paragraphs.paragraphs_type.sidebar_menu
+  module:
+    - block_field
+id: paragraph.sidebar_menu.default
+targetEntityType: paragraph
+bundle: sidebar_menu
+mode: default
+content:
+  field_menu_block:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

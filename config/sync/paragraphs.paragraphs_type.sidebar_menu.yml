@@ -1,0 +1,10 @@
+uuid: 6f2bca04-3bcc-4804-900e-d4b5b878eaa4
+langcode: en
+status: true
+dependencies: {  }
+id: sidebar_menu
+label: 'sidebar menu'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
