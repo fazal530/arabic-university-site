@@ -1,0 +1,47 @@
+uuid: e4412527-b21a-4b58-a2a2-146a579e646f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.department_section.field_description
+    - field.field.paragraph.department_section.field_heading
+    - field.field.paragraph.department_section.field_link
+    - paragraphs.paragraphs_type.department_section
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+id: paragraph.department_section.default
+targetEntityType: paragraph
+bundle: department_section
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_heading:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

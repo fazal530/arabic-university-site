@@ -1,0 +1,30 @@
+uuid: a3af18d6-1e69-4ac5-b269-ab28e2b4e7cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.limited_fields
+    - field.field.paragraph.department_section.field_description
+    - field.field.paragraph.department_section.field_heading
+    - field.field.paragraph.department_section.field_link
+    - paragraphs.paragraphs_type.department_section
+  module:
+    - link
+id: paragraph.department_section.limited_fields
+targetEntityType: paragraph
+bundle: department_section
+mode: limited_fields
+content:
+  field_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_description: true
+  field_heading: true
+  status: true

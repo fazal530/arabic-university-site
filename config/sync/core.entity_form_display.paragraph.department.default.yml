@@ -1,0 +1,63 @@
+uuid: 59c23eba-7d33-49de-bed6-5f1a640a1b9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.department.field_accreditations_title
+    - field.field.paragraph.department.field_description
+    - field.field.paragraph.department.field_description_image
+    - field.field.paragraph.department.field_heading_dep
+    - field.field.paragraph.department.field_label
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.department
+  module:
+    - svg_image
+    - text
+id: paragraph.department.default
+targetEntityType: paragraph
+bundle: department
+mode: default
+content:
+  field_accreditations_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_description_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_heading_dep:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,32 @@
+uuid: 88c2f698-d376-4c5b-8666-9e05bf0b6c77
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.limited_fields
+    - field.field.paragraph.department.field_accreditations_title
+    - field.field.paragraph.department.field_description
+    - field.field.paragraph.department.field_description_image
+    - field.field.paragraph.department.field_heading_dep
+    - field.field.paragraph.department.field_label
+    - paragraphs.paragraphs_type.department
+id: paragraph.department.limited_fields
+targetEntityType: paragraph
+bundle: department
+mode: limited_fields
+content:
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_accreditations_title: true
+  field_description: true
+  field_description_image: true
+  field_heading_dep: true
+  status: true
