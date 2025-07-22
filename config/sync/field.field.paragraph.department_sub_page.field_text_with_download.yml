@@ -1,45 +1,41 @@
-uuid: 5a9a75ba-629c-480e-9848-50c837fad3c5
+uuid: 338235cc-9eef-428c-a13b-171f52ae97c7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
-    - node.type.standard_page
-    - paragraphs.paragraphs_type.accreditations_achievements
-    - paragraphs.paragraphs_type.department
+    - field.storage.paragraph.field_text_with_download
     - paragraphs.paragraphs_type.department_section
-    - paragraphs.paragraphs_type.icon_link
+    - paragraphs.paragraphs_type.department_sub_page
+    - paragraphs.paragraphs_type.text_with_file
   module:
     - entity_reference_revisions
-id: node.standard_page.field_content
-field_name: field_content
-entity_type: node
-bundle: standard_page
-label: Content
+id: paragraph.department_sub_page.field_text_with_download
+field_name: field_text_with_download
+entity_type: paragraph
+bundle: department_sub_page
+label: 'Text with download'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      icon_link: icon_link
-      accreditations_achievements: accreditations_achievements
-      department: department
       department_section: department_section
-    negate: 1
+      text_with_file: text_with_file
+    negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:
-        weight: 6
-        enabled: true
+        weight: 21
+        enabled: false
       accreditations_wrapper:
-        weight: 8
+        weight: 22
         enabled: false
       department:
         weight: 23
-        enabled: true
+        enabled: false
       department_section:
         weight: 24
         enabled: true
@@ -47,16 +43,16 @@ settings:
         weight: 25
         enabled: false
       events_block_view:
-        weight: 11
+        weight: 26
         enabled: false
       hero_section:
-        weight: -5
+        weight: 27
         enabled: false
       icon_link:
-        weight: 5
-        enabled: true
+        weight: 28
+        enabled: false
       icon_link_wrapper:
-        weight: 7
+        weight: 29
         enabled: false
       label:
         weight: 30
@@ -71,24 +67,24 @@ settings:
         weight: 33
         enabled: false
       news_block_view:
-        weight: 13
+        weight: 34
         enabled: false
       organization_wrapper:
-        weight: 20
+        weight: 35
         enabled: false
       profile:
-        weight: 21
+        weight: 36
         enabled: false
       profile_wrapper:
-        weight: 22
+        weight: 37
         enabled: false
       text_with_banner:
-        weight: 17
+        weight: 38
         enabled: false
       text_with_file:
         weight: 39
-        enabled: false
+        enabled: true
       text_with_image:
-        weight: -4
+        weight: 40
         enabled: false
 field_type: entity_reference_revisions
