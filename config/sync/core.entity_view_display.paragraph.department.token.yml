@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.department.field_description_image
     - field.field.paragraph.department.field_heading_dep
     - field.field.paragraph.department.field_label
+    - field.field.paragraph.department.field_menu2
     - paragraphs.paragraphs_type.department
 id: paragraph.department.token
 targetEntityType: paragraph
@@ -28,3 +29,4 @@ hidden:
   field_description: true
   field_description_image: true
   field_heading_dep: true
+  field_menu2: true
