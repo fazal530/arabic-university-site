@@ -5,29 +5,28 @@
     grid-column: 1/-1;
     grid-row: 1/3;
     background: rgba(0, 0, 0, 0);
-  }
+    height: 618px !important;
+    width: 100%;
 
-  .slick-list {
-    .slick-track {
-      width: 100%;
+    @include tablet {
+      height: 600px !important;
+    }
 
-      img {
-        width: 100%;
-        height: 618px !important;
-        object-fit: cover;
-        object-position: center;
-        z-index: 5 !important;
-
-        @include tablet {
-          height: 600px !important;
-        }
-
-        @include desktop {
-          height: 800px !important;
-        }
-      }
+    @include desktop {
+      height: 800px !important;
     }
   }
+
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+
 
   .hero-section_body {
     @extend .container;
