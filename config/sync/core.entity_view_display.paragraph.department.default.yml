@@ -8,10 +8,8 @@ dependencies:
     - field.field.paragraph.department.field_description_image
     - field.field.paragraph.department.field_heading_dep
     - field.field.paragraph.department.field_label
-    - field.field.paragraph.department.field_menu2
     - paragraphs.paragraphs_type.department
   module:
-    - entity_reference_revisions
     - svg_image
     - text
 id: paragraph.department.default
@@ -64,14 +62,5 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 3
-    region: content
-  field_menu2:
-    type: entity_reference_revisions_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 0
     region: content
 hidden: {  }

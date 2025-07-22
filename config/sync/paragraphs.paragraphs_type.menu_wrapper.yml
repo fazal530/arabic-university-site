@@ -1,0 +1,10 @@
+uuid: f5e250a8-e708-4126-8c3c-1dd7f0ba009a
+langcode: en
+status: true
+dependencies: {  }
+id: menu_wrapper
+label: 'Menu wrapper '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
