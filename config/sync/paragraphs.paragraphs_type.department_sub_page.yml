@@ -1,0 +1,10 @@
+uuid: 50a74ad7-4133-4c76-9ef7-7a1f4796ee2f
+langcode: en
+status: true
+dependencies: {  }
+id: department_sub_page
+label: department-sub-page
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

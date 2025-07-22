@@ -39,6 +39,9 @@ settings:
       department_section:
         weight: 23
         enabled: true
+      department_sub_page:
+        weight: 25
+        enabled: false
       events_block_view:
         weight: 24
         enabled: false
