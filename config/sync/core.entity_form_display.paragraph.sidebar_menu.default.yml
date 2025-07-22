@@ -1,0 +1,26 @@
+uuid: 18cd9c08-632b-4c8a-9d3f-782cb65b702c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sidebar_menu.field_menu_block
+    - paragraphs.paragraphs_type.sidebar_menu
+  module:
+    - block_field
+id: paragraph.sidebar_menu.default
+targetEntityType: paragraph
+bundle: sidebar_menu
+mode: default
+content:
+  field_menu_block:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.department_sub_page.field_text_with_download
     - paragraphs.paragraphs_type.department_sub_page
   module:
-    - block_field
     - entity_reference_revisions
 id: paragraph.department_sub_page.default
 targetEntityType: paragraph
@@ -15,9 +14,11 @@ bundle: department_sub_page
 mode: default
 content:
   field_menu:
-    type: block_field
+    type: entity_reference_revisions_entity_view
     label: hidden
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     weight: 0
     region: content
