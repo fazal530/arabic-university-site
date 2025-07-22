@@ -47,20 +47,26 @@
   ]
 %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}>
+  <div class="department-wrapper"{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{content.field_description_text}}
-      
-      <div class="accordion-content">
-        {{ content.field_description }}
-      <div class="btn">
-        <button>
-          <a href="{{ file_url(paragraph.field_upload_file.entity.fileuri) }}" download>
-            {{ 'Download'|t }}
-          </a>
-        </button>
+      <div class="department">
+        <div class="department-heading">
+      {{ content.field_heading_dep }}
       </div>
-    </div>
+      <div class="department-des">
+      {{ content.field_description }}
+      </div>
+      <div class="department-image">
+      {{ content.field_description_image }}
+      </div>
+      <div class="department-label">
+      {{ content.field_label }}
+      </div>
+      <div class="department-title">
+      {{ content.field_accreditations_title }}
+      </div>
+      </div>
+      
     {% endblock %}
   </div>
 {% endblock paragraph %}
