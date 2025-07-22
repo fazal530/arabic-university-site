@@ -1,0 +1,24 @@
+uuid: aed4f998-0517-4816-a01e-8ba0ba18ec2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.department
+  module:
+    - text
+id: paragraph.department.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: department
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long
