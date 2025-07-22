@@ -1,11 +1,74 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Language Toggle</title>
+  <style>
+    body {
+      background: #2f1b0d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .links.nav {
+      width: 60px;
+      height: 30px;
+      background-color: white;
+      border-radius: 30px;
+      border: 1px solid #ccc;
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .links.nav .nav-item {
+      all: unset;
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: #7bed7b;
+      top: 1px;
+      left: 1px;
+      transition: left 0.3s ease;
+    }
+
+    .links.nav .nav-item[data-lang="ar"].is-active {
+      left: 31px;
+    }
+
+    /* Hide text visually but keep it accessible */
+    .links.nav .nav-item span {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  
+
+<ul class="links nav">
+  <li class="nav-item" data-lang="en">
+    <span><a href="/" class="language-link">En</a></span>
+  </li>
+  <li class="nav-item is-active" data-lang="ar">
+    <span><a href="/ar" class="language-link is-active">Ar</a></span>
+  </li>
+</ul>
+
+<script>
+  document.querySelectorAll('.links.nav .language-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent navigation
+
+      document.querySelectorAll('.links.nav .nav-item').forEach(item => {
+        item.classList.remove('is-active');
+      });
+
+      this.closest('.nav-item').classList.add('is-active');
+    });
+  });
+</script>
+
 </body>
-</html>
+</html> -->
