@@ -1,0 +1,35 @@
+uuid: 07bb86bf-3fe8-419d-a199-8656aa339f35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.menu_wrapper.field_menu_ref
+    - paragraphs.paragraphs_type.menu_wrapper
+  module:
+    - paragraphs
+id: paragraph.menu_wrapper.default
+targetEntityType: paragraph
+bundle: menu_wrapper
+mode: default
+content:
+  field_menu_ref:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
