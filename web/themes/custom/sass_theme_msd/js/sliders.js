@@ -2,18 +2,18 @@
 	Drupal.behaviors.backgroundSlider = {
 		attach: function (context, settings) {
 			// LTR background sliders
-			$('[dir="ltr"] .background-slider', context).each(function () {
-				if (!$(this).hasClass('slick-initialized')) {
-					$(this).slick({
-						autoplay: true,
-						autoplaySpeed: 4000,
-						arrows: true,
-						dots: true,
-						fade: true,
-						rtl: false
-					});
-				}
-			});
+			// $('[dir="ltr"] .background-slider', context).each(function () {
+			// 	if (!$(this).hasClass('slick-initialized')) {
+			// 		$(this).slick({
+			// 			autoplay: true,
+			// 			autoplaySpeed: 4000,
+			// 			arrows: true,
+			// 			dots: true,
+			// 			fade: true,
+			// 			rtl: false
+			// 		});
+			// 	}
+			// });
 
 			// LTR make-carosel sliders
 			$('[dir="rtl"] .make-carosel', context).each(function () {

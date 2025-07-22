@@ -1,0 +1,90 @@
+uuid: 338235cc-9eef-428c-a13b-171f52ae97c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_with_download
+    - paragraphs.paragraphs_type.department_section
+    - paragraphs.paragraphs_type.department_sub_page
+    - paragraphs.paragraphs_type.text_with_file
+  module:
+    - entity_reference_revisions
+id: paragraph.department_sub_page.field_text_with_download
+field_name: field_text_with_download
+entity_type: paragraph
+bundle: department_sub_page
+label: 'Text with download'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      department_section: department_section
+      text_with_file: text_with_file
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 21
+        enabled: false
+      accreditations_wrapper:
+        weight: 22
+        enabled: false
+      department:
+        weight: 23
+        enabled: false
+      department_section:
+        weight: 24
+        enabled: true
+      department_sub_page:
+        weight: 25
+        enabled: false
+      events_block_view:
+        weight: 26
+        enabled: false
+      hero_section:
+        weight: 27
+        enabled: false
+      icon_link:
+        weight: 28
+        enabled: false
+      icon_link_wrapper:
+        weight: 29
+        enabled: false
+      label:
+        weight: 30
+        enabled: false
+      label_text_wrapper:
+        weight: 31
+        enabled: false
+      label_with_text:
+        weight: 32
+        enabled: false
+      link_button:
+        weight: 33
+        enabled: false
+      news_block_view:
+        weight: 34
+        enabled: false
+      organization_wrapper:
+        weight: 35
+        enabled: false
+      profile:
+        weight: 36
+        enabled: false
+      profile_wrapper:
+        weight: 37
+        enabled: false
+      text_with_banner:
+        weight: 38
+        enabled: false
+      text_with_file:
+        weight: 39
+        enabled: true
+      text_with_image:
+        weight: 40
+        enabled: false
+field_type: entity_reference_revisions

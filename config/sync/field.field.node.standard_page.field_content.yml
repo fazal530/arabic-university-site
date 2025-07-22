@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_content
     - node.type.standard_page
     - paragraphs.paragraphs_type.accreditations_achievements
+    - paragraphs.paragraphs_type.department
+    - paragraphs.paragraphs_type.department_section
     - paragraphs.paragraphs_type.icon_link
   module:
     - entity_reference_revisions
@@ -25,6 +27,8 @@ settings:
     target_bundles:
       icon_link: icon_link
       accreditations_achievements: accreditations_achievements
+      department: department
+      department_section: department_section
     negate: 1
     target_bundles_drag_drop:
       accreditations_achievements:
@@ -32,6 +36,15 @@ settings:
         enabled: true
       accreditations_wrapper:
         weight: 8
+        enabled: false
+      department:
+        weight: 23
+        enabled: true
+      department_section:
+        weight: 24
+        enabled: true
+      department_sub_page:
+        weight: 25
         enabled: false
       events_block_view:
         weight: 11
@@ -44,6 +57,18 @@ settings:
         enabled: true
       icon_link_wrapper:
         weight: 7
+        enabled: false
+      label:
+        weight: 30
+        enabled: false
+      label_text_wrapper:
+        weight: 31
+        enabled: false
+      label_with_text:
+        weight: 32
+        enabled: false
+      link_button:
+        weight: 33
         enabled: false
       news_block_view:
         weight: 13
@@ -59,6 +84,9 @@ settings:
         enabled: false
       text_with_banner:
         weight: 17
+        enabled: false
+      text_with_file:
+        weight: 39
         enabled: false
       text_with_image:
         weight: -4
