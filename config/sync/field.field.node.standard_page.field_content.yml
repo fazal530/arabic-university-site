@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.department
     - paragraphs.paragraphs_type.department_section
     - paragraphs.paragraphs_type.icon_link
-    - paragraphs.paragraphs_type.sidebar_menu
   module:
     - entity_reference_revisions
 id: node.standard_page.field_content
@@ -30,7 +29,6 @@ settings:
       accreditations_achievements: accreditations_achievements
       department: department
       department_section: department_section
-      sidebar_menu: sidebar_menu
     negate: 1
     target_bundles_drag_drop:
       accreditations_achievements:
@@ -86,7 +84,7 @@ settings:
         enabled: false
       sidebar_menu:
         weight: 39
-        enabled: true
+        enabled: false
       text_with_banner:
         weight: 17
         enabled: false

@@ -5,7 +5,9 @@ dependencies:
   config:
     - field.storage.node.field_ref_para
     - node.type.department
+    - paragraphs.paragraphs_type.department
     - paragraphs.paragraphs_type.department_section
+    - paragraphs.paragraphs_type.sidebar_menu
     - paragraphs.paragraphs_type.text_with_file
   module:
     - entity_reference_revisions
@@ -23,8 +25,10 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
+      department: department
       department_section: department_section
       text_with_file: text_with_file
+      sidebar_menu: sidebar_menu
     negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:
@@ -35,7 +39,7 @@ settings:
         enabled: false
       department:
         weight: 22
-        enabled: false
+        enabled: true
       department_section:
         weight: 23
         enabled: true
@@ -78,6 +82,9 @@ settings:
       profile_wrapper:
         weight: 35
         enabled: false
+      sidebar_menu:
+        weight: 39
+        enabled: true
       text_with_banner:
         weight: 36
         enabled: false
