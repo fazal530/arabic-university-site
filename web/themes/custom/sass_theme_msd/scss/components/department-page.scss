@@ -1,0 +1,179 @@
+.department-menu-wrapper {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    @include desktop {
+
+        gap: 65px
+    }
+
+    .paragraph--type--sidebar-menu {
+        flex: 1;
+
+        .college-content {
+            display: block;
+            margin-top: 0px;
+        }
+    }
+
+
+}
+
+.department-wrapper {
+    flex: 2;
+
+    .department {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        @include tablet {
+           gap: 31px;
+        }
+     @include desktop {
+            flex-direction: row;
+        }
+
+        .department-left {
+            p {
+                @extend .body2;
+                margin-top: 20px;
+            }
+        }
+
+        .department-right {
+
+            .department-image {
+
+                width: 340px;
+                height: auto;
+
+                @include tablet {
+                    width: 288px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+
+                .department-caption {
+                    text-align: center;
+                  .field-items {
+                        h2 {
+                            @extend .h5;
+                            color: $tertiary;
+                            padding-block: 20px 5px;
+                        }
+                    }
+                }
+
+                .department-sub-caption {
+                    text-align: center;
+                  .field-items {
+                        h2 {
+                            @extend .h6;
+                            color: $tertiary;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.department-section-wrapper {
+    margin-top: 62px;
+
+    .department-section-heading {}
+
+    .department-section-description {
+        padding-block: 10px 20px;
+
+
+        p {
+            @extend .body2;
+        }
+    }
+
+    .department-section-link {
+        @extend .link-button;
+    }
+}
+
+
+
+.text-with-file {
+    margin-top: 60px;
+
+    p {
+        @extend .body2;
+        padding-block: 10px;
+
+        @include tablet {
+            padding-block: 20px;
+        }
+
+        @include desktop {
+            padding-block: 20px 30px;
+        }
+    }
+
+    ul {
+        list-style: none;
+
+
+        li {
+            @extend .h5;
+            color: $tertiary;
+            padding-bottom: 25px;
+            position: relative;
+            padding-left: 30px;
+             [dir="rtl"] & {
+                        padding-right: 30px;
+                    }
+
+            &::before {
+                position: absolute;
+                top: 5px;
+                left: -4px;
+                content: "";
+                display: inline-block;
+                width: 21px;
+                height: 21px;
+                border-radius: 50%;
+                background-color: $primary;
+                 [dir="rtl"] & {
+                    
+                        right: 4px;
+                    }
+
+            }
+        }
+    }
+}
+
+.text-with-file + .accordion-content {
+    display: block;
+    @extend .container;
+    margin-bottom: 60px;
+
+    .btn {
+        button {
+            @extend .link-button;
+
+
+        }
+    }
+}

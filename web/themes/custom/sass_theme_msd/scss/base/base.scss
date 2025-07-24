@@ -104,21 +104,37 @@ body {
 
 .link-button {
   border: 1px solid $tertiary;
-  display: inline;
-  padding: 10px 59px;
+  padding: 10px 40px;
+  text-align: center;
   @include tablet{
-     padding: 10px 50px;
+    padding: 10px 59px;
   }
- a{
- 
-  font-family: $font_tajawal;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 27px;
-  text-decoration: none;
-  color: $tertiary;
+
+  @include tablet {
+    padding: 10px 50px;
+    display: inline;
+  }
+
+  a {
+
+    font-family: $font_tajawal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    text-decoration: none;
+    color: $tertiary;
+
+
+  }
+
+  &:hover {
+    background-color: $primary;
+
+    a {
+      color: $white;
+    }
+
+  }
 
 }
-}
-

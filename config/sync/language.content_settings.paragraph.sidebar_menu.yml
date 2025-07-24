@@ -1,9 +1,9 @@
-uuid: a96782de-1bb3-47a9-8273-a2b4a477c9fb
+uuid: 548eb58a-7b1c-4be2-b2bf-90f1cde55c52
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.department
+    - paragraphs.paragraphs_type.sidebar_menu
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: node.department
-target_entity_type_id: node
-target_bundle: department
+id: paragraph.sidebar_menu
+target_entity_type_id: paragraph
+target_bundle: sidebar_menu
 default_langcode: site_default
 language_alterable: true

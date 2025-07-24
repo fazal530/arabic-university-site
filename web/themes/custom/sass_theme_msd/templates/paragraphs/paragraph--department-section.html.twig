@@ -47,29 +47,21 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 ]
 %}
 {% block paragraph %}
-<div class="department-wrapper" {{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes) }}>
   {% block content %}
-  <div class="department">
-    <div class="department-left">
-      {{ content.field_heading_dep }}
-      {{ content.field_description }}
+  <div class="department-section-wrapper container">
+    <div class="department-section-heading">
+      <h2>
+      {{ content.field_heading }}
+      </h2>
     </div>
-    <div class="department-right">
-      <div class="department-image">
-        {{ content.field_description_image }}
-         <div class="department-caption">
-          {{ content.field_label }}
-        </div>
-         <div class="department-sub-caption">
-          {{ content.field_accreditations_title }}
-        </div>
-         </div>
-       
-       
-     
+    <div class="department-section-description">
+      {{content.field_description}}
+    </div>
+    <div class="department-section-link">
+      {{content.field_link}}
     </div>
   </div>
-
   {% endblock %}
-</div>
-{% endblock paragraph %}
+  </div>
+  {% endblock paragraph %}
