@@ -149,10 +149,10 @@ h6 {
   font-weight: 400;
   line-height: 20px;
   color: $tertiary;
- 
-  
+
+
   @include tablet {
-    font-size: 14px ;
+    font-size: 14px;
     line-height: 24px;
   }
 
@@ -167,7 +167,7 @@ h6 {
 .button {
   @extend .h6;
   border-radius: 20px;
- 
+
 }
 
 .program_button {
@@ -196,9 +196,30 @@ h6 {
   position: absolute;
   top: 0;
 }
-.space-line{
+
+.space-line {
   margin-block: 30px;
   width: 100%;
   height: 1px;
 }
 
+.link-button {
+  border: 1px solid $tertiary;
+  display: inline;
+  padding: 10px 59px;
+
+  @include tablet {
+    padding: 10px 50px;
+  }
+
+  a {
+
+    font-family: $font_tajawal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    text-decoration: none;
+    color: $tertiary;
+  }
+}

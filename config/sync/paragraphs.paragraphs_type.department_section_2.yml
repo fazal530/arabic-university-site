@@ -1,0 +1,10 @@
+uuid: e2b5c878-c6f3-4480-be81-dda9a6682fea
+langcode: en
+status: true
+dependencies: {  }
+id: department_section_2
+label: 'Department section 2'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

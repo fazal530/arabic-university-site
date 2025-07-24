@@ -1,0 +1,71 @@
+.department_subpage {
+    @extend .grid;
+    @extend .container;
+
+    .paragraph--type--sidebar-menu {
+        grid-column: 1/5;
+
+        .college-content {
+            display: block;
+            margin-top: 0px;
+        }
+    }
+
+    .paragraph--type--department-section {
+        grid-column: 6/-1;
+
+        .paragraph--type--label {
+            color: $secondary;
+        }
+
+        p {
+            @extend .body2;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+                gap: 12px;
+                @extend .h5;
+                color: $tertiary;
+                margin-top: 13px;
+                margin-bottom: 10px;
+
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 35px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: $primary;
+                }
+            }
+
+        }
+    }
+
+    .paragraph--type--text-with-file {
+        grid-column: 6/-1;
+
+        h5 {
+            color: $tertiary;
+        }
+
+        .accordion-content {
+            display: block;
+
+            .btn {
+                display: flex;
+                margin-bottom: 30px;
+                margin-top: 20px;
+
+                button {
+                    @extend .link-button
+                }
+            }
+        }
+
+    }
+}
