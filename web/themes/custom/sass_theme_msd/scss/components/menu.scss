@@ -264,3 +264,11 @@
         }
     }
 }
+
+.college-content .college-menu .sf-accordion-toggle.sf-style-none+ul {
+    display: block !important;
+}
+
+.college-content .college-menu .sf-accordion-toggle.sf-style-none+ul.sf-hidden {
+    display: block !important;
+}
