@@ -1,9 +1,9 @@
-uuid: a96782de-1bb3-47a9-8273-a2b4a477c9fb
+uuid: 14209744-7fb1-49f8-85f7-1efcbb5da4a5
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.department
+    - paragraphs.paragraphs_type.link_button
   module:
     - content_translation
 third_party_settings:
@@ -11,8 +11,8 @@ third_party_settings:
     enabled: true
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: node.department
-target_entity_type_id: node
-target_bundle: department
+id: paragraph.link_button
+target_entity_type_id: paragraph
+target_bundle: link_button
 default_langcode: site_default
 language_alterable: true
