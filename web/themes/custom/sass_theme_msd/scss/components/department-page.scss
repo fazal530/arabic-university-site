@@ -94,7 +94,17 @@
 
 
 .department-section-wrapper {
-    margin-top: 62px;
+
+    .department-section-heading {
+        h2{
+            .h2{
+                 margin-top: 62px;
+            }
+            .paragraph--type--label{
+                @extend .h2;
+            }
+        }
+    }
 
     .department-section-description {
         padding-block: 10px 20px;
