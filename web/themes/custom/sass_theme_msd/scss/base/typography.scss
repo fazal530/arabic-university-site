@@ -225,4 +225,12 @@ h6 {
    
    
   }
+
+  &:hover {
+    background-color: $primary;
+
+    a {
+      color: $white;
+    }
+  }
 }

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.text_with_file.field_description
     - field.field.paragraph.text_with_file.field_description_text
+    - field.field.paragraph.text_with_file.field_label
     - field.field.paragraph.text_with_file.field_upload_file
     - paragraphs.paragraphs_type.text_with_file
   module:
@@ -31,12 +32,25 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_label:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_upload_file:
     type: file_generic
     weight: 2
     region: content
     settings:
       progress_indicator: throbber
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
