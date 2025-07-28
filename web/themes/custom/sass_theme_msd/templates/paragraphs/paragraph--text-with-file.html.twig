@@ -49,17 +49,23 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }} >
     {% block content %}
+    {% if paragraph.field_description_text.value %}
       {{content.field_description_text}}
+      {% endif %}
       
       <div class="accordion-content">
+        {% if paragraph.field_description.value %}
         {{ content.field_description }}
+        {% endif %}
+        {% if paragraph.field_label.value %}
       <div class="btn">
         <button>
           <a href="{{ file_url(paragraph.field_upload_file.entity.fileuri) }}" download>
-            {{ 'Download'|t }}
+            {{ paragraph.field_label.value }}
           </a>
         </button>
       </div>
+      {% endif %}
     </div>
     {% endblock %}
   </div>

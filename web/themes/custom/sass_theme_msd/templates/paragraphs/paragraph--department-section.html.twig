@@ -49,18 +49,24 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 {% block paragraph %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-  <div class="department-section-wrapper container">
+  <div class="department-section-wrapper">
+    {% if paragraph.field_heading.value %}
     <div class="department-section-heading">
       <h2>
       {{ content.field_heading }}
       </h2>
     </div>
+    {% endif %}
+    {% if paragraph.field_description.value %}
     <div class="department-section-description">
       {{content.field_description}}
     </div>
+    {% endif %}
+    {% if paragraph.field_link.value %}
     <div class="department-section-link">
       {{content.field_link}}
     </div>
+    {% endif %}
   </div>
   {% endblock %}
   </div>

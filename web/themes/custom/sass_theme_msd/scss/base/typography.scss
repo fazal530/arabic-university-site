@@ -222,4 +222,12 @@ h6 {
     text-decoration: none;
     color: $tertiary;
   }
+
+  &:hover {
+    background-color: $primary;
+
+    a {
+      color: $white;
+    }
+  }
 }

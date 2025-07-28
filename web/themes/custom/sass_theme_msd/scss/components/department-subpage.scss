@@ -1,6 +1,5 @@
 .department_subpage {
     @extend .grid;
-    @extend .container;
 
     .paragraph--type--sidebar-menu {
         grid-column: 1/5;

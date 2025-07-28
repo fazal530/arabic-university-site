@@ -96,8 +96,6 @@
 .department-section-wrapper {
     margin-top: 62px;
 
-    .department-section-heading {}
-
     .department-section-description {
         padding-block: 10px 20px;
 
@@ -110,6 +108,7 @@
     .department-section-link {
         @extend .link-button;
     }
+    
 }
 
 
@@ -155,7 +154,6 @@
                 border-radius: 50%;
                 background-color: $primary;
                  [dir="rtl"] & {
-                    
                         right: 4px;
                     }
 
@@ -166,7 +164,6 @@
 
 .text-with-file + .accordion-content {
     display: block;
-    @extend .container;
     margin-bottom: 60px;
 
     .btn {

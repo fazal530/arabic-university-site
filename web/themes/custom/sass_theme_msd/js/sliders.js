@@ -25,23 +25,23 @@
 						infinite: true,       // 👈 Loop back to first slide when reaching the end (false = no loop)
 						autoplay: true,       // 👈 Automatically scroll through slides
 						autoplaySpeed: 3000,   // 👈 Time between auto scrolls (ms), only works if autoplay is true
-						speed: 500,   
+						speed: 500,
 						rtl: true,         // 👈 Transition speed (ms) between slides
-					  
+
 						responsive: [          // 👈 Media query breakpoints for responsiveness
-						  {
-							breakpoint: 1024,  // 👈 If screen is 1024px or less
-							settings: {
-							  slidesToShow: 2  // 👈 Show 2 slides
+							{
+								breakpoint: 1024,  // 👈 If screen is 1024px or less
+								settings: {
+									slidesToShow: 2  // 👈 Show 2 slides
+								}
+							},
+							{
+								breakpoint: 780,   // 👈 If screen is 768px or less
+								settings: {
+									slidesToShow: 1, // 👈 Show 1 slide
+									arrows: false    // 👈 Hide arrows on small screens
+								}
 							}
-						  },
-						  {
-							breakpoint: 780,   // 👈 If screen is 768px or less
-							settings: {
-							  slidesToShow: 1, // 👈 Show 1 slide
-							  arrows: false    // 👈 Hide arrows on small screens
-							}
-						  }
 						]
 
 					});
