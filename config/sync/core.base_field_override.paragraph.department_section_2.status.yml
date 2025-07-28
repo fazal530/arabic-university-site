@@ -1,0 +1,22 @@
+uuid: 826f7877-96a3-44f2-8261-8ddd2aaaaefb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.department_section_2
+id: paragraph.department_section_2.status
+field_name: status
+entity_type: paragraph
+bundle: department_section_2
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

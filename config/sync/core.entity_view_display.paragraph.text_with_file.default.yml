@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.text_with_file.field_description
     - field.field.paragraph.text_with_file.field_description_text
+    - field.field.paragraph.text_with_file.field_label
     - field.field.paragraph.text_with_file.field_upload_file
     - paragraphs.paragraphs_type.text_with_file
   module:
@@ -28,6 +29,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_upload_file:
     type: file_default

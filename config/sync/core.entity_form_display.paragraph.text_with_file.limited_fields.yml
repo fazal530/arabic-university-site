@@ -6,13 +6,27 @@ dependencies:
     - core.entity_form_mode.paragraph.limited_fields
     - field.field.paragraph.text_with_file.field_description
     - field.field.paragraph.text_with_file.field_description_text
+    - field.field.paragraph.text_with_file.field_label
     - field.field.paragraph.text_with_file.field_upload_file
     - paragraphs.paragraphs_type.text_with_file
 id: paragraph.text_with_file.limited_fields
 targetEntityType: paragraph
 bundle: text_with_file
 mode: limited_fields
-content: {  }
+content:
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   field_description: true
