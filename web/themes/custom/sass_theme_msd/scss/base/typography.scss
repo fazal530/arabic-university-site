@@ -205,12 +205,14 @@ h6 {
 
 .link-button {
   border: 1px solid $tertiary;
-  display: inline;
+  display: block;
   padding: 10px 59px;
+  text-align: center;
   
 
   @include tablet {
     padding: 10px 50px;
+    display: inline;
   }
 
   a {
