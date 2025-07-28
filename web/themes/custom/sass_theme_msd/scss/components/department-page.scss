@@ -32,10 +32,12 @@
         display: flex;
         gap: 20px;
         flex-direction: column;
+
         @include tablet {
-           gap: 31px;
+            gap: 31px;
         }
-     @include desktop {
+
+        @include desktop {
             flex-direction: row;
         }
 
@@ -66,7 +68,8 @@
 
                 .department-caption {
                     text-align: center;
-                  .field-items {
+
+                    .field-items {
                         h2 {
                             @extend .h5;
                             color: $tertiary;
@@ -77,7 +80,8 @@
 
                 .department-sub-caption {
                     text-align: center;
-                  .field-items {
+
+                    .field-items {
                         h2 {
                             @extend .h6;
                             color: $tertiary;
@@ -96,13 +100,11 @@
 .department-section-wrapper {
 
     .department-section-heading {
-        h2{
-            .h2{
-                 margin-top: 62px;
+        h2 {
+            .h2 {
+                margin-top: 62px;
             }
-            .paragraph--type--label{
-                @extend .h2;
-            }
+            @extend .h2;
         }
     }
 
@@ -118,7 +120,7 @@
     .department-section-link {
         @extend .link-button;
     }
-    
+
 }
 
 
@@ -149,9 +151,10 @@
             padding-bottom: 25px;
             position: relative;
             padding-left: 30px;
-             [dir="rtl"] & {
-                        padding-right: 30px;
-                    }
+
+            [dir="rtl"] & {
+                padding-right: 30px;
+            }
 
             &::before {
                 position: absolute;
@@ -163,16 +166,17 @@
                 height: 21px;
                 border-radius: 50%;
                 background-color: $primary;
-                 [dir="rtl"] & {
-                        right: 4px;
-                    }
+
+                [dir="rtl"] & {
+                    right: 4px;
+                }
 
             }
         }
     }
 }
 
-.text-with-file + .accordion-content {
+.text-with-file+.accordion-content {
     display: block;
     margin-bottom: 60px;
 
