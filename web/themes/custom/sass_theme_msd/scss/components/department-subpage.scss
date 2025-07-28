@@ -25,20 +25,31 @@
             list-style: none;
 
             li {
-                display: flex;
-                gap: 12px;
                 @extend .h5;
                 color: $tertiary;
-                margin-top: 13px;
-                margin-bottom: 10px;
-
+                padding-bottom: 25px;
+                position: relative;
+                padding-left: 30px;
+    
+                [dir="rtl"] & {
+                    padding-right: 30px;
+                }
+    
                 &::before {
+                    position: absolute;
+                    top: 5px;
+                    left: -4px;
                     content: "";
                     display: inline-block;
-                    width: 35px;
-                    height: 20px;
+                    width: 21px;
+                    height: 21px;
                     border-radius: 50%;
                     background-color: $primary;
+    
+                    [dir="rtl"] & {
+                        right: 4px;
+                    }
+    
                 }
             }
 
