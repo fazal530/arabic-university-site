@@ -15,22 +15,61 @@
 			// 	}
 			// });
 
+
+
+
+
+
+
+
+
+
 			// LTR make-carosel sliders
 			$('[dir="rtl"] .make-carosel', context).each(function () {
 				if (!$(this).hasClass('slick-initialized')) {
 					$(this).slick({
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						arrows: false,
+						infinite: true,
+						autoplay: true,
+						autoplaySpeed: 3000,
+						rtl: true,
+
+						responsive: [
+							{
+								breakpoint: 1024,
+								settings: {
+									slidesToShow: 2
+								}
+							},
+							{
+								breakpoint: 780,
+								settings: {
+									slidesToShow: 1,
+									arrows: false
+								}
+							}
+						]
+
+					});
+				}
+			});
+			$('[dir="ltr"] .make-carosel', context).each(function () {
+				if (!$(this).hasClass('slick-initialized')) {
+					$(this).slick({
 						slidesToShow: 3,       // 👈 Number of slides (cards) shown at once
 						slidesToScroll: 1,     // 👈 Number of slides to move when scrolling/clicking arrow
-						arrows: true,          // 👈 Show previous/next arrows
+						arrows: false,          // 👈 Show previous/next arrows
 						infinite: true,       // 👈 Loop back to first slide when reaching the end (false = no loop)
 						autoplay: true,       // 👈 Automatically scroll through slides
 						autoplaySpeed: 3000,   // 👈 Time between auto scrolls (ms), only works if autoplay is true
 						speed: 500,
-						rtl: true,         // 👈 Transition speed (ms) between slides
+						ltr: true,           // 👈 Transition speed (ms) between slides
 
 						responsive: [          // 👈 Media query breakpoints for responsiveness
 							{
-								breakpoint: 1024,  // 👈 If screen is 1024px or less
+								breakpoint: 1440,  // 👈 If screen is 1024px or less
 								settings: {
 									slidesToShow: 2  // 👈 Show 2 slides
 								}
@@ -47,22 +86,26 @@
 					});
 				}
 			});
-			$('[dir="ltr"] .make-carosel', context).each(function () {
+
+
+
+			$('[dir="ltr"] .make-slick-carosel', context).each(function () {
 				if (!$(this).hasClass('slick-initialized')) {
 					$(this).slick({
-						slidesToShow: 3,       // 👈 Number of slides (cards) shown at once
+						slidesToShow: 1,       // 👈 Number of slides (cards) shown at once
 						slidesToScroll: 1,     // 👈 Number of slides to move when scrolling/clicking arrow
-						arrows: true,          // 👈 Show previous/next arrows
+						arrows: false,          // 👈 Show previous/next arrows
 						infinite: true,       // 👈 Loop back to first slide when reaching the end (false = no loop)
 						autoplay: true,       // 👈 Automatically scroll through slides
 						autoplaySpeed: 3000,   // 👈 Time between auto scrolls (ms), only works if autoplay is true
-						speed: 500,            // 👈 Transition speed (ms) between slides
+						speed: 500,
+						ltr: true,           // 👈 Transition speed (ms) between slides
 
 						responsive: [          // 👈 Media query breakpoints for responsiveness
 							{
 								breakpoint: 1440,  // 👈 If screen is 1024px or less
 								settings: {
-									slidesToShow: 2  // 👈 Show 2 slides
+									slidesToShow: 1  // 👈 Show 2 slides
 								}
 							},
 							{

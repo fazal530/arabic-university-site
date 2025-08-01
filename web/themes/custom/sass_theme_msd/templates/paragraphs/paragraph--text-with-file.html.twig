@@ -47,6 +47,7 @@
   ]
 %}
 {% block paragraph %}
+<div class="accordion-wrapper">
   <div{{ attributes.addClass(classes) }} >
     {% block content %}
     {% if paragraph.field_description_text.value %}
@@ -69,4 +70,5 @@
     </div>
     {% endblock %}
   </div>
+</div>
 {% endblock paragraph %}

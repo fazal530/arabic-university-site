@@ -42,22 +42,19 @@
         }
 
         .department-left {
+            h2 {
+                @extend .h4;
+            }
             p {
                 @extend .body2;
-                margin-top: 20px;
             }
         }
 
         .department-right {
 
             .department-image {
-
-                width: 340px;
-                height: auto;
-
-                @include tablet {
-                    width: 288px;
-                }
+                width: 295px;
+                height: 399px;
 
                 img {
                     width: 100%;

@@ -12,7 +12,7 @@ dependencies:
 id: sass_theme_msd_newsblock
 theme: sass_theme_msd
 region: content
-weight: -9
+weight: -13
 provider: null
 plugin: 'block_content:7d62bd2d-c33f-4355-8481-f2c3f32ca50d'
 settings:

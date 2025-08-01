@@ -1,0 +1,25 @@
+uuid: 442659d6-9305-4e3d-9cdf-86020d4eb482
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_block
+    - paragraphs.paragraphs_type.college_latest_news
+  module:
+    - block_field
+id: paragraph.college_latest_news.field_news_block
+field_name: field_news_block
+entity_type: paragraph
+bundle: college_latest_news
+label: 'News Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:news_listing-block_4': 'views_block:news_listing-block_4'
+field_type: block_field
