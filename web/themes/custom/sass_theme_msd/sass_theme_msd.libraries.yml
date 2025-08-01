@@ -18,7 +18,8 @@ global:
     js/scroll.js: {}
 
    
-    
+  
+
 
   dependencies:
     - core/drupal
@@ -32,3 +33,11 @@ fontawesome:
   css:
     theme:
       libs/fontawesome/css/all.css: {}
+
+  custom_modal:
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.ajax
+    - core/drupal.dialog
+    - core/drupal.dialog.ajax

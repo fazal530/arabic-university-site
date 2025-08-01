@@ -1,17 +1,18 @@
-uuid: 4df7fbb0-36e1-4b65-a27d-27284b3113c6
+uuid: 869102ca-dd86-4f89-bebd-a98fe290b6fa
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_tel
     - node.type.profile
-id: node.profile.title
-field_name: title
+id: node.profile.field_tel
+field_name: field_tel
 entity_type: node
 bundle: profile
-label: Name
+label: 'Tel:'
 description: ''
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

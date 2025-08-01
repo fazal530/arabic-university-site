@@ -1,16 +1,17 @@
-uuid: 7df2c1eb-4651-43fd-bf3a-3f72b3171b8c
+uuid: fdea1c46-cbfb-4213-865a-99729cbce1d5
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_college
-field_name: field_college
+id: node.field_job_title
+field_name: field_job_title
 entity_type: node
-type: entity_reference
+type: string
 settings:
-  target_type: taxonomy_term
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

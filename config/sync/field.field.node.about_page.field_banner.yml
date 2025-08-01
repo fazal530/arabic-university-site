@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_banner
     - node.type.about_page
     - paragraphs.paragraphs_type.organization_wrapper
-    - paragraphs.paragraphs_type.profile_wrapper
   module:
     - entity_reference_revisions
 id: node.about_page.field_banner
@@ -24,7 +23,6 @@ settings:
   handler_settings:
     target_bundles:
       organization_wrapper: organization_wrapper
-      profile_wrapper: profile_wrapper
     negate: 0
     target_bundles_drag_drop:
       accreditations_achievements:

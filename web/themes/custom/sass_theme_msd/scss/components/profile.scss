@@ -157,3 +157,211 @@
 
 
 
+//profile 2//
+
+
+.profile-content-wrapper {
+    display: flex;
+    gap: 125px;
+
+    .profile-left {
+        .profile-table {
+            width: 485px;
+            height: 335px;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: $light-gray;
+            border-radius: 10px;
+            overflow: hidden;
+
+        }
+
+        .profile-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+
+            .field-items {
+                h2 {
+                    @extend .h6;
+                    color: $tertiary;
+                    text-align: left;
+                }
+            }
+        }
+
+
+        .profile-table td:first-child {
+            font-weight: bold;
+            width: 40%;
+
+            strong {
+                @extend .h6;
+            }
+
+        }
+
+        .profile-table tr:first-child td:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        .profile-table tr:first-child td:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        .profile-table tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+
+        .profile-table tr:last-child td:last-child {
+            border-bottom-right-radius: 10px;
+        }
+
+    }
+
+
+    .profile-right {
+        padding-bottom: 50px;
+
+        .profile-image {
+            width: 610px;
+            height: 406px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+
+            }
+
+        }
+
+        .profile-value {
+            padding-block: 20px 8px;
+
+            h6 {
+                color: #464646;
+            }
+        }
+
+        .profile-email {
+            @extend .body2;
+            color: #464646;
+        }
+
+        .profile-contact {
+            padding-block: 5px;
+
+            .field-items {
+
+                h2 {
+                    @extend .body2;
+                    color: #464646;
+                }
+            }
+        }
+
+        .profile-cv {
+            padding-bottom: 5px;
+
+        }
+
+        .paragraph--type--text-with-file {
+            .accordion-content {
+                display: block;
+
+                .btn {
+                    button {
+                        border: none;
+
+                        a {
+                            text-decoration: none;
+                            @extend .body2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.field-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+    &::before {
+        display: inline-block;
+        color: #118ab2;
+    }
+
+    &.email::before,
+    &.phone::before,
+    &.cv::before,
+    &.calendar::before {
+        content: "";
+        background-size: cover;
+        width: 24px;
+        height: 24px;
+    }
+
+    &.email::before {
+        background-image: url(../icons/email.svg);
+    }
+
+    &.phone::before {
+        background-image: url(../icons/phone.svg);
+    }
+
+    &.cv::before {
+        background-image: url(../icons/download-cv.svg);
+    }
+
+    &.calendar::before {
+        background-image: url(../icons/hours.svg);
+    }
+
+}
+
+.ui-dialog {
+    top: 13% !important;
+  .container {
+        padding-inline: 0px !important;
+        margin-inline: 0px !important;
+        max-width: 0px;
+    }
+
+    .ui-dialog-title {
+        display: none;
+    }
+
+    .ui-dialog-titlebar {
+        padding: 30px !important;
+        background: none !important;
+        border: none !important;
+    }
+
+    .profile-right {
+        padding-bottom: 0px;
+        .profile-image {
+            width: 500px;
+            height: 250px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+
+
+   
+
+
+
+}

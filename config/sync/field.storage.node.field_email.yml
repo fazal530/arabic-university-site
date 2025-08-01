@@ -1,16 +1,14 @@
-uuid: 7df2c1eb-4651-43fd-bf3a-3f72b3171b8c
+uuid: d8eec6e6-5edc-4351-9b3a-0dcf6fdb4a7e
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_college
-field_name: field_college
+id: node.field_email
+field_name: field_email
 entity_type: node
-type: entity_reference
-settings:
-  target_type: taxonomy_term
+type: email
+settings: {  }
 module: core
 locked: false
 cardinality: 1
