@@ -1,0 +1,22 @@
+uuid: 8edf08b9-1d84-4956-a7af-93fecd0458c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.college_latest_news.field_news_block
+    - paragraphs.paragraphs_type.college_latest_news
+  module:
+    - block_field
+id: paragraph.college_latest_news.default
+targetEntityType: paragraph
+bundle: college_latest_news
+mode: default
+content:
+  field_news_block:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

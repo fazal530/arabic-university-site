@@ -1,0 +1,10 @@
+uuid: 58374935-ea86-4135-b5de-626572292716
+langcode: en
+status: true
+dependencies: {  }
+id: navigation
+label: Navigation
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

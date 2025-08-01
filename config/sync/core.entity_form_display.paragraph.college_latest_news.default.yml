@@ -1,0 +1,26 @@
+uuid: 7cacef1d-bed4-49d2-b5ae-6a78df94eaa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.college_latest_news.field_news_block
+    - paragraphs.paragraphs_type.college_latest_news
+  module:
+    - block_field
+id: paragraph.college_latest_news.default
+targetEntityType: paragraph
+bundle: college_latest_news
+mode: default
+content:
+  field_news_block:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

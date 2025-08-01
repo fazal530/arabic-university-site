@@ -12,7 +12,7 @@ dependencies:
 id: sass_theme_msd_views_block__news_listing_block_3
 theme: sass_theme_msd
 region: content
-weight: 0
+weight: -10
 provider: null
 plugin: 'views_block:news_listing-block_3'
 settings:
