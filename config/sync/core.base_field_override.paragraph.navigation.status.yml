@@ -1,17 +1,17 @@
-uuid: 585758bb-8c03-4526-a064-b58cd9b5c7b7
+uuid: ace0d338-2fbf-4352-beba-1cf3dc054063
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.colleges
-id: node.colleges.status
+    - paragraphs.paragraphs_type.navigation
+id: paragraph.navigation.status
 field_name: status
-entity_type: node
-bundle: colleges
+entity_type: paragraph
+bundle: navigation
 label: Published
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 1

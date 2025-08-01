@@ -1,13 +1,13 @@
-uuid: e402159e-bc45-41e6-8549-68e38601173c
+uuid: 89e839ad-b83b-4938-9828-d8dc367d7243
 langcode: en
 status: true
 dependencies:
   module:
     - block_field
-    - node
-id: node.field_members_block
-field_name: field_members_block
-entity_type: node
+    - paragraphs
+id: paragraph.field_navigation_block
+field_name: field_navigation_block
+entity_type: paragraph
 type: block_field
 settings: {  }
 module: block_field

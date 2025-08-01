@@ -1,14 +1,13 @@
-uuid: de2c9dc2-30ae-44dd-8015-ab16a480f485
+uuid: 99015741-dc51-452e-8925-c7c443d8cc47
 langcode: en
 status: true
 dependencies:
   module:
     - entity_reference_revisions
-    - node
     - paragraphs
-id: node.field_banner_text
-field_name: field_banner_text
-entity_type: node
+id: paragraph.field_sidebar_para
+field_name: field_sidebar_para
+entity_type: paragraph
 type: entity_reference_revisions
 settings:
   target_type: paragraph

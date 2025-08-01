@@ -1,13 +1,13 @@
-uuid: de5bac45-1492-4a5b-9c37-65908406c766
+uuid: 6e7dbc2a-dc3f-44c2-b587-d2203e78b253
 langcode: en
 status: true
 dependencies:
   module:
     - block_field
-    - node
-id: node.field_former_deans
-field_name: field_former_deans
-entity_type: node
+    - paragraphs
+id: paragraph.field_news_block
+field_name: field_news_block
+entity_type: paragraph
 type: block_field
 settings: {  }
 module: block_field

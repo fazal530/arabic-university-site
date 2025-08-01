@@ -1,18 +1,18 @@
-uuid: 53dfd588-768a-466d-817a-fc5b2a8e2129
+uuid: 9b61a432-ea28-4c47-af4e-e2a32d162d80
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.colleges
+    - paragraphs.paragraphs_type.navigation
   module:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: true
+    enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
-id: node.colleges
-target_entity_type_id: node
-target_bundle: colleges
+id: paragraph.navigation
+target_entity_type_id: paragraph
+target_bundle: navigation
 default_langcode: site_default
-language_alterable: true
+language_alterable: false

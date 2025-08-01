@@ -1,0 +1,10 @@
+uuid: 85018d18-f8fb-4a80-8536-42ca52d71b47
+langcode: en
+status: true
+dependencies: {  }
+id: college_latest_news
+label: 'College Latest News'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
