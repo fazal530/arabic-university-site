@@ -1,12 +1,12 @@
-uuid: 7df2c1eb-4651-43fd-bf3a-3f72b3171b8c
+uuid: 786256c7-ca12-4e12-99a5-850c32c6c5c0
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_college
-field_name: field_college
+id: node.field_department
+field_name: field_department
 entity_type: node
 type: entity_reference
 settings:

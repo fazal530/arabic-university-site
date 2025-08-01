@@ -27,13 +27,17 @@
             }
 
             .profile-title {
-                padding-block: 10px 15px;
+                padding-block: 15px 10px;
 
                 .field-items {
                     h2 {
                         @extend .h6;
                         text-align: center;
-                        color: $tertiary;
+                        
+                        a{
+                            text-decoration: none;
+                            color: $tertiary;
+                        }
                     }
                 }
             }
@@ -49,31 +53,7 @@
                 }
             }
 
-            // .profile-social-links {
-            //     display: flex;
-            //     justify-content: space-around;
-            //     width: 100%;
-            //     padding-top: 15px;
-
-            //     .icon-wrapper {
-            //         .fontawesome-icon {
-            //             width: 50px;
-            //             height: 50px;
-            //             border-radius: 50%;
-            //             padding: 10px;
-            //             background-color: $gray-light;
-            //         }
-
-            //         .svg-inline--fa {
-            //             width: 30px;
-            //             height: 30px;
-
-            //             path {
-            //                 fill: $secondary;
-            //             }
-            //         }
-            //     }
-            // }
+           
         }
     }
 }
@@ -153,31 +133,7 @@
                 }
             }
 
-            // .profile-social-links {
-            //     display: flex;
-            //     justify-content: space-around;
-            //     width: 100%;
-            //     padding-top: 15px;
-
-            //     .icon-wrapper {
-            //         .fontawesome-icon {
-            //             width: 50px;
-            //             height: 50px;
-            //             border-radius: 50%;
-            //             padding: 10px;
-            //             background-color: $gray-light;
-            //         }
-
-            //         .svg-inline--fa {
-            //             width: 30px;
-            //             height: 30px;
-
-            //             path {
-            //                 fill: $secondary;
-            //             }
-            //         }
-            //     }
-            // }
+           
         }
     }
 }
@@ -251,3 +207,5 @@
         gap: 20px;
     }
 }
+
+

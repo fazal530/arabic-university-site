@@ -9,6 +9,8 @@ dependencies:
     - field.field.paragraph.text_with_file.field_label
     - field.field.paragraph.text_with_file.field_upload_file
     - paragraphs.paragraphs_type.text_with_file
+  module:
+    - file
 id: paragraph.text_with_file.token
 targetEntityType: paragraph
 bundle: text_with_file
@@ -20,9 +22,16 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_upload_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   field_description: true
   field_description_text: true
-  field_upload_file: true

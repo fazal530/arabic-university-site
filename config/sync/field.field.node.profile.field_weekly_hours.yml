@@ -1,0 +1,91 @@
+uuid: 31dd6b2c-ad4f-49a0-8d60-247f36876d47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weekly_hours
+    - node.type.profile
+    - paragraphs.paragraphs_type.text_with_file
+  module:
+    - entity_reference_revisions
+id: node.profile.field_weekly_hours
+field_name: field_weekly_hours
+entity_type: node
+bundle: profile
+label: 'Weekly Hours'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_with_file: text_with_file
+    negate: 0
+    target_bundles_drag_drop:
+      accreditations_achievements:
+        weight: 22
+        enabled: false
+      accreditations_wrapper:
+        weight: 23
+        enabled: false
+      department:
+        weight: 24
+        enabled: false
+      department_section:
+        weight: 25
+        enabled: false
+      department_section_2:
+        weight: 26
+        enabled: false
+      department_sub_page:
+        weight: 27
+        enabled: false
+      events_block_view:
+        weight: 28
+        enabled: false
+      hero_section:
+        weight: 29
+        enabled: false
+      icon_link:
+        weight: 30
+        enabled: false
+      icon_link_wrapper:
+        weight: 31
+        enabled: false
+      label:
+        weight: 32
+        enabled: false
+      label_text_wrapper:
+        weight: 33
+        enabled: false
+      label_with_text:
+        weight: 34
+        enabled: false
+      link_button:
+        weight: 35
+        enabled: false
+      menu_wrapper:
+        weight: 36
+        enabled: false
+      news_block_view:
+        weight: 37
+        enabled: false
+      organization_wrapper:
+        weight: 38
+        enabled: false
+      sidebar_menu:
+        weight: 39
+        enabled: false
+      text_with_banner:
+        weight: 40
+        enabled: false
+      text_with_file:
+        weight: 41
+        enabled: true
+      text_with_image:
+        weight: 42
+        enabled: false
+field_type: entity_reference_revisions

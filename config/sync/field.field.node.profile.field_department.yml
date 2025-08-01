@@ -1,16 +1,16 @@
-uuid: a6ce9611-58a1-4983-bde5-f1f6248e39a8
+uuid: 56965801-e38f-428c-88fd-35f417c10eb5
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_college
+    - field.storage.node.field_department
     - node.type.profile
-    - taxonomy.vocabulary.college_categorization
-id: node.profile.field_college
-field_name: field_college
+    - taxonomy.vocabulary.department
+id: node.profile.field_department
+field_name: field_department
 entity_type: node
 bundle: profile
-label: College
+label: Department
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      college_categorization: college_categorization
+      department: department
     sort:
       field: name
       direction: asc

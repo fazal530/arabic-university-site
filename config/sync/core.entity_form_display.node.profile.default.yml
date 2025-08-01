@@ -1,20 +1,24 @@
-uuid: e2c3946e-9ed0-402f-a4dd-998d33304eff
+uuid: e9309d40-7941-425e-9294-7594b6d0de53
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.profile.field_achievements
-    - field.field.node.profile.field_bio
+    - field.field.node.profile.field_building
     - field.field.node.profile.field_college
-    - field.field.node.profile.field_college_categorization
-    - field.field.node.profile.field_info
-    - field.field.node.profile.field_profile_categorization
-    - field.field.node.profile.field_social_links
+    - field.field.node.profile.field_department
+    - field.field.node.profile.field_email
+    - field.field.node.profile.field_image
+    - field.field.node.profile.field_job_title
+    - field.field.node.profile.field_office_no
+    - field.field.node.profile.field_tel
+    - field.field.node.profile.field_upload_cv
+    - field.field.node.profile.field_weekly_hours
+    - image.style.thumbnail
     - node.type.profile
   module:
     - paragraphs
     - path
-    - text
+    - svg_image
 id: node.profile.default
 targetEntityType: node
 bundle: profile
@@ -22,29 +26,80 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_achievements:
+  field_building:
     type: string_textfield
-    weight: 12
+    weight: 127
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_bio:
-    type: text_textarea
-    weight: 11
+  field_college:
+    type: entity_reference_autocomplete
+    weight: 129
     region: content
     settings:
-      rows: 5
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_college:
+  field_department:
+    type: entity_reference_autocomplete
+    weight: 130
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 122
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_job_title:
+    type: string_textfield
+    weight: 126
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_office_no:
+    type: number
+    weight: 128
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_tel:
+    type: string_textfield
+    weight: 123
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_upload_cv:
     type: paragraphs
-    weight: 8
+    weight: 124
     region: content
     settings:
       title: Paragraph
@@ -54,47 +109,17 @@ content:
       autocollapse: none
       closed_mode_threshold: 0
       add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
-    third_party_settings: {  }
-  field_college_categorization:
-    type: options_buttons
-    weight: 14
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_info:
-    type: paragraphs
-    weight: 9
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: profile
-      default_paragraph_type: profile
+      form_display_mode: limited_fields
+      default_paragraph_type: text_with_file
       features:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
         convert: '0'
         duplicate: duplicate
     third_party_settings: {  }
-  field_profile_categorization:
-    type: options_buttons
-    weight: 13
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_social_links:
+  field_weekly_hours:
     type: paragraphs
-    weight: 10
+    weight: 125
     region: content
     settings:
       title: Paragraph
@@ -104,8 +129,8 @@ content:
       autocollapse: none
       closed_mode_threshold: 0
       add_mode: dropdown
-      form_display_mode: profile
-      default_paragraph_type: icon_link_wrapper
+      form_display_mode: limited_fields
+      default_paragraph_type: text_with_file
       features:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
@@ -114,54 +139,49 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 1
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 4
+    weight: 15
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
+    weight: 120
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 5
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  translation:
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS

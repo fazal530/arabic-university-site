@@ -1,0 +1,57 @@
+uuid: 70bbbb7b-0d4a-4127-bc5c-a74a1cc8adca
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.profile.field_building
+    - field.field.node.profile.field_college
+    - field.field.node.profile.field_department
+    - field.field.node.profile.field_email
+    - field.field.node.profile.field_image
+    - field.field.node.profile.field_job_title
+    - field.field.node.profile.field_office_no
+    - field.field.node.profile.field_tel
+    - field.field.node.profile.field_upload_cv
+    - field.field.node.profile.field_weekly_hours
+    - image.style.medium
+    - node.type.profile
+  module:
+    - svg_image
+    - user
+id: node.profile.teaser
+targetEntityType: node
+bundle: profile
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_building: true
+  field_college: true
+  field_department: true
+  field_email: true
+  field_job_title: true
+  field_office_no: true
+  field_tel: true
+  field_upload_cv: true
+  field_weekly_hours: true
+  langcode: true

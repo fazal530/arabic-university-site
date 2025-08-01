@@ -1,73 +1,118 @@
-uuid: 045fe0ff-57e9-4ea6-a748-f33ec40de739
+uuid: 8efe1adc-d09c-44a2-b473-2920960082fe
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.profile.field_achievements
-    - field.field.node.profile.field_bio
+    - field.field.node.profile.field_building
     - field.field.node.profile.field_college
-    - field.field.node.profile.field_college_categorization
-    - field.field.node.profile.field_info
-    - field.field.node.profile.field_profile_categorization
-    - field.field.node.profile.field_social_links
+    - field.field.node.profile.field_department
+    - field.field.node.profile.field_email
+    - field.field.node.profile.field_image
+    - field.field.node.profile.field_job_title
+    - field.field.node.profile.field_office_no
+    - field.field.node.profile.field_tel
+    - field.field.node.profile.field_upload_cv
+    - field.field.node.profile.field_weekly_hours
+    - image.style.wide
     - node.type.profile
   module:
     - entity_reference_revisions
-    - text
+    - svg_image
     - user
 id: node.profile.default
 targetEntityType: node
 bundle: profile
 mode: default
 content:
-  field_achievements:
+  field_building:
     type: string
-    label: above
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_college:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_department:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: eager
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_job_title:
+    type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 5
     region: content
-  field_bio:
-    type: text_default
+  field_office_no:
+    type: number_integer
     label: hidden
-    settings: {  }
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    weight: 4
+    weight: 7
     region: content
-  field_college:
+  field_tel:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_upload_cv:
     type: entity_reference_revisions_entity_view
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 0
-    region: content
-  field_info:
-    type: entity_reference_revisions_entity_view
-    label: hidden
-    settings:
-      view_mode: profile
-      link: ''
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_social_links:
-    type: entity_reference_revisions_entity_view
-    label: hidden
-    settings:
-      view_mode: preview
-      link: ''
-    third_party_settings: {  }
     weight: 3
     region: content
-  links:
-    settings: {  }
+  field_weekly_hours:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 4
     region: content
 hidden:
-  field_college_categorization: true
-  field_profile_categorization: true
   langcode: true
+  links: true

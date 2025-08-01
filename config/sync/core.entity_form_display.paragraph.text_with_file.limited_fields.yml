@@ -9,6 +9,8 @@ dependencies:
     - field.field.paragraph.text_with_file.field_label
     - field.field.paragraph.text_with_file.field_upload_file
     - paragraphs.paragraphs_type.text_with_file
+  module:
+    - file
 id: paragraph.text_with_file.limited_fields
 targetEntityType: paragraph
 bundle: text_with_file
@@ -16,14 +18,21 @@ mode: limited_fields
 content:
   field_label:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_upload_file:
+    type: file_generic
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -31,5 +40,4 @@ hidden:
   created: true
   field_description: true
   field_description_text: true
-  field_upload_file: true
   status: true

@@ -1,17 +1,18 @@
-uuid: 4df7fbb0-36e1-4b65-a27d-27284b3113c6
+uuid: 3b89429a-5133-46a2-b11a-ca8d2be28018
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_job_title
     - node.type.profile
-id: node.profile.title
-field_name: title
+id: node.profile.field_job_title
+field_name: field_job_title
 entity_type: node
 bundle: profile
-label: Name
+label: 'Job Title'
 description: ''
-required: true
-translatable: true
+required: false
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
