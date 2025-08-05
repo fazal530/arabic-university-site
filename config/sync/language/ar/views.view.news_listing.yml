@@ -42,4 +42,10 @@ display:
           content:
             value: ''
             format: full_html
+  block_4:
+    display_options:
+      fields:
+        field_achievements:
+          alter:
+            text: الأخبار
 label: 'كتلة قائمة الأخبار'

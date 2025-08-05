@@ -118,6 +118,10 @@
                         right: 2px;
                         top: 48%;
                         transform: translate(-31px, -50%) rotate(90deg);
+                        [dir="rtl"] & {
+                            left: 68px;
+                            right: unset;
+                        }
                     }
                 }
                 .accordion.open {
@@ -184,14 +188,29 @@
                                     padding-block: 10px;
                                     padding-left: 20px;
                                     text-align: left;
+                                    [dir="rtl"] & {
+                                        padding-left: unset;
+                                        padding-right: 20px;
+                                        text-align: right;
+                                    }
 
                                     &:first-child {
                                         border-top-left-radius: 10px;
+                                        [dir="rtl"] & {
+                                            border-right: 1px solid $black;
+                                            border-top-right-radius: 10px;
+                                            border-top-left-radius: unset;
+                                        }
                                     }
 
                                     &:last-child {
                                         border-top-right-radius: 10px;
                                         border-right: 1px solid $black;
+                                        [dir="rtl"] & {
+                                            border-right: unset;
+                                            border-top-right-radius: unset;
+                                            border-top-left-radius: 10px;
+                                        }
                                     }
                                 }
                             }
@@ -205,13 +224,25 @@
                                     padding: 10px 77px 10px 18px;
                                     border-bottom: 1px solid $black;
                                     border-left: 1px solid $black;
+                                    [dir="rtl"] & {
+                                        padding: 10px 18px 10px 77px;
+
+
+                                    }
 
                                     &:first-child {
                                         border-left: 1px solid $black;
+                                        [dir="rtl"] & {
+                                            border-right: 1px solid $black;
+                                        }
                                     }
 
                                     &:last-child {
                                         border-right: 1px solid $black;
+                                        [dir="rtl"] & {
+                                            border-right: unset;
+                                            border-left: 1px solid $black;
+                                        }
                                     }
                                 }
 
@@ -219,10 +250,18 @@
                                     td {
                                         &:first-child {
                                             border-bottom-left-radius: 10px;
+                                            [dir="rtl"] & {
+                                                border-bottom-right-radius: 10px;
+                                                border-bottom-left-radius: unset;
+                                            }
                                         }
 
                                         &:last-child {
                                             border-bottom-right-radius: 10px;
+                                            [dir="rtl"] & {
+                                                border-bottom-left-radius: 10px;
+                                                border-bottom-right-radius: unset;
+                                            }
                                         }
                                     }
                                 }
@@ -232,6 +271,12 @@
                 }
             }
         }
+    }
+    .accreditation-title{
+        padding: 0 !important;
+    }
+    .accreditation-main-wrapper{
+        padding: 0 !important;
     }
     .department-wrapper {
         .department {

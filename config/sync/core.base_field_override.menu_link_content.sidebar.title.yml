@@ -1,0 +1,18 @@
+uuid: da25987f-8a88-49c1-a8d1-caf506168cb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sidebar
+id: menu_link_content.sidebar.title
+field_name: title
+entity_type: menu_link_content
+bundle: sidebar
+label: 'Menu link title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

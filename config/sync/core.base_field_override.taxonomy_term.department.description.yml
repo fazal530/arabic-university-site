@@ -1,0 +1,21 @@
+uuid: 4411631e-164d-45ae-ad33-05cbde5ebab7
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.department
+  module:
+    - text
+id: taxonomy_term.department.description
+field_name: description
+entity_type: taxonomy_term
+bundle: department
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

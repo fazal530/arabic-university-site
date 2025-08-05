@@ -1,0 +1,18 @@
+uuid: 6f9945f0-fa4b-4a23-a591-66c88c16fdd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.college_latest_news
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.college_latest_news
+target_entity_type_id: paragraph
+target_bundle: college_latest_news
+default_langcode: site_default
+language_alterable: false

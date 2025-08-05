@@ -72,6 +72,8 @@
 
         #block-sass-theme-msd-mainnavigation,
         #block-sass-theme-msd-mainnavigation--2 {
+            width: 100%;
+
             .sf-menu {
                 padding-inline: 25px;
                 display: block;
@@ -79,7 +81,7 @@
                 left: 0px !important;
                 border-radius: 0px 0px 10px 10px;
                 background-color: $secondary;
-                width: 54%;
+                width: 65%;
 
                 @include tablet {
                     width: 33%;
@@ -166,16 +168,23 @@
                             width: 100% !important;
                             display: flex;
                             background-image: url('../images/pattern.png');
-                            text-align: center;
                             align-items: center;
+                            justify-content: center;
+                            padding-inline: 6px;
                         }
 
                         li {
                             color: $black;
                             opacity: 1;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            white-space: nowrap;
 
-                            &:hover {
-                                color: $black !important;
+                            @include desktop {
+                                justify-content: center;
+                                padding-inline: 3px;
+
                             }
 
                             a {
@@ -186,10 +195,24 @@
 
                                 &:hover {
                                     color: $white !important;
+                                }
+                            }
 
-                                    @include desktop {
-                                        color: $black !important;
-                                    }
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                object-fit: cover;
+                            }
+
+                            &:hover {
+                                color: red !important;
+
+                                a {
+                                    color: $secondary !important;
+                                }
+
+                                img {
+                                    filter: brightness(0) saturate(100%) invert(37%) sepia(91%) saturate(606%) hue-rotate(170deg) brightness(94%) contrast(92%);
                                 }
                             }
                         }

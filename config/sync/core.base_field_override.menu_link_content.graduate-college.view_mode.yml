@@ -1,0 +1,20 @@
+uuid: 49744a90-b094-47a9-81e6-98d6d5ad2da6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.graduate-college
+  module:
+    - menu_item_extras
+id: menu_link_content.graduate-college.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: graduate-college
+label: 'View mode'
+description: 'Per item view mode selector.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

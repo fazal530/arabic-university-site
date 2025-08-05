@@ -1,0 +1,22 @@
+uuid: cfb2a82f-961d-4d8b-9d37-ffaf146089dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.college_latest_news
+id: paragraph.college_latest_news.status
+field_name: status
+entity_type: paragraph
+bundle: college_latest_news
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
