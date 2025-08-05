@@ -1,15 +1,15 @@
-uuid: 68c8c016-d5fb-4ef5-87ce-7ef0d4521c45
+uuid: 9b01024e-0cae-4b5e-8e4d-9e3e4ed2d226
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.college_categorization
+    - taxonomy.vocabulary.department
   module:
     - path
-id: taxonomy_term.college_categorization.path
+id: taxonomy_term.department.path
 field_name: path
 entity_type: taxonomy_term
-bundle: college_categorization
+bundle: department
 label: 'URL alias'
 description: ''
 required: false

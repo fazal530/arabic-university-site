@@ -186,6 +186,9 @@
                     @extend .h6;
                     color: $tertiary;
                     text-align: left;
+                    [dir="rtl"] & {
+                        text-align: right;
+                    }
                 }
             }
         }
@@ -203,18 +206,35 @@
 
         .profile-table tr:first-child td:first-child {
             border-top-left-radius: 10px;
+             [dir="rtl"] & {
+                      border-top-right-radius: 10px;
+                      border-top-left-radius: 0px;
+                    }
         }
 
         .profile-table tr:first-child td:last-child {
             border-top-right-radius: 10px;
-        }
+             [dir="rtl"] & {
+                      border-top-left-radius: 10px;
+                      border-top-right-radius: 0px;
+                    }
+            }
 
         .profile-table tr:last-child td:first-child {
             border-bottom-left-radius: 10px;
+              [dir="rtl"] & {
+                      border-bottom-right-radius: 10px;
+                      border-bottom-left-radius: 0px;
+                    }
         }
 
         .profile-table tr:last-child td:last-child {
             border-bottom-right-radius: 10px;
+            [dir="rtl"] & {
+                      border-bottom-left-radius: 10px;
+                      border-bottom-right-radius: 0px;
+                    }
+            
         }
 
     }

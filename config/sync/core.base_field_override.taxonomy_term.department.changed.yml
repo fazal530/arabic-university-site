@@ -1,13 +1,13 @@
-uuid: 1af9bbf1-20c8-434c-9593-5d750d4b639b
+uuid: 7fe4aaca-ca7e-46c7-aec3-cf3448870be6
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.college_categorization
-id: taxonomy_term.college_categorization.changed
+    - taxonomy.vocabulary.department
+id: taxonomy_term.department.changed
 field_name: changed
 entity_type: taxonomy_term
-bundle: college_categorization
+bundle: department
 label: Changed
 description: 'The time that the term was last edited.'
 required: false

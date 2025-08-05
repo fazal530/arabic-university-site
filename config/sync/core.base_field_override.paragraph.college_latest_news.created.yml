@@ -1,0 +1,18 @@
+uuid: 18664421-1d77-48b1-9b20-80e13c74cad1
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.college_latest_news
+id: paragraph.college_latest_news.created
+field_name: created
+entity_type: paragraph
+bundle: college_latest_news
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created
