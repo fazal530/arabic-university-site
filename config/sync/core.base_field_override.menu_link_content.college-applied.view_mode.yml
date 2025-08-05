@@ -1,0 +1,20 @@
+uuid: 1adda283-daf5-4421-841e-5a7d881aee75
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.college-applied
+  module:
+    - menu_item_extras
+id: menu_link_content.college-applied.view_mode
+field_name: view_mode
+entity_type: menu_link_content
+bundle: college-applied
+label: 'View mode'
+description: 'Per item view mode selector.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

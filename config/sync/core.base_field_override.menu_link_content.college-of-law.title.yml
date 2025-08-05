@@ -1,0 +1,18 @@
+uuid: 23fa6693-50cf-4941-956a-c2aeb57124ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.college-of-law
+id: menu_link_content.college-of-law.title
+field_name: title
+entity_type: menu_link_content
+bundle: college-of-law
+label: 'Menu link title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

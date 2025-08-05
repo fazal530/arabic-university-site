@@ -1,0 +1,18 @@
+uuid: ea702a75-0f95-433d-a298-cba098bc5f4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.college-of-law
+id: menu_link_content.college-of-law.changed
+field_name: changed
+entity_type: menu_link_content
+bundle: college-of-law
+label: Changed
+description: 'The time that the menu link was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

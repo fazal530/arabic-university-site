@@ -1,0 +1,18 @@
+uuid: ef21654a-13fa-4eb8-8ee2-dacf7bbbb035
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.college-applied
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.college-applied
+target_entity_type_id: menu_link_content
+target_bundle: college-applied
+default_langcode: site_default
+language_alterable: true
