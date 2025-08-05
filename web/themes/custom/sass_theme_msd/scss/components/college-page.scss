@@ -3,6 +3,10 @@
         .college-content {
             display: flex;
             gap: 66px;
+            flex-direction: column;
+            @include desktop {
+                flex-direction: row;
+            }
 
             .college-left {
                 .college-menu {
