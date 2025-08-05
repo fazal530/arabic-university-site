@@ -1,13 +1,13 @@
-uuid: d02740a0-0a42-43f7-a3d8-b3675f433a29
+uuid: 6ad79666-0afc-4e58-869a-6ec361ac1a87
 langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.college_categorization
-id: taxonomy_term.college_categorization.status
+    - taxonomy.vocabulary.department
+id: taxonomy_term.department.status
 field_name: status
 entity_type: taxonomy_term
-bundle: college_categorization
+bundle: department
 label: Published
 description: ''
 required: false
