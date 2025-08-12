@@ -4,6 +4,7 @@
             display: flex;
             gap: 66px;
             flex-direction: column;
+
             @include desktop {
                 flex-direction: row;
             }
@@ -14,7 +15,6 @@
                     border-radius: 10px;
                     margin-bottom: 30px;
                     width: 355px;
-
 
                     ul {
                         list-style: none;
@@ -52,15 +52,17 @@
 
                                 li {
                                     background-color: $white !important;
-                                    margin-top: 2px;
+                                    border-top: 2px solid $white;
 
                                     a {
                                         color: $tertiary !important;
                                         padding-block: 8px !important;
+                                        width: 100%;
                                     }
 
                                     &:hover {
                                         background-color: $secondary !important;
+
 
                                         a {
                                             color: $white !important;
@@ -127,6 +129,7 @@
             .college-right {
                 position: relative;
                 overflow: hidden;
+
                 p {
                     padding-block: 10px 60px;
 
@@ -194,4 +197,3 @@
         }
     }
 }
-

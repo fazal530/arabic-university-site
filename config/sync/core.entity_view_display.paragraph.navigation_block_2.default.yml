@@ -1,0 +1,24 @@
+uuid: 7e5a7d46-754d-4b18-aad9-13d21c33b6b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.navigation_block_2.field_ref_para
+    - paragraphs.paragraphs_type.navigation_block_2
+  module:
+    - entity_reference_revisions
+id: paragraph.navigation_block_2.default
+targetEntityType: paragraph
+bundle: navigation_block_2
+mode: default
+content:
+  field_ref_para:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

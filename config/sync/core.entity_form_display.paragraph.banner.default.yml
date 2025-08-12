@@ -1,0 +1,26 @@
+uuid: 014de9d7-f72c-4e35-af9a-095df117c35d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner.field_slider
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.banner
+  module:
+    - svg_image
+id: paragraph.banner.default
+targetEntityType: paragraph
+bundle: banner
+mode: default
+content:
+  field_slider:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

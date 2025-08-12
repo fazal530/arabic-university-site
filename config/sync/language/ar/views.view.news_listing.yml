@@ -6,6 +6,7 @@ display:
           content:
             value: '<img class="my-header-image" src="C:\xampp\htdocs\arabic-university-site\web\themes\custom\sass_theme_msd\images\news-page-image.png" alt="Header Image">'
             format: full_html
+      title: 'كتلة قائمة الأخبار'
   block_1:
     display_options:
       header:

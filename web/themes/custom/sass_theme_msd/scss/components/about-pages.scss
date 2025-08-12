@@ -50,7 +50,7 @@ h2 {
     display: flex;
     gap: 60px;
     flex-direction: column;
-    padding-block: 60px;
+    padding-bottom: 60px;
 
     @include desktop {
         flex-direction: row;
@@ -61,7 +61,7 @@ h2 {
         border-radius: 10px;
         border: 1px solid $light-gray;
         height: 350px;
-        background-color: $white;
+        background-color: $gray-light;
         width: 100%;
 
         @include tablet {
@@ -96,7 +96,7 @@ h2 {
                     background-color: $secondary;
 
                     a {
-                        color: $white;
+                        color: $white !important;
                     }
                 }
             }
@@ -253,12 +253,14 @@ h2 {
     }
 }
 
-
 .submenu-toggle {
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px 24% 10px 0px;
+    [dir="rtl"] & {
+        padding: 10px 15% 10px 25%;
+    }
 
 }
 
