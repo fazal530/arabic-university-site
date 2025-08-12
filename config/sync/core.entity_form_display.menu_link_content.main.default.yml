@@ -38,6 +38,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   view_mode:
     type: menu_item_extras_view_mode_selector_select
     weight: 0
