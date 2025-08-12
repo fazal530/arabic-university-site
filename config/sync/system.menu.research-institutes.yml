@@ -1,0 +1,8 @@
+uuid: 1fe5b979-7522-4437-a643-a731d0fae0fd
+langcode: en
+status: true
+dependencies: {  }
+id: research-institutes
+label: 'Research Institutes'
+description: ''
+locked: false

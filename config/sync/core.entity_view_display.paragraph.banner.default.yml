@@ -1,0 +1,30 @@
+uuid: bc2f8ac1-7973-466a-8f5e-e5c6076cd99c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner.field_slider
+    - paragraphs.paragraphs_type.banner
+  module:
+    - svg_image
+id: paragraph.banner.default
+targetEntityType: paragraph
+bundle: banner
+mode: default
+content:
+  field_slider:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

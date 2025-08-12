@@ -1,0 +1,5 @@
+label: 'الملف الشخصي'
+display:
+  default:
+    display_options:
+      title: 'الملف الشخصي'

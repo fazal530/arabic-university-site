@@ -1,0 +1,10 @@
+uuid: e42b0a20-f775-4dfc-a5a4-58bb342ad8a6
+langcode: en
+status: true
+dependencies: {  }
+id: navigation_block_2
+label: 'Navigation Block-2'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
