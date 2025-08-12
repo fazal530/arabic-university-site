@@ -1,0 +1,34 @@
+uuid: 997843fc-9c1c-4b77-ba7b-f2a7644a15cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion.field_description
+    - field.field.paragraph.accordion.field_description_text
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - text
+id: paragraph.accordion.default
+targetEntityType: paragraph
+bundle: accordion
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_description_text:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

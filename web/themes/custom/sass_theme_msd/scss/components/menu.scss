@@ -184,7 +184,6 @@
                             @include desktop {
                                 justify-content: center;
                                 padding-inline: 3px;
-
                             }
 
                             a {
@@ -203,16 +202,23 @@
                                 height: 20px;
                                 object-fit: cover;
                             }
-
                             &:hover {
-                                color: red !important;
-
-                                a {
-                                    color: $secondary !important;
+                                a{
+                                    width: 100%;
                                 }
+                                img{
+                                filter: invert(1);
+                                }
+                            
+                                @include desktop {
+                                    a {
+                                        color: $secondary !important;  
+                                        width: unset !important;                                   
+                                    }
 
-                                img {
-                                    filter: brightness(0) saturate(100%) invert(37%) sepia(91%) saturate(606%) hue-rotate(170deg) brightness(94%) contrast(92%);
+                                    img {
+                                        filter: brightness(0) saturate(100%) invert(37%) sepia(91%) saturate(606%) hue-rotate(170deg) brightness(94%) contrast(92%);
+                                    }
                                 }
                             }
                         }
