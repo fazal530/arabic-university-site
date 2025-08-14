@@ -1,0 +1,23 @@
+.paragraph--type--two-columns{
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+
+    .paragraph--type--news-block-view{
+          @extend .college-latest-newses;
+          padding: 0 !important;
+          margin: 0 !important;
+        .draggable{
+          width: 820px;
+          height: 546.999px;
+        }
+   
+        
+    }
+}
+.paragraph--type--news-block-view{
+             ul{
+    display: flex;
+    list-style: none;
+  }
+}
