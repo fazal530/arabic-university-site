@@ -1,0 +1,8 @@
+uuid: 0e45b694-3f1f-4077-9f41-af2d5df80e32
+langcode: en
+status: true
+dependencies: {  }
+id: learning-resources
+label: 'Learning Resources'
+description: ''
+locked: false

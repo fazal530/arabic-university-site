@@ -1,0 +1,10 @@
+uuid: fa1c7d33-43e1-4ac8-83d2-4daa56b52a9c
+langcode: en
+status: true
+dependencies: {  }
+id: upload_file
+label: 'Upload File'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

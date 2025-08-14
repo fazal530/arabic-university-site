@@ -1,0 +1,41 @@
+uuid: c34719dd-bc32-415c-9b1d-dce165c026b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.upload_file.field_heading_dep
+    - field.field.paragraph.upload_file.field_label
+    - field.field.paragraph.upload_file.field_upload_file
+    - paragraphs.paragraphs_type.upload_file
+  module:
+    - file
+id: paragraph.upload_file.default
+targetEntityType: paragraph
+bundle: upload_file
+mode: default
+content:
+  field_heading_dep:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_upload_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

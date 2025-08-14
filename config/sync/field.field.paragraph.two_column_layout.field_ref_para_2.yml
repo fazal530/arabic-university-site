@@ -110,4 +110,7 @@ settings:
       two_column_layout:
         weight: 54
         enabled: false
+      upload_file:
+        weight: 56
+        enabled: false
 field_type: entity_reference_revisions

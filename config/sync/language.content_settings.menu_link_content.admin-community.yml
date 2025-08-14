@@ -1,0 +1,18 @@
+uuid: 16780b17-a96c-4f16-a4d1-94c34e354d42
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admin-community
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: menu_link_content.admin-community
+target_entity_type_id: menu_link_content
+target_bundle: admin-community
+default_langcode: site_default
+language_alterable: true

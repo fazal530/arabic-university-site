@@ -1,0 +1,8 @@
+uuid: a39a79f8-c644-4ed8-9cb6-f833d3541b1e
+langcode: en
+status: true
+dependencies: {  }
+id: admin-community
+label: 'Admin & Community '
+description: ''
+locked: false

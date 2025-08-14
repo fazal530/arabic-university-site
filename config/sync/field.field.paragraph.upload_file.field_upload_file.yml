@@ -1,0 +1,27 @@
+uuid: 206ec543-4fad-4162-affa-8f4a852decab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_upload_file
+    - paragraphs.paragraphs_type.upload_file
+  module:
+    - file
+id: paragraph.upload_file.field_upload_file
+field_name: field_upload_file
+entity_type: paragraph
+bundle: upload_file
+label: 'Upload File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc'
+  max_filesize: ''
+  description_field: false
+field_type: file
