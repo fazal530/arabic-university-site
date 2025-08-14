@@ -21,6 +21,7 @@ settings:
   selection: blocks
   selection_settings:
     plugin_ids:
+      'system_menu_block:admin-community': 'system_menu_block:admin-community'
       'system_menu_block:college-applied': 'system_menu_block:college-applied'
       'system_menu_block:graduate-college': 'system_menu_block:graduate-college'
       'system_menu_block:college-of-law': 'system_menu_block:college-of-law'

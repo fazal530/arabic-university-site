@@ -119,11 +119,12 @@
 
             @include desktop {
                 grid-column: 8/10;
-                margin-left: -32px;
             }
 
             #block-sass-theme-msd-mainnavigation-2 {
-
+                @include desktop {
+                    margin-left: -32px;
+                }
 
 
                 h4 {

@@ -1,0 +1,26 @@
+uuid: 98e64250-a576-4371-a53a-5c1fa2d58644
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.upload_file.field_heading_dep
+    - field.field.paragraph.upload_file.field_label
+    - field.field.paragraph.upload_file.field_upload_file
+    - paragraphs.paragraphs_type.upload_file
+id: paragraph.upload_file.token
+targetEntityType: paragraph
+bundle: upload_file
+mode: token
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_heading_dep: true
+  field_upload_file: true
