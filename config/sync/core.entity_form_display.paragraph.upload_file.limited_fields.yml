@@ -1,0 +1,28 @@
+uuid: 456d9d66-dc1a-4c76-b58b-3b0af0d23e37
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.limited_fields
+    - field.field.paragraph.upload_file.field_heading_dep
+    - field.field.paragraph.upload_file.field_label
+    - field.field.paragraph.upload_file.field_upload_file
+    - paragraphs.paragraphs_type.upload_file
+id: paragraph.upload_file.limited_fields
+targetEntityType: paragraph
+bundle: upload_file
+mode: limited_fields
+content:
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_heading_dep: true
+  field_upload_file: true
+  status: true

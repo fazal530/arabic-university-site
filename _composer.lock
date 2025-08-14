@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bfdade955e42780deae7480156e5599",
+    "content-hash": "46d6486aea4fbf524f8d485099e494b8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1428,7 +1428,7 @@
                 "shasum": "0d25e3b7bcea28533ae5f2371a34d507603bfb66"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9.5 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -1508,7 +1508,7 @@
                 "reference": "89413d1bcff88c8016806c498abb2f254da03fd5"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -1560,7 +1560,7 @@
                 "shasum": "bfc523c4d01f2f5dcbb2a612455b8f0a84d651b2"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9.5 || ^10 || ^11"
             },
             "suggest": {
                 "defuse/php-encryption": "Optional encryption of saved backups."
@@ -1626,7 +1626,7 @@
                 "shasum": "a215444c39a6ae384710a6c707caf593f6dd1e2d"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^10 || ^11",
                 "drupal/nouislider_js": "^15.8"
             },
             "type": "drupal-module",
@@ -1700,7 +1700,7 @@
                 "shasum": "b87e43e9bbaaf6cff6d8946d5e45db492978cbb6"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -1747,140 +1747,6 @@
             "homepage": "https://www.drupal.org/project/block_field",
             "support": {
                 "source": "https://git.drupalcode.org/project/block_field"
-            }
-        },
-        {
-            "name": "drupal/ckeditor",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor.git",
-                "reference": "1.0.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor-1.0.2.zip",
-                "reference": "1.0.2",
-                "shasum": "fec2ca9ad852a00c7b9584cb6040dc860364c481"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
-            },
-            "require-dev": {
-                "drupal/classy": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.2",
-                    "datestamp": "1695740655",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "hass",
-                    "homepage": "https://www.drupal.org/user/85918"
-                },
-                {
-                    "name": "jcisio",
-                    "homepage": "https://www.drupal.org/user/210762"
-                },
-                {
-                    "name": "Jorrit",
-                    "homepage": "https://www.drupal.org/user/161217"
-                },
-                {
-                    "name": "lauriii",
-                    "homepage": "https://www.drupal.org/user/1078742"
-                },
-                {
-                    "name": "magnus",
-                    "homepage": "https://www.drupal.org/user/73919"
-                },
-                {
-                    "name": "nod_",
-                    "homepage": "https://www.drupal.org/user/598310"
-                },
-                {
-                    "name": "p.wiaderny",
-                    "homepage": "https://www.drupal.org/user/2956619"
-                },
-                {
-                    "name": "vokiel",
-                    "homepage": "https://www.drupal.org/user/2793801"
-                },
-                {
-                    "name": "wim leers",
-                    "homepage": "https://www.drupal.org/user/99777"
-                },
-                {
-                    "name": "wwalc",
-                    "homepage": "https://www.drupal.org/user/184556"
-                },
-                {
-                    "name": "xjm",
-                    "homepage": "https://www.drupal.org/user/65776"
-                }
-            ],
-            "description": "WYSIWYG editing for rich text fields using CKEditor.",
-            "homepage": "https://www.drupal.org/project/ckeditor",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ckeditor"
-            }
-        },
-        {
-            "name": "drupal/ckeditor_lts",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor_lts.git",
-                "reference": "1.0.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_lts-1.0.4.zip",
-                "reference": "1.0.4",
-                "shasum": "b0cfd7351644aedf8273c61ddadd5b72e8258ec7"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.4",
-                    "datestamp": "1738774201",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "salmonek",
-                    "homepage": "https://www.drupal.org/user/3104645"
-                },
-                {
-                    "name": "wwalc",
-                    "homepage": "https://www.drupal.org/user/184556"
-                }
-            ],
-            "homepage": "https://www.drupal.org/project/ckeditor_lts",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ckeditor_lts"
             }
         },
         {
@@ -2166,7 +2032,7 @@
                 "doctrine/annotations": "~2.0.2",
                 "doctrine/deprecations": "~1.1.5",
                 "doctrine/lexer": "~2.1.1",
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "11.2.3",
                 "egulias/email-validator": "~4.0.4",
                 "guzzlehttp/guzzle": "~7.9.3",
                 "guzzlehttp/promises": "~2.2.0",
@@ -2247,7 +2113,7 @@
                 "shasum": "69f5889cf557df9e55519390e6a95cfa31b67874"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9.5 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -2341,7 +2207,7 @@
             },
             "require": {
                 "doctrine/common": "^2.7 || ^3.4",
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^10.3 || ^11 || ^12",
                 "php": ">=8.1",
                 "symfony/var-dumper": "^4 || ^5 || ^6 || ^7"
             },
@@ -2401,7 +2267,7 @@
                 "shasum": "9e7c33e2ec0637d37d509776795a476f2f2d9bb8"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9.2 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -2496,7 +2362,7 @@
                 "shasum": "2a2ff8617c7ce01b56df1caaf0a563da04948e26"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9 || ^10 || ^11"
             },
             "require-dev": {
                 "drupal/diff": "^1 || ^2"
@@ -2560,7 +2426,7 @@
                 "shasum": "48102613a7cb6791db4d50c0ffe8604cdb29623f"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^10.2 || ^11.0"
             },
             "type": "drupal-module",
             "extra": {
@@ -2614,7 +2480,7 @@
                 "shasum": "3f893843ec30fed18fa1b0cb326e51880b0cb686"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9.2 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -2710,7 +2576,7 @@
                 "shasum": "f52cfc83f302a54b9c71a038e9ac1ce496f47edd"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^9.2 || ^10 || ^11",
                 "drupal/jquery_ui": "^1.7"
             },
             "type": "drupal-module",
@@ -2763,7 +2629,7 @@
                 "shasum": "b39f54ee2f07757c6a511964828f30cc23486134"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^9.2 || ^10 || ^11",
                 "drupal/jquery_ui": "^1.7"
             },
             "type": "drupal-module",
@@ -2816,7 +2682,7 @@
                 "shasum": "e010b3de64a0d57eef9c1773c4dd7e3d9bd9118c"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -2860,7 +2726,7 @@
                 "shasum": "39abc5557333e71b1f0b26f069e7367f921bdbab"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^10.3 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -2930,7 +2796,7 @@
                 "shasum": "d46e68421a31e8775d3bbd5dbb769867e68570a4"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -3020,7 +2886,7 @@
                 "shasum": "831a81a11eac419e8410db45efef5b283c4d117c"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^10.2 || ^11",
                 "drupal/entity_reference_revisions": "~1.3"
             },
             "require-dev": {
@@ -3101,7 +2967,7 @@
                 "shasum": "3b09fb13d2bd0bb351cf98fdae1b27eab8032984"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^9.3 || ^10 || ^11",
                 "drupal/paragraphs": "~1.15"
             },
             "require-dev": {
@@ -3172,7 +3038,7 @@
                 "shasum": "e64b5a82cf1b8ab48bce400b21ae6fc99c8078fd"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^9.4 || ^10 || ^11",
                 "drupal/ctools": "*",
                 "drupal/token": "*"
             },
@@ -3243,7 +3109,7 @@
                 "shasum": "18f0843088f9ea681c8dfe9ba560c223d88da445"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^10.3 || ^11",
                 "drupal/jquery_ui_accordion": "^2.1",
                 "drupal/jquery_ui_tabs": "^2.1",
                 "drupal/js_cookie": "^1.0"
@@ -3337,7 +3203,7 @@
                 "shasum": "ec02663ff712866dc662554bfdf30a10a960715f"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9.3 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
@@ -3389,7 +3255,7 @@
                 "shasum": "c35230d4f2159d2967baf78c010abe81a74b5b70"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^9 || ^10 || ^11",
                 "lobsterr/drupal-superfish": "2.3.10"
             },
             "type": "drupal-module",
@@ -3451,7 +3317,7 @@
                 "shasum": "4623b9d0de4c624857df10daaa8c68793942ad87"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^10.3 || ^11",
                 "enshrined/svg-sanitize": ">=0.15 <1.0"
             },
             "type": "drupal-module",
@@ -3514,7 +3380,7 @@
                 "shasum": "5916fbccc86458a5f51e71f832ac70ff4c84ebdf"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^9.2 || ^10 || ^11"
             },
             "require-dev": {
                 "drupal/book": "*"
@@ -3586,7 +3452,7 @@
                 "shasum": "ceaa5ea8f357ce8827c728f22871265f0f7cd74f"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^10.3 || ^11.0",
                 "ext-json": "*",
                 "php": ">=8.1",
                 "twig/twig": "^3.10.3"
@@ -3646,7 +3512,7 @@
                 "shasum": "9f5390f1eb507cdc9b591595c12d91f7f51c7b81"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12"
+                "drupal/core": "^10.3 || ^11.0"
             },
             "require-dev": {
                 "drupal/address": "^2.0",
@@ -4730,64 +4596,6 @@
                 "source": "https://github.com/mck89/peast/tree/v1.17.2"
             },
             "time": "2025-07-01T09:30:45+00:00"
-        },
-        {
-            "name": "mglaman/composer-drupal-lenient",
-            "version": "1.0.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mglaman/composer-drupal-lenient.git",
-                "reference": "bcb9be7f2d3160be43cd1d13a44580734a5afee0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/composer-drupal-lenient/zipball/bcb9be7f2d3160be43cd1d13a44580734a5afee0",
-                "reference": "bcb9be7f2d3160be43cd1d13a44580734a5afee0",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^2.0",
-                "php": ">=8.1"
-            },
-            "require-dev": {
-                "composer/composer": "^2.3",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan": "^1.6",
-                "phpstan/phpstan-phpunit": "^1.1",
-                "phpstan/phpstan-strict-rules": "^1.2",
-                "phpunit/phpunit": "^9.5",
-                "squizlabs/php_codesniffer": "^3.6"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "ComposerDrupalLenient\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "ComposerDrupalLenient\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Matt Glaman",
-                    "email": "nmd.matt@gmail.com"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/mglaman/composer-drupal-lenient/issues",
-                "source": "https://github.com/mglaman/composer-drupal-lenient/tree/1.0.7"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/mglaman",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-11-21T15:59:26+00:00"
         },
         {
             "name": "nikic/php-parser",
