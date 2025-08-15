@@ -25,5 +25,6 @@ settings:
       'system_menu_block:college-applied': 'system_menu_block:college-applied'
       'system_menu_block:graduate-college': 'system_menu_block:graduate-college'
       'system_menu_block:college-of-law': 'system_menu_block:college-of-law'
+      'system_menu_block:learning-resources': 'system_menu_block:learning-resources'
       'system_menu_block:research-institutes': 'system_menu_block:research-institutes'
 field_type: block_field

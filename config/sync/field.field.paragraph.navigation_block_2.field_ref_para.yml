@@ -7,6 +7,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.navigation
     - paragraphs.paragraphs_type.navigation_block_2
+    - paragraphs.paragraphs_type.news_block_view
   module:
     - entity_reference_revisions
 id: paragraph.navigation_block_2.field_ref_para
@@ -25,6 +26,7 @@ settings:
     target_bundles:
       accordion: accordion
       navigation: navigation
+      news_block_view: news_block_view
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -89,7 +91,7 @@ settings:
         enabled: false
       news_block_view:
         weight: 47
-        enabled: false
+        enabled: true
       organization_wrapper:
         weight: 48
         enabled: false
@@ -104,5 +106,11 @@ settings:
         enabled: false
       text_with_image:
         weight: 52
+        enabled: false
+      two_column_layout:
+        weight: 55
+        enabled: false
+      upload_file:
+        weight: 56
         enabled: false
 field_type: entity_reference_revisions
