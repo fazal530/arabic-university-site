@@ -232,7 +232,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<h5>\r\n{{ field_achievements }}\r\n</h5>\r\n<h6>\r\n{{ field_description }}\r\n</h6>\r\n<p class=\"body2\">\r\n{{ field_date }}\r\n</p>"
+            text: "<h5>\r\n{{ field_achievements }}\r\n</h5>\r\n{{ field_description }}\r\n<span class=\"body2\">\r\n{{ field_date }}\r\n</span>"
             make_link: false
             path: ''
             absolute: false
@@ -303,8 +303,8 @@ display:
                 advanced:
                   sort_options: false
                   rewrite:
-                    filter_rewrite_values: ''
-                    filter_rewrite_values_key: false
+                    filter_rewrite_values: 'All | All'
+                    filter_rewrite_values_key: true
                   collapsible: false
                   collapsible_disable_automatic_open: false
                   is_secondary: false
@@ -381,16 +381,19 @@ display:
             reduce: true
           is_grouped: false
           group_info:
-            label: ''
-            description: ''
-            identifier: ''
+            label: 'Content type'
+            description: null
+            identifier: type
             optional: true
             widget: select
             multiple: false
             remember: false
             default_group: All
             default_group_multiple: {  }
-            group_items: {  }
+            group_items:
+              1: {  }
+              2: {  }
+              3: {  }
         langcode:
           id: langcode
           table: node_field_data
@@ -451,8 +454,34 @@ display:
           query_tags: {  }
       relationships: {  }
       use_ajax: true
-      header: {  }
-      footer: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>News & Events</h2>'
+            format: full_html
+          tokenize: false
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h6><button>View All</button></h6>'
+            format: full_html
+          tokenize: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1

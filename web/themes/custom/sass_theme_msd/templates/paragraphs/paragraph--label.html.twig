@@ -50,8 +50,12 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
+    <h2>
       {{ content.field_label }}
-      
+      </h2>
+      <div class="body2">
+      {{content.field_label_description}}
+      </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}

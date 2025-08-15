@@ -35,7 +35,8 @@
 
                                 li {
                                     margin-bottom: unset !important;
-                                    a{
+
+                                    a {
                                         &.is-active {
                                             color: $white;
                                         }
@@ -86,6 +87,7 @@
 
                 .accordion.open {
                     border-radius: 10px 10px 0px 0px;
+
                     .arrow-2 {
                         display: none;
                     }
@@ -172,7 +174,8 @@
 
                     }
                 }
-                h4{
+
+                h4 {
                     @extend .h5;
                     color: $tertiary;
                 }
@@ -207,18 +210,20 @@
                             @extend .h6;
                             color: $tertiary;
                         }
+
                         &:hover {
                             background-color: $primary;
                             color: $white !important;
                             border: 1px solid $primary;
-                            em{
+
+                            em {
                                 color: $white;
                             }
-                  
-                          }
+
+                        }
                     }
 
-                    
+
                 }
 
                 .field-items {
@@ -305,3 +310,6 @@
 
     }
 }
+
+
+

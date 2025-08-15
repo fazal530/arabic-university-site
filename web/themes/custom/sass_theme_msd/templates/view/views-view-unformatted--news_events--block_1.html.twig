@@ -2,7 +2,7 @@
   <h3>{{ title }}</h3>
 {% endif %}
 
-<div class="node-block-news">
+<div class="node-block-news grid">
   {% for row in rows %}
     {% set row_classes = [ default_row_class ? 'views-row' ] %}
     {% set content = row.content|render %}
