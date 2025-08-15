@@ -27,11 +27,17 @@ settings:
       college_latest_news: college_latest_news
     negate: 0
     target_bundles_drag_drop:
+      accordion:
+        weight: 29
+        enabled: false
       accreditations_achievements:
         weight: 25
         enabled: false
       accreditations_wrapper:
         weight: 26
+        enabled: false
+      banner:
+        weight: 32
         enabled: false
       college_latest_news:
         weight: 28
@@ -78,17 +84,14 @@ settings:
       navigation:
         weight: 40
         enabled: false
+      navigation_block_2:
+        weight: 48
+        enabled: false
       news_block_view:
         weight: 41
         enabled: false
       organization_wrapper:
         weight: 42
-        enabled: false
-      profile:
-        weight: 43
-        enabled: false
-      profile_wrapper:
-        weight: 44
         enabled: false
       sidebar_menu:
         weight: 45
@@ -101,5 +104,11 @@ settings:
         enabled: false
       text_with_image:
         weight: 48
+        enabled: false
+      two_column_layout:
+        weight: 55
+        enabled: false
+      upload_file:
+        weight: 56
         enabled: false
 field_type: entity_reference_revisions

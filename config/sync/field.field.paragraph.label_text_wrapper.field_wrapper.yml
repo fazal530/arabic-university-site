@@ -6,6 +6,7 @@ dependencies:
     - field.storage.paragraph.field_wrapper
     - paragraphs.paragraphs_type.label_text_wrapper
     - paragraphs.paragraphs_type.label_with_text
+    - paragraphs.paragraphs_type.news_block_view
     - paragraphs.paragraphs_type.upload_file
   module:
     - entity_reference_revisions
@@ -24,6 +25,7 @@ settings:
   handler_settings:
     target_bundles:
       label_with_text: label_with_text
+      news_block_view: news_block_view
       upload_file: upload_file
     negate: 0
     target_bundles_drag_drop:
@@ -89,7 +91,7 @@ settings:
         enabled: false
       news_block_view:
         weight: 23
-        enabled: false
+        enabled: true
       organization_wrapper:
         weight: 24
         enabled: false
