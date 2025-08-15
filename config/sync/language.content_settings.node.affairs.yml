@@ -1,0 +1,11 @@
+uuid: 46ab2f62-2384-4fd4-865c-9da845b84aa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.affairs
+id: node.affairs
+target_entity_type_id: node
+target_bundle: affairs
+default_langcode: site_default
+language_alterable: false

@@ -22,4 +22,6 @@ settings:
   selection_settings:
     plugin_ids:
       'views_block:news_events-block_1': 'views_block:news_events-block_1'
+      'views_block:news_listing-block_4': 'views_block:news_listing-block_4'
+      'views_block:news_listing-block_1': 'views_block:news_listing-block_1'
 field_type: block_field

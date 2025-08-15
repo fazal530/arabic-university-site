@@ -1,0 +1,121 @@
+uuid: ac2b5803-925b-44bd-8c8b-cbbd7e9d8a1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reference_para
+    - node.type.affairs
+    - paragraphs.paragraphs_type.accordion_wrapper
+    - paragraphs.paragraphs_type.label
+    - paragraphs.paragraphs_type.news_block_view
+    - paragraphs.paragraphs_type.two_columns
+  module:
+    - entity_reference_revisions
+id: node.affairs.field_reference_para
+field_name: field_reference_para
+entity_type: node
+bundle: affairs
+label: 'Reference para'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion_wrapper: accordion_wrapper
+      label: label
+      news_block_view: news_block_view
+      two_columns: two_columns
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 30
+        enabled: false
+      accordion_wrapper:
+        weight: 31
+        enabled: true
+      accreditations_achievements:
+        weight: 32
+        enabled: false
+      accreditations_wrapper:
+        weight: 33
+        enabled: false
+      banner:
+        weight: 34
+        enabled: false
+      college_latest_news:
+        weight: 35
+        enabled: false
+      department:
+        weight: 36
+        enabled: false
+      department_section:
+        weight: 37
+        enabled: false
+      department_section_2:
+        weight: 38
+        enabled: false
+      department_sub_page:
+        weight: 39
+        enabled: false
+      events_block_view:
+        weight: 40
+        enabled: false
+      hero_section:
+        weight: 41
+        enabled: false
+      icon_link:
+        weight: 42
+        enabled: false
+      icon_link_wrapper:
+        weight: 43
+        enabled: false
+      label:
+        weight: 44
+        enabled: true
+      label_text_wrapper:
+        weight: 45
+        enabled: false
+      label_with_text:
+        weight: 46
+        enabled: false
+      link_button:
+        weight: 47
+        enabled: false
+      menu_wrapper:
+        weight: 48
+        enabled: false
+      navigation:
+        weight: 49
+        enabled: false
+      navigation_block_2:
+        weight: 50
+        enabled: false
+      news_block_view:
+        weight: 51
+        enabled: true
+      organization_wrapper:
+        weight: 52
+        enabled: false
+      sidebar_menu:
+        weight: 53
+        enabled: false
+      text_with_banner:
+        weight: 54
+        enabled: false
+      text_with_file:
+        weight: 55
+        enabled: false
+      text_with_image:
+        weight: 56
+        enabled: false
+      two_column_layout:
+        weight: 58
+        enabled: false
+      two_columns:
+        weight: 57
+        enabled: true
+field_type: entity_reference_revisions

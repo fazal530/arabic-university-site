@@ -438,7 +438,7 @@
                 .college-news-title {
                     color: $black;
                     background-color: $primary;
-                    @extend .h2;
+                    @extend .h4;
                     padding-inline: 6px;
                     width: fit-content;
                     border-radius: 5px;

@@ -1,0 +1,10 @@
+uuid: 1883d993-ffa1-43ee-a1e6-79a1cbe2364b
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_wrapper
+label: 'Accordion Wrapper'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
