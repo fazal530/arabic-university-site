@@ -1,0 +1,31 @@
+uuid: 1ec0e05d-7c7e-46cf-ad97-5fa4923ee331
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.affairs.field_reference_para
+    - node.type.affairs
+  module:
+    - entity_reference_revisions
+    - user
+id: node.affairs.default
+targetEntityType: node
+bundle: affairs
+mode: default
+content:
+  field_reference_para:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

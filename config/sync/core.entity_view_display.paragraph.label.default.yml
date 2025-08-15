@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.label.field_heading_size
     - field.field.paragraph.label.field_label
+    - field.field.paragraph.label.field_label_description
     - paragraphs.paragraphs_type.label
 id: paragraph.label.default
 targetEntityType: paragraph
@@ -18,6 +19,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_label_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   field_heading_size: true
