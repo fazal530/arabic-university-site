@@ -1,9 +1,9 @@
-uuid: 73b226f8-43e6-4f64-bd89-1809b458676d
+uuid: 742b15dd-67f6-4d92-a93f-e6ce518f85ca
 langcode: en
 status: true
 dependencies: {  }
-id: faq
-label: FAQ
+id: label_text_wrapper2
+label: Label-Text-Wrapper2
 icon_uuid: null
 icon_default: null
 description: ''
