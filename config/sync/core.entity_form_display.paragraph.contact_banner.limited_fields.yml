@@ -1,0 +1,26 @@
+uuid: 2eed4cea-77a7-4e0a-8c71-6c8c8c9cc204
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.limited_fields
+    - field.field.paragraph.contact_banner.field_label
+    - field.field.paragraph.contact_banner.field_slider
+    - paragraphs.paragraphs_type.contact_banner
+id: paragraph.contact_banner.limited_fields
+targetEntityType: paragraph
+bundle: contact_banner
+mode: limited_fields
+content:
+  field_label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_slider: true
+  status: true

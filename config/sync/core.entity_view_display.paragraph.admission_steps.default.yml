@@ -1,0 +1,39 @@
+uuid: 985af637-6e58-41f7-9423-60800622838a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.admission_steps.field_admission_icon
+    - field.field.paragraph.admission_steps.field_admission_text
+    - paragraphs.paragraphs_type.admission_steps
+  module:
+    - svg_image
+    - text
+id: paragraph.admission_steps.default
+targetEntityType: paragraph
+bundle: admission_steps
+mode: default
+content:
+  field_admission_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_admission_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

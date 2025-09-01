@@ -1,0 +1,19 @@
+uuid: 1d1c3235-469e-4701-9bb3-e5602e5421d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_label
+    - paragraphs.paragraphs_type.contact_banner
+id: paragraph.contact_banner.field_label
+field_name: field_label
+entity_type: paragraph
+bundle: contact_banner
+label: 'Contact label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

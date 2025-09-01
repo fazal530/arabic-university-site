@@ -1,0 +1,10 @@
+uuid: 40bae9b8-690d-439a-9d9e-2b5604a5f9c9
+langcode: en
+status: true
+dependencies: {  }
+id: admission_steps
+label: 'Admission Steps'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
