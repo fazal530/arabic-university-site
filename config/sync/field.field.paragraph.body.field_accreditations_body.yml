@@ -1,19 +1,18 @@
-uuid: 4e10f7d3-2ad3-45c1-a3e2-fcaa7c2830bf
+uuid: 2bf8ba02-767f-4df2-8b47-19a9374d4ef0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_accreditations_body
     - filter.format.full_html
-    - filter.format.full_html2
-    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.body
   module:
     - text
-id: paragraph.faq.field_accreditations_body
+id: paragraph.body.field_accreditations_body
 field_name: field_accreditations_body
 entity_type: paragraph
-bundle: faq
-label: FAQ
+bundle: body
+label: body
 description: ''
 required: false
 translatable: false
@@ -21,6 +20,5 @@ default_value: {  }
 default_value_callback: ''
 settings:
   allowed_formats:
-    - full_html2
     - full_html
 field_type: text_long
