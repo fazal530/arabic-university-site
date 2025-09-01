@@ -53,9 +53,12 @@
     <h2>
       {{ content.field_label }}
       </h2>
+      
+      {% if paragraph.field_label_description.value %}
       <div class="body2">
-      {{content.field_label_description}}
+        {{ paragraph.field_label_description.value }}
       </div>
+    {% endif %}
     {% endblock %}
   </div>
 {% endblock paragraph %}
