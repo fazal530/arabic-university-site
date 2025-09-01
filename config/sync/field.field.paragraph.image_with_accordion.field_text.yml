@@ -1,0 +1,24 @@
+uuid: 4cc0757c-d2e4-42c1-ab3f-7c119f841839
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.full_html2
+    - paragraphs.paragraphs_type.image_with_accordion
+  module:
+    - text
+id: paragraph.image_with_accordion.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: image_with_accordion
+label: text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html2
+field_type: text_long
