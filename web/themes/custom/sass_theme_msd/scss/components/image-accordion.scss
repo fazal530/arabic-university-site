@@ -1,0 +1,95 @@
+.paragraph--type--image-with-accordion {
+   margin-bottom: 50px;
+    @extend .container;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 434px;
+        border-radius: 20px;
+
+        @include tablet {
+            width: 238px;
+            height: 304px;
+            
+        }
+
+        @include desktop {
+            width: 505px;
+            height: 648px;
+            
+
+
+        }
+
+    }
+
+   
+}
+
+ .ckeditor-accordion-container {
+    width: 100%;
+    dl {
+        border: 0;
+        dt{
+            a {
+                margin-bottom: 20px;
+                background-color: #2795B7 !important;
+                text-decoration: none;
+                border-radius: 20px !important;
+                padding: 15px 20px !important;
+                @extend .h4;
+                @include desktop {
+                    padding: 28px 25px !important;
+
+                }
+                span {
+                    right: 15px !important;
+                    left: auto !important;
+
+                    @include tablet {
+                        right: 18px !important;
+                    }
+                        &::before{
+                            left: 7px !important;
+                            transform: rotate(180deg) !important;
+        
+                        }
+                        &::after {
+                            transform: rotate(180deg) !important;
+                            transform: rotate(90deg)   !important;
+                        }
+                }
+
+            }
+
+            dd {
+                p {
+                  @extend .body2;
+
+                }
+            }
+        }
+    }
+    dt.active{
+        a {
+        span {
+            &::before{
+            display: none  !important;
+            }
+            &::after {
+                transform: rotate(180deg) !important;
+            }
+        }
+
+        }
+
+    }
+}

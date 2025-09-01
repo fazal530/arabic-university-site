@@ -1,0 +1,19 @@
+uuid: d83b8d77-3407-49e9-b3f9-8f762240da04
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+name: 'Full HTML2'
+format: full_html2
+weight: 0
+filters:
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types: {  }
