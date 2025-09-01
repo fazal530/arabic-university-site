@@ -1,0 +1,21 @@
+uuid: 65b8c28b-012e-436f-8ce1-ed29c0bfda69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_varient
+    - paragraphs.paragraphs_type.label_with_text
+  module:
+    - options
+id: paragraph.label_with_text.field_varient
+field_name: field_varient
+entity_type: paragraph
+bundle: label_with_text
+label: varient
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

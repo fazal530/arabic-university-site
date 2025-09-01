@@ -25,6 +25,7 @@ display:
             format_custom_true: منشور
           separator: ', '
         changed:
+          label: التحديث
           separator: ', '
         operations:
           label: عمليات

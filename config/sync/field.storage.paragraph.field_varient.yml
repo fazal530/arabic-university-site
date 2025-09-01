@@ -1,0 +1,27 @@
+uuid: 03d077a6-f827-4e59-9bf7-c5c4487db1a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_varient
+field_name: field_varient
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: style_1
+      label: style-1
+    -
+      value: style_2
+      label: style_2
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
