@@ -1,0 +1,24 @@
+uuid: 6176a82b-dc66-4e4f-8fb2-b4d9f1bd5b6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_admission_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.admission_steps
+  module:
+    - text
+id: paragraph.admission_steps.field_admission_text
+field_name: field_admission_text
+entity_type: paragraph
+bundle: admission_steps
+label: 'Admission Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

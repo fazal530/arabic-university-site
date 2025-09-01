@@ -1,0 +1,78 @@
+.paragraph--type--admission-steps-wrapper {
+  @extend .container;
+  padding-block: 60px;
+  @extend .grid;
+.paragraph--type--admission-steps {
+  grid-column: span 5;
+  @include tablet{
+    grid-column: span 4;
+  }
+}
+  .admission-step-card {
+    background-color: $half-gray;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 376px;
+    padding: 32px;
+
+    .card-icon {
+      background: $secondary;
+      padding: 30px;
+      width: 172px;
+      height: 172px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 114.169px;
+        height: 91.474px;
+      }
+    }
+
+    .card-text {
+      h4 {
+        text-align: center;
+      }
+    }
+  }
+
+  div:nth-child(3) {
+    .admission-step-card {
+        background-color: $secondary;
+      .card-text {
+        h6 {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  p{
+    padding-top: 25px;
+    a{
+        padding: 10px 50px 10px 50px;
+        border: 1px solid $white;
+        background-color: $secondary;
+        color: $white;
+        font-size: 20px;
+        line-height: 27px;
+        cursor: pointer;
+        text-decoration: none;
+
+          &::after {
+          content: url(../icons/fluent_arrow-left-16-filled.svg); 
+          display: inline-block;
+          margin-left: 10px;
+          vertical-align: middle;
+    }
+
+      
+    }
+  }
+
+}

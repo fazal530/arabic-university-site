@@ -1,0 +1,19 @@
+uuid: 4cb8cff3-3b70-4ced-905d-a1300e222ba8
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.field_maps_location
+field_name: field_maps_location
+entity_type: paragraph
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

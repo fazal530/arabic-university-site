@@ -1,0 +1,33 @@
+uuid: f77fb602-e4b6-4ae7-bdcf-a5d5c9ef2819
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.maps_with_form.field_contact_us
+    - field.field.paragraph.maps_with_form.field_maps_location
+    - paragraphs.paragraphs_type.maps_with_form
+  module:
+    - block_field
+    - webform
+id: paragraph.maps_with_form.default
+targetEntityType: paragraph
+bundle: maps_with_form
+mode: default
+content:
+  field_contact_us:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_maps_location:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

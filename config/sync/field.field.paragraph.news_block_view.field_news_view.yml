@@ -21,6 +21,7 @@ settings:
   selection: blocks
   selection_settings:
     plugin_ids:
+      'block_content:deb07a06-97a5-42a8-bc8d-c4d5af6fb90d': 'block_content:deb07a06-97a5-42a8-bc8d-c4d5af6fb90d'
       'views_block:news_events-block_1': 'views_block:news_events-block_1'
       'views_block:news_listing-block_4': 'views_block:news_listing-block_4'
       'views_block:news_listing-block_1': 'views_block:news_listing-block_1'
