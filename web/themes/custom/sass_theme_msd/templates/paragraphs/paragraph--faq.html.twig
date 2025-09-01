@@ -38,36 +38,20 @@
  * @ingroup themeable
  */
 #}
-{% set value = paragraph.field_varient_.0.value %}
 {%
   set classes = [
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished',
-    value
+    not paragraph.isPublished() ? 'paragraph--unpublished'
   ]
 %}
 {% block paragraph %}
- 
-
-  {% if value is not empty %}
-  <div class="container" {{ attributes.addClass(classes) }}>
+  <div{{ attributes.addClass(classes) }}>
     {% block content %}
-    <div class="contact-wrapper">
-      <div class="contact-label">
-      {{ content.field_label }}
-      </div>
-      <div class="contact-description">
-      {{ content.field_description }}
-      </div>
+    <div class="container">
+      {{ content }}
       </div>
     {% endblock %}
   </div>
-{% else %}
-<div {{ attributes.addClass(classes) }}>
-  {{content}}
-</div>
-{% endif %}
-
 {% endblock paragraph %}

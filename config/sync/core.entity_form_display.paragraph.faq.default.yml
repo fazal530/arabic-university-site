@@ -1,15 +1,15 @@
-uuid: a97d5b4c-7c91-410d-a8bc-a506b7b98f8d
+uuid: ba1858cd-611f-415d-9fd5-5b6504ec0c4c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.body.field_accreditations_body
-    - paragraphs.paragraphs_type.body
+    - field.field.paragraph.faq.field_accreditations_body
+    - paragraphs.paragraphs_type.faq
   module:
     - text
-id: paragraph.body.default
+id: paragraph.faq.default
 targetEntityType: paragraph
-bundle: body
+bundle: faq
 mode: default
 content:
   field_accreditations_body:
