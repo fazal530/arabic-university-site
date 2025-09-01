@@ -8,27 +8,12 @@ dependencies:
     - field.field.paragraph.label_with_text.field_label
     - field.field.paragraph.label_with_text.field_varient
     - paragraphs.paragraphs_type.label_with_text
-  module:
-    - text
 id: paragraph.label_with_text.token
 targetEntityType: paragraph
 bundle: label_with_text
 mode: token
-content:
-  field_description:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_label:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 0
-    region: content
+content: {  }
 hidden:
+  field_description: true
+  field_label: true
   field_varient: true
