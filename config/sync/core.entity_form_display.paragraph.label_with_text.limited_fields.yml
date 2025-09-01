@@ -6,6 +6,7 @@ dependencies:
     - core.entity_form_mode.paragraph.limited_fields
     - field.field.paragraph.label_with_text.field_description
     - field.field.paragraph.label_with_text.field_label
+    - field.field.paragraph.label_with_text.field_varient
     - paragraphs.paragraphs_type.label_with_text
 id: paragraph.label_with_text.limited_fields
 targetEntityType: paragraph
@@ -20,7 +21,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   created: true
   field_description: true
+  field_varient: true
   status: true
