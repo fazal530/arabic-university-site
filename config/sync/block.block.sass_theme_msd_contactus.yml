@@ -17,7 +17,7 @@ plugin: 'block_content:deb07a06-97a5-42a8-bc8d-c4d5af6fb90d'
 settings:
   id: 'block_content:deb07a06-97a5-42a8-bc8d-c4d5af6fb90d'
   label: 'Contact us'
-  label_display: '0'
+  label_display: visible
   provider: block_content
   status: true
   info: ''

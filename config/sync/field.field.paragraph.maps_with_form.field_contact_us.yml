@@ -1,0 +1,25 @@
+uuid: 7e5a49bd-5cb2-4cbb-bc91-13faca9cffb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_us
+    - paragraphs.paragraphs_type.maps_with_form
+  module:
+    - webform
+id: paragraph.maps_with_form.field_contact_us
+field_name: field_contact_us
+entity_type: paragraph
+bundle: maps_with_form
+label: 'contact us'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

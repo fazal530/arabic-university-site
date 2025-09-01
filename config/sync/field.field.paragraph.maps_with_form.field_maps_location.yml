@@ -1,0 +1,24 @@
+uuid: 6ee2124b-69dc-488e-9b3a-0d39c8da9a40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_maps_location
+    - paragraphs.paragraphs_type.maps_with_form
+  module:
+    - block_field
+id: paragraph.maps_with_form.field_maps_location
+field_name: field_maps_location
+entity_type: paragraph
+bundle: maps_with_form
+label: 'Maps location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids: {  }
+field_type: block_field

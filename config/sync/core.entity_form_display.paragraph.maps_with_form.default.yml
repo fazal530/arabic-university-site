@@ -1,0 +1,36 @@
+uuid: e51e3fc6-0f9d-47c2-bebd-ffd90e1ad8fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.maps_with_form.field_contact_us
+    - field.field.paragraph.maps_with_form.field_maps_location
+    - paragraphs.paragraphs_type.maps_with_form
+  module:
+    - block_field
+    - webform
+id: paragraph.maps_with_form.default
+targetEntityType: paragraph
+bundle: maps_with_form
+mode: default
+content:
+  field_contact_us:
+    type: webform_entity_reference_select
+    weight: 1
+    region: content
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+  field_maps_location:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

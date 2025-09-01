@@ -1,0 +1,35 @@
+uuid: 53ae2471-4c77-4be0-8266-3cd887d41dc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_banner.field_label
+    - field.field.paragraph.contact_banner.field_slider
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.contact_banner
+  module:
+    - svg_image
+id: paragraph.contact_banner.default
+targetEntityType: paragraph
+bundle: contact_banner
+mode: default
+content:
+  field_label:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_slider:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

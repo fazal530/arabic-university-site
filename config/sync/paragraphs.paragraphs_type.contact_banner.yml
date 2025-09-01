@@ -1,0 +1,10 @@
+uuid: 25977143-eea8-496a-b319-ac4582956ef1
+langcode: en
+status: true
+dependencies: {  }
+id: contact_banner
+label: 'Contact Banner'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

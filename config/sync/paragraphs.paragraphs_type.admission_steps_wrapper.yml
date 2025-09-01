@@ -1,0 +1,10 @@
+uuid: 00a25aab-7968-412f-86f2-cc95ca106b76
+langcode: en
+status: true
+dependencies: {  }
+id: admission_steps_wrapper
+label: 'Admission Steps Wrapper'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

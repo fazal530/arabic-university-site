@@ -58,6 +58,7 @@
 
 .paragraph--type--two-columns {
     .paragraph--type--accordion-wrapper {
+        padding: 0px;
         .paragraph--type--accordion {
             margin-bottom: 20px;
             position: relative;
@@ -193,8 +194,13 @@
 
 
 .paragraph--type--news-block-view{
+    padding-block:0px;
   .views-exposed-form {
     .js-form-item{
+        padding-block: 30px;
+        @include desktop{
+            padding-block: 33px 60px;
+        }
       ul{
         display: flex;
         align-items: center;
@@ -218,7 +224,7 @@
     }
   }
   header{
-    padding-block: 60px 30px;
+    padding-top: 60px;
     h2 {
     position: relative;
     padding-left: 20px; 
@@ -240,6 +246,7 @@
   }
   }
  footer {
+    padding-block: 30px 60px;
   h6 {
     text-align: center;
     button {
@@ -259,6 +266,7 @@
 .node-block-news{
   .views-row{
     grid-column: span 4;
+    margin-block: 0px !important;
   }
   
   
@@ -283,7 +291,7 @@
   }
 
   .body2 {
-    padding-block: 20px 30px;
+    padding-top: 20px;
   }
 }
 
@@ -309,4 +317,14 @@
             }
         }
     }
+
+   .paragraph--type--accordion-wrapper{
+    padding-block: 60px;
+}
+
+
+
+
+
+
 

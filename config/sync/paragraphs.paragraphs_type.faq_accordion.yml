@@ -1,0 +1,10 @@
+uuid: 22bd5e84-eea3-4427-b4d0-11916cbe5acb
+langcode: en
+status: true
+dependencies: {  }
+id: faq_accordion
+label: 'Faq Accordion'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

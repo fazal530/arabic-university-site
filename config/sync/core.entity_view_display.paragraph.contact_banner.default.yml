@@ -1,0 +1,39 @@
+uuid: 0395b701-b372-4278-85b0-b08eb71a407c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_banner.field_label
+    - field.field.paragraph.contact_banner.field_slider
+    - paragraphs.paragraphs_type.contact_banner
+  module:
+    - svg_image
+id: paragraph.contact_banner.default
+targetEntityType: paragraph
+bundle: contact_banner
+mode: default
+content:
+  field_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_slider:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
