@@ -1,0 +1,24 @@
+uuid: 52c57d0e-4ef4-4a57-a751-d137de4d80b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.label_text_wrapper2.field_label_text_wrapper2
+    - paragraphs.paragraphs_type.label_text_wrapper2
+  module:
+    - entity_reference_revisions
+id: paragraph.label_text_wrapper2.default
+targetEntityType: paragraph
+bundle: label_text_wrapper2
+mode: default
+content:
+  field_label_text_wrapper2:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

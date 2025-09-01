@@ -1,0 +1,22 @@
+uuid: 13f98f35-a7eb-4930-8f28-eb11c98b438e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.body.field_accreditations_body
+    - paragraphs.paragraphs_type.body
+  module:
+    - text
+id: paragraph.body.default
+targetEntityType: paragraph
+bundle: body
+mode: default
+content:
+  field_accreditations_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
