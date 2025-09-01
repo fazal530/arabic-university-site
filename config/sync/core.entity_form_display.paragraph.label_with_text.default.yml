@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.label_with_text.field_description
     - field.field.paragraph.label_with_text.field_label
+    - field.field.paragraph.label_with_text.field_varient
     - paragraphs.paragraphs_type.label_with_text
   module:
     - text
@@ -28,6 +29,17 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_varient:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
