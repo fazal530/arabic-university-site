@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.field.paragraph.label_with_text.field_description
     - field.field.paragraph.label_with_text.field_label
+    - field.field.paragraph.label_with_text.field_varient
     - paragraphs.paragraphs_type.label_with_text
   module:
+    - options
     - text
 id: paragraph.label_with_text.default
 targetEntityType: paragraph
@@ -27,5 +29,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_varient:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }

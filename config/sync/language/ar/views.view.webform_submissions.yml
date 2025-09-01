@@ -17,6 +17,7 @@ display:
         sid:
           separator: ', '
         in_draft:
+          label: مسودة
           separator: ', '
         created:
           label: الإنشاء
@@ -39,8 +40,10 @@ display:
         sid:
           separator: ', '
         in_draft:
+          label: مسودة
           separator: ', '
         sticky:
+          label: مثبت
           separator: ', '
         locked:
           label: مقفل
@@ -49,6 +52,7 @@ display:
           label: الإنشاء
           separator: ', '
         completed:
+          label: 'تم الإنهاء'
           separator: ', '
         remote_addr:
           label: 'عنوان الـIP'
@@ -56,6 +60,9 @@ display:
         operations:
           label: عمليات
       filters:
+        sticky:
+          expose:
+            label: مثبت
         locked:
           expose:
             label: مقفل
@@ -67,8 +74,10 @@ display:
         sid:
           separator: ', '
         in_draft:
+          label: مسودة
           separator: ', '
         sticky:
+          label: مثبت
           separator: ', '
         locked:
           label: مقفل
@@ -77,6 +86,7 @@ display:
           label: الإنشاء
           separator: ', '
         completed:
+          label: 'تم الإنهاء'
           separator: ', '
         remote_addr:
           label: 'عنوان الـIP'
@@ -88,6 +98,9 @@ display:
           label: عمليات
           text: تحرير
       filters:
+        sticky:
+          expose:
+            label: مثبت
         locked:
           expose:
             label: مقفل
@@ -97,8 +110,10 @@ display:
         sid:
           separator: ', '
         in_draft:
+          label: مسودة
           separator: ', '
         sticky:
+          label: مثبت
           separator: ', '
         locked:
           label: مقفل
@@ -107,6 +122,7 @@ display:
           label: الإنشاء
           separator: ', '
         completed:
+          label: 'تم الإنهاء'
           separator: ', '
         remote_addr:
           label: 'عنوان الـIP'
@@ -115,6 +131,9 @@ display:
           label: عمليات
           text: عرض
       filters:
+        sticky:
+          expose:
+            label: مثبت
         locked:
           expose:
             label: مقفل

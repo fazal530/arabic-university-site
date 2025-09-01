@@ -9,6 +9,8 @@ display:
         type:
           label: 'نوع الصندوق'
           separator: ', '
+        changed:
+          label: التحديث
         operations:
           label: عمليات
       pager:
