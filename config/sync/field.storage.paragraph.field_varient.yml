@@ -16,7 +16,7 @@ settings:
       label: style-1
     -
       value: style_2
-      label: style_2
+      label: style-2
   allowed_values_function: ''
 module: options
 locked: false

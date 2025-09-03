@@ -1,69 +1,75 @@
 .contact-banner {
-    position: relative;
-    
+  position: relative;
 
-    .contact-image {
-        width: 100%;
-        height: 100%;
 
-        img {
-            width: 100%;
-            height: 327px;
-            object-fit: cover;
-        }
+  .contact-image {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 327px;
+      object-fit: cover;
     }
-    &::after {
+  }
+
+  &::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 107, 141, 0.91) 0%,
-      rgba(115, 115, 115, 0) 100%
-    );
-   
+    background: linear-gradient(180deg,
+        rgba(0, 107, 141, 0.91) 0%,
+        rgba(115, 115, 115, 0) 100%);
+
   }
 
 
-    .contact-label {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 4;
-        .field-items{
-            h2{
-                @extend .h1;
-                color: $white;
-                
-            }
-        }
+  .contact-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+
+    .field-items {
+      h2 {
+        @extend .h1;
+        color: $white;
+
+      }
     }
+  }
 }
 
 .contact-wrapper {
   text-align: center;
   padding-block: 60px;
-    .contact-label{
-        .field-items{
-            h2{
-                margin-bottom: 29px;
-            }
-        }
+
+  .contact-label {
+    .field-items {
+      h2 {
+        margin-bottom: 29px;
+      }
     }
+  }
+
   .contact-description {
     .contact-boxes {
       display: flex;
-      justify-content:space-between;
-      gap: 20px; 
-      align-items: stretch; 
+      justify-content: space-between;
+      gap: 20px;
+      align-items: stretch;
+      flex-direction: column;
+      @include tablet{
+        flex-direction: row;
+      }
 
       .contact-us-left,
       .contact-us-right {
-        flex: 1; 
+        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -88,11 +94,19 @@
   #block-contactus {
     display: flex;
     justify-content: space-around;
+    gap: 10px;
+    @include tablet{
+      gap: 0px;
+    }
 
     p {
-      font-size: 20px;
+      font-size: 14px;
       position: relative;
       margin-top: 30px;
+      text-align: center;
+      @include tablet{
+        font-size: 20px;
+      }
     }
 
     .tel::before,
@@ -101,16 +115,15 @@
       content: "";
       position: absolute;
       left: 50%;
-      top: -60px; // move above text
+      top: -60px;
       transform: translateX(-50%);
-      width: 50px;   // icon container size
+      width: 50px;
       height: 50px;
       background-color: $primary;
       border-radius: 20px;
-      background-image: url("..//icons/Phone (1).svg"); // default (override below)
-      background-size: 24px 24px; // actual icon size inside box
+      background-size: 24px 24px;
       background-repeat: no-repeat;
-      background-position: center; // center the icon
+      background-position: center;
     }
 
     .tel::before {
@@ -129,44 +142,143 @@
 
 
 
-.maps-form-wrapper{
-    display: flex;
-    gap: 20px;
-    margin-block: 60px;
-    .map{
+.maps-form-wrapper {
+  display: flex;
+  gap: 20px;
+  margin-block: 60px;
+  flex-direction: column;
+  @include desktop{
+    flex-direction: row;
+  }
+  .map {
+    width: 100%;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .form {
+    .js-form-item {
+      margin-bottom: 30px;
+
+      input,
+      textarea {
+        padding: 17px;
+        border-radius: 10px;
+        border: 2px solid $secondary;
         width: 100%;
-        iframe{
-            width: 100%;
+        
+
+      }
+
+    }
+
+    .form-actions {
+      text-align: center;
+
+      input {
+        padding: 10px 50px;
+        border: 1px solid $tertiary;
+        border-radius: 0px;
+        color: $tertiary;
+      }
+    }
+  }
+
+}
+
+
+
+.paragraph--type--faq {
+  @extend .container;
+
+  .ckeditor-accordion-container {
+    border: 2px solid $secondary !important;
+    margin-block: 10px 60px;
+dl {
+  dt {
+    a {
+       .ckeditor-accordion-toggle{
+      position: absolute !important;
+      top: calc(12% - 1px);
+      border-radius: 10px;
+      @include desktop{
+        top: calc(24% - 1px);
+      }
+     
+     }
+      span {
+        right: 7px !important;
+        background-color: $secondary;
+        width: 50px;
+        height: 50px;
+        @include tablet{
+          right: 50px !important;
         }
+        &::before {
+          
+           content: url(../icons/vector-7.svg);
+           background-color: transparent;
+           width: auto;
+           height: auto;
+           padding-inline: 10px;
+           border-radius: 10px;
+           left: 10% !important;
+           top: 16% !important;
+        }
+         &::after {
+        
+         display: none;
+        }
+      }
     }
-    .form{
-        .js-form-item{
-            margin-bottom: 30px;
-            input, textarea{
-                padding: 17px;
-                border-radius: 10px;
-                border: 2px solid $secondary;
-                
-            }
-           
-         }
-         .form-actions{
-            text-align: center;
-            input{
-               padding: 10px 50px;
-               border: 1px solid $tertiary;
-               border-radius: 0px;
-               color: $tertiary;
-            }
-         }
+  }
+   dt.active {
+    a {
+      span {
+        color: yellow !important;
+        &::before {
+          
+           content: url(../icons/vector-7.svg);
+           background-color: transparent;
+           width: auto;
+           height: auto;
+           transform: rotate(0deg) !important;
+           display: block !important;
+        }
+         &::after {
+        
+         display: none;
+        }
+      }
     }
-
+  }
 }
 
 
-
-.paragraph--type--faq{
+    .ckeditor-accordion-toggler {
+      background-color: $white !important;
+      color: $secondary !important;
+      border-radius: 0px !important;
+     
   
+    
+
+    }
+
+    .active {
+       
+      p {
+        margin-block: 30px;
+        color: $tertiary;
+        span {
+          @extend .h5;
+        }
+      }
+    }
+  }
 }
 
 
+ 
