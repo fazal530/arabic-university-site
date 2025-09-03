@@ -1,0 +1,18 @@
+uuid: f6953a80-151b-4eaa-9792-b5b3f5ea5f6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.admission_steps
+id: paragraph.admission_steps.created
+field_name: created
+entity_type: paragraph
+bundle: admission_steps
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.label_text_wrapper.field_style_
     - field.field.paragraph.label_text_wrapper.field_wrapper
     - paragraphs.paragraphs_type.label_text_wrapper
   module:
@@ -12,6 +13,12 @@ targetEntityType: paragraph
 bundle: label_text_wrapper
 mode: default
 content:
+  field_style_:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_wrapper:
     type: paragraphs
     weight: 0
@@ -29,6 +36,11 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

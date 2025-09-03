@@ -1,69 +1,71 @@
 .contact-banner {
-    position: relative;
-    
+  position: relative;
 
-    .contact-image {
-        width: 100%;
-        height: 100%;
 
-        img {
-            width: 100%;
-            height: 327px;
-            object-fit: cover;
-        }
+  .contact-image {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 327px;
+      object-fit: cover;
     }
-    &::after {
+  }
+
+  &::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 107, 141, 0.91) 0%,
-      rgba(115, 115, 115, 0) 100%
-    );
-   
+    background: linear-gradient(180deg,
+        rgba(0, 107, 141, 0.91) 0%,
+        rgba(115, 115, 115, 0) 100%);
+
   }
 
 
-    .contact-label {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 4;
-        .field-items{
-            h2{
-                @extend .h1;
-                color: $white;
-                
-            }
-        }
+  .contact-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+
+    .field-items {
+      h2 {
+        @extend .h1;
+        color: $white;
+
+      }
     }
+  }
 }
 
 .contact-wrapper {
   text-align: center;
   padding-block: 60px;
-    .contact-label{
-        .field-items{
-            h2{
-                margin-bottom: 29px;
-            }
-        }
+
+  .contact-label {
+    .field-items {
+      h2 {
+        margin-bottom: 29px;
+      }
     }
+  }
+
   .contact-description {
     .contact-boxes {
       display: flex;
-      justify-content:space-between;
-      gap: 20px; 
-      align-items: stretch; 
+      justify-content: space-between;
+      gap: 20px;
+      align-items: stretch;
 
       .contact-us-left,
       .contact-us-right {
-        flex: 1; 
+        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,7 +74,6 @@
         border-radius: 8px;
         gap: 25px;
         border-top: 6px solid $primary;
-
 
         h5 {
           color: $white;
@@ -85,6 +86,7 @@
 .paragraph--type--news-block-view {
   @extend .container;
 
+
   #block-contactus {
     display: flex;
     justify-content: space-around;
@@ -95,78 +97,64 @@
       margin-top: 30px;
     }
 
-    .tel::before,
-    .email::before,
-    .address::before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: -60px; // move above text
-      transform: translateX(-50%);
-      width: 50px;   // icon container size
-      height: 50px;
-      background-color: $primary;
-      border-radius: 20px;
-      background-image: url("..//icons/Phone (1).svg"); // default (override below)
-      background-size: 24px 24px; // actual icon size inside box
-      background-repeat: no-repeat;
-      background-position: center; // center the icon
-    }
+    .fontawesome-icon-inline {
+      svg {
+        position: absolute;
+        left: 50%;
+        top: -55px; // move above text
+        transform: translateX(-50%);
+        width: 20px; // icon container size
+        height: 20px;
+        background-color: $primary;
+        border-radius: 10px;
+        padding-inline: 10px;
+        padding-block: 10px;
 
-    .tel::before {
-      background-image: url("..//icons/Phone (1).svg");
-    }
-
-    .email::before {
-      background-image: url("..//icons/Email (1).svg");
-    }
-
-    .address::before {
-      background-image: url("..//icons/Address (1).svg");
+        path {
+          color: $white;
+        }
+      }
     }
   }
 }
 
 
 
-.maps-form-wrapper{
-    display: flex;
-    gap: 20px;
-    margin-block: 60px;
-    .map{
-        width: 100%;
-        iframe{
-            width: 100%;
-        }
+
+.maps-form-wrapper {
+  display: flex;
+  gap: 20px;
+  margin-block: 60px;
+
+  .map {
+    width: 100%;
+
+    iframe {
+      width: 100%;
     }
-    .form{
-        .js-form-item{
-            margin-bottom: 30px;
-            input, textarea{
-                padding: 17px;
-                border-radius: 10px;
-                border: 2px solid $secondary;
-                
-            }
-           
-         }
-         .form-actions{
-            text-align: center;
-            input{
-               padding: 10px 50px;
-               border: 1px solid $tertiary;
-               border-radius: 0px;
-               color: $tertiary;
-            }
-         }
+  }
+
+  .form {
+    .js-form-item {
+      margin-bottom: 30px;
+
+      input,
+      textarea {
+        padding: 17px;
+        border-radius: 10px;
+        border: 2px solid $secondary;
+      }
     }
 
+    .form-actions {
+      text-align: center;
+
+      input {
+        padding: 10px 50px;
+        border: 1px solid $tertiary;
+        border-radius: 0px;
+        color: $tertiary;
+      }
+    }
+  }
 }
-
-
-
-.paragraph--type--faq{
-  
-}
-
-

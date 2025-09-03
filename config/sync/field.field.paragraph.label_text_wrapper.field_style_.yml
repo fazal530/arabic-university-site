@@ -1,0 +1,21 @@
+uuid: 84a35238-1ca0-4cbf-9c5f-93b22d1cda3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_
+    - paragraphs.paragraphs_type.label_text_wrapper
+  module:
+    - options
+id: paragraph.label_text_wrapper.field_style_
+field_name: field_style_
+entity_type: paragraph
+bundle: label_text_wrapper
+label: style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

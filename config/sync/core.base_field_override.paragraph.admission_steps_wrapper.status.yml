@@ -1,0 +1,22 @@
+uuid: e48cca5f-f32b-46da-9b48-2eacb0c8e812
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.admission_steps_wrapper
+id: paragraph.admission_steps_wrapper.status
+field_name: status
+entity_type: paragraph
+bundle: admission_steps_wrapper
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

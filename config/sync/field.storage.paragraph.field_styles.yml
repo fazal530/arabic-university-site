@@ -1,0 +1,30 @@
+uuid: ea2bca94-5446-4c93-888e-9523572afe9d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_styles
+field_name: field_styles
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: style_1
+      label: style-1
+    -
+      value: style_2
+      label: style-2
+    -
+      value: style_3
+      label: style-3
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

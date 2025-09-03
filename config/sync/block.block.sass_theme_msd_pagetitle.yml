@@ -21,4 +21,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "<front>\r\n/news/*\r\n/node/121"
+    pages: "<front>\r\n/news/*\r\n/node/121\r\n/node/137"

@@ -1,0 +1,22 @@
+uuid: 29caa444-df06-4b84-a771-f92d20e4a9a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.affairs
+id: node.affairs.promote
+field_name: promote
+entity_type: node
+bundle: affairs
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
