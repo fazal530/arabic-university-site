@@ -96,7 +96,7 @@
 
                 .accordion-content {
                     border-radius: 0px 0px 10px 10px;
-                    padding: 20px 57px 20px 20px;
+                    padding: 20px 20px;
                     background-color: $gray-light;
                 }
 
@@ -345,28 +345,33 @@
 }
 
 .paragraph--type--label-with-text {
-        .banner_layout {
-            @extend .container;
-            background-color: $gray-light;
-            padding-block: 50px;
-            display: flex;
-            align-items: center;
-            gap: 70px;
-            margin-block: 40px 60px;
+    .banner_layout {
+        @extend .container;
+        background-color: $gray-light;
+        padding-block: 50px;
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        margin-block: 40px 60px;
 
-            h3 {
-                color: $secondary;
-            }
+        h3 {
+            color: $secondary;
+        }
 
-            h6 {
-                border: 1px solid $tertiary;
-                padding-block: 10px;
-                padding-inline: 50px;
+        h6 {
+            border: 1px solid $tertiary;
+            padding-block: 10px;
+            padding-inline: 50px;
 
-                a {
-                    text-decoration: none;
-                    color: $tertiary;
-                }
+            a {
+                text-decoration: none;
+                color: $tertiary;
             }
         }
     }
+}
+
+
+
+
+

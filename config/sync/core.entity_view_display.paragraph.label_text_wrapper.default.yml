@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.label_text_wrapper.field_style_
     - field.field.paragraph.label_text_wrapper.field_wrapper
     - paragraphs.paragraphs_type.label_text_wrapper
   module:
@@ -21,4 +22,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_style_: true

@@ -1,95 +1,573 @@
 .paragraph--type--image-with-accordion {
-   margin-bottom: 50px;
     @extend .container;
-    flex-direction: column;
-    display: flex;
-    gap: 20px;
 
-    @include tablet {
-        flex-direction: row;
+    .image-with-accordion_wrapper {
+        .image-with-accordion {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            @include tablet {
+                flex-direction: row;
+            }
+        }
+
+        .image-wrapper {
+            width: 100%;
+            height: 100%;
+            margin-block: 30px;
+
+            img {
+                width: 100%;
+                height: 648px;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+
+        .accordions {
+            width: 100%;
+
+            .ckeditor-accordion-container {
+                margin-block: 30px;
+
+                dl {
+                    border: 0;
+
+                    dt {
+                        margin-bottom: 20px;
+                        transition: all 0.3s ease;
+
+                        a {
+                            padding-bottom: 20px;
+                            background-color: #2795B7 !important;
+                            text-decoration: none;
+                            border-radius: 20px !important;
+                            padding: 15px 20px !important;
+                            @extend .h4;
+                            font-size: 22px;
+
+                            @include desktop {
+                                padding: 28px 25px !important;
+                            }
+
+                            span {
+                                right: 15px !important;
+                                left: auto !important;
+
+                                [dir="rtl"] & {
+                                    left: 15px !important;
+                                    right: auto !important;
+                                }
+
+                                @include tablet {
+                                    right: 18px !important;
+
+                                    [dir="rtl"] & {
+                                        left: 18px !important;
+                                    }
+                                }
+
+                                &::before {
+                                    left: -11px !important;
+                                    transform: rotate(180deg) !important;
+                                    height: 5px !important;
+                                    width: 28px !important;
+                                }
+
+                                &::after {
+                                    transform: rotate(180deg) !important;
+                                    transform: rotate(90deg) !important;
+                                    height: 5px !important;
+                                    width: 28px !important;
+                                }
+                            }
+
+                        }
+                    }
+
+                    dd {
+                        padding: 30px 0 30px 0 !important;
+
+                        p {
+                            @extend .body2;
+
+                        }
+
+                    }
+
+                    dt.active {
+                        margin: 0 !important;
+
+                        a {
+                            border-radius: 15px 15px 0px 0px !important;
+                        }
+
+                        dd {
+                            background-color: red !important;
+                        }
+                    }
+                }
+
+                dt.active {
+                    a {
+                        span {
+                            &::before {
+                                display: none !important;
+                                height: 5px !important;
+                                width: 28px !important;
+                            }
+
+                            &::after {
+                                transform: rotate(180deg) !important;
+                                height: 5px !important;
+                                width: 28px !important;
+                            }
+                        }
+                    }
+                }
+
+
+                .table {
+
+                    border-collapse: separate;
+                    border-spacing: 0;
+                    overflow: hidden;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                    thead {
+                        background-color: $primary;
+
+                        tr {
+                            @extend h6;
+                            font-weight: 600;
+
+                            th {
+                                border-bottom: 1px solid $black;
+                                border-left: 1px solid $black;
+                                border-top: 1px solid $black;
+                                text-align: left;
+                                padding: 10px 20px 10px 20px;
+
+                                [dir="rtl"] & {
+                                    border-right: 1px solid $black;
+                                    border-left: 0px solid $black;
+                                }
+
+                                &:last-child {
+                                    border-right: 1px solid $black;
+
+                                    [dir="rtl"] & {
+                                        border-left: 1px solid $black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        background-color: $white !important;
+
+                        tr {
+                            td {
+                                @extend .body2;
+                                color: $black;
+                                border-bottom: 1px solid $black;
+                                border-left: 1px solid $black;
+                                padding: 10px 0px 10px 20px;
+
+                                [dir="rtl"] & {
+                                    padding: 10px 20px 10px 0px;
+                                    border-right: 1px solid $black;
+                                    border-left: 0px solid $black;
+                                }
+
+                                &:last-child {
+                                    border-right: 1px solid $black;
+
+                                    [dir="rtl"] & {
+                                        border-left: 1px solid $black;
+                                    }
+                                }
+
+                            }
+
+
+                        }
+                    }
+                }
+
+                h5 {
+                    color: $tertiary;
+
+                }
+
+                ul {
+                    padding-left: 30px;
+
+                    li {
+                        @extend .h5;
+                        color: $tertiary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.paragraph--type--body {
+    @extend .container;
+    margin-bottom: 60px;
+
+    h5 {
+        margin-top: 30px;
+        color: $tertiary;
     }
 
-    img {
-        object-fit: cover;
+    ol {
+        padding-left: 30px;
+        margin-block: 30px;
+
+        [dir="rtl"] & {
+            padding-right: 30px;
+            padding-left: 0;
+        }
+
+        li {
+            @extend .h5;
+            color: $tertiary;
+        }
+    }
+
+    .apply-btn {
+        border: 1px solid $black;
+        padding-block: 10px;
         width: 100%;
-        height: 434px;
-        border-radius: 20px;
+        text-align: center;
 
         @include tablet {
-            width: 238px;
-            height: 304px;
-            
+            width: 30%;
         }
 
         @include desktop {
-            width: 505px;
-            height: 648px;
-            
-
-
+            width: 17%;
         }
 
-    }
+        a {
+            text-decoration: none;
+            @extend .h6;
+            color: $tertiary;
 
-   
+        }
+    }
 }
 
- .ckeditor-accordion-container {
-    width: 100%;
-    dl {
-        border: 0;
-        dt{
-            a {
-                margin-bottom: 20px;
-                background-color: #2795B7 !important;
-                text-decoration: none;
-                border-radius: 20px !important;
-                padding: 15px 20px !important;
-                @extend .h4;
-                @include desktop {
-                    padding: 28px 25px !important;
+.style_2 {
+    .table {
+        border-collapse: separate;
+        border-spacing: 0; // Needed for border-radius to apply
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        margin-block: 20px;
 
-                }
-                span {
-                    right: 15px !important;
-                    left: auto !important;
 
-                    @include tablet {
-                        right: 18px !important;
+        thead {
+            tr {
+                @extend h6;
+                font-weight: 600;
+                background-color: $primary;
+
+                th {
+                    border-bottom: 1px solid $black;
+                    border-left: 1px solid $black;
+                    border-top: 1px solid $black;
+                    text-align: left;
+                    padding: 10px 20px 10px 20px;
+
+                    [dir="rtl"] & {
+                        padding-right: 20px;
+                        text-align: right;
                     }
-                        &::before{
-                            left: 7px !important;
-                            transform: rotate(180deg) !important;
-        
+
+                    &:first-child {
+                        border-top-left-radius: 10px;
+
+                        [dir="rtl"] & {
+                            border-right: 1px solid $black;
+                            border-top-right-radius: 10px;
+                            border-top-left-radius: unset;
                         }
-                        &::after {
-                            transform: rotate(180deg) !important;
-                            transform: rotate(90deg)   !important;
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: 10px;
+                        border-right: 1px solid $black;
+
+                        [dir="rtl"] & {
+                            border-right: unset;
+                            border-top-right-radius: unset;
+                            border-top-left-radius: 10px;
                         }
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    @extend .body2;
+                    color: $black;
+                    border-bottom: 1px solid $black;
+                    border-left: 1px solid $black;
+                    padding: 10px 0px 10px 20px;
+
+                    [dir="rtl"] & {
+                        padding-right: 20px;
+                    }
+
+                    &:first-child {
+                        border-left: 1px solid $black;
+
+                        [dir="rtl"] & {
+                            border-right: 1px solid $black;
+                        }
+                    }
+
+                    &:last-child {
+                        border-right: 1px solid $black;
+
+                        [dir="rtl"] & {
+                            border-right: unset;
+                            border-left: 1px solid $black;
+                        }
+                    }
+
                 }
 
-            }
+                &:hover {
+                    background-color: $secondary;
 
-            dd {
-                p {
-                  @extend .body2;
+                    td {
+                        color: $white;
+                    }
+                }
 
+                &:last-child {
+                    td {
+                        &:first-child {
+                            border-bottom-left-radius: 10px;
+
+                            [dir="rtl"] & {
+                                border-bottom-right-radius: 10px;
+                                border-bottom-left-radius: unset;
+                            }
+                        }
+
+                        &:last-child {
+                            border-bottom-right-radius: 10px;
+
+                            [dir="rtl"] & {
+                                border-bottom-left-radius: 10px;
+                                border-bottom-right-radius: unset;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-    dt.active{
-        a {
-        span {
-            &::before{
-            display: none  !important;
-            }
-            &::after {
-                transform: rotate(180deg) !important;
-            }
+}
+
+.style_1 {
+    @extend .container;
+    margin-top: -20px;
+    padding-top: 30px;
+
+    .paragraph--type--label-with-text {
+        padding-bottom: 30px;
+
+        p {
+            padding-bottom: 10px;
+            @extend .body2;
         }
+
+        .button {
+            padding-top: 10px;
+
+            a {
+                border: 1px solid $tertiary;
+                text-decoration: none;
+                padding-block: 10px;
+                padding-inline: 50px;
+
+                em {
+                    @extend .h6;
+                    color: $tertiary;
+                }
+
+                &:hover {
+                    background-color: $primary;
+                    color: $white !important;
+                    border: 1px solid $primary;
+
+                    em {
+                        color: $white;
+                    }
+
+                }
+            }
+
 
         }
 
+        .field-items {
+            h2 {
+                padding-bottom: 25px;
+
+                @include tablet {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                @extend .h5;
+                color: $tertiary;
+                padding-bottom: 10px;
+                position: relative;
+                padding-left: 30px;
+
+                [dir="rtl"] & {
+                    padding-right: 30px;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: 5px;
+                    left: -4px;
+                    content: "";
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: $primary;
+
+                    [dir="rtl"] & {
+                        right: 4px;
+                    }
+
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 20px;
+            padding-bottom: 20px;
+
+            @include tablet {
+                height: 180px;
+            }
+
+            @include desktop {
+                height: 358px;
+            }
+        }
+    }
+
+    .paragraph--type--upload-file {
+        padding-bottom: 60px;
+        width: 40%;
+
+        .file_wrapper {
+            border: 1px solid $tertiary;
+            text-align: center;
+            padding-block: 60px;
+            border-radius: 10px;
+            background: rgba(250, 250, 250, 0.90);
+
+            .field-items {
+                h2 {
+                    @extend .h5;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .btn {
+                button {
+                    padding-inline: 20px;
+                    padding-block: 10px !important;
+
+                    @include tablet {
+                        padding-inline: 50px;
+                    }
+
+                    a {
+                        @extend .h6;
+                        text-decoration: none;
+                        color: $tertiary;
+                        background-color: unset !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#block-sass-theme-msd-mainnavigation-3 {
+    @extend .container;
+    padding-block: 60px;
+    @extend .hide-on-mobile;
+
+    .menu-level-0 {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid $secondary;
+        padding-block: 31px;
+        padding-inline: 12px;
+        border-radius: 10px;
+
+        @include desktop {
+            padding-inline: 40px;
+
+        }
+
+        .menu-item {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 5px;
+
+            a {
+                text-decoration: none;
+                @extend .body2;
+                color: $tertiary;
+                font-weight: 400 !important;
+
+                @include desktop {
+                    font-family: $font_tajawal;
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                object-fit: cover;
+
+                @include desktop {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
     }
 }

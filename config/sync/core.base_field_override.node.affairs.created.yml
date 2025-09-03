@@ -1,0 +1,18 @@
+uuid: 7f82e148-819a-435c-bd22-14738980d00f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.affairs
+id: node.affairs.created
+field_name: created
+entity_type: node
+bundle: affairs
+label: 'Authored on'
+description: 'The date and time that the content was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

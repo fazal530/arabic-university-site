@@ -1,0 +1,22 @@
+uuid: 2039272b-1e6c-4d0a-a64c-aa638f9f5313
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.affairs
+id: node.affairs.status
+field_name: status
+entity_type: node
+bundle: affairs
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

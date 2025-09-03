@@ -1,0 +1,22 @@
+uuid: 3a3014cf-3f79-4840-8ea0-25085c1933ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.affairs
+id: node.affairs.sticky
+field_name: sticky
+entity_type: node
+bundle: affairs
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 0f3de123-88d1-4fc8-aedf-386382a59f89
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.affairs
+  module:
+    - path
+id: node.affairs.path
+field_name: path
+entity_type: node
+bundle: affairs
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

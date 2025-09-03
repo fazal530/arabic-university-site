@@ -1,0 +1,18 @@
+uuid: 31526cd5-4d52-4663-9bf4-e4df1757c63c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.maps
+id: block_content.maps.changed
+field_name: changed
+entity_type: block_content
+bundle: maps
+label: Changed
+description: 'The time that the content block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

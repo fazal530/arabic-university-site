@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.body.field_accreditations_body
+    - field.field.paragraph.body.field_styles
     - paragraphs.paragraphs_type.body
   module:
     - text
@@ -19,6 +20,12 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_styles:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true

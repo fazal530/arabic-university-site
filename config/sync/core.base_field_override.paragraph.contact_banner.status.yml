@@ -1,0 +1,22 @@
+uuid: 02f54c34-af36-473e-963d-acaeb8e61a3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.contact_banner
+id: paragraph.contact_banner.status
+field_name: status
+entity_type: paragraph
+bundle: contact_banner
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

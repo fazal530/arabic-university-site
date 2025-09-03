@@ -6,7 +6,14 @@ dependencies:
     - field.storage.paragraph.field_slider
     - paragraphs.paragraphs_type.image_with_accordion
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: paragraph.image_with_accordion.field_slider
 field_name: field_slider
 entity_type: paragraph
@@ -14,14 +21,14 @@ bundle: image_with_accordion
 label: image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg webp'
+  file_extensions: 'png gif jpg jpeg webp svg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''

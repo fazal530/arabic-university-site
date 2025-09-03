@@ -1,0 +1,22 @@
+uuid: 69b24226-0ddb-408c-8820-0b3065399a79
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.maps
+id: block_content.maps.status
+field_name: status
+entity_type: block_content
+bundle: maps
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

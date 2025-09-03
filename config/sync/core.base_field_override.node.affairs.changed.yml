@@ -1,0 +1,18 @@
+uuid: 16dc030e-f9a1-433f-8874-02d89952e7d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.affairs
+id: node.affairs.changed
+field_name: changed
+entity_type: node
+bundle: affairs
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

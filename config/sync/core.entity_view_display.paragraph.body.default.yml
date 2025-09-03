@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.body.field_accreditations_body
+    - field.field.paragraph.body.field_styles
     - paragraphs.paragraphs_type.body
   module:
     - text
@@ -17,6 +18,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_styles: true

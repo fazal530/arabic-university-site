@@ -1,0 +1,18 @@
+uuid: a5a5a1df-9f1e-4d93-8322-5b7e6fb78847
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.affairs
+id: node.affairs.title
+field_name: title
+entity_type: node
+bundle: affairs
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
