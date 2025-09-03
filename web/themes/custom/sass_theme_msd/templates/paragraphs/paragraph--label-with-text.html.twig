@@ -38,20 +38,20 @@
  * @ingroup themeable
  */
 #}
-{% set value = paragraph.field_varient_.0.value %}
+{% set style = paragraph.field_varient.0.value %}
 {%
   set classes = [
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    value
+   style
   ]
 %}
 {% block paragraph %}
  
 
-  {% if value is not empty %}
+  {% if style is not empty %}
   <div class="container" {{ attributes.addClass(classes) }}>
     {% block content %}
     <div class="contact-wrapper">
@@ -67,6 +67,7 @@
 {% else %}
 <div {{ attributes.addClass(classes) }}>
   {{content}}
+  {{dump(style)}}
 </div>
 {% endif %}
 

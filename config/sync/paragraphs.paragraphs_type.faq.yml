@@ -1,9 +1,9 @@
-uuid: 22bd5e84-eea3-4427-b4d0-11916cbe5acb
+uuid: b6a5e749-dc11-44d0-99da-16fade4cf5e1
 langcode: en
 status: true
 dependencies: {  }
-id: faq_accordion
-label: 'Faq Accordion'
+id: faq
+label: FAQ
 icon_uuid: null
 icon_default: null
 description: ''

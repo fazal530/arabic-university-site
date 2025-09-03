@@ -1,0 +1,25 @@
+uuid: a51b5f9e-b129-4d95-b45c-40f04fa02260
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_accreditations_body
+    - paragraphs.paragraphs_type.faq
+  module:
+    - text
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_accreditations_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
