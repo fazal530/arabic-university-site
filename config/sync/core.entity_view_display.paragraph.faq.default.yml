@@ -1,0 +1,22 @@
+uuid: ff877833-4b72-40a6-8de0-fb01ebc9953b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_accreditations_body
+    - paragraphs.paragraphs_type.faq
+  module:
+    - text
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_accreditations_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -62,6 +62,10 @@
       justify-content: space-between;
       gap: 20px;
       align-items: stretch;
+      flex-direction: column;
+      @include tablet{
+        flex-direction: row;
+      }
 
       .contact-us-left,
       .contact-us-right {
@@ -90,11 +94,19 @@
   #block-contactus {
     display: flex;
     justify-content: space-around;
+    gap: 10px;
+    @include tablet{
+      gap: 0px;
+    }
 
     p {
-      font-size: 20px;
+      font-size: 14px;
       position: relative;
       margin-top: 30px;
+      text-align: center;
+      @include tablet{
+        font-size: 20px;
+      }
     }
 
     .fontawesome-icon-inline {
@@ -120,6 +132,49 @@
 
 
 
+.maps-form-wrapper {
+  display: flex;
+  gap: 20px;
+  margin-block: 60px;
+  flex-direction: column;
+  @include desktop{
+    flex-direction: row;
+  }
+  .map {
+    width: 100%;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .form {
+    .js-form-item {
+      margin-bottom: 30px;
+
+      input,
+      textarea {
+        padding: 17px;
+        border-radius: 10px;
+        border: 2px solid $secondary;
+        width: 100%;
+        
+
+      }
+
+    }
+
+    .form-actions {
+      text-align: center;
+
+      input {
+        padding: 10px 50px;
+        border: 1px solid $tertiary;
+        border-radius: 0px;
+        color: $tertiary;
+      }
+    }
+  }
 
 .maps-form-wrapper {
   display: flex;
@@ -137,6 +192,95 @@
   .form {
     .js-form-item {
       margin-bottom: 30px;
+.paragraph--type--faq {
+  @extend .container;
+
+  .ckeditor-accordion-container {
+    border: 2px solid $secondary !important;
+    margin-block: 10px 60px;
+dl {
+  dt {
+    a {
+       .ckeditor-accordion-toggle{
+      position: absolute !important;
+      top: calc(12% - 1px);
+      border-radius: 10px;
+      @include desktop{
+        top: calc(24% - 1px);
+      }
+     
+     }
+      span {
+        right: 7px !important;
+        background-color: $secondary;
+        width: 50px;
+        height: 50px;
+        @include tablet{
+          right: 50px !important;
+        }
+        &::before {
+          
+           content: url(../icons/vector-7.svg);
+           background-color: transparent;
+           width: auto;
+           height: auto;
+           padding-inline: 10px;
+           border-radius: 10px;
+           left: 10% !important;
+           top: 16% !important;
+        }
+         &::after {
+        
+         display: none;
+        }
+      }
+    }
+  }
+   dt.active {
+    a {
+      span {
+        color: yellow !important;
+        &::before {
+          
+           content: url(../icons/vector-7.svg);
+           background-color: transparent;
+           width: auto;
+           height: auto;
+           transform: rotate(0deg) !important;
+           display: block !important;
+        }
+         &::after {
+        
+         display: none;
+        }
+      }
+    }
+  }
+}
+
+
+    .ckeditor-accordion-toggler {
+      background-color: $white !important;
+      color: $secondary !important;
+      border-radius: 0px !important;
+     
+  
+    
+
+    }
+
+    .active {
+       
+      p {
+        margin-block: 30px;
+        color: $tertiary;
+        span {
+          @extend .h5;
+        }
+      }
+    }
+  }
+}
 
       input,
       textarea {
