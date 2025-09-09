@@ -1,0 +1,113 @@
+.book-wrapper {
+     .book-heading{
+    padding-block: 60px;
+    background-color: $gray-light;
+    h1{
+        color: $secondary;
+        padding-inline: 100px;
+    }
+  }
+  .book-content{
+ @extend .container;
+  .image {
+    height: 551px;
+    margin-block: 60px 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .title,
+  .author,
+  .subject,
+  .publish,
+  .launguage {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-block: 10px;
+
+    h4 {
+      color: $tertiary;
+      span{
+        color: $secondary;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $secondary;
+    }
+  }
+  .btn {
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: $white;
+  font-weight: bold;
+  border: 1px solid $tertiary;
+  margin-top: 20px;
+  a{
+      color: $tertiary;
+      text-decoration: none;
+  }
+  
+}
+
+  .description{
+    padding-block: 60px;
+    p{
+        @extend .body2;
+    }
+  }
+}
+}
+
+
+
+
+
+
+//catalog view//
+.paragraph--type--catalog{
+  grid-column: 5 / -1;
+  .views-exposed-form{
+    display: flex;
+  }
+  .catalog-wrapper{
+@extend .grid;
+  
+  .views-row{
+    grid-column: span 6;
+    .image-wrapper{
+      height:311px;
+      img{
+        height: 311px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .book-content{
+      background-color: $gray-light;
+    .book-title{
+      a{
+       color: $secondary;
+       @extend .h5;
+       text-decoration: none;
+      }
+    }
+    .book-author,.book-subject{
+      h6{
+        color: $tertiary;
+      }
+    }
+   
+    }
+  }
+  }
+}
+
+
+
+

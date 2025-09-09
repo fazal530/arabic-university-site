@@ -1,9 +1,9 @@
-uuid: bd4ac22e-6bb9-485b-bd5c-aa6a802549cc
+uuid: 2ba0317c-7cdd-4e09-8d90-5df8ac882641
 langcode: en
 status: true
 dependencies: {  }
-id: news_block_view
-label: 'block views'
+id: catalog
+label: Catalog
 icon_uuid: null
 icon_default: null
 description: ''

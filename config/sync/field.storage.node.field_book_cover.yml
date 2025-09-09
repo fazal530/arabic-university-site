@@ -1,17 +1,16 @@
-uuid: 86334e63-0cf2-49b5-a8fa-7866ecc4240b
+uuid: 2aea0a4a-3df0-47b2-8198-5df1625e1ea5
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-id: node.field_achievements
-field_name: field_achievements
+id: node.field_book_cover
+field_name: field_book_cover
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: media
 module: core
 locked: false
 cardinality: 1
