@@ -5,8 +5,10 @@ dependencies:
   config:
     - field.storage.paragraph.field_ref_para_2
     - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.catalog
     - paragraphs.paragraphs_type.label_text_wrapper
     - paragraphs.paragraphs_type.navigation_block_2
+    - paragraphs.paragraphs_type.news_block_view
     - paragraphs.paragraphs_type.two_column_layout
   module:
     - entity_reference_revisions
@@ -27,10 +29,15 @@ settings:
       banner: banner
       label_text_wrapper: label_text_wrapper
       navigation_block_2: navigation_block_2
+      catalog: catalog
+      news_block_view: news_block_view
     negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 28
+        enabled: false
+      accordion_wrapper:
+        weight: 40
         enabled: false
       accreditations_achievements:
         weight: 29
@@ -38,11 +45,26 @@ settings:
       accreditations_wrapper:
         weight: 30
         enabled: false
+      admission_steps:
+        weight: 43
+        enabled: false
+      admission_steps_wrapper:
+        weight: 44
+        enabled: false
       banner:
         weight: 31
         enabled: true
+      body:
+        weight: 46
+        enabled: false
+      catalog:
+        weight: 48
+        enabled: true
       college_latest_news:
         weight: 32
+        enabled: false
+      contact_banner:
+        weight: 48
         enabled: false
       department:
         weight: 33
@@ -59,6 +81,9 @@ settings:
       events_block_view:
         weight: 37
         enabled: false
+      faq:
+        weight: 54
+        enabled: false
       hero_section:
         weight: 38
         enabled: false
@@ -68,17 +93,26 @@ settings:
       icon_link_wrapper:
         weight: 40
         enabled: false
+      image_with_accordion:
+        weight: 58
+        enabled: false
       label:
         weight: 41
         enabled: false
       label_text_wrapper:
         weight: 42
         enabled: true
+      label_text_wrapper2:
+        weight: 61
+        enabled: false
       label_with_text:
         weight: 43
         enabled: false
       link_button:
         weight: 44
+        enabled: false
+      maps_with_form:
+        weight: 64
         enabled: false
       menu_wrapper:
         weight: 45
@@ -91,7 +125,7 @@ settings:
         enabled: true
       news_block_view:
         weight: 48
-        enabled: false
+        enabled: true
       organization_wrapper:
         weight: 49
         enabled: false
@@ -109,6 +143,9 @@ settings:
         enabled: false
       two_column_layout:
         weight: 54
+        enabled: false
+      two_columns:
+        weight: 74
         enabled: false
       upload_file:
         weight: 56

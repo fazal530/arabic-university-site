@@ -1,17 +1,16 @@
-uuid: 86334e63-0cf2-49b5-a8fa-7866ecc4240b
+uuid: a9411038-7e2c-43d4-bf71-22a8c770a482
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_achievements
-field_name: field_achievements
+    - taxonomy
+id: node.field_language
+field_name: field_language
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

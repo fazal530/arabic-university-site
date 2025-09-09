@@ -1,0 +1,27 @@
+uuid: 532097ac-3aff-4cb2-a57e-afa6a049e196
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_download_book
+    - node.type.book
+  module:
+    - file
+id: node.book.field_download_book
+field_name: field_download_book
+entity_type: node
+bundle: book
+label: 'Download Book'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc'
+  max_filesize: ''
+  description_field: false
+field_type: file
