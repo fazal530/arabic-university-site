@@ -16,7 +16,7 @@ bundle: label_text_wrapper2
 label: Label-Text-Wrapper2
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

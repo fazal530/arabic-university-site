@@ -1,0 +1,20 @@
+uuid: 4ba5311a-5497-4a8b-964a-f976840797e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.college_main_page
+  module:
+    - path
+id: node.college_main_page.path
+field_name: path
+entity_type: node
+bundle: college_main_page
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

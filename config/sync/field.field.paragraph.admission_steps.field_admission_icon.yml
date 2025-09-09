@@ -6,7 +6,14 @@ dependencies:
     - field.storage.paragraph.field_admission_icon
     - paragraphs.paragraphs_type.admission_steps
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: paragraph.admission_steps.field_admission_icon
 field_name: field_admission_icon
 entity_type: paragraph
@@ -14,7 +21,7 @@ bundle: admission_steps
 label: 'Admission icon'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

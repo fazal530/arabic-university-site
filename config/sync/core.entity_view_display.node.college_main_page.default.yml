@@ -1,0 +1,67 @@
+uuid: bb101756-e22c-4e12-8f76-3633378d9b1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.college_main_page.field_accordion
+    - field.field.node.college_main_page.field_all_block
+    - field.field.node.college_main_page.field_deans
+    - field.field.node.college_main_page.field_label
+    - field.field.node.college_main_page.field_navigation
+    - node.type.college_main_page
+  module:
+    - block_field
+    - entity_reference_revisions
+    - text
+    - user
+id: node.college_main_page.default
+targetEntityType: node
+bundle: college_main_page
+mode: default
+content:
+  field_accordion:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_all_block:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_deans:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_label:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_navigation:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

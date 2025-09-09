@@ -1,0 +1,22 @@
+uuid: 39249900-2624-42c7-a00d-685e15918a5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.acad
+id: node.acad.promote
+field_name: promote
+entity_type: node
+bundle: acad
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

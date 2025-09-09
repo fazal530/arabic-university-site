@@ -1,0 +1,35 @@
+uuid: 529bc241-79a9-48e5-b5aa-2732a71eb96b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.portal_cards.field_admission_text
+    - field.field.paragraph.portal_cards.field_ex_link
+    - paragraphs.paragraphs_type.portal_cards
+  module:
+    - link
+    - text
+id: paragraph.portal_cards.default
+targetEntityType: paragraph
+bundle: portal_cards
+mode: default
+content:
+  field_admission_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_ex_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

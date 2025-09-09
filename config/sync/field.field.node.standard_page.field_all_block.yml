@@ -21,5 +21,6 @@ settings:
   selection: blocks
   selection_settings:
     plugin_ids:
+      'views_block:calender_view-block_1': 'views_block:calender_view-block_1'
       'views_block:profile-block_1': 'views_block:profile-block_1'
 field_type: block_field

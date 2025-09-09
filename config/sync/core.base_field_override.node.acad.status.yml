@@ -1,0 +1,22 @@
+uuid: be7703fa-8a72-4bcc-8eaf-db32618983f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.acad
+id: node.acad.status
+field_name: status
+entity_type: node
+bundle: acad
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

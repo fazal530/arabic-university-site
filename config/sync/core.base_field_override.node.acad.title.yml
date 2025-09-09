@@ -1,0 +1,18 @@
+uuid: 3c3e390a-8718-4511-8b5f-5650bf6c95c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.acad
+id: node.acad.title
+field_name: title
+entity_type: node
+bundle: acad
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

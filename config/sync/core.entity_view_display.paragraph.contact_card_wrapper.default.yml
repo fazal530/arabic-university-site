@@ -1,0 +1,24 @@
+uuid: 820a9f75-eea8-4172-8405-ab94e16b7a0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact_card_wrapper.field_card_portal
+    - paragraphs.paragraphs_type.contact_card_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.contact_card_wrapper.default
+targetEntityType: paragraph
+bundle: contact_card_wrapper
+mode: default
+content:
+  field_card_portal:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

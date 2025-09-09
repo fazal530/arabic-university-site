@@ -1,0 +1,148 @@
+uuid: 6cba3bb2-197c-4127-b423-829c471aa7fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_portal_cards
+    - paragraphs.paragraphs_type.portal_cards
+    - paragraphs.paragraphs_type.potal_cards_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.potal_cards_wrapper.field_portal_cards
+field_name: field_portal_cards
+entity_type: paragraph
+bundle: potal_cards_wrapper
+label: 'Portal Cards'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      portal_cards: portal_cards
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 41
+        enabled: false
+      accordion_wrapper:
+        weight: 42
+        enabled: false
+      accreditations_achievements:
+        weight: 43
+        enabled: false
+      accreditations_wrapper:
+        weight: 44
+        enabled: false
+      admission_steps:
+        weight: 45
+        enabled: false
+      admission_steps_wrapper:
+        weight: 46
+        enabled: false
+      banner:
+        weight: 47
+        enabled: false
+      body:
+        weight: 48
+        enabled: false
+      college_latest_news:
+        weight: 49
+        enabled: false
+      contact_banner:
+        weight: 50
+        enabled: false
+      department:
+        weight: 51
+        enabled: false
+      department_section:
+        weight: 52
+        enabled: false
+      department_section_2:
+        weight: 53
+        enabled: false
+      department_sub_page:
+        weight: 54
+        enabled: false
+      events_block_view:
+        weight: 55
+        enabled: false
+      faq:
+        weight: 56
+        enabled: false
+      hero_section:
+        weight: 57
+        enabled: false
+      icon_link:
+        weight: 58
+        enabled: false
+      icon_link_wrapper:
+        weight: 59
+        enabled: false
+      image_with_accordion:
+        weight: 60
+        enabled: false
+      label:
+        weight: 61
+        enabled: false
+      label_text_wrapper:
+        weight: 62
+        enabled: false
+      label_text_wrapper2:
+        weight: 63
+        enabled: false
+      label_with_text:
+        weight: 64
+        enabled: false
+      link_button:
+        weight: 65
+        enabled: false
+      maps_with_form:
+        weight: 66
+        enabled: false
+      menu_wrapper:
+        weight: 67
+        enabled: false
+      navigation:
+        weight: 68
+        enabled: false
+      navigation_block_2:
+        weight: 69
+        enabled: false
+      news_block_view:
+        weight: 70
+        enabled: false
+      organization_wrapper:
+        weight: 71
+        enabled: false
+      portal_cards:
+        weight: 72
+        enabled: true
+      potal_cards_wrapper:
+        weight: 73
+        enabled: false
+      sidebar_menu:
+        weight: 74
+        enabled: false
+      text_with_banner:
+        weight: 75
+        enabled: false
+      text_with_file:
+        weight: 76
+        enabled: false
+      text_with_image:
+        weight: 77
+        enabled: false
+      two_column_layout:
+        weight: 79
+        enabled: false
+      two_columns:
+        weight: 78
+        enabled: false
+      upload_file:
+        weight: 80
+        enabled: false
+field_type: entity_reference_revisions

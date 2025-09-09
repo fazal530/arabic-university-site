@@ -1,0 +1,142 @@
+uuid: 2e532cd4-9541-4966-8a7c-57a6d6324d3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_label
+    - node.type.college_main_page
+    - paragraphs.paragraphs_type.label
+  module:
+    - entity_reference_revisions
+id: node.college_main_page.field_label
+field_name: field_label
+entity_type: node
+bundle: college_main_page
+label: 'College Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      label: label
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 39
+        enabled: false
+      accordion_wrapper:
+        weight: 40
+        enabled: false
+      accreditations_achievements:
+        weight: 17
+        enabled: false
+      accreditations_wrapper:
+        weight: 18
+        enabled: false
+      admission_steps:
+        weight: 43
+        enabled: false
+      admission_steps_wrapper:
+        weight: 44
+        enabled: false
+      banner:
+        weight: 45
+        enabled: false
+      body:
+        weight: 46
+        enabled: false
+      college_latest_news:
+        weight: 47
+        enabled: false
+      contact_banner:
+        weight: 48
+        enabled: false
+      department:
+        weight: 49
+        enabled: false
+      department_section:
+        weight: 50
+        enabled: false
+      department_section_2:
+        weight: 51
+        enabled: false
+      department_sub_page:
+        weight: 52
+        enabled: false
+      events_block_view:
+        weight: 19
+        enabled: false
+      faq:
+        weight: 54
+        enabled: false
+      hero_section:
+        weight: 20
+        enabled: false
+      icon_link:
+        weight: 21
+        enabled: false
+      icon_link_wrapper:
+        weight: 22
+        enabled: false
+      image_with_accordion:
+        weight: 58
+        enabled: false
+      label:
+        weight: 23
+        enabled: true
+      label_text_wrapper:
+        weight: 24
+        enabled: false
+      label_text_wrapper2:
+        weight: 61
+        enabled: false
+      label_with_text:
+        weight: 25
+        enabled: false
+      link_button:
+        weight: 63
+        enabled: false
+      maps_with_form:
+        weight: 64
+        enabled: false
+      menu_wrapper:
+        weight: 65
+        enabled: false
+      navigation:
+        weight: 66
+        enabled: false
+      navigation_block_2:
+        weight: 67
+        enabled: false
+      news_block_view:
+        weight: 26
+        enabled: false
+      organization_wrapper:
+        weight: 27
+        enabled: false
+      sidebar_menu:
+        weight: 70
+        enabled: false
+      text_with_banner:
+        weight: 30
+        enabled: false
+      text_with_file:
+        weight: 31
+        enabled: false
+      text_with_image:
+        weight: 32
+        enabled: false
+      two_column_layout:
+        weight: 75
+        enabled: false
+      two_columns:
+        weight: 74
+        enabled: false
+      upload_file:
+        weight: 76
+        enabled: false
+field_type: entity_reference_revisions

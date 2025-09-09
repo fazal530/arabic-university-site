@@ -1,0 +1,20 @@
+uuid: ba8b48ff-5499-4751-82b6-4dd0ae07248f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.acad
+id: node.acad.menu_link
+field_name: menu_link
+entity_type: node
+bundle: acad
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

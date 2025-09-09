@@ -1,0 +1,125 @@
+.college-main {
+    .college-left {
+        grid-column: 1/5;
+
+        .college-menu {
+            background-color: $gray-light;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            width: 355px;
+
+            ul {
+                list-style: none;
+                float: none !important;
+                padding: 29px 0px !important;
+
+                li {
+                    cursor: pointer;
+
+                    a {
+                        &:first-of-type {
+                            @extend .h6;
+                            text-decoration: none;
+                            color: $tertiary;
+                            padding-inline: 10px 0 !important;
+                            padding-block: 9px;
+
+                            &:focus-within {
+                                background-color: $secondary;
+                                color: $white;
+                            }
+                        }
+
+                        .sf-sub-indicator {
+                            &:active {
+                                display: inline-block;
+                                transition: transform 0.3s ease;
+                                transform: rotate(-180deg);
+                            }
+                        }
+                    }
+
+                    ul {
+                        padding: 0 !important;
+
+                        li {
+                            background-color: $white !important;
+                            border-top: 2px solid $white;
+
+                            a {
+                                color: $tertiary !important;
+                                padding-block: 8px !important;
+                                width: 100%;
+                            }
+
+                            &:hover {
+                                background-color: $secondary !important;
+
+
+                                a {
+                                    color: $white !important;
+                                }
+                            }
+
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $secondary !important;
+                    }
+                }
+            }
+
+            .sf-accordion-toggle.sf-style-none {
+                display: none !important;
+            }
+        }
+
+        .accordiones {
+            .ckeditor-accordion-container {
+                width: 355px;
+            }
+        }
+    }
+
+    .college-right {
+        grid-column: 5/-1;
+
+        .details {
+            .paragraph--type--label {
+                padding: 0 !important;
+                margin: 0 !important;
+
+                h2 {
+                    padding: 0;
+
+                    &::before {
+                        content: unset;
+                    }
+                }
+            }
+        }
+
+        .deans {
+            margin-top: 60px;
+
+            .department-image {
+                img {
+                    width: 400px;
+                    height: 293px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .news {
+            .college-news {
+                grid-column: span 6;
+
+                p {
+                    @extend .body2;
+                }
+            }
+        }
+    }
+}
