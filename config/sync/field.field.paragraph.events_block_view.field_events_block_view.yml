@@ -11,7 +11,7 @@ id: paragraph.events_block_view.field_events_block_view
 field_name: field_events_block_view
 entity_type: paragraph
 bundle: events_block_view
-label: 'Events block view'
+label: 'Block Views'
 description: ''
 required: false
 translatable: true
@@ -21,5 +21,6 @@ settings:
   selection: blocks
   selection_settings:
     plugin_ids:
+      'views_block:catalog-block_1': 'views_block:catalog-block_1'
       'views_block:events-block_1': 'views_block:events-block_1'
 field_type: block_field

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - node
     - system
   theme:
     - sass_theme_msd
@@ -22,3 +23,19 @@ visibility:
     id: request_path
     negate: true
     pages: "<front>\r\n/node/121\r\n/admission-reg/*\r\n/admission-reg"
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      about_page: about_page
+      affairs: affairs
+      article: article
+      college: college
+      department: department
+      event: event
+      news_announcements: news_announcements
+      page: page
+      profile: profile
+      standard_page: standard_page

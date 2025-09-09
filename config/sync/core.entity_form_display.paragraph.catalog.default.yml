@@ -1,0 +1,26 @@
+uuid: 392a0b94-5d51-468e-8131-20a640d5c510
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.catalog.field_catalog_view
+    - paragraphs.paragraphs_type.catalog
+  module:
+    - block_field
+id: paragraph.catalog.default
+targetEntityType: paragraph
+bundle: catalog
+mode: default
+content:
+  field_catalog_view:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

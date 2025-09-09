@@ -1,0 +1,25 @@
+uuid: 947ced66-7405-46cd-b348-7745716f5519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_catalog_view
+    - paragraphs.paragraphs_type.catalog
+  module:
+    - block_field
+id: paragraph.catalog.field_catalog_view
+field_name: field_catalog_view
+entity_type: paragraph
+bundle: catalog
+label: 'Catalog view'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:catalog-block_1': 'views_block:catalog-block_1'
+field_type: block_field
