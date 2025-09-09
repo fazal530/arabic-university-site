@@ -1,0 +1,22 @@
+uuid: f1a43e95-563d-4f9a-a11c-8c4a04286054
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.college_main_page
+id: node.college_main_page.sticky
+field_name: sticky
+entity_type: node
+bundle: college_main_page
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -87,9 +87,13 @@
             justify-content: flex-end;
 
             .paragraph--type--text-with-file {
-
+                width: 100%;
                 margin-bottom: 30px;
-                width: 823px;
+
+                @include tablet {
+
+                    width: 823px;
+                }
 
                 h2 {
                     padding-block: 30px;
@@ -117,12 +121,14 @@
                         right: 2px;
                         top: 48%;
                         transform: translate(-31px, -50%) rotate(90deg);
+
                         [dir="rtl"] & {
                             left: 68px;
                             right: unset;
                         }
                     }
                 }
+
                 .accordion.open {
                     .arrow-2 {
                         display: none;
@@ -130,8 +136,11 @@
                 }
 
                 .accordion-content {
-                    padding: 30px;
+                    padding: 3%;
                     background-color: $gray-light;
+                    @include tablet{
+                        padding: 30px;
+                    }
 
                     ul {
                         list-style: none;
@@ -186,7 +195,12 @@
                                     border-left: 1px solid $black;
                                     border-top: 1px solid $black;
                                     text-align: left;
-                                    padding: 10px 20px 10px 20px;
+                                    padding: 10px 10px 10px 10px;
+
+                                    @include tablet {
+                                        padding: 10px 20px 10px 20px;
+                                    }
+
                                     [dir="rtl"] & {
                                         padding-right: 20px;
                                         text-align: right;
@@ -194,6 +208,7 @@
 
                                     &:first-child {
                                         border-top-left-radius: 10px;
+
                                         [dir="rtl"] & {
                                             border-right: 1px solid $black;
                                             border-top-right-radius: 10px;
@@ -204,6 +219,7 @@
                                     &:last-child {
                                         border-top-right-radius: 10px;
                                         border-right: 1px solid $black;
+
                                         [dir="rtl"] & {
                                             border-right: unset;
                                             border-top-right-radius: unset;
@@ -222,11 +238,14 @@
                                     border-bottom: 1px solid $black;
                                     border-left: 1px solid $black;
                                     padding: 10px 0px 10px 20px;
+
                                     [dir="rtl"] & {
                                         padding-right: 20px;
                                     }
+
                                     &:first-child {
                                         border-left: 1px solid $black;
+
                                         [dir="rtl"] & {
                                             border-right: 1px solid $black;
                                         }
@@ -234,6 +253,7 @@
 
                                     &:last-child {
                                         border-right: 1px solid $black;
+
                                         [dir="rtl"] & {
                                             border-right: unset;
                                             border-left: 1px solid $black;
@@ -245,6 +265,7 @@
                                     td {
                                         &:first-child {
                                             border-bottom-left-radius: 10px;
+
                                             [dir="rtl"] & {
                                                 border-bottom-right-radius: 10px;
                                                 border-bottom-left-radius: unset;
@@ -253,6 +274,7 @@
 
                                         &:last-child {
                                             border-bottom-right-radius: 10px;
+
                                             [dir="rtl"] & {
                                                 border-bottom-left-radius: 10px;
                                                 border-bottom-right-radius: unset;
@@ -267,12 +289,15 @@
             }
         }
     }
-    .accreditation-title{
+
+    .accreditation-title {
         padding: 0 !important;
     }
-    .accreditation-main-wrapper{
+
+    .accreditation-main-wrapper {
         padding: 0 !important;
     }
+
     .department-wrapper {
         .department {
             align-items: center;

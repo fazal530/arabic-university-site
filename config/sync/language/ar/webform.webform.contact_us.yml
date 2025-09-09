@@ -1,0 +1,11 @@
+elements: |
+  name:
+    '#placeholder': الاسم
+  email:
+    '#placeholder': 'البريد الإلكتروني'
+  subject:
+    '#placeholder': الموضوع
+  message:
+    '#placeholder': الرسالة
+  actions:
+    '#submit__label': 'إرسال الرسالة'

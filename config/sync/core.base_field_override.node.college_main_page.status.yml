@@ -1,0 +1,22 @@
+uuid: 7da893d1-d62b-4ee2-979b-f41da84f3013
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.college_main_page
+id: node.college_main_page.status
+field_name: status
+entity_type: node
+bundle: college_main_page
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

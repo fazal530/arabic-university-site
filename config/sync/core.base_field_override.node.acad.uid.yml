@@ -1,0 +1,20 @@
+uuid: b77a9a53-d0ac-4325-a606-c3d0dcb88750
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.acad
+id: node.acad.uid
+field_name: uid
+entity_type: node
+bundle: acad
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

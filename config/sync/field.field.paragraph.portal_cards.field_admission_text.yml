@@ -1,0 +1,24 @@
+uuid: 998cf013-3357-4bf1-aa81-2007c84b22f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_admission_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.portal_cards
+  module:
+    - text
+id: paragraph.portal_cards.field_admission_text
+field_name: field_admission_text
+entity_type: paragraph
+bundle: portal_cards
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,17 @@
+display:
+  default:
+    display_options:
+      title: 'الأخبار والفعاليات'
+      header:
+        area:
+          content:
+            value: '<h2>الأخبار والفعاليات</h2>'
+            format: full_html
+      exposed_form:
+        options:
+          bef:
+            filter:
+              type:
+                advanced:
+                  rewrite:
+                    filter_rewrite_values: ''

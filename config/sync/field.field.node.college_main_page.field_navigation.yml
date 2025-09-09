@@ -1,0 +1,27 @@
+uuid: ccefe76d-b5fc-47c2-aec8-6bcef7b8352d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_navigation
+    - node.type.college_main_page
+  module:
+    - block_field
+id: node.college_main_page.field_navigation
+field_name: field_navigation
+entity_type: node
+bundle: college_main_page
+label: Navigation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'menu_block:college-applied': 'menu_block:college-applied'
+      'system_menu_block:graduate-college': 'system_menu_block:graduate-college'
+      'system_menu_block:college-of-law': 'system_menu_block:college-of-law'
+field_type: block_field

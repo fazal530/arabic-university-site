@@ -179,7 +179,7 @@
 
             .accordion-content {
                 border-radius: 0px 0px 10px 10px;
-                padding: 20px 57px 20px 20px;
+                padding: 20px;
                 background-color: $gray-light;
 
                 h5 {
@@ -207,11 +207,16 @@
             }
         }
     }
+    .paragraph--type--label{
+        padding: 0 !important;
+        margin: 0px !important;
+    }
 }
 
 
 .paragraph--type--news-block-view {
-    padding-block: 0px;
+    padding: 0 !important;
+    margin: 0 !important;
 
     .views-exposed-form {
         .js-form-item {
@@ -230,25 +235,37 @@
                 border-radius: 10px;
                 padding-block: 14px;
                 padding-left: 20px;
-
+  
+                [dir="rtl"] & {
+                    padding-left: 0px !important;
+                    padding-right: 20px;
+                }
                 @include desktop {
                     gap: 70px;
                     padding-left: 60px;
                     padding-block: 10px;
+                    [dir="rtl"] & {
+                        padding-left: 0px !important;
+                        padding-right: 60px;
+                    }
                 }
 
                 li {
                     a {
                         text-decoration: none;
+                        color: $tertiary;
+                        @extend .body1;
+                    }
+                    &:nth-child(1) {
+                        display: none;
                     }
                 }
+
             }
         }
     }
 
     header {
-        padding-top: 60px;
-
         h2 {
             position: relative;
             padding-left: 20px;
@@ -294,9 +311,7 @@
 
 .paragraph--type--label {
     @extend .container;
-
     h2 {
-
         position: relative;
         padding-left: 20px;
 
@@ -305,6 +320,7 @@
         }
 
         &::before {
+            
             content: "";
             position: absolute;
             left: 0;

@@ -1,0 +1,22 @@
+uuid: b432c330-5aab-4863-a3b7-04157b258eb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.acad
+id: node.acad.sticky
+field_name: sticky
+entity_type: node
+bundle: acad
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

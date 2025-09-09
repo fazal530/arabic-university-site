@@ -1,0 +1,38 @@
+uuid: a05acb0d-47c5-4060-9f31-e0bc8c1b9706
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.token
+    - field.field.node.college_main_page.field_accordion
+    - field.field.node.college_main_page.field_all_block
+    - field.field.node.college_main_page.field_deans
+    - field.field.node.college_main_page.field_label
+    - field.field.node.college_main_page.field_navigation
+    - node.type.college_main_page
+  module:
+    - block_field
+    - user
+id: node.college_main_page.token
+targetEntityType: node
+bundle: college_main_page
+mode: token
+content:
+  field_all_block:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_accordion: true
+  field_deans: true
+  field_label: true
+  field_navigation: true
+  langcode: true

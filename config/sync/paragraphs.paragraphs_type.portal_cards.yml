@@ -1,0 +1,10 @@
+uuid: 3e44c3fa-f07f-4c11-8549-1900d41be561
+langcode: en
+status: true
+dependencies: {  }
+id: portal_cards
+label: 'Portal Cards'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

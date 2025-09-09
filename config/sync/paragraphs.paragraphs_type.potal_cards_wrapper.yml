@@ -1,0 +1,10 @@
+uuid: b8d6e2fd-6adf-47be-a2f6-6e5de81e4f9c
+langcode: en
+status: true
+dependencies: {  }
+id: potal_cards_wrapper
+label: 'Portal Cards Wrapper'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

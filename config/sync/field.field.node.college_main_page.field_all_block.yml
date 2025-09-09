@@ -1,0 +1,27 @@
+uuid: c0535382-f54c-44a4-a741-ed3eeaa83a69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_all_block
+    - node.type.college_main_page
+  module:
+    - block_field
+id: node.college_main_page.field_all_block
+field_name: field_all_block
+entity_type: node
+bundle: college_main_page
+label: 'All Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'views_block:college_news-block_1': 'views_block:college_news-block_1'
+      'views_block:news_events-block_1': 'views_block:news_events-block_1'
+      'views_block:profile-block_1': 'views_block:profile-block_1'
+field_type: block_field

@@ -1,0 +1,97 @@
+.calender {
+    @extend .container;
+    padding-bottom: 60px;
+
+    .top-section {
+        position: relative;
+        padding-inline: 71px;
+
+        .banner {
+            position: relative;
+            height: 422px;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+
+            .overlay {
+                background: radial-gradient(circle, rgba(76, 76, 76, 0.7) 0%, rgba(76, 76, 76, 0.7) 100%) !important;
+                border-radius: 10px;
+            }
+        }
+
+        .text {
+            position: absolute;
+            color: white;
+            bottom: 10%;
+            left: 85px;
+            right: 85px;
+
+            .heading {
+                padding-bottom: 38px;
+                text-align: center;
+
+                h2 {
+                    color: white;
+                    @extend .h1;
+                }
+            }
+
+            .news {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                @extend .h4;
+
+                div {
+                    background-color: $primary;
+                    padding-inline: 5px;
+                    @extend .h2;
+                    border-radius: 5px;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .lower-section {
+        .body {
+            .paragraph--type--body {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+        }
+    }
+
+    .paragraph--type--label {
+        padding-block: 60px 20px;
+        padding-inline: 0 !important;
+        margin: 0 !important;
+
+    }
+
+    .paragraph--type--body {
+        .note {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        p {
+            @extend .h4;
+            color: $tertiary;
+            padding-top: 15px;
+        }
+    }
+}
+
+#block-views-block-calender-view-block-1 {
+    article {
+       > h2 {
+            display: none;
+        }
+    }
+}

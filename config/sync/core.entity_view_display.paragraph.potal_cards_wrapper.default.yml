@@ -1,0 +1,24 @@
+uuid: e6b98027-1425-4363-87b4-9e026b5e81d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.potal_cards_wrapper.field_portal_cards
+    - paragraphs.paragraphs_type.potal_cards_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.potal_cards_wrapper.default
+targetEntityType: paragraph
+bundle: potal_cards_wrapper
+mode: default
+content:
+  field_portal_cards:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

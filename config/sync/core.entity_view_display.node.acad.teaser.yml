@@ -1,0 +1,45 @@
+uuid: b6f34651-02aa-4194-ac94-3a411ce79210
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.acad.field_body
+    - field.field.node.acad.field_calender_heading
+    - field.field.node.acad.field_image
+    - field.field.node.acad.field_news
+    - image.style.medium
+    - node.type.acad
+  module:
+    - svg_image
+    - user
+id: node.acad.teaser
+targetEntityType: node
+bundle: acad
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_calender_heading: true
+  field_news: true
+  langcode: true
