@@ -2,12 +2,16 @@
   @extend .container;
   padding-block: 60px;
   @extend .grid;
-.paragraph--type--admission-steps {
-  grid-column: span 5;
-  @include tablet{
-    grid-column: span 4;
+
+  .paragraph--type--admission-steps {
+    grid-column: span 5;
+    position: relative;
+
+    @include tablet {
+      grid-column: span 4;
+    }
   }
-}
+
   .admission-step-card {
     background-color: $half-gray;
     display: flex;
@@ -17,6 +21,14 @@
     flex-direction: column;
     height: 376px;
     padding: 32px;
+    position: relative;
+
+    .card-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   
 
     .card-icon {
       background: $secondary;
@@ -39,39 +51,55 @@
         text-align: center;
       }
     }
-  }
+     }
 
-  div:nth-child(3) {
-    .admission-step-card {
-        background-color: $secondary;
-      .card-text {
-        h6 {
-          color: $white;
-        }
+
+    .hover-text {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #0077a3;
+      color: #fff;
+      opacity: 0;
+      z-index: 2;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: opacity 0.4s ease-in-out;
+
+      h6 {
+        padding-block: 10px;
+      }
+
+      &:hover {
+        opacity: 1;
       }
     }
   }
 
-  p{
+
+  p {
     padding-top: 25px;
-    a{
-        padding: 10px 50px 10px 50px;
-        border: 1px solid $white;
-        background-color: $secondary;
-        color: $white;
-        font-size: 20px;
-        line-height: 27px;
-        cursor: pointer;
-        text-decoration: none;
 
-          &::after {
-          content: url(../icons/fluent_arrow-left-16-filled.svg); 
-          display: inline-block;
-          margin-left: 10px;
-          vertical-align: middle;
-    }
+    a {
+      padding: 10px 50px 10px 50px;
+      border: 1px solid $white;
+      background-color: $secondary;
+      color: $white;
+      font-size: 20px;
+      line-height: 27px;
+      cursor: pointer;
+      text-decoration: none;
 
-      
+      &::after {
+        content: url(../icons/fluent_arrow-left-16-filled.svg);
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+
+
     }
   }
 

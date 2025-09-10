@@ -346,7 +346,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"image-wrapper\">\r\n{{ field_book_cover }}\r\n</div>\r\n<div class=\"book-content\">\r\n<div class=\"book-title\">\r\n{{ title }}\r\n</div>\r\n<div class=\"book-author\">\r\n<h6>\r\n{{ field_author }}\r\n</h6>\r\n</div>\r\n<div class=\"book-subject\">\r\n<h6>\r\n{{ field_subject }} \r\n</h6>\r\n</div>\r\n{{ view_node }}\r\n</div>"
+            text: "<div class=\"image-wrapper\">\r\n{{ field_book_cover }}\r\n</div>\r\n<div class=\"book-content\">\r\n<div class=\"book-title\">\r\n{{ title }}\r\n</div>\r\n<div class=\"book-author\">\r\n<h6>\r\n{{ field_author }}\r\n</h6>\r\n</div>\r\n<div class=\"book-subject\">\r\n<h6>\r\n{{ field_subject }} \r\n</h6>\r\n</div>\r\n<div class=\"btn\">\r\n{{ view_node }}\r\n</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
