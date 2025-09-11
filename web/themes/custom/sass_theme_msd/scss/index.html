@@ -2,71 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scientific Research Portal</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Card Hover Effect</title>
   <style>
-    .card {
-      background: #6d6d6d; /* grey background */
-      color: white;
-      padding: 15px;
-      border-radius: 6px;
-      position: relative;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
       display: flex;
+      justify-content: center;
       align-items: center;
-      font-size: 16px;
-      font-weight: 500;
+      height: 100vh;
     }
 
-    .card::before {
-      content: "*"; /* FontAwesome file-alt icon */
-      font-family: "Font Awesome 6 Free";
-      font-weight: 400;
-      margin-right: 10px;
-      font-size: 20px;
+    .card-wrapper {
+      position: relative;
+      width: 300px;
+      height: 220px;
+      cursor: pointer;
     }
 
-    .card::after {
-      content: "*"; /* FontAwesome external-link-alt icon */
-      font-family: "Font Awesome 6 Free";
-      font-weight: 900;
-      margin-left: auto;
-      font-size: 18px;
+    .card {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
     }
 
-    .description {
-      margin-top: 10px;
-      color: #666;
-      font-size: 14px;
-      line-height: 1.6;
+    .card-front {
+      background: #e6e6e6;
+      z-index: 1;
+    }
+
+    .card-front .icon {
+      font-size: 50px;
+      margin-bottom: 10px;
+      color: #0077a3;
+    }
+
+    .card-back {
+      background: #0077a3;
+      color: #fff;
+      opacity: 0;
+      z-index: 2;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-back button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .card-back button:hover {
+      background: #fff;
+      color: #0077a3;
+    }
+
+    /* Hover Effect */
+    .card-wrapper:hover .card-back {
+      opacity: 1;
     }
   </style>
 </head>
 <body>
+  <div class="card-wrapper">
+    <!-- Left Card -->
+    <div class="card card-front">
+      <div class="icon">🎓</div>
+      <p>Admission steps for master’s programs</p>
+    </div>
 
-  <div class="card">
-    Scientific Research Portal
+    <!-- Right Card (hidden by default) -->
+    <div class="card card-back">
+      hover text
+    </div>
   </div>
-  <div class="description">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  </div>
-
 </body>
 </html>
-
-<!-- <div class="contact-boxes">
-  <div class="contact-us-left">
-      <drupal-media data-entity-type="media" data-entity-uuid="ffec6550-2efd-429b-aa6a-81a9b3ac2fd6">&nbsp;</drupal-media>
-      <h5>
-          Join arab east colleges
-      </h5>
-      <drupal-media data-entity-type="media" data-entity-uuid="ae35bf7e-6245-4a0d-b138-f1077a5c3719">&nbsp;</drupal-media>
-  </div>
-  <div class="contact-us-right">
-      <drupal-media data-entity-type="media" data-entity-uuid="e5bcaf57-9f51-40fd-834b-06c19c958a21">&nbsp;</drupal-media>
-      <h5>
-          Tech Support
-      </h5>
-      <drupal-media data-entity-type="media" data-entity-uuid="ae35bf7e-6245-4a0d-b138-f1077a5c3719">&nbsp;</drupal-media>
-  </div>
-</div> -->

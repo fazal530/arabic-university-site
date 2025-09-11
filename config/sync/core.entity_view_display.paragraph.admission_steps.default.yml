@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.admission_steps.field_accreditations_body
     - field.field.paragraph.admission_steps.field_admission_icon
     - field.field.paragraph.admission_steps.field_admission_text
     - paragraphs.paragraphs_type.admission_steps
@@ -14,6 +15,13 @@ targetEntityType: paragraph
 bundle: admission_steps
 mode: default
 content:
+  field_accreditations_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_admission_icon:
     type: image
     label: hidden
